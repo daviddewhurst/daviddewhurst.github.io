@@ -1,6 +1,6 @@
 ---
 layout: page
-title: david rushing dewhurst
+title: about 
 description: david rushing dewhurst 
 ---
 
@@ -12,7 +12,8 @@ description: david rushing dewhurst
 
 #### about me
 
-husband. phd candidate at [uvm](http://vermontcomplexsystems.org/). former trombonist.
+husband. phd candidate at [uvm](http://vermontcomplexsystems.org/). 
+former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
 
 #### links
 
