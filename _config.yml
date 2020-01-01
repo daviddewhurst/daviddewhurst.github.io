@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-theme: jekyll-theme-cayman
-=======
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
@@ -11,16 +8,16 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Sociotechnical Signals
+title : david rushing dewhurst
 author :
-  name : socsig
-  email : inquiries@sociotechnicalsignals.com
-  github : socsig
-  twitter : nil
+  name : drd
+  email : drd@davidrushingdewhurst.com
+  github : nil
+  twitter : https://twitter.com/d_r_dewhurst
   feedburner : nil
 
 # NOTE: Replacing this next line with your own URL
-  production_url : https://sociotechnicalsignals.com
+  production_url : https://davidrushingdewhurst.com
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
@@ -57,7 +54,7 @@ JB :
   #     This means always setting the protocol (http|https) or prefixing with "/"
   #
   # NOTE: Replace this next line with your own URL, likely with username.github.io
-  BASE_PATH : https://sociotechnicalsignals.com
+  BASE_PATH : https://davidrushingdewhurst.com
 
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
