@@ -17,7 +17,7 @@ former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for 
 
 Here is a photo of me. It is five years old but I have not changed much.
 
-<img src="./photos/2015-headshot.jpg" alt="a photo of me" width="500" height="500"/>
+<img src="./photos/2015-headshot.jpg" alt="a photo of me" width="150" height="150"/>
 
 #### links
 
