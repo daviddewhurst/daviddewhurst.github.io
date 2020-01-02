@@ -10,7 +10,7 @@ description: david rushing dewhurst
 + Agent-based modeling
 + Mechanistic models of non-equilibrium systems
 
-#### about me
+#### Personal statistics
 
 Husband. PhD candidate at [uvm](http://vermontcomplexsystems.org/). 
 Former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
