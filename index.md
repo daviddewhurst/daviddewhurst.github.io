@@ -1,25 +1,25 @@
 ---
 layout: page
-title: about 
+title: About 
 description: david rushing dewhurst 
 ---
 
-#### research interests
+#### Research interests
 
-+ nonparametric and bayesian structural time series
-+ agent-based modeling
-+ mechanistic models of non-equilibrium systems
++ Nonparametric and bayesian structural time series
++ Agent-based modeling
++ Mechanistic models of non-equilibrium systems
 
 #### about me
 
-husband. phd candidate at [uvm](http://vermontcomplexsystems.org/). 
-former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
+Husband. PhD candidate at [uvm](http://vermontcomplexsystems.org/). 
+Former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
 
 Here is a photo of me. It is five years old but I have not changed much.
 
 <img src="./photos/2015-headshot.jpg" alt="a photo of me" width="150" height="150"/>
 
-#### links
+#### Links
 
 + [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
 + [consulting](https://sociotechnicalsignals.com)
