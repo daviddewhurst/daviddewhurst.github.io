@@ -15,6 +15,10 @@ description: david rushing dewhurst
 husband. phd candidate at [uvm](http://vermontcomplexsystems.org/). 
 former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
 
+Here is a photo of me. It is five years old but I have not changed much.
+
+<img src="./photos/2015-headshot.jpg" alt="a photo of me" width="500" height="500"/>
+
 #### links
 
 + [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
