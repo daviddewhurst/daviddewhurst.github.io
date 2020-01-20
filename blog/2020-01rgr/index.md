@@ -33,28 +33,45 @@ distribution. This is also the RGR process described by Udny Yule and
 Herbert Simon in their seminal papers on this topic.
 
 We would like to know how many groups of size \\(k\\) there are in the
-system, where \\(k = 1,2,...\\) In addition, we will add the following
-twist: at each timestep, with probability \\(\rho\\) the attachment
-process as we have just outlined it is in operation. But with
-probability \\(1 - \rho\\), a new group forms. We will call \\(\rho\\) the
-*innovation probability*. You can probably imagine that it also has a
-profound effect on the distribution of group sizes — just think about
-what the size distribution must look like if \\(\rho = 1\\) so that every
-element forms a new group! Moving to continuous time (which is a useful
-approximation if ticks of the system’s governing clock are close
-together), the equation describing the number of groups of size \\(k\\),
-\\(N_k\\),
+system, where \\(k = 1,2,...\\). We will suppose that the system initially
+starts with \\(n_0\\) elements that are in some initial configuration
+\\(N_k(0)\\). In addition, we will add the following twist: at each
+timestep, with probability \\(\rho\\) the attachment process as we have
+just outlined it is in operation. But with probability \\(1 - \rho\\), a
+new group forms. We will call \\(\rho\\) the *innovation probability*. You
+can probably imagine that it also has a profound effect on the
+distribution of group sizes — just think about what the size
+distribution must look like if \\(\rho = 1\\) so that every element forms
+a new group\! Moving to continuous time (which is a useful approximation
+if ticks of the system’s governing clock are close together), the
+equation describing the number of groups of size \\(k\\), \\(N_k\\),
 is
 
-\\[
-\frac{dN_k}{dt} = (1 - \rho) [ \text{Inflow into group $k$} - \text{Outflow from group $k$}] + \rho \delta_{k1}.
-\\]
+\\[\frac{dN_k}{dt} = (1 - \rho) [\text{Inflow into group $k$} - \text{Outflow from group $k$}]
+    + \rho \delta_{k1}.\\]
 
 We will encode the actual mechanics of the attachment process through a
 function \\(r(k)\\), which determines how elements are selected for
-replication. For example, the probability that an element from a group
-with \\(k\\) elements is selected when using Simon’s mechanism is
-\\(r(k) = k\\), since each element has an equal chance of being picked.
+replication. We call this function the *attachment kernel*. For example,
+the probability that an element from a group with \\(k\\) elements is
+selected when using Simon’s mechanism is \\(r(k) = k\\), since each
+element has an equal chance of being picked. Using this attachment
+kernel, the evolution equation is
+
+\\[\frac{dN_k}{dt} = (1 - \rho) [P_{k-1} - P_k] + \rho \delta_{k1},\\]
+
+where by \\(P_k\\) we mean the probability of choosing for replication an
+element from a group of size \\(k\\). What is this probability? It is
+proportional to the number of things in each group, which is \\(k\\),
+multiplied by the number of these kinds of groups, \\(N_k\\). Hence
+\\(P_k = kN_k / \sum_{\ell} \ell N_{\ell} = k N_k / t + n_0,\\) since
+there must be \\(t + n_0\\) elements in the system at time \\(t\\). Thus,
+the actual functional form of the evolution equation is (finally)
+
+\\[
+        \frac{dN_k}{dt} = (1 - \rho) \left[ \frac{(k-1)N_{k-1}}{t + n_0} - \frac{k N_k}{t + n_0} \right]
+    + \rho \delta_{k1}
+\\]
 
 **Citations**
 
