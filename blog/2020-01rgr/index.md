@@ -9,7 +9,8 @@ describe aspects of many objects and phenomena in the natural and social
 sciences, e.g., firm size and wealth distributions, citation networks,
 protein phosphorylation, and lung injury. We will review the derivation
 of a continuous-time, continuous-space version of the RGR process and
-then describe connections with survival theory.
+then describe connections with survival theory. This article is derived
+partially from our papers also contains original research.
 
 If a system evolves according to an RGR process, this means that larger
 objects (or objects with more money, more distance, and so on) are more
@@ -64,14 +65,50 @@ where by \\(P_k\\) we mean the probability of choosing for replication an
 element from a group of size \\(k\\). What is this probability? It is
 proportional to the number of things in each group, which is \\(k\\),
 multiplied by the number of these kinds of groups, \\(N_k\\). Hence
-\\(P_k = kN_k / \sum_{\ell} \ell N_{\ell} = k N_k / t + n_0,\\) since
+\\(P_k = kN_k / \sum_{\ell} \ell N_{\ell} = k N_k / (t + n_0),\\) since
 there must be \\(t + n_0\\) elements in the system at time \\(t\\). Thus,
 the actual functional form of the evolution equation is (finally)
 
-\\[
-        \frac{dN_k}{dt} = (1 - \rho) \left[ \frac{(k-1)N_{k-1}}{t + n_0} - \frac{k N_k}{t + n_0} \right]
-    + \rho \delta_{k1}
-\\]
+\\[\begin{aligned}
+        \frac{dN_k}{dt} &= (1 - \rho) \left[ \frac{(k-1)N_{k-1}}{t + n_0} - \frac{k N_k}{t + n_0} \right]
+    + \rho \delta_{k1}.
+    \end{aligned}\\]
+
+This equation actually has a closed-form solution which was communicated
+to me by Babak Fotouhi. Finding this solution is an interesting problem,
+but we will not consider it during the rest of this article.
+
+In certain contexts, it makes sense to include spatial distance when
+describing a system driven by rich-get-richer dynamics. If the distance
+between groups is small, then the master equation that we just derived
+is well-approximated by a first-order hyperbolic partial differential
+equation:
+
+\\[\frac{\partial N(x,t)}{\partial t}
+    = -\frac{1 - \rho}{t + n_0} \frac{\partial}{\partial x}[r(x)N(x,t)] + \rho \delta(x - x^*).\\]
+
+This equation is defined on the half-open interval
+\\(x\in [x_0, \infty)\\) where \\(x_0 > 0\\). We are being as general as
+possible and so now are including the arbitrary attachment kernel
+\\(r(x)\\) instead of just the Simon kernel \\(r(x) = x\\). In passage to
+the continuum spatial limit, the Kronecker delta has become a Dirac
+delta. When \\(x >> x_0\\) and \\(\rho \ll 1\\), the tail of \\(N(x,t)\\) is
+approximately given by the solution to the simpler equation
+
+\\[\frac{\partial N(x,t)}{\partial t}
+    = -\frac{1 - \rho}{t + n_0} \frac{\partial}{\partial x}[r(x)N(x,t)].\\]
+
+We can solve this equation using separation of variables. We assume that
+the solution scales as the product of function of time only and of a
+probability distribution, \\(N(x,t) = T(t)p(x)\\). The PDE decouples into
+two equations,
+
+\\[(t + n_0)\frac{\dot{T}(t)}{T(t)} = \lambda = 
+    -\frac{(1 - \rho)}{p(x)} \frac{d}{dx}[r(x)p(x)].\\]
+
+The ODE in time has the solution \\(T(t) \propto (t + n_0)^{\lambda}\\),
+while the spatial ODE has \\(p(x) \propto
+\frac{1}{r(x)}\exp \left\{ -\int_{x_0}^x \frac{\lambda}{1 - \rho}\frac{1}{r(s)}ds \right\}\\).
 
 **Citations**
 
