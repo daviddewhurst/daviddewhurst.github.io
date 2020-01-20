@@ -108,7 +108,7 @@ two equations,
 
 The ODE in time has the solution \\(T(t) \propto (t + n_0)^{\lambda}\\),
 while the spatial ODE has \\(p(x) \propto
-\frac{1}{r(x)}\exp \left\{ -\int_{x_0}^x \frac{\lambda}{1 - \rho}\frac{1}{r(s)}ds \right\}\\).
+\frac{1}{r(x)}\exp [ -\int_{x_0}^x \frac{\lambda}{1 - \rho}\frac{1}{r(s)}ds ]\\).
 
 **Citations**
 
