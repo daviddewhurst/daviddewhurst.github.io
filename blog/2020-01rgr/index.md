@@ -10,9 +10,9 @@ then describe connections with survival theory.
 If a system evolves according to an RGR process, this means that larger
 objects (or objects with more money, more distance, and so on) are more
 likely to become still larger. It is useful to first examine a process
-that is *not* an RGR process. Suppose we have \(N\) objects that are
-randomly partitioned into \(K\) jars. At each timestep, with equal
-probability we select one of the \(K\) jars and add an element to that
+that is *not* an RGR process. Suppose we have \\(N\\) objects that are
+randomly partitioned into \\(K\\) jars. At each timestep, with equal
+probability we select one of the \\(K\\) jars and add an element to that
 jar. It is pretty obvious by construction that this process does not
 assign higher probability to jars that have more things in them. In
 fact, you can work out that this process has an equilibrium distribution
@@ -28,29 +28,29 @@ is a subtle change but has significant consequences for the equilibrium
 distribution. This is also the RGR process described by Udny Yule and
 Herbert Simon in their seminal papers on this topic.
 
-We would like to know how many groups of size \(k\) there are in the
-system, where \(k = 1,2,...\) In addition, we will add the following
-twist: at each timestep, with probability \(\rho\) the attachment
+We would like to know how many groups of size \\(k\\) there are in the
+system, where \\(k = 1,2,...\\) In addition, we will add the following
+twist: at each timestep, with probability \\(\rho\\) the attachment
 process as we have just outlined it is in operation. But with
-probability \(1 - \rho\), a new group forms. We will call \(\rho\) the
+probability \\(1 - \rho\\), a new group forms. We will call \\(\rho\\) the
 *innovation probability*. You can probably imagine that it also has a
 profound effect on the distribution of group sizes — just think about
-what the size distribution must look like if \(\rho = 1\) so that every
+what the size distribution must look like if \\(\rho = 1\\) so that every
 element forms a new group\! Moving to continuous time (which is a useful
 approximation if ticks of the system’s governing clock are close
-together), the equation describing the number of groups of size \(k\),
-\(N_k\),
+together), the equation describing the number of groups of size \\(k\\),
+\\(N_k\\),
 is
 
-\[
+\\[
 \frac{dN_k}{dt} = (1 - \rho) [ \text{Inflow into group $k$} - \text{Outflow from group $k$}] + \rho \delta_{k1}.
-\]
+\\]
 
 We will encode the actual mechanics of the attachment process through a
-function \(r(k)\), which determines how elements are selected for
+function \\(r(k)\\), which determines how elements are selected for
 replication. For example, the probability that an element from a group
-with \(k\) elements is selected when using Simon’s mechanism is
-\(r(k) = k\), since each element has an equal chance of being picked.
+with \\(k\\) elements is selected when using Simon’s mechanism is
+\\(r(k) = k\\), since each element has an equal chance of being picked.
 
 **Citations**
 
