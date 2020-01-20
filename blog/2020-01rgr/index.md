@@ -1,4 +1,8 @@
-**Continuum rich-get-richer dynamics and survival theory**
+---
+layout: page
+title: Continuum rich-get-richer dynamics and survival theory
+description: Continuum rich-get-richer dynamics and survival theory
+---
 
 Rich-get-richer (RGR) processes are a type of growth process that
 describe aspects of many objects and phenomena in the natural and social
@@ -36,7 +40,7 @@ probability \\(1 - \rho\\), a new group forms. We will call \\(\rho\\) the
 *innovation probability*. You can probably imagine that it also has a
 profound effect on the distribution of group sizes — just think about
 what the size distribution must look like if \\(\rho = 1\\) so that every
-element forms a new group\! Moving to continuous time (which is a useful
+element forms a new group! Moving to continuous time (which is a useful
 approximation if ticks of the system’s governing clock are close
 together), the equation describing the number of groups of size \\(k\\),
 \\(N_k\\),
