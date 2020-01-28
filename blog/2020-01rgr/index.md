@@ -300,7 +300,9 @@ given by
 \\[\hat{P}_{\geq}(x) = \prod_{
        	n: X_n < x 
          }
-         (1 - d_n/K_n).\\] The cumulative hazard function can therefore
+         (1 - d_n/K_n).\\] 
+
+The cumulative hazard function can therefore
 be estimated by
 
 \\[\hat{\Lambda}(x) = -\sum_{
