@@ -298,17 +298,14 @@ This is a nonparametric method to estimate the sf of the rv \\(X\\) and is
 given by
 
 \\[\hat{P}_{\geq}(x) = \prod_{
-        \substack{n\\
-         X_n \leq x}
+       	n: X_n < x 
          }
          (1 - d_n/K_n).\\] The cumulative hazard function can therefore
 be estimated by
 
 \\[\hat{\Lambda}(x) = -\sum_{
-        \substack{n\\
-         X_n \leq x}
-         }
-    \log (1 - d_n/K_n).\\]
+       	n: X_n < x 
+         }    \log (1 - d_n/K_n).\\]
 
 Being somewhat cavalier about our definition of the derivative (we can
 make this as formal as we please by an appeal to absolute continuity of
@@ -316,34 +313,27 @@ measure and the Radon Nikodym theorem, if we so cared), the RGR kernel
 is then approximated by
 
 \\[\hat{r}(x) = -\eta\left[ \frac{d}{dx} \sum_{
-        \substack{n\\
-         X_n \leq x}
-         }
-    \log (1 - d_n/K_n) \right]^{-1}.\\]
+       	n: X_n < x 
+         }    \log (1 - d_n/K_n) \right]^{-1}.\\]
 
 ### Nelson - Aalen estimator
 
 Looking at the cumulative hazard function estimator version of the
 Kaplan - Meier estimator, \\(\hat{\Lambda}(x) = -\sum_{
-        \substack{n\\
-         X_n \leq x}
-         }
-    \log (1 - d_n/K_n)\\), we notice that \\(\log(1 - y) \approx -y\\) for
+       	n: X_n < x 
+         }    \log (1 - d_n/K_n)\\), we notice that \\(\log(1 - y) \approx -y\\) for
 small \\(y\\). Using this substitution, we arrive at the alternative
 cumulative hazard estimator
 
 \\[\hat{\Lambda}(x) =  \sum_{
-        \substack{n\\
-         X_n \leq x}}
-        d_n/K_n.\\]
+       	n: X_n < x 
+         }        d_n/K_n.\\]
 
 Applying a similar argument, we have
 
 \\[\hat{r}(x) = \eta\left[ \frac{d}{dx} \sum_{
-        \substack{n\\
-         X_n \leq x}
-         }
-    d_n/K_n \right]^{-1}\\]
+       	n: X_n < x 
+         }    d_n/K_n \right]^{-1}\\]
 
 Let’s take a look at these hf estimators applied to some manufactured
 datasets. We will draw values from three distributions, one calm (folded
