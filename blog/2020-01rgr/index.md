@@ -1,4 +1,8 @@
-# Continuum rich-get-richer dynamics and survival theory
+---
+layout: page
+title: Continuum rich-get-richer dynamics and survival theory
+description: none
+---
 
 ## Introduction
 
