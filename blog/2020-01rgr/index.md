@@ -295,13 +295,10 @@ draws from the RGR process have not experienced failure by mark \\(X_n\\).
 ### Kaplan-Meier estimator
 
 This is a nonparametric method to estimate the sf of the rv \\(X\\) and is
-given by
-
-\\[\hat{P}_{\geq}(x) = \prod_{
+given by \\(\hat{P}_{\geq}(x) = \prod_{
        	n: X_n < x 
          }
-         (1 - d_n/K_n).\\] 
-
+         (1 - d_n/K_n).\\)
 (For some reason the \\(\LaTeX\\) of the above formula won't render. Please inspect
 the source of this document and see if you can figure out why; we sure can't.)
 The cumulative hazard function can therefore
