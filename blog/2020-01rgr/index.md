@@ -289,7 +289,7 @@ marks at which at least one event (failure, death, wealth level, etc.)
 happened. By “marks” we mean times, distances, revolutions, or whatever
 else is being measured as a quantity until failure random variable. At
 the \\(n\\)-th mark, \\(d_n\geq 0\\) failure events occur. (If time is
-continuous, \\(d_n \in \{0, 1\}\\) almost surely.) A total of \\(K_n\\)
+continuous, \\(d_n =1 \\) almost surely.) A total of \\(K_n\\)
 draws from the RGR process have not experienced failure by mark \\(X_n\\).
 
 ### Kaplan-Meier estimator
@@ -372,7 +372,7 @@ We will illustrate this approach using some simulated rich-get-richer
 processes. We simulate four RGR processes in discrete time for
 \\(N_t = 2\times 10^4\\) timesteps with an innovation rate of
 \\(\rho = 0.1\\) and four different attachment kernels,
-\\(r(x) \in \{ 1, \log(x + 1), x^{2/3}, x \}\\). These attachment kernels
+\\(r(x) \in \\{ 1, \log(x + 1), x^{2/3}, x \\}\\). These attachment kernels
 lead to qualitatively different functional forms of the failure pdf
 \\(p(x)\\), as you can verify through substitution and integration. (If
 you do attempt to do this, you’ll find yourself computing the integral
