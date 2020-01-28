@@ -302,6 +302,8 @@ given by
          }
          (1 - d_n/K_n).\\] 
 
+(For some reason the \\(\LaTeX\\) of the above formula won't render. Please inspect
+the source of this document and see if you can figure out why; we sure can't.)
 The cumulative hazard function can therefore
 be estimated by
 
