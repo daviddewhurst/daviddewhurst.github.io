@@ -9,6 +9,7 @@ description: david rushing dewhurst
 + Nonparametric and bayesian structural time series
 + Agent-based modeling
 + Mechanistic models of non-equilibrium systems
++ Monte Carlo methods and evolutionary algorithms
 
 #### Personal statistics
 
