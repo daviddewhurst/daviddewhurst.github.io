@@ -19,6 +19,14 @@ Here is a photo of me. It is five years old but I have not changed much.
 
 <img src="./photos/2015-headshot.jpg" alt="a photo of me" width="150" height="150"/>
 
+#### Blog
+
+From time to time I will write about things. I will list the things here.
+
++ [Continuum rich-get-richer dynamics and survival theory](./blog/2020-01rgr/): 
+on the non-obvious connection between
+the kernel function of a rich-get-richer process and the hazard function of a random variable.
+
 #### Links
 
 + [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
