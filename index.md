@@ -29,7 +29,7 @@ on the non-obvious connection between
 the kernel function of a rich-get-richer process and the hazard function of a random variable.
 
 
-### Software
+#### Software
 
 + [`verdantcurve`](https://gitlab.com/daviddewhurst/verdantcurve):
  agent-based market model created in collaboration with
