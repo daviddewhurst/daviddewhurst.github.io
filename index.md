@@ -28,6 +28,17 @@ From time to time I will write about things. I will list the things here.
 on the non-obvious connection between
 the kernel function of a rich-get-richer process and the hazard function of a random variable.
 
+
+### Software
+
++ [`verdantcurve`](https://gitlab.com/daviddewhurst/verdantcurve):
+ agent-based market model created in collaboration with
+ [Colin Van Oort](https://gitlab.com/omega1563). This package contains
+	+ A heterogeneous and extensible set of algorithmic trading agents
+	+ A matching engine that implements a [frequent batch auction](https://www.jstor.org/stable/pdf/42920973.pdf?casa_token=WQYwiAbhMW4AAAAA:6aPoP4fUReKATbS2faIbwiw8d0--C_c4CU1wCnwb9QtEHk4IabYUzcwJeHVs6M6UMYtwSrEdnTi8JAY-rZPfjTNbMHA0lFlbowmF3_JJ85vdPbRhDg), a new type of auction mechanism that greatly reduces the effectiveness of high-frequency trading strategies
+	+ A orderbook and multiple types of orders
+	+ A market construct to facilitate interaction between agents and the matching engine
+
 #### Links
 
 + [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
