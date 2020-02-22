@@ -42,6 +42,7 @@ the kernel function of a rich-get-richer process and the hazard function of a ra
 #### Links
 
 + [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
++ [papers](./papers/)
 + [consulting](https://sociotechnicalsignals.com)
 + [cv](./documents/drd-cv.pdf)
 + [twitter](https://twitter.com/d_r_dewhurst)
