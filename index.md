@@ -13,7 +13,8 @@ description: david rushing dewhurst
 
 #### Personal statistics
 
-Husband. PhD candidate at [uvm](http://vermontcomplexsystems.org/). 
+Husband. Father. Lead data scientist at [MassMutual](https://datascience.massmutual.com/).
+ Affiliate research scientist at [Vermont Complex Systems Center](https://vermontcomplexsystems.org/).
 Former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
 
 Here is a photo of me. It is five years old but I have not changed much.
@@ -53,4 +54,6 @@ qualitative, shape-based, timescale-independent time series similarity search al
 #### Disclaimer
 
 No statement expressed on this website should be construed as reflectng the 
-official position or opinion of any of my employers or the U.S. federal government.
+official position or opinion of any of my employers,
+the U.S. federal government, 
+or the Massachusetts state government.
