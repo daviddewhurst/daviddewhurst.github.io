@@ -7,6 +7,11 @@ description: david rushing dewhurst
 In reverse chronological order. I have included my favorite copy of each; some papers with arXiv pdfs here have been published.
 Others languish. I will not update this list immediately, so google scholar is a better resource to see publication status.
 
++ [The growing echo chamber of social media: Measuring temporal and social contagion dynamics for over 150 languages on Twitter for 2009–2020](../documents/papers/2020-twitter-languages.pdf)
+(Alshaabi, Dewhurst, Minot, Arnold, Adams, Danforth, and Dodds)
++ [Allotaxonometry and rank-turbulence divergence: A universal instrument
+for comparing complex systems.](../documents/papers/2020-allotax.pdf) 
+(Dodds, Minot, Arnold, Alshaabi, Adams, Dewhurst, Gray, Frank, Reagan, and Danforth)
 + [Noncooperative dynamics in election interference](../documents/papers/2020-red-blue.pdf) 
 (Dewhurst, Danforth and Dodds)
 + [The shocklet transform: a decomposition method for the identification of local, mechanism-driven dynamics in sociotechnical time series](../documents/papers/2020-shocklets.pdf) 
