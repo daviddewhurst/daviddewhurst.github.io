@@ -7,6 +7,11 @@ description: david rushing dewhurst
 In reverse chronological order. I have included my favorite copy of each; some papers with arXiv pdfs here have been published.
 Others languish. I will not update this list immediately, so google scholar is a better resource to see publication status.
 
++ [Hurricanes and hashtags: Characterizing online collective attention for natural disasters](../documents/papers/2020-hurricanes-hashtags.pdf)
+(Arnold, Dewhurst, Alshaabi, Minot, Adams, Danforth, and Dodds)
++ [How the world’s collective attention is being paid to a pandemic: COVID-19 related
+1-gram time series for 24 languages on Twitter.](../documents/papers/2020-covid19-attention.pdf)
+(Alshaabi, Arnold, Minot, Adams, Dewhurst, Reagan, Muhamad, Danforth, and Dodds)
 + [The growing echo chamber of social media: Measuring temporal and social contagion dynamics for over 150 languages on Twitter for 2009–2020](../documents/papers/2020-twitter-languages.pdf)
 (Alshaabi, Dewhurst, Minot, Arnold, Adams, Danforth, and Dodds)
 + [Allotaxonometry and rank-turbulence divergence: A universal instrument
