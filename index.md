@@ -25,6 +25,8 @@ Here is a photo of me. It is five years old but I have not changed much.
 
 From time to time I will write about things. I will list the things here.
 
++ [Perturbing correlation matrices](./blog/2020-04-22correlation-perturbation.html): on what we can do when we are 
+presented with a correlation matrix and *not* with the data that generated it
 + [Continuum rich-get-richer dynamics and survival theory](./blog/2020-01rgr/): 
 on the non-obvious connection between
 the kernel function of a rich-get-richer process and the hazard function of a random variable.
