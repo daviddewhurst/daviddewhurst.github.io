@@ -7,6 +7,7 @@ description: david rushing dewhurst
 In reverse chronological order. I have included my favorite copy of each; some papers with arXiv pdfs here have been published.
 Others languish. I will not update this list immediately, so google scholar is a better resource to see publication status.
 
++ [Divergent modes of online collective attention to the COVID-19 pandemic are associated with future caseload variance](../documents/papers/2020-covid-clustering1.pdf) (Dewhurst, Alshaabi, Arnold, Minot, Danforth, and Dodds)
 + [Hurricanes and hashtags: Characterizing online collective attention for natural disasters](../documents/papers/2020-hurricanes-hashtags.pdf)
 (Arnold, Dewhurst, Alshaabi, Minot, Adams, Danforth, and Dodds)
 + [How the world’s collective attention is being paid to a pandemic: COVID-19 related
