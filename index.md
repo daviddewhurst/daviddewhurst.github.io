@@ -25,6 +25,8 @@ Here is a photo of me. It is five years old but I have not changed much.
 
 From time to time I will write about things. I will list the things here.
 
++ [Theoretical data science background I: functional optimization](./blog/2020-05-30theoretical-ds-background-1-functional-optimization.html) First post in a (maybe) multipost series of theoreetical background for data scince.
+ Here lie Euler-Lagrange equations, the general supervised learning problem, and time series smoothing.
 + [Perturbing correlation matrices](./blog/2020-04-22correlation-perturbation.html): on what we can do when we are 
 presented with a correlation matrix and *not* with the data that generated it
 + [Continuum rich-get-richer dynamics and survival theory](./blog/2020-01rgr/): 
