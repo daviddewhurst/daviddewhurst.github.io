@@ -1,6 +1,6 @@
 ---
 layout: page
-title: david rushing dewhurst 
+title:      
 description: about 
 ---
 
