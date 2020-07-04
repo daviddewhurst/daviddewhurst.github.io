@@ -1,5 +1,3 @@
-# This is the default format.
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
@@ -13,7 +11,7 @@ author :
   name : drd
   email : drd@davidrushingdewhurst.com
   github : nil
-  twitter : https://twitter.com/d_r_dewhurst
+  twitter : https://twitter.com/rushingdewhurst
   feedburner : nil
 
 # NOTE: Replacing this next line with your own URL

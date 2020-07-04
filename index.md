@@ -1,25 +1,23 @@
 ---
 layout: page
-title: About 
-description: david rushing dewhurst 
+title: david rushing dewhurst 
+description: about 
 ---
 
 #### Research interests
 
-+ Nonparametric and bayesian structural time series
++ Nonparametric and Bayesian structural time series
 + Agent-based modeling
 + Mechanistic models of non-equilibrium systems
-+ Monte Carlo methods and evolutionary algorithms
++ Probabilistic programming
 
 #### Personal statistics
 
-Husband. Father. Lead data scientist at [MassMutual](https://datascience.massmutual.com/).
- Affiliate research scientist at [Vermont Complex Systems Center](https://vermontcomplexsystems.org/).
-Former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10), for what it is worth.
-
-Here is a photo of me. It is five years old but I have not changed much.
-
-<img src="./photos/2015-headshot.jpg" alt="a photo of me" width="150" height="150"/>
+Husband.
+Father.
+Lead data scientist at [MassMutual](https://datascience.massmutual.com/).
+Research scientist at [Vermont Complex Systems Center](https://vermontcomplexsystems.org/).
+Former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10).
 
 #### Blog
 
@@ -54,10 +52,3 @@ qualitative, shape-based, timescale-independent time series similarity search al
 + [cv](./documents/drd-cv.pdf)
 + [twitter](https://twitter.com/d_r_dewhurst)
 + [tax policy blog posts](https://taxfoundation.org/staff/david-dewhurst/)
-
-#### Disclaimer
-
-No statement expressed on this website should be construed as reflectng the 
-official position or opinion of any of my employers,
-the U.S. federal government, 
-or the Massachusetts state government.
