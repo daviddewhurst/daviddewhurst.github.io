@@ -50,5 +50,3 @@ qualitative, shape-based, timescale-independent time series similarity search al
 + [papers](./papers/)
 + [consulting](https://sociotechnicalsignals.com)
 + [cv](./documents/drd-cv.pdf)
-+ [twitter](https://twitter.com/d_r_dewhurst)
-+ [tax policy blog posts](https://taxfoundation.org/staff/david-dewhurst/)
