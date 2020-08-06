@@ -13,11 +13,12 @@ description: about
 
 #### Personal statistics
 
-Husband.
-Father.
-Lead data scientist at [MassMutual](https://datascience.massmutual.com/).
-Research scientist at [Vermont Complex Systems Center](https://vermontcomplexsystems.org/).
-Former [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10).
++ Husband
++ Father
++ Machine learning and probabilistic modeling scientist at [Charles River Analytics](https://cra.com/) and 
+research fellow at the [Vermont Complex Systems Center](https://vermontcomplexsystems.org/)
++ Former lead data scientist at [MassMutual](https://datascience.massmutual.com/) 
+and [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10)
 
 #### Blog
 
