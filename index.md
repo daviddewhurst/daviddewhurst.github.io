@@ -52,5 +52,4 @@ qualitative, shape-based, timescale-independent time series similarity search al
 
 + [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
 + [papers](./papers/)
-+ [consulting](https://sociotechnicalsignals.com)
 + [cv](./documents/drd-cv.pdf)
