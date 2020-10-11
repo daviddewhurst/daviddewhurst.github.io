@@ -1,7 +1,7 @@
 ---
 layout: page
-title: `stsb2` documentation
-description: none
+title: stsb2 documentation
+description: stsb2 documentation
 ---
 
 # `effects`
