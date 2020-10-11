@@ -10,10 +10,10 @@ description: none
 A context manager that changes the interpretation of an STS call.
     
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
@@ -34,16 +34,16 @@ Args:
     root (block): the root of the STS graph
     Nt (int >= 1): number of timesteps to forecast
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_enter\_\_`
+### `__enter__`
 None
 
-### `\_\_exit\_\_`
+### `__exit__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
@@ -57,18 +57,18 @@ Effect handler for intervening on a single STS node.
 
 Args:
     node (Block): node on which to intervene
-    kwargs (dict): {param\_name: new\_param\_val, ...}
+    kwargs (dict): {param_name: new_param_val, ...}
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_enter\_\_`
+### `__enter__`
 None
 
-### `\_\_exit\_\_`
+### `__exit__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
@@ -86,21 +86,21 @@ From start to finish, the proposal operation consists of
 Args:
     root (Block): the root of the STS graph
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_enter\_\_`
+### `__enter__`
 None
 
-### `\_\_exit\_\_`
+### `__exit__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
 
-## `\_\_ForecastEffect`
+## `__ForecastEffect`
 DEPRECATED
 Effect handler for forecasting-like tasks
 
@@ -111,21 +111,21 @@ Args:
     root (stsb.Block): the root block
     ic (numpy.ndarray): value of the initial condition from which to start forecasting
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_enter\_\_`
+### `__enter__`
 None
 
-### `\_\_exit\_\_`
+### `__exit__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
 
-## `\_effect\_call`
+## `_effect_call`
 Turns an effect handler defined as a context manager into a callable.
 
 Args:
@@ -133,7 +133,7 @@ Args:
     fn (callable): a callable
 
 
-## `\_forecast\_off`
+## `_forecast_off`
 Reverses a Block-like object from forecast to sample mode.
 
 This does three things:
@@ -142,7 +142,7 @@ This does three things:
 3. ic -> old ic
 
 
-## `\_forecast\_on`
+## `_forecast_on`
 Fast-forwards a Block-like object from sample to forecast mode.
 
 This does three things:
@@ -171,9 +171,9 @@ an array of indices of the sample that should be accepted.
 
 Args:
     eps (EpsilonStrategy): the threshold class
-    eps\_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
+    eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 ### `accept`
@@ -200,16 +200,16 @@ Args:
     verbosity (float >= 0): status messages are printed `verbosity` fraction
         of the time
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_empirical\_joint`
+### `_empirical_joint`
 None
 
-### `\_lv\_sample`
+### `_lv_sample`
 None
 
-### `\_mc\_sample`
+### `_mc_sample`
 None
 
 ### `sample`
@@ -239,13 +239,13 @@ Args:
     root (Block): a block. Will be treated as the root of a graph and all predecessor 
         nodes in the graph will be tracked.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 ### `lpdf`
 See documentation of Distribution1D.lpdf(...)
 
-log p = \sum\_n \log p\_n, where the sum runs over all free
+log p = \sum_n \log p_n, where the sum runs over all free
 parameters of the underlying STS graph.
 
 Args:
@@ -257,7 +257,7 @@ See documentation of ProductDistribution.sample(...)
 Args:
     size (int >= 1): number of draws to sample
 
-### `set\_model\_rvs`
+### `set_model_rvs`
 Sets free parameter values of the underlying STS graph. 
 
 Args:
@@ -271,16 +271,16 @@ See documentation of Distribution1D.
 A beta distribution. 
 
 Args:
-    log\_alpha (float): the log of the alpha parameter of the beta distribution
-    log\_beta (float): the log of the beta parameter of the beta distribution
+    log_alpha (float): the log of the alpha parameter of the beta distribution
+    log_beta (float): the log of the beta parameter of the beta distribution
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_init\_dist`
+### `_init_dist`
 None
 
 ### `lpdf`
@@ -293,31 +293,31 @@ See doocumentation of Distribution1D.
 Returns:
     sample (numpy.ndarray): shape is (size, len(distributions))
 
-### `update\_parameters`
+### `update_parameters`
 Updates the parameters of the distribution. 
 
 Args:
-    kwargs (dict, optional): {param\_name: param\_value, ...}
+    kwargs (dict, optional): {param_name: param_value, ...}
 
 
 
 ## `Bound1D`
 Object describing the support of a univariate distribution. 
 
-Bounds must implement \_\_call\_\_, yielding a (lower, upper) tuple, and 
-\_\_contains\_\_(...), returning True if lower < ... < upper. Bound1D is
+Bounds must implement __call__, yielding a (lower, upper) tuple, and 
+__contains__(...), returning True if lower < ... < upper. Bound1D is
 designed to be subclassed.
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_contains\_\_`
+### `__contains__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
 
@@ -330,10 +330,10 @@ A fixed, constant epsilon value.
 Args:
     eps (float >= 0.0): the acceptance threshold
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
@@ -341,16 +341,16 @@ Initialize self.  See help(type(self)) for accurate signature.
 ## `Distribution1D`
 A 1d probability distribution. 
 
-This essentially provides an interface to scipy.stats.<distribution\_name> and adds 
+This essentially provides an interface to scipy.stats.<distribution_name> and adds 
 the ability to update parameters (useful for, e.g., variational inference).
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_init\_dist`
+### `_init_dist`
 None
 
 ### `lpdf`
@@ -373,24 +373,24 @@ Args:
 Returns:
     sample (float || numpy.ndarray): a sample from the distribution
 
-### `update\_parameters`
+### `update_parameters`
 Updates the parameters of the distribution. 
 
 Args:
-    kwargs (dict, optional): {param\_name: param\_value, ...}
+    kwargs (dict, optional): {param_name: param_value, ...}
 
 
 
 ## `EpsilonStrategy`
 The strategy for setting the tolerance in ABC.
 
-All `EpsilonStrategy` must implement `\_\_call\_\_`, which returns 
+All `EpsilonStrategy` must implement `__call__`, which returns 
 the current epsilon value. 
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
@@ -403,12 +403,12 @@ See documentation of ABCDistanceMetric
 Args:
     data (numpy.ndarray): observed data
     eps (EpsilonStrategy): the threshold class
-    eps\_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
+    eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 ### `accept`
@@ -427,7 +427,7 @@ See documentation of QuasiLikelihood.lpdf(...).
 
 Args:
     draws (numpy.ndarray): draws from a model
-    reduce\_ (bool): if reduce\_, returns the average lpdf
+    reduce_ (bool): if reduce_, returns the average lpdf
 
 
 
@@ -438,15 +438,15 @@ A gaussian state space quasilikelihood.
 
 Args:
     data (numpy.ndarray): observed data
-    std\_mode (string): one of 'rolling', 'constant'. If 'rolling', will be computed 
+    std_mode (string): one of 'rolling', 'constant'. If 'rolling', will be computed 
         using a windowed rolling standard deviation of the differences of the 
         observed data. If 'constant', will be equal to the standard deviation of the 
         observed data.
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 ### `lpdf`
@@ -454,7 +454,7 @@ See documentation of QuasiLikelihood.lpdf(...).
 
 Args:
     draws (numpy.ndarray): draws from a model
-    reduce\_ (bool): if reduce\_, returns the average lpdf
+    reduce_ (bool): if reduce_, returns the average lpdf
 
 
 
@@ -470,7 +470,7 @@ Args:
     root (Block): a block. Will be treated as the root of a graph and all predecessor 
         nodes in the graph will be tracked.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 
@@ -480,16 +480,16 @@ See documentation of Bound1D.
 
 (lower, upper)
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_contains\_\_`
+### `__contains__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
 
@@ -501,16 +501,16 @@ A log-normal distribution.
 
 Args:
     loc (float || numpy.ndarray): the mean of the underlying normal distribution
-    log\_scale (float || numpy.ndarray): the log standard deviation of the underlying 
+    log_scale (float || numpy.ndarray): the log standard deviation of the underlying 
     normal distribution
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_init\_dist`
+### `_init_dist`
 None
 
 ### `lpdf`
@@ -523,11 +523,11 @@ See doocumentation of Distribution1D.
 Returns:
     sample (numpy.ndarray): shape is (size, len(distributions))
 
-### `update\_parameters`
+### `update_parameters`
 Updates the parameters of the distribution. 
 
 Args:
-    kwargs (dict, optional): {param\_name: param\_value, ...}
+    kwargs (dict, optional): {param_name: param_value, ...}
 
 
 
@@ -538,9 +538,9 @@ See documentation of ABCDistanceMetric
 
 Args:
     eps (EpsilonStrategy): the threshold class
-    eps\_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
+    eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 ### `accept`
@@ -564,15 +564,15 @@ A normal distribution.
 
 Args:
     loc (float || numpy.ndarray): the mean of the distribution
-    log\_scale (float || numpy.ndarray): the log standard deviation of the distribution
+    log_scale (float || numpy.ndarray): the log standard deviation of the distribution
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_init\_dist`
+### `_init_dist`
 None
 
 ### `lpdf`
@@ -585,11 +585,11 @@ See doocumentation of Distribution1D.
 Returns:
     sample (numpy.ndarray): shape is (size, len(distributions))
 
-### `update\_parameters`
+### `update_parameters`
 Updates the parameters of the distribution. 
 
 Args:
-    kwargs (dict, optional): {param\_name: param\_value, ...}
+    kwargs (dict, optional): {param_name: param_value, ...}
 
 
 
@@ -598,16 +598,16 @@ See documentation of Bound1D.
 
 (0, infinity)
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_contains\_\_`
+### `__contains__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
 
@@ -615,24 +615,24 @@ Return repr(self).
 ## `ProductDistribution1D`
 See documentation of Distribution1D.
 
-A factorization q(z) = \prod\_n q\_n(z\_n). 
+A factorization q(z) = \prod_n q_n(z_n). 
 
 Args:
     distributions (iterable[Distribution1D]): the 1d distributions
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_init\_dist`
+### `_init_dist`
 None
 
 ### `lpdf`
 See documentation of Distribution 1D.
 
-log q(z) = \sum\_n log q\_n(z\_n).
+log q(z) = \sum_n log q_n(z_n).
 
 ### `sample`
 See doocumentation of Distribution1D.
@@ -640,11 +640,11 @@ See doocumentation of Distribution1D.
 Returns:
     sample (numpy.ndarray): shape is (size, len(distributions))
 
-### `update\_parameters`
+### `update_parameters`
 Updates the parameters of the distribution. 
 
 Args:
-    kwargs (dict, optional): {param\_name: param\_value, ...}
+    kwargs (dict, optional): {param_name: param_value, ...}
 
 
 
@@ -656,15 +656,15 @@ the data likelihood is, we can manufacture a function that is plausible.
 For example, if we observe an unbounded time series, we could conjecture a
 noisy observation model that we parameterize as a Gaussian state space model.
 All `QuasiLikelihood`s must implement lpdf, which returns the (quasi)likelihood of
-draws given the observed data, and `\_\_call\_\_`, which calls `lpdf`.
+draws given the observed data, and `__call__`, which calls `lpdf`.
 
 Args:
     data (numpy.ndarray): observed data
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
 ### `lpdf`
@@ -677,16 +677,16 @@ See documentation of Bound1D.
 
 (-infinity, infinity)
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_contains\_\_`
+### `__contains__`
 None
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
 
@@ -700,10 +700,10 @@ Args:
     verbosity (float >=0): status messages are printed `verbosity` fraction of
         the time
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_empirical\_joint`
+### `_empirical_joint`
 None
 
 ### `sample`
@@ -711,7 +711,7 @@ None
 
 
 
-## `dist\_suggestion`
+## `dist_suggestion`
 Suggests proposal / guide distribution given a Bound.
 
 This is very basic. Suggests a Normal for infinite support, LogNormal for 
@@ -725,7 +725,7 @@ Returns:
     distribution (Distribution1D): a distribution class
 
 
-## `gen\_str\_param\_names`
+## `gen_str_param_names`
 Generates string parameter names.
 
 This is mainly useful for plotting or downstream work in other libraries.
@@ -755,32 +755,32 @@ Args:
         lognormal.
     ic (None || float || numpy.ndarray): if None, ic is distributed standard normal
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -812,7 +812,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -844,7 +844,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -874,7 +874,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -885,13 +885,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -914,7 +914,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -932,32 +932,32 @@ Args:
     left (Block): the left addend
     right (Block): the right addend
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -989,7 +989,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -1021,7 +1021,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -1051,7 +1051,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -1062,13 +1062,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -1091,7 +1091,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1105,35 +1105,35 @@ Base class for all STS blocks.
 Args:
     t0 (int): start timepoint
     t1 (int): end timepoint
-    is\_cached (str): whether to give sampling a cached interpretation.
-        If `is\_cached`, subsequent calls to `.sample(...)` after the first
+    is_cached (str): whether to give sampling a cached interpretation.
+        If `is_cached`, subsequent calls to `.sample(...)` after the first
         will replay the result of the first call. This behavior will
-        occur until the cache is reset (with `util.clear\_cache(...)` or
-        `self.clear\_cache(...)`)
+        occur until the cache is reset (with `util.clear_cache(...)` or
+        `self.clear_cache(...)`)
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -1165,7 +1165,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -1197,7 +1197,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -1227,7 +1227,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -1238,13 +1238,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -1267,7 +1267,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1291,32 +1291,32 @@ Args:
     right (Block): the right block in the changepoint, values of this after `t^*` will be used
     frac (float, optional): the fractional position of the changepoint
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -1348,7 +1348,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -1380,7 +1380,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -1410,7 +1410,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -1421,13 +1421,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -1450,7 +1450,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1470,32 +1470,32 @@ Args:
     a (None || Block || float || numpy.ndarray): if None, a is drawn from a standard normal.
     b (None || Block || float || numpy.ndarray): if None, b is drawn from a standard normal.
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -1527,7 +1527,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -1559,7 +1559,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -1589,7 +1589,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -1600,13 +1600,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -1629,7 +1629,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1651,32 +1651,32 @@ Args:
         lognormal.
     theta (None || Block || float || numpy.ndarray): if None, theta is distributed standard normal.
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -1708,7 +1708,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -1740,7 +1740,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -1770,7 +1770,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -1781,13 +1781,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -1810,7 +1810,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1826,35 +1826,35 @@ This block should be subclassed and is nonfunctional on its own.
 Args:
     t0 (int): start timepoint
     t1 (int): end timepoint
-    is\_cached (str): whether to give sampling a cached interpretation.
-        If `is\_cached`, subsequent calls to `.sample(...)` after the first
+    is_cached (str): whether to give sampling a cached interpretation.
+        If `is_cached`, subsequent calls to `.sample(...)` after the first
         will replay the result of the first call. This behavior will
-        occur until the cache is reset (with `util.clear\_cache(...)` or
-        `self.clear\_cache(...)`)
+        occur until the cache is reset (with `util.clear_cache(...)` or
+        `self.clear_cache(...)`)
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -1886,7 +1886,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -1918,7 +1918,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -1948,7 +1948,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -1959,13 +1959,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -1988,7 +1988,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -2011,32 +2011,32 @@ Args:
         lognormal
     ic (None || float || numpy.ndarray): the initial condition. 
 
-### `\_\_add\_\_`
+### `__add__`
 None
 
-### `\_\_call\_\_`
+### `__call__`
 Call self as a function.
 
-### `\_\_init\_\_`
+### `__init__`
 Initialize self.  See help(type(self)) for accurate signature.
 
-### `\_\_repr\_\_`
+### `__repr__`
 Return repr(self).
 
-### `\_forecast`
+### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
 
-### `\_maybe\_add\_blocks`
+### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
 Args:
     *args: iterable of (name, parameter, bound) 
 
-### `\_sample`
+### `_sample`
 None
 
-### `\_transform`
+### `_transform`
 Defines a transform from a string argument.
 
 Currently the following string arguments are supported:
@@ -2068,7 +2068,7 @@ Returns:
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
         
 
-### `clear\_cache`
+### `clear_cache`
 Clears the block cache.
 
 This method does *not* alter the cache mode.
@@ -2100,7 +2100,7 @@ Args:
     size (int >= 1): number of forecast paths
     Nt (int >= 1): number of timesteps forward to forecast
 
-### `forecast\_many`
+### `forecast_many`
 Draw many forecast paths.
 
 Args:
@@ -2130,7 +2130,7 @@ NOte that this lowers the time dimension from T to T - 1.
 x -> log(x / (1 - x))
         
 
-### `parameter\_update`
+### `parameter_update`
 Updates the parameters of the block.
 
 This method should be used with caution as it can change the type, dimension, etc
@@ -2141,13 +2141,13 @@ Passed values can be
     + `stsb.Block`s
 
 Args:
-    **kwargs: `parameter\_1\_name=parameter\_1\_value, ...`
+    **kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_prec (list): list of predecessor nodes
+    _prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
@@ -2170,7 +2170,7 @@ x -> log(1 + exp(x))
 Returns the successor nodes of `self` in the (implicit) compute graph
 
 Returns:
-    \_succ (list): list of successor nodes
+    _succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -2178,23 +2178,23 @@ x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
 
 
 
-## `\_add\_fns\_to\_repr`
+## `_add_fns_to_repr`
 None
 
 
-## `\_apply\_fns`
+## `_apply_fns`
 None
 
 
-## `\_is\_block`
+## `_is_block`
 None
 
 
-## `\_make\_1d`
+## `_make_1d`
 None
 
 
-## `\_make\_2d`
+## `_make_2d`
 None
 
 
@@ -2210,17 +2210,17 @@ Returns:
     ChangepointBlock(left, right, frac=frac)
 
 
-## `get\_id`
+## `get_id`
 Assign the uid of a Block.
 
 Args:
     obj (Block): block to which you want to assign a uid.
 
 Returns:
-    id\_ (string): the block's uid
+    id_ (string): the block's uid
 
 
-## `get\_timesteps`
+## `get_timesteps`
 Get the number of timesteps over which the block is defined.
 
 Args:
@@ -2230,7 +2230,7 @@ Returns:
     timesteps (int > 0): number of timesteps over which the block is defined
 
 
-## `set\_time\_endpoints`
+## `set_time_endpoints`
 Set time endpoints of block. 
 
 Args:
@@ -2241,35 +2241,35 @@ Args:
 
 # `util`
 
-## `\_constant\_std`
+## `_constant_std`
 None
 
 
-## `\_rolling\_std`
+## `_rolling_std`
 None
 
 
-## `clear\_cache`
+## `clear_cache`
 Clears cache of all predecessor nodes of root.
 This does *not* reset the cache mode of any node;
-to turn off caching, call `set\_cache\_mode(root, False)`
+to turn off caching, call `set_cache_mode(root, False)`
 
 Args:
     root (Block): a block
 
 
-## `get\_all\_values`
+## `get_all_values`
 Gets current value of all parameters in the model.
 
 Args:
     nodes (list[Block]): list of all blocks in the model
-    param\_names (list[string]): list of all block param names in the model
+    param_names (list[string]): list of all block param names in the model
 
 Returns:
     values (list): list of all current param values
 
 
-## `get\_free\_parameters\_from\_root`
+## `get_free_parameters_from_root`
 Gets all free parameter values from the root and its predecessors
 
 Defines a BFS order on the compute graph. This is one of two functions
@@ -2282,7 +2282,7 @@ Returns:
     return (tuple[list]): (nodes, parameter names, parameter bounds)
 
 
-## `get\_nodes\_from\_root`
+## `get_nodes_from_root`
 Returns the root and all its predecessors in the graph.
 
 Defines a BFS order on the compute graph. This is one of two functions
@@ -2295,34 +2295,34 @@ Returns:
     nodes (tuple[list]): root and predecessor nodes in the graph
 
 
-## `roll\_op`
+## `roll_op`
 Rolls an operation along an array.
 
 Args:
     arr (numpy.ndarray): original array
     op (callable): reduction function
-    window\_size (int >= 2): size of the subarrays to pass to `op`
-    op\_args (list): non-keyword arguments to pass to op
-    output\_size (string): one of 'same', 'valid'
+    window_size (int >= 2): size of the subarrays to pass to `op`
+    op_args (list): non-keyword arguments to pass to op
+    output_size (string): one of 'same', 'valid'
     pad (string): currently only 'continue' is supported
-    op\_kwargs (dict): keyword arguments to pass to op
+    op_kwargs (dict): keyword arguments to pass to op
 
 Returns:
     out (numpy.ndarray): the filtered array
 
 
-## `set\_all\_values`
+## `set_all_values`
 Sets all values to proposed.
 
 Args:
     proposed (numpy.ndarray): array of proposed param values.
-        Shape (p, batch\_size) where p is the total number of params
+        Shape (p, batch_size) where p is the total number of params
         of the model
     nodes (list[Block]): list of all blocks in the model
-    param\_names (list[string]): list of all block param names in the model
+    param_names (list[string]): list of all block param names in the model
 
 
-## `set\_cache\_mode`
+## `set_cache_mode`
 Sets root and all predecessor nodes cache mode to `cache`.
 
 Args:
