@@ -38,6 +38,9 @@ the kernel function of a rich-get-richer process and the hazard function of a ra
 
 #### Software
 
++ [`stsb2`](https://davidrushingdewhurst.com/stsb2/)
+ Structural time series, round 2. Implements a grammar over structural time series models and an 
+associated modeling + inference library. 
 + [`verdantcurve`](https://gitlab.com/daviddewhurst/verdantcurve):
  agent-based market model created in collaboration with
  [Colin Van Oort](https://gitlab.com/omega1563). This package contains
