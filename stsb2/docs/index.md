@@ -668,13 +668,18 @@ The DGP for AR1 is `f(t) = beta * f(t - 1) + scale * e(t), f(0) = ic`,
 where `e` is a standard normal distributed vector. Both beta and scale can be 
 univariate parameters, multivariate parameters, or `Block`s.
 
-Args:
-    t0 (int): start timepoint
-    t1 (int): end timepoint
-    beta (None || Block || float || numpy.ndarray): if None, beta is distributed standard normal
-    scale (None || Block || float || numpy.ndarray): if None, scale is distributed standard 
-        lognormal.
-    ic (None || float || numpy.ndarray): if None, ic is distributed standard normal
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+beta (None || Block || float || numpy.ndarray): if None, beta is distributed standard normal
+
+scale (None || Block || float || numpy.ndarray): if None, scale is distributed standard 
+    lognormal.
+
+ic (None || float || numpy.ndarray): if None, ic is distributed standard normal
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -683,8 +688,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -711,11 +717,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -749,20 +757,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -777,7 +792,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -793,23 +808,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -822,8 +841,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -837,9 +857,11 @@ The result of adding two blocks together.
 If `x` and `y` are two `stsb.Block`s, then `z = x + y` means that `z` is an `AddedBlock`.
 A call to `z.sample(...)` returns the result of `left.sample(...) + right.sample(...)`.
 
-Args:
-    left (Block): the left addend
-    right (Block): the right addend
+*Args:*
+
+left (Block): the left addend
+
+right (Block): the right addend
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -848,8 +870,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -876,11 +899,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -914,20 +939,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -942,7 +974,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -958,23 +990,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -987,8 +1023,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -999,14 +1036,17 @@ x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
 ## `Block`
 Base class for all STS blocks.
 
-Args:
-    t0 (int): start timepoint
-    t1 (int): end timepoint
-    is_cached (str): whether to give sampling a cached interpretation.
-        If `is_cached`, subsequent calls to `.sample(...)` after the first
-        will replay the result of the first call. This behavior will
-        occur until the cache is reset (with `util.clear_cache(...)` or
-        `self.clear_cache(...)`)
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+is_cached (str): whether to give sampling a cached interpretation.
+    If `is_cached`, subsequent calls to `.sample(...)` after the first
+    will replay the result of the first call. This behavior will
+    occur until the cache is reset (with `util.clear_cache(...)` or
+    `self.clear_cache(...)`)
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1015,8 +1055,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -1043,11 +1084,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -1081,20 +1124,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -1109,7 +1159,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -1125,23 +1175,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -1154,8 +1208,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1174,10 +1229,13 @@ It is set by the continuous parameter `frac` which must be bounded between 0 and
 The changepoint is defined by `t^* = int(frac * (t1 - t0))`. A call to `forecast(...)` 
 is equivalent to calling `right.forecast(...)`.
 
-Args:
-    left (Block): the left block in the changepoint, values of this before `t^*` will be used
-    right (Block): the right block in the changepoint, values of this after `t^*` will be used
-    frac (float, optional): the fractional position of the changepoint
+*Args:*
+
+left (Block): the left block in the changepoint, values of this before `t^*` will be used
+
+right (Block): the right block in the changepoint, values of this after `t^*` will be used
+
+frac (float, optional): the fractional position of the changepoint
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1186,8 +1244,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -1214,11 +1273,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -1252,20 +1313,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -1280,7 +1348,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -1296,23 +1364,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -1325,8 +1397,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1340,11 +1413,15 @@ Implements a global trend model.
 The DGP of GlobalTrend is `f(t) = a + b * t`. Both `a` and `b` can be univariate parameters,
 multivariate parameters, or `Block`s. 
 
-Args:
-    t0 (int): start timepoint
-    t1 (int): end timepoint
-    a (None || Block || float || numpy.ndarray): if None, a is drawn from a standard normal.
-    b (None || Block || float || numpy.ndarray): if None, b is drawn from a standard normal.
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+a (None || Block || float || numpy.ndarray): if None, a is drawn from a standard normal.
+
+b (None || Block || float || numpy.ndarray): if None, b is drawn from a standard normal.
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1353,8 +1430,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -1381,11 +1459,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -1419,20 +1499,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -1447,7 +1534,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -1463,23 +1550,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -1492,8 +1583,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1507,13 +1599,18 @@ A moving average of order 1.
 The DGP for MA1 is `f(t) = loc + e[t] + theta * e[t - 1]`, where `e ~ Normal(0, scale^2)`. 
 Each of loc, scale, and theta can be univariate parameters, multivariate parameters, or `Block`s.
 
-Args:
-    t0 (int): start timepoint
-    t1 (int): end timepoint
-    loc (None || Block || float || numpy.ndarray): if None, loc is distributed standard normal.
-    scale (None || Block || float || numpy.ndarray): if None, scale is distributed standard 
-        lognormal.
-    theta (None || Block || float || numpy.ndarray): if None, theta is distributed standard normal.
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+loc (None || Block || float || numpy.ndarray): if None, loc is distributed standard normal.
+
+scale (None || Block || float || numpy.ndarray): if None, scale is distributed standard 
+    lognormal.
+
+theta (None || Block || float || numpy.ndarray): if None, theta is distributed standard normal.
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1522,8 +1619,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -1550,11 +1648,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -1588,20 +1688,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -1616,7 +1723,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -1632,23 +1739,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -1661,8 +1772,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1675,14 +1787,17 @@ Block that depends on its sample history.
 
 This block should be subclassed and is nonfunctional on its own.
 
-Args:
-    t0 (int): start timepoint
-    t1 (int): end timepoint
-    is_cached (str): whether to give sampling a cached interpretation.
-        If `is_cached`, subsequent calls to `.sample(...)` after the first
-        will replay the result of the first call. This behavior will
-        occur until the cache is reset (with `util.clear_cache(...)` or
-        `self.clear_cache(...)`)
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+is_cached (str): whether to give sampling a cached interpretation.
+    If `is_cached`, subsequent calls to `.sample(...)` after the first
+    will replay the result of the first call. This behavior will
+    occur until the cache is reset (with `util.clear_cache(...)` or
+    `self.clear_cache(...)`)
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1691,8 +1806,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -1719,11 +1835,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -1757,20 +1875,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -1785,7 +1910,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -1801,23 +1926,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -1830,8 +1959,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -1846,13 +1976,18 @@ The DGP of RandomWalk is `f(t) = f(t - 1) + loc + scale * w(t), f(0) = ic`, wher
 `w` is standard normal distributed. Both loc and scale can be univariate parameters,
 vector parameters, or `Block`s to implement composition.
 
-Args:
-    t0 (int): start timepoint
-    t1 (int): end timepoint
-    loc (None || Block || float || numpy.ndarray): if None, loc will be drawn from a standard normal
-    scale (None || Block || float || numpy.ndarray): if None, scale will be drawn from a standard
-        lognormal
-    ic (None || float || numpy.ndarray): the initial condition. 
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+loc (None || Block || float || numpy.ndarray): if None, loc will be drawn from a standard normal
+
+scale (None || Block || float || numpy.ndarray): if None, scale will be drawn from a standard
+    lognormal
+
+ic (None || float || numpy.ndarray): the initial condition. 
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1861,8 +1996,9 @@ See documentation of `forecast(...)` and `effects.ForecastEffect`.
 ### `_maybe_add_blocks`
 Adds parameters to prec and succ if they subclass Block.
 
-Args:
-    *args: iterable of (name, parameter, bound) 
+*Args:*
+
+args: iterable of (name, parameter, bound) 
 
 ### `_sample`
 None
@@ -1889,11 +2025,13 @@ Currently the following string arguments are supported:
 The resulting transform will be added to the transform stack iff
 it is not already at the top of the stack.
 
-Args:
-    arg (str): one of the above strings corresponding to function
+*Args:*
 
-Returns:
-    self (stsb.Block)
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
 
 ### `arctanh`
 x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
@@ -1927,20 +2065,27 @@ Forecasts the block forward in time.
 Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
 and calling sample(...).
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
 
 ### `forecast_many`
 Draw many forecast paths.
 
-Args:
-    size (int >= 1): number of forecast paths
-    Nt (int >= 1): number of timesteps forward to forecast
-    ic (float || numpy.ndarray): initial condition, optional. If not set,
-        will be set to the last observed / simulated value of the block.
+*Args:*
 
-Returns: (numpy.ndarray) array of shape (size, ic.shape[0], t1 - t0)
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
     
 
 ### `invlogit`
@@ -1955,7 +2100,7 @@ Block paths must be positive for valid output.
 ### `logdiff`
 x -> log x[1:] - log x[:-1]
 
-NOte that this lowers the time dimension from T to T - 1.
+Note that this lowers the time dimension from T to T - 1.
 
 ### `logit`
 x -> log(x / (1 - x))
@@ -1971,23 +2116,27 @@ Passed values can be
     + `numpy.ndarray`s
     + `stsb.Block`s
 
-Args:
-    **kwargs: `parameter_1_name=parameter_1_value, ...`
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
 
 ### `prec`
 Returns the predecessor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _prec (list): list of predecessor nodes
+*Returns:*
+
+_prec (list): list of predecessor nodes
 
 ### `sample`
 Draws a batch of `size` samples from the block.
 
-Args:
-    size (int): batch size
+*Args:*
 
-Returns:
-    draws (numpy.ndarray) sampled values from the block
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
 
 ### `sin`
 x -> sin x
@@ -2000,8 +2149,9 @@ x -> log(1 + exp(x))
 ### `succ`
 Returns the successor nodes of `self` in the (implicit) compute graph
 
-Returns:
-    _succ (list): list of successor nodes
+*Returns:*
+
+_succ (list): list of successor nodes
 
 ### `tanh`
 x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
@@ -2032,42 +2182,53 @@ None
 ## `changepoint`
 Functional endpoint to changepoint block creation. 
 
-Args:
-    left (Block): the left block in the changepoint
-    right (Block): the right block in the changepoint
-    frac (float, 0 < frac < 1): where the changepoint is on interval (t0, t1)
+*Args:*
 
-Returns:
-    ChangepointBlock(left, right, frac=frac)
+left (Block): the left block in the changepoint
+
+right (Block): the right block in the changepoint
+
+frac (float, 0 < frac < 1): where the changepoint is on interval (t0, t1)
+
+*Returns:*
+
+ChangepointBlock(left, right, frac=frac)
 
 
 ## `get_id`
 Assign the uid of a Block.
 
-Args:
-    obj (Block): block to which you want to assign a uid.
+*Args:*
 
-Returns:
-    id_ (string): the block's uid
+obj (Block): block to which you want to assign a uid.
+
+*Returns:*
+    
+id_ (string): the block's uid
 
 
 ## `get_timesteps`
 Get the number of timesteps over which the block is defined.
 
-Args:
-    obj (Block): block from which you want the number of timesteps
+*Args:*
 
-Returns:
-    timesteps (int > 0): number of timesteps over which the block is defined
+obj (Block): block from which you want the number of timesteps
+
+*Returns:*
+
+timesteps (int > 0): number of timesteps over which the block is defined
 
 
 ## `set_time_endpoints`
 Set time endpoints of block. 
 
-Args:
-    obj (Block): block for which you want to set timepoints
-    t0 (int): initial time
-    t1 (int): end time
+*Args:*
+
+obj (Block): block for which you want to set timepoints
+
+t0 (int): initial time
+
+t1 (int): end time
 
 
 # `util`
