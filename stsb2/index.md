@@ -28,14 +28,8 @@ noise = sts.AR1(t1=100,)
 sgt = seasonal + trend + noise
 
 # model 4
-def MAq(q, t1):
-    if q == 1:
-        return sts.MA1(t1=t1,)
-    return sts.MA1(t1=t1, loc=MAq(q - 1, t1))
-
-
 log_vol_1 = sts.RandomWalk(t1=100)
-log_vol_2 = MAq(12, 100)
+log_vol_2 = MA1(t1=t1,)
 vol = sts.changepoint(log_vol_1, log_vol_2, frac=0.6).exp()
 price = sts.RandomWalk(t1=t1, loc=0.0, scale=vol, ic=0.0).exp()
 ```
