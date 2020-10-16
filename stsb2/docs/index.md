@@ -10,12 +10,6 @@ description: stsb2 documentation
 A context manager that changes the interpretation of an STS call.
     
 
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 
 
 ## `ForecastEffect`
@@ -34,18 +28,6 @@ Args:
     root (block): the root of the STS graph
     Nt (int >= 1): number of timesteps to forecast
 
-### `__call__`
-Call self as a function.
-
-### `__enter__`
-None
-
-### `__exit__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 
 
 ## `InterveneEffect`
@@ -58,18 +40,6 @@ Effect handler for intervening on a single STS node.
 Args:
     node (Block): node on which to intervene
     kwargs (dict): {param_name: new_param_val, ...}
-
-### `__call__`
-Call self as a function.
-
-### `__enter__`
-None
-
-### `__exit__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 
 
@@ -85,43 +55,6 @@ From start to finish, the proposal operation consists of
 
 Args:
     root (Block): the root of the STS graph
-
-### `__call__`
-Call self as a function.
-
-### `__enter__`
-None
-
-### `__exit__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-
-
-## `__ForecastEffect`
-DEPRECATED
-Effect handler for forecasting-like tasks
-
-Temporarily turns off caching and intervenes on the `root.<param>` with 
-the passed `<param>` value. Turns caching back on upon exit.
-
-Args:
-    root (stsb.Block): the root block
-    ic (numpy.ndarray): value of the initial condition from which to start forecasting
-
-### `__call__`
-Call self as a function.
-
-### `__enter__`
-None
-
-### `__exit__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 
 
@@ -173,9 +106,6 @@ Args:
     eps (EpsilonStrategy): the threshold class
     eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 ### `accept`
 None
 
@@ -183,15 +113,6 @@ None
 
 ## `ABCPosterior`
 None
-
-### `__getitem__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 
 
@@ -213,9 +134,6 @@ Args:
         not None, then `niter` is not used
     verbosity (float >= 0): status messages are printed `verbosity` fraction
         of the time
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_empirical_joint`
 None
@@ -253,9 +171,6 @@ Args:
     root (Block): a block. Will be treated as the root of a graph and all predecessor 
         nodes in the graph will be tracked.
 
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 ### `lpdf`
 See documentation of Distribution1D.lpdf(...)
 
@@ -288,12 +203,6 @@ Args:
     log_alpha (float): the log of the alpha parameter of the beta distribution
     log_beta (float): the log of the beta parameter of the beta distribution
 
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 ### `_init_dist`
 None
 
@@ -322,18 +231,6 @@ Bounds must implement __call__, yielding a (lower, upper) tuple, and
 __contains__(...), returning True if lower < ... < upper. Bound1D is
 designed to be subclassed.
 
-### `__call__`
-Call self as a function.
-
-### `__contains__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
-
 
 
 ## `ConstantEpsilon`
@@ -344,12 +241,6 @@ A fixed, constant epsilon value.
 Args:
     eps (float >= 0.0): the acceptance threshold
 
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 
 
 ## `Distribution1D`
@@ -357,12 +248,6 @@ A 1d probability distribution.
 
 This essentially provides an interface to scipy.stats.<distribution_name> and adds 
 the ability to update parameters (useful for, e.g., variational inference).
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_init_dist`
 None
@@ -401,12 +286,6 @@ The strategy for setting the tolerance in ABC.
 All `EpsilonStrategy` must implement `__call__`, which returns 
 the current epsilon value. 
 
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 
 
 ## `GaussianQuasiLikelihood`
@@ -420,12 +299,6 @@ Args:
         using a windowed rolling standard deviation of the differences of the 
         observed data. If 'constant', will be equal to the standard deviation of the 
         observed data.
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `lpdf`
 See documentation of QuasiLikelihood.lpdf(...).
@@ -448,27 +321,12 @@ Args:
     root (Block): a block. Will be treated as the root of a graph and all predecessor 
         nodes in the graph will be tracked.
 
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 
 
 ## `Interval`
 See documentation of Bound1D.
 
 (lower, upper)
-
-### `__call__`
-Call self as a function.
-
-### `__contains__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 
 
@@ -481,12 +339,6 @@ Args:
     loc (float || numpy.ndarray): the mean of the underlying normal distribution
     log_scale (float || numpy.ndarray): the log standard deviation of the underlying 
     normal distribution
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_init_dist`
 None
@@ -518,9 +370,6 @@ Args:
     eps (EpsilonStrategy): the threshold class
     eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 ### `accept`
 Whether to accept the draws given the data. 
 
@@ -544,9 +393,6 @@ Args:
     eps (EpsilonStrategy): the threshold class
     eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 ### `accept`
 Whether to accept the draws given the data. 
 
@@ -569,12 +415,6 @@ A normal distribution.
 Args:
     loc (float || numpy.ndarray): the mean of the distribution
     log_scale (float || numpy.ndarray): the log standard deviation of the distribution
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_init_dist`
 None
@@ -602,18 +442,6 @@ See documentation of Bound1D.
 
 (0, infinity)
 
-### `__call__`
-Call self as a function.
-
-### `__contains__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
-
 
 
 ## `ProductDistribution1D`
@@ -623,12 +451,6 @@ A factorization q(z) = \prod_n q_n(z_n).
 
 Args:
     distributions (iterable[Distribution1D]): the 1d distributions
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_init_dist`
 None
@@ -665,12 +487,6 @@ draws given the observed data, and `__call__`, which calls `lpdf`.
 Args:
     data (numpy.ndarray): observed data
 
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
 ### `lpdf`
 None
 
@@ -680,18 +496,6 @@ None
 See documentation of Bound1D.
 
 (-infinity, infinity)
-
-### `__call__`
-Call self as a function.
-
-### `__contains__`
-None
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 
 
@@ -703,9 +507,6 @@ Args:
     nsample (int >= 0 || None): number of draws from the (approximate) posterior
     verbosity (float >=0): status messages are printed `verbosity` fraction of
         the time
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_empirical_joint`
 None
@@ -723,12 +524,6 @@ A truncated normal distribution.
 Args:
     loc (float || numpy.ndarray): the mean of the distribution
     log_scale (float || numpy.ndarray): the log standard deviation of the distribution
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_init_dist`
 None
@@ -794,18 +589,6 @@ Args:
     scale (None || Block || float || numpy.ndarray): if None, scale is distributed standard 
         lognormal.
     ic (None || float || numpy.ndarray): if None, ic is distributed standard normal
-
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -971,18 +754,6 @@ A call to `z.sample(...)` returns the result of `left.sample(...) + right.sample
 Args:
     left (Block): the left addend
     right (Block): the right addend
-
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1150,15 +921,6 @@ Args:
         will replay the result of the first call. This behavior will
         occur until the cache is reset (with `util.clear_cache(...)` or
         `self.clear_cache(...)`)
-
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1331,18 +1093,6 @@ Args:
     right (Block): the right block in the changepoint, values of this after `t^*` will be used
     frac (float, optional): the fractional position of the changepoint
 
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
-
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
@@ -1509,18 +1259,6 @@ Args:
     t1 (int): end timepoint
     a (None || Block || float || numpy.ndarray): if None, a is drawn from a standard normal.
     b (None || Block || float || numpy.ndarray): if None, b is drawn from a standard normal.
-
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -1691,18 +1429,6 @@ Args:
         lognormal.
     theta (None || Block || float || numpy.ndarray): if None, theta is distributed standard normal.
 
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
-
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
         
@@ -1871,15 +1597,6 @@ Args:
         will replay the result of the first call. This behavior will
         occur until the cache is reset (with `util.clear_cache(...)` or
         `self.clear_cache(...)`)
-
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
@@ -2050,18 +1767,6 @@ Args:
     scale (None || Block || float || numpy.ndarray): if None, scale will be drawn from a standard
         lognormal
     ic (None || float || numpy.ndarray): the initial condition. 
-
-### `__add__`
-None
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `__repr__`
-Return repr(self).
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
