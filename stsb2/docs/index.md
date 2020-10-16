@@ -24,9 +24,11 @@ From start to finish, the forecast operation consists of
 + reversing time
 + resuming caching
 
-Args:
-    root (block): the root of the STS graph
-    Nt (int >= 1): number of timesteps to forecast
+*Args:*
+
+root (block): the root of the STS graph
+
+Nt (int >= 1): number of timesteps to forecast
 
 
 
@@ -37,9 +39,11 @@ Effect handler for intervening on a single STS node.
 + <perform some operations>
 + Reset to original free parameter values
 
-Args:
-    node (Block): node on which to intervene
-    kwargs (dict): {param_name: new_param_val, ...}
+*Args:*
+
+node (Block): node on which to intervene
+
+kwargs (dict): {param_name: new_param_val, ...}
 
 
 
@@ -53,17 +57,20 @@ From start to finish, the proposal operation consists of
 + turning on caching
 + replacing old parameter values
 
-Args:
-    root (Block): the root of the STS graph
+*Args:*
+
+root (Block): the root of the STS graph
 
 
 
 ## `_effect_call`
 Turns an effect handler defined as a context manager into a callable.
 
-Args:
-    obj (Effect): an effect
-    fn (callable): a callable
+*Args:*
+
+obj (Effect): an effect
+
+fn (callable): a callable
 
 
 ## `_forecast_off`
@@ -87,11 +94,13 @@ This does three things:
 ## `effect`
 Convert an Effect object into a function decorator.
 
-Args:
-    obj (Effect): an effect handler
+*Args:*
 
-Returns:
-    effect (callable): a decorator
+obj (Effect): an effect handler
+
+*Returns:*
+
+effect (callable): a decorator
 
 
 # `inference`
