@@ -102,8 +102,10 @@ A distance metric for use in approximate sampling.
 All `ABCDistanceMetric` must implement `accept(...)`, which returns 
 an array of indices of the sample that should be accepted.
 
-Args:
+*Args:*
+
     eps (EpsilonStrategy): the threshold class
+
     eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
 ### `accept`
@@ -112,7 +114,25 @@ None
 
 
 ## `ABCPosterior`
-None
+A posterior object for ABC computations.
+
+Users will generally not create instances of this class. Instances are 
+returned by ABCSamplers after sampling. 
+
+*Usage:*
+
+```
+p_z = ABCPosterior(...)
+some_samples = p_z[sub_series][param_name]
+```
+where `sub_series` is a Block that is a parent of, or is, the originally
+passed `series` object, and `param_name` is a parameter name of the sub series.
+
+*Args:*
+
+    series (Block): the model for which the posterior was calculated
+
+    samples (numpy.ndarray): samples from the approximate posterior.
 
 
 
@@ -124,14 +144,21 @@ approximate posterior / posterior predictive distributions. Should only be used
 when data is already observed since draws from the prior can be made with calls
 to `series(...)`.
 
-Args:
+*Args:*
+
     series (Block): the root of the DGP
+
     data (numpy.ndarray): the observed data
+
     guide (Guide): the proposal distribution
+
     metric (Metric): initialized acceptance metric object
+
     niter (int >= 0 || None): number of iterations for which to run sampler
+
     nsample (int >=0 || None): number of draws to make. If this argument is
         not None, then `niter` is not used
+
     verbosity (float >= 0): status messages are printed `verbosity` fraction
         of the time
 
@@ -154,8 +181,10 @@ integer, then a monte carlo sampling algorithm is used (the sampler
 will run for only `niter` iterations and a random number >= 0 samples
 will be returned)
 
-Args:
+*Args:*
+
     nsample (int >= 0 || None): number of samples to draw
+
     niter (int >= 0 || None): number of iterations to run the sampler
 
 
@@ -167,7 +196,8 @@ A `Guide` that attempts to automate the definition of distributions.
 tracking. If it's unable to do this, it tags that parameter as unmodeled for later
 custom modeling.
 
-Args:
+*Args:*
+
     root (Block): a block. Will be treated as the root of a graph and all predecessor 
         nodes in the graph will be tracked.
 
@@ -177,19 +207,22 @@ See documentation of Distribution1D.lpdf(...)
 log p = \sum_n \log p_n, where the sum runs over all free
 parameters of the underlying STS graph.
 
-Args:
+*Args:*
+
     draw (numpy.ndarray): a draw from the `Guide`
 
 ### `sample`
 See documentation of ProductDistribution.sample(...)
 
-Args:
+*Args:*
+
     size (int >= 1): number of draws to sample
 
 ### `set_model_rvs`
 Sets free parameter values of the underlying STS graph. 
 
-Args:
+*Args:*
+
     draw (numpy.ndarray): a draw from the `Guide`
 
 
@@ -199,8 +232,10 @@ See documentation of Distribution1D.
 
 A beta distribution. 
 
-Args:
+*Args:*
+
     log_alpha (float): the log of the alpha parameter of the beta distribution
+
     log_beta (float): the log of the beta parameter of the beta distribution
 
 ### `_init_dist`
@@ -213,7 +248,8 @@ See documentation of Distribution1D.
 ### `sample`
 See doocumentation of Distribution1D.
 
-Returns:
+*Returns:
+
     sample (numpy.ndarray): shape is (size, len(distributions))
 
 ### `update_parameters`
@@ -238,7 +274,8 @@ See documentation for EpsilonStrategy.
 
 A fixed, constant epsilon value.
 
-Args:
+*Args:*
+
     eps (float >= 0.0): the acceptance threshold
 
 
@@ -255,10 +292,12 @@ None
 ### `lpdf`
 Returns the log probability of `x` under the distribution. 
 
-Args:
+*Args:*
+
     x (float || numpy.ndarray): a value to score
 
-Returns:
+*Returns:*
+
     lpdf (float || numpy.ndarray): the log probability of the value
 
 ### `sample`
@@ -266,10 +305,12 @@ Returns a sample from the distribution.
 
 Sample is of shape (size,)
 
-Args:
+*Args:*
+
     size (int >= 1): number of samples to return
 
-Returns:
+*Returns:*
+
     sample (float || numpy.ndarray): a sample from the distribution
 
 ### `update_parameters`
@@ -293,8 +334,10 @@ See documentation of QuasiLikelihood.
 
 A gaussian state space quasilikelihood. 
 
-Args:
+*Args:*
+
     data (numpy.ndarray): observed data
+
     std_mode (string): one of 'rolling', 'constant'. If 'rolling', will be computed 
         using a windowed rolling standard deviation of the differences of the 
         observed data. If 'constant', will be equal to the standard deviation of the 
@@ -303,8 +346,10 @@ Args:
 ### `lpdf`
 See documentation of QuasiLikelihood.lpdf(...).
 
-Args:
+*Args:*
+
     draws (numpy.ndarray): draws from a model
+
     reduce_ (bool): if reduce_, returns the average lpdf
 
 
@@ -317,7 +362,8 @@ It can be used as a prior or as a variational posterior (which is where the name
 comes from, c.f. the Pyro language). `Guide`s contain a collection of `Distribution1D`s
 and track the behavior of all `Block`s and free parameters in the compute graph.
 
-Args:
+*Args:*
+
     root (Block): a block. Will be treated as the root of a graph and all predecessor 
         nodes in the graph will be tracked.
 
@@ -335,8 +381,10 @@ See documentation of Distribution1D.
 
 A log-normal distribution. 
 
-Args:
+*Args:*
+
     loc (float || numpy.ndarray): the mean of the underlying normal distribution
+
     log_scale (float || numpy.ndarray): the log standard deviation of the underlying 
     normal distribution
 
@@ -350,7 +398,8 @@ See documentation of Distribution1D.
 ### `sample`
 See doocumentation of Distribution1D.
 
-Returns:
+*Returns:*
+
     sample (numpy.ndarray): shape is (size, len(distributions))
 
 ### `update_parameters`
@@ -366,19 +415,25 @@ See documentation of ABCDistanceMetric
 
 (x, y) -> abs(x - y).mean() is the distance function.
 
-Args:
+*Args:*
+
     eps (EpsilonStrategy): the threshold class
+
     eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
 ### `accept`
 Whether to accept the draws given the data. 
 
-Args:
+*Args:*
+
     data (numpy.ndarray): observed data
+
     draws (numpy.ndarray): draws from a model
+
     iteration (int >= 0): iteration of sampling
 
-Returns:
+*Returns:
+
     accept (numpy.ndarray): an array of indices of the sample that should be
         accepted
 
@@ -389,19 +444,25 @@ See documentation of ABCDistanceMetric
 
 (x, y) -> ((x - y) ** 2.0).mean() is the distance function.
 
-Args:
+*Args:*
+
     eps (EpsilonStrategy): the threshold class
+
     eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
 
 ### `accept`
 Whether to accept the draws given the data. 
 
-Args:
+*Args:*
+
     data (numpy.ndarray): observed data
+
     draws (numpy.ndarray): draws from a model
+
     iteration (int >= 0): iteration of sampling
 
-Returns:
+*Returns:*
+
     accept (numpy.ndarray): an array of indices of the sample that should be
         accepted
 
@@ -412,8 +473,10 @@ See documentation of Distribution1D.
 
 A normal distribution. 
 
-Args:
+*Args:*
+
     loc (float || numpy.ndarray): the mean of the distribution
+
     log_scale (float || numpy.ndarray): the log standard deviation of the distribution
 
 ### `_init_dist`
@@ -426,7 +489,8 @@ See documentation of Distribution1D.
 ### `sample`
 See doocumentation of Distribution1D.
 
-Returns:
+*Returns:*
+
     sample (numpy.ndarray): shape is (size, len(distributions))
 
 ### `update_parameters`
@@ -449,7 +513,8 @@ See documentation of Distribution1D.
 
 A factorization q(z) = \prod_n q_n(z_n). 
 
-Args:
+*Args:*
+
     distributions (iterable[Distribution1D]): the 1d distributions
 
 ### `_init_dist`
@@ -463,7 +528,8 @@ log q(z) = \sum_n log q_n(z_n).
 ### `sample`
 See doocumentation of Distribution1D.
 
-Returns:
+*Returns:*
+
     sample (numpy.ndarray): shape is (size, len(distributions))
 
 ### `update_parameters`
@@ -484,7 +550,8 @@ noisy observation model that we parameterize as a Gaussian state space model.
 All `QuasiLikelihood`s must implement lpdf, which returns the (quasi)likelihood of
 draws given the observed data, and `__call__`, which calls `lpdf`.
 
-Args:
+*Args:*
+
     data (numpy.ndarray): observed data
 
 ### `lpdf`
@@ -502,9 +569,12 @@ See documentation of Bound1D.
 ## `Sampler`
 Base class for all samplers.
 
-Args:
+*Args:*
+
     niter (int >=0 || None): number of iterations to run the sampler
+
     nsample (int >= 0 || None): number of draws from the (approximate) posterior
+
     verbosity (float >=0): status messages are printed `verbosity` fraction of
         the time
 
@@ -521,8 +591,10 @@ See documentation of Distribution1D.
 
 A truncated normal distribution. 
 
-Args:
+*Args:*
+
     loc (float || numpy.ndarray): the mean of the distribution
+
     log_scale (float || numpy.ndarray): the log standard deviation of the distribution
 
 ### `_init_dist`
@@ -535,7 +607,8 @@ See documentation of Distribution1D.
 ### `sample`
 See doocumentation of Distribution1D.
 
-Returns:
+*Returns:*
+
     sample (numpy.ndarray): shape is (size, len(distributions))
 
 ### `update_parameters`
@@ -553,10 +626,12 @@ This is very basic. Suggests a Normal for infinite support, LogNormal for
 half-infinite (positive half-line) support, and Beta distribution for support
 on [0, 1]. Returns `None` otherwise.
 
-Args:
+*Args:*
+
     bound (Bound): the bound for which a distribution is desired
 
-Returns:
+*Returns:*
+
     distribution (Distribution1D): a distribution class
 
 
@@ -565,11 +640,13 @@ Generates string parameter names.
 
 This is mainly useful for plotting or downstream work in other libraries.
 
-Args:
+*Args:*
+
     root (Block): a block. Parameter names will be generated for this nodes and all of
         its predecessors in the compute graph.
 
-Returns:
+*Returns:*
+
     names (list[string]): list of parameter names
 
 
