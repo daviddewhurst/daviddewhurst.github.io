@@ -181,6 +181,20 @@ None
 
 
 
+## `ABCPosterior`
+None
+
+### `__getitem__`
+None
+
+### `__init__`
+Initialize self.  See help(type(self)) for accurate signature.
+
+### `__repr__`
+Return repr(self).
+
+
+
 ## `ABCSampler`
 See the documentation of Sampler.
 
@@ -395,42 +409,6 @@ Initialize self.  See help(type(self)) for accurate signature.
 
 
 
-## `GaussianDistanceMetric`
-See documentation of ABCDistanceMetric
-
-(x, y) -> log MultivariateNormalLikelihood(x, y; cov) is the distance function.
-
-Args:
-    data (numpy.ndarray): observed data
-    eps (EpsilonStrategy): the threshold class
-    eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
-
-### `__call__`
-Call self as a function.
-
-### `__init__`
-Initialize self.  See help(type(self)) for accurate signature.
-
-### `accept`
-Whether to accept the draws given the data. 
-
-Args:
-    draws (numpy.ndarray): draws from a model
-    iteration (int >= 0): iteration of sampling
-
-Returns:
-    accept (numpy.ndarray): an array of indices of the sample that should be
-        accepted
-
-### `lpdf`
-See documentation of QuasiLikelihood.lpdf(...).
-
-Args:
-    draws (numpy.ndarray): draws from a model
-    reduce_ (bool): if reduce_, returns the average lpdf
-
-
-
 ## `GaussianQuasiLikelihood`
 See documentation of QuasiLikelihood. 
 
@@ -528,6 +506,32 @@ Updates the parameters of the distribution.
 
 Args:
     kwargs (dict, optional): {param_name: param_value, ...}
+
+
+
+## `MAEDistanceMetric`
+See documentation of ABCDistanceMetric
+
+(x, y) -> abs(x - y).mean() is the distance function.
+
+Args:
+    eps (EpsilonStrategy): the threshold class
+    eps_kwargs (dict): keyword arguments to pass to the EpsilonStrategy
+
+### `__init__`
+Initialize self.  See help(type(self)) for accurate signature.
+
+### `accept`
+Whether to accept the draws given the data. 
+
+Args:
+    data (numpy.ndarray): observed data
+    draws (numpy.ndarray): draws from a model
+    iteration (int >= 0): iteration of sampling
+
+Returns:
+    accept (numpy.ndarray): an array of indices of the sample that should be
+        accepted
 
 
 
@@ -708,6 +712,42 @@ None
 
 ### `sample`
 None
+
+
+
+## `TruncatedNormalDistribution1D`
+See documentation of Distribution1D.
+
+A truncated normal distribution. 
+
+Args:
+    loc (float || numpy.ndarray): the mean of the distribution
+    log_scale (float || numpy.ndarray): the log standard deviation of the distribution
+
+### `__call__`
+Call self as a function.
+
+### `__init__`
+Initialize self.  See help(type(self)) for accurate signature.
+
+### `_init_dist`
+None
+
+### `lpdf`
+See documentation of Distribution1D. 
+        
+
+### `sample`
+See doocumentation of Distribution1D.
+
+Returns:
+    sample (numpy.ndarray): shape is (size, len(distributions))
+
+### `update_parameters`
+Updates the parameters of the distribution. 
+
+Args:
+    kwargs (dict, optional): {param_name: param_value, ...}
 
 
 
