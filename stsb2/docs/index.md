@@ -2076,19 +2076,23 @@ Clears cache of all predecessor nodes of root.
 This does *not* reset the cache mode of any node;
 to turn off caching, call `set_cache_mode(root, False)`
 
-Args:
-    root (Block): a block
+*Args:*
+
+root (Block): a block
 
 
 ## `get_all_values`
 Gets current value of all parameters in the model.
 
-Args:
-    nodes (list[Block]): list of all blocks in the model
-    param_names (list[string]): list of all block param names in the model
+*Args:*
 
-Returns:
-    values (list): list of all current param values
+nodes (list[Block]): list of all blocks in the model
+
+param_names (list[string]): list of all block param names in the model
+
+*Returns:*
+
+values (list): list of all current param values
 
 
 ## `get_free_parameters_from_root`
@@ -2097,11 +2101,13 @@ Gets all free parameter values from the root and its predecessors
 Defines a BFS order on the compute graph. This is one of two functions
 that explicitly walk through the compute graph.
 
-Args:
-    root (Block): the root of the STS graph
+*Args:*
 
-Returns:
-    return (tuple[list]): (nodes, parameter names, parameter bounds)
+root (Block): the root of the STS graph
+
+*Returns:*
+    
+return (tuple[list]): (nodes, parameter names, parameter bounds)
 
 
 ## `get_nodes_from_root`
@@ -2110,45 +2116,60 @@ Returns the root and all its predecessors in the graph.
 Defines a BFS order on the compute graph. This is one of two functions
 that explicitly walk through the compute graph.
 
-Args:
-    root (Block): the root of the STS graph
+*Args:*
 
-Returns:
-    nodes (tuple[list]): root and predecessor nodes in the graph
+root (Block): the root of the STS graph
+
+*Returns:*
+
+nodes (tuple[list]): root and predecessor nodes in the graph
 
 
 ## `roll_op`
 Rolls an operation along an array.
 
-Args:
-    arr (numpy.ndarray): original array
-    op (callable): reduction function
-    window_size (int >= 2): size of the subarrays to pass to `op`
-    op_args (list): non-keyword arguments to pass to op
-    output_size (string): one of 'same', 'valid'
-    pad (string): currently only 'continue' is supported
-    op_kwargs (dict): keyword arguments to pass to op
+*Args:*
 
-Returns:
-    out (numpy.ndarray): the filtered array
+arr (numpy.ndarray): original array
+
+op (callable): reduction function
+
+window_size (int >= 2): size of the subarrays to pass to `op`
+
+op_args (list): non-keyword arguments to pass to op
+
+output_size (string): one of 'same', 'valid'
+
+pad (string): currently only 'continue' is supported
+
+op_kwargs (dict): keyword arguments to pass to op
+
+*Returns:*
+
+out (numpy.ndarray): the filtered array
 
 
 ## `set_all_values`
 Sets all values to proposed.
 
-Args:
-    proposed (numpy.ndarray): array of proposed param values.
-        Shape (p, batch_size) where p is the total number of params
-        of the model
-    nodes (list[Block]): list of all blocks in the model
-    param_names (list[string]): list of all block param names in the model
+*Args:*
+
+proposed (numpy.ndarray): array of proposed param values.
+    Shape (p, batch_size) where p is the total number of params
+    of the model
+
+nodes (list[Block]): list of all blocks in the model
+
+param_names (list[string]): list of all block param names in the model
 
 
 ## `set_cache_mode`
 Sets root and all predecessor nodes cache mode to `cache`.
 
-Args:
-    root (Block): a block
-    cache (bool): whether or not to cache block calls
+*Args:*
+
+root (Block): a block
+
+cache (bool): whether or not to cache block calls
 
 
