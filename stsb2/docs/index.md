@@ -6,6 +6,19 @@ description: stsb2 documentation
 
 # `effects`
 
+## `BoundSampleEffect`
+Effect handler to impose bounds on unbounded distributions
+
+*Args:*
+
+density (Distribution1D-like): probability distribution
+
+lower (float || numpy.ndarray): lower bound(s)
+
+upper (float || numpy.ndarray): upper bound(s)
+
+
+
 ## `Effect`
 A context manager that changes the interpretation of an STS call.
     
@@ -145,7 +158,7 @@ samples (numpy.ndarray): samples from the approximate posterior.
 
 
 
-## `ABCSampler`
+## `ABCRejectionSampler`
 See the documentation of Sampler.
 
 Uses approximate Bayesian computation rejection sampling to sample from the 
@@ -1407,6 +1420,202 @@ x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
 
 
 
+## `ConstantCoefficientSDE`
+Implements an SDE with coefficients that do not depend on state. 
+
+The DGP of ConstantCoefficientSDE is 
+```
+f(t) = f(t - 1) + h(t) * loc + sqrt(h(t)) * scale * w(t), f(0) = ic,
+```
+where
+`w` is standard normal distributed. Both loc and scale can be univariate parameters,
+vector parameters, or `Block`s to implement composition.
+
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+loc (None || Block || float || numpy.ndarray): if None, loc will be drawn from a standard normal
+
+scale (None || Block || float || numpy.ndarray): if None, scale will be drawn from a standard
+    lognormal
+
+h (None || Block || float || numpy.ndarray): if None, h will be set to 1 / (t1 - t0).
+
+ic (None || float || numpy.ndarray): the initial condition. 
+
+### `_forecast`
+See documentation of `forecast(...)` and `effects.ForecastEffect`.
+        
+
+### `_maybe_add_blocks`
+Adds parameters to prec and succ if they subclass Block.
+
+*Args:*
+
+args: iterable of (name, parameter, bound) 
+
+### `_sample`
+None
+
+### `_transform`
+Defines a transform from a string argument.
+
+Currently the following string arguments are supported:
+    + exp
+    + log
+    + logit
+    + invlogit
+    + tanh
+    + arctanh
+    + invlogit
+    + logit
+    + floor
+    + sin
+    + cos
+    + softplus
+    + diff (lowers time dimemsion by 1)
+    + logdiff (lowers time dimension by 1)
+
+The resulting transform will be added to the transform stack iff
+it is not already at the top of the stack.
+
+*Args:*
+
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
+
+### `arctanh`
+x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
+        
+
+### `clear_cache`
+Clears the block cache.
+
+This method does *not* alter the cache mode.
+
+### `cos`
+x -> cos x
+        
+
+### `diff`
+x -> x[1:] - x[:-1]
+
+Note that this lowers the time dimension from T to T - 1.
+
+### `exp`
+x -> exp(x)
+        
+
+### `floor`
+x -> x - [[x]], where [[.]] is the fractional part operator
+        
+
+### `forecast`
+Forecasts the block forward in time. 
+
+Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
+and calling sample(...).
+
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+### `forecast_many`
+Draw many forecast paths.
+
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
+    
+
+### `invlogit`
+x -> 1 / (1 + exp(-x))
+        
+
+### `log`
+x -> log x 
+
+Block paths must be positive for valid output.
+
+### `logdiff`
+x -> log x[1:] - log x[:-1]
+
+Note that this lowers the time dimension from T to T - 1.
+
+### `logit`
+x -> log(x / (1 - x))
+        
+
+### `parameter_update`
+Updates the parameters of the block.
+
+This method should be used with caution as it can change the type, dimension, etc
+of any parameter that is passed and does not perform any safety checks.
+Passed values can be 
+    + numeric types
+    + `numpy.ndarray`s
+    + `stsb.Block`s
+
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
+
+### `prec`
+Returns the predecessor nodes of `self` in the (implicit) compute graph
+
+*Returns:*
+
+_prec (list): list of predecessor nodes
+
+### `sample`
+Draws a batch of `size` samples from the block.
+
+*Args:*
+
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
+
+### `sin`
+x -> sin x
+        
+
+### `softplus`
+x -> log(1 + exp(x))
+        
+
+### `succ`
+Returns the successor nodes of `self` in the (implicit) compute graph
+
+*Returns:*
+
+_succ (list): list of successor nodes
+
+### `tanh`
+x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
+        
+
+
+
 ## `GlobalTrend`
 Implements a global trend model.
 
@@ -1798,6 +2007,204 @@ is_cached (str): whether to give sampling a cached interpretation.
     will replay the result of the first call. This behavior will
     occur until the cache is reset (with `util.clear_cache(...)` or
     `self.clear_cache(...)`)
+
+### `_forecast`
+See documentation of `forecast(...)` and `effects.ForecastEffect`.
+        
+
+### `_maybe_add_blocks`
+Adds parameters to prec and succ if they subclass Block.
+
+*Args:*
+
+args: iterable of (name, parameter, bound) 
+
+### `_sample`
+None
+
+### `_transform`
+Defines a transform from a string argument.
+
+Currently the following string arguments are supported:
+    + exp
+    + log
+    + logit
+    + invlogit
+    + tanh
+    + arctanh
+    + invlogit
+    + logit
+    + floor
+    + sin
+    + cos
+    + softplus
+    + diff (lowers time dimemsion by 1)
+    + logdiff (lowers time dimension by 1)
+
+The resulting transform will be added to the transform stack iff
+it is not already at the top of the stack.
+
+*Args:*
+
+arg (str): one of the above strings corresponding to function
+
+*Returns:*
+
+self (stsb.Block)
+
+### `arctanh`
+x -> arctanh(x), i.e. x -> 0.5 log ((1 + x) / (1 - x))
+        
+
+### `clear_cache`
+Clears the block cache.
+
+This method does *not* alter the cache mode.
+
+### `cos`
+x -> cos x
+        
+
+### `diff`
+x -> x[1:] - x[:-1]
+
+Note that this lowers the time dimension from T to T - 1.
+
+### `exp`
+x -> exp(x)
+        
+
+### `floor`
+x -> x - [[x]], where [[.]] is the fractional part operator
+        
+
+### `forecast`
+Forecasts the block forward in time. 
+
+Forecasting is equivalent to fast-forwarding time, using possibly-updated parameter estimates,
+and calling sample(...).
+
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+### `forecast_many`
+Draw many forecast paths.
+
+*Args:*
+
+size (int >= 1): number of forecast paths
+
+Nt (int >= 1): number of timesteps forward to forecast
+
+ic (float || numpy.ndarray): initial condition, optional. If not set,
+    will be set to the last observed / simulated value of the block.
+
+*Returns:*
+
+forecast (numpy.ndarray): array of shape (size, ic.shape[0], t1 - t0)
+    
+
+### `invlogit`
+x -> 1 / (1 + exp(-x))
+        
+
+### `log`
+x -> log x 
+
+Block paths must be positive for valid output.
+
+### `logdiff`
+x -> log x[1:] - log x[:-1]
+
+Note that this lowers the time dimension from T to T - 1.
+
+### `logit`
+x -> log(x / (1 - x))
+        
+
+### `parameter_update`
+Updates the parameters of the block.
+
+This method should be used with caution as it can change the type, dimension, etc
+of any parameter that is passed and does not perform any safety checks.
+Passed values can be 
+    + numeric types
+    + `numpy.ndarray`s
+    + `stsb.Block`s
+
+*Args:*
+
+kwargs: `parameter_1_name=parameter_1_value, ...`
+
+### `prec`
+Returns the predecessor nodes of `self` in the (implicit) compute graph
+
+*Returns:*
+
+_prec (list): list of predecessor nodes
+
+### `sample`
+Draws a batch of `size` samples from the block.
+
+*Args:*
+
+size (int): batch size
+
+*Returns:*
+
+draws (numpy.ndarray) sampled values from the block
+
+### `sin`
+x -> sin x
+        
+
+### `softplus`
+x -> log(1 + exp(x))
+        
+
+### `succ`
+Returns the successor nodes of `self` in the (implicit) compute graph
+
+*Returns:*
+
+_succ (list): list of successor nodes
+
+### `tanh`
+x -> tanh(x), i.e. x -> (exp(x) - exp(-x)) / (exp(x) + exp(-x))
+        
+
+
+
+## `OrnsteinUhlenbeckProcess`
+Implements an Ornstein Uhlenbeck process. 
+
+The DGP of OrnsteinUhlenbeckProcess is 
+```
+f(t) = f(t - 1) + h(t) * theta * (loc - f(t - 1)) + sqrt(h(t)) * scale * w(t), f(0) = ic,
+```
+where
+`w` is standard normal distributed. Both loc and scale can be univariate parameters,
+vector parameters, or `Block`s to implement composition.
+
+*Args:*
+
+t0 (int): start timepoint
+
+t1 (int): end timepoint
+
+loc (None || Block || float || numpy.ndarray): if None, loc will be drawn from a standard normal
+
+scale (None || Block || float || numpy.ndarray): if None, scale will be drawn from a standard
+    lognormal
+
+h (None || Block || float || numpy.ndarray): if None, h will be set to 1 / (t1 - t0).
+
+theta (None || Block || float || numpy.ndarray): if None, theta will be drawn from a standard normal
+
+ic (None || float || numpy.ndarray): the initial condition. 
 
 ### `_forecast`
 See documentation of `forecast(...)` and `effects.ForecastEffect`.
