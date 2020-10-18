@@ -2687,6 +2687,18 @@ root (Block): the root of the STS graph
 return (tuple[list]): (nodes, parameter names, parameter bounds)
 
 
+## `get_graph_from_root`
+Returns the compute graph with `root` as the single base node.
+
+*Args:*
+
+root (Block): the root of the STS graph
+
+*Returns:*
+
+graph (dict[list[Block...]]): {node, [predecessor nodes]}
+
+
 ## `get_nodes_from_root`
 Returns the root and all its predecessors in the graph.
 
