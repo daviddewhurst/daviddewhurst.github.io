@@ -13,8 +13,8 @@ description: about
 
 #### Personal statistics
 
-+ Husband
-+ Father
++ [Husband](./photos/kiss.jpg)
++ [Father](./photos/small.jpg)
 + Machine learning and probabilistic modeling scientist at [Charles River Analytics](https://cra.com/) and 
 research fellow at the [Vermont Complex Systems Center](https://vermontcomplexsystems.org/)
 + Former lead data scientist at [MassMutual](https://datascience.massmutual.com/) 
