@@ -13,7 +13,7 @@ significantly different from much of the rest of the state. My house was built i
 2x3s, not 2x4s. 
 
 <p float="left">
-  <img src="../photos/october-water.jpg" width="100" />
-  <img src="../photos/january-water.jpg" width="100" /> 
+  <img src="../photos/october-water.jpg" width="500" />
+  <img src="../photos/january-water.jpg" width="500" /> 
 </p>
 This is the view from my backyard at two different times of year -- October on the left, January on the right. 
