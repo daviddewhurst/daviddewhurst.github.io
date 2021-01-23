@@ -11,7 +11,7 @@ description: about
 + Mechanistic models of non-equilibrium systems
 + Probabilistic programming
 
-#### Personal statistics
+#### Description
 
 + [Husband](./photos/kiss.jpg) and [father](./photos/small.jpg)
 + Machine learning and probabilistic modeling scientist at [Charles River Analytics](https://cra.com/) and 
@@ -36,7 +36,7 @@ qualitative, shape-based, timescale-independent time series similarity search al
 
 #### Links
 
-+ [teaching](./teaching/)
-+ [arXiv](https://arxiv.org/search/?query=david+rushing+dewhurst&searchtype=all&abstracts=show&order=-announced_date_first&size=50)
++ [personal](./personal/)
 + [cv](./documents/drd-cv.pdf)
++ [teaching](./teaching/)
 + [blog](./blog/)
