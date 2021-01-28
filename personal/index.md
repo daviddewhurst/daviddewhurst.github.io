@@ -15,8 +15,9 @@ significantly different from much of the rest of the state. My house was built i
 <p float="left">
   <img src="../photos/october-water.jpg" width="500" />
   <img src="../photos/january-water.jpg" width="500" /> 
+  <img src="../photos/january-snow-water.jpg" width="500" />
 </p>
-This is the view from my backyard at two different times of year -- October on the top, January on the bottom.
+This is the view from my backyard at two different times of year -- October on the top, January in the middle, and January in the snow on the bottom.
 
 I met my wife, Casey Dewhurst (nee Comeau), in 2011. 
 She is an extraordinarily talented artist, gardener, crafter, and baker.
