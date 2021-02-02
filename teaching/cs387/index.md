@@ -10,6 +10,8 @@ This is the homepage for cs/stat 387, spring 2021.
 You can find all the information about the course here.
 
 + [**Syllabus**](./syllabus.pdf): please read it. It's not great if you ask me a question and the answer is on the syllabus.
++ **Lecture slides**
+	+ [Lecture 1](./slides/2021-02-02cs387-slides.pdf)
 + **Reading list**: I am nowhere near organized enough to know when in the semester we will read these papers, but I'm pretty sure that we will read them
     at some point. This list is not guaranteed to be in *any order*.
     + Kschischang, Frank R., Brendan J. Frey, and H-A. Loeliger. "Factor graphs and the sum-product algorithm." IEEE Transactions on information theory 47, no. 2 (2001): 498-519.
