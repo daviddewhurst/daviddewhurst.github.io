@@ -21,9 +21,6 @@ and [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10)
 
 #### Software
 
-+ [`stsb3`](https://davidrushingdewhurst.com/stsb3/)
- Structural time series, round 3. Implements a (slightly different from `stsb2`) grammar over structural time series models, an associated modeling 
- library, and deep integration with the [`pyro`](http://pyro.ai) PPL.
 + [`stsb2`](https://davidrushingdewhurst.com/stsb2/)
  Structural time series, round 2. Implements a grammar over structural time series models and an 
 associated modeling + inference library. 
