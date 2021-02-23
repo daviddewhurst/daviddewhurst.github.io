@@ -16,6 +16,9 @@ You can find all the information about the course here.
 	+ [Lecture 3](./slides/2021-02-09cs387-slides.pdf)
 	+ [Lecture 4](./notes/2021-02-11notes.html)
 	+ [Lecture 5](./slides/2021-02-16notes.slides.html)
+	+ [Lecture 6](./slides/2021-02-17notes.slides.html)
+	+ [Lecture 7](./slides/2021-02-23notes.slides.html). Additionally, read *Bingham, Eli, Jonathan P. Chen, Martin Jankowiak, Fritz Obermeyer, Neeraj Pradhan, Theofanis Karaletsos, Rohit Singh, Paul Szerlip, Paul Horsfall, and Noah D. Goodman. "Pyro: Deep universal probabilistic programming." The Journal of Machine Learning Research 20, no. 1 (2019): 973-978*, *Pfeffer, Avi. "Figaro: An object-oriented probabilistic programming language." Charles River Analytics Technical Report 137 (2009): 96*, and *Cusumano-Towner, Marco F., Feras A. Saad, Alexander K. Lew, and Vikash K. Mansinghka. "Gen: a general-purpose probabilistic programming system with programmable inference." In Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation, pp. 221-236. 2019* for Thursday. We will also discuss midterm / final projects today.
+		+ 
 + **Reading list**: I am nowhere near organized enough to know when in the semester we will read these papers, but I'm pretty sure that we will read them
     at some point. This list is not guaranteed to be in *any order*.
     + Kschischang, Frank R., Brendan J. Frey, and H-A. Loeliger. "Factor graphs and the sum-product algorithm." IEEE Transactions on information theory 47, no. 2 (2001): 498-519.
