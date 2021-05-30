@@ -7,7 +7,7 @@ description: about
 
 #### Personal
 
-My family and I live on the south coast of Massachusetts. 
+My family and I live in a town called Wareham on the south coast of Massachusetts. 
 It's a wonderful area that's less commonly-trafficked than the cape, at least by outsiders, and has a culture that I think is 
 significantly different from much of the rest of the state. My house was built in 1920, old enough for the walls to be constructed from 
 2x3s, not 2x4s. 
@@ -19,6 +19,9 @@ significantly different from much of the rest of the state. My house was built i
 </p>
 This is the view from my backyard at two different times of year -- October on the top, January in the middle, and January in the snow on the bottom.
 
-I met my wife, Casey Dewhurst (nee Comeau), in 2011. 
+I met my wife, Casey Lyn Dewhurst (nee Comeau), in 2011. 
 She is an extraordinarily talented artist, gardener, crafter, and baker.
-Our son, Jacob Alexander Conrad Dewhurst, was born in 2020. He is a good boy.
+We have two sons: our first, Jacob Alexander Conrad Dewhurst, was born in 2020;
+our second, Colin Glenn Stephen Dewhurst, was born in 2021. They are good boys.
+
+I used to have hobbies. Now I work and parent.

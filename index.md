@@ -39,4 +39,3 @@ qualitative, shape-based, timescale-independent time series similarity search al
 + [personal](./personal/)
 + [cv](./documents/drd-cv.pdf)
 + [teaching](./teaching/)
-+ [blog](./blog/)
