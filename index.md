@@ -24,7 +24,7 @@ Application areas in which I'm interested include
 
 + [Husband](./photos/kiss.jpg) and [father](./photos/small.jpg)
 + Machine learning and probabilistic modeling scientist at [Charles River Analytics](https://cra.com/)
-+ Former lead data scientist at [MassMutual](https://datascience.massmutual.com/), graduate fellow at [MITRE](https://compfi.org/), adjunct assistant professor (mathematics and statistics) at the [Vermont Complex Systems Center](https://vermontcomplexsystems.org/), and [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10)
++ Former lead data scientist at [MassMutual](https://datascience.massmutual.com/), graduate fellow at [MITRE](https://compfi.org/), and [trombonist](http://www.frankwitheyscholarshipfund.org/?page_id=10)
 
 #### Software
 
