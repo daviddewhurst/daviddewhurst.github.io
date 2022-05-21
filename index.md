@@ -14,9 +14,9 @@ description: about
 
 I develop probabilistic AI for military and financial applications. I'm interested in
 
++ Financial resilience
 + Logistics and supply networks
 + Cybersecurity
-+ Financial resilience
 
 to which I often apply the tools of
 
