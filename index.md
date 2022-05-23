@@ -26,8 +26,8 @@ to which I often apply the tools of
 + Agent-based modeling
 
 #### Software
-
-+ [`libpolymorphic`](https://gitlab.com/daviddewhurst/libpolymorphic) a universal record-based probabilistic programming language,
++ [`libcpolymorphic`](https://gitlab.com/daviddewhurst/libcpolymorphic): a universal probabilistic programming language hosted in C; distinguished by (a) enabling open-world sample-based inference without tracing (b) zero heap usage; very much pre-alpha and a work in progress
++ [`libpolymorphic`](https://gitlab.com/daviddewhurst/libpolymorphic): a universal record-based probabilistic programming language,
 hosted in C++.
 + [`CrimsonSkyline.jl`](https://gitlab.com/daviddewhurst/CrimsonSkyline.jl):
 a universal trace-based probabilistic programming language, hosted in Julia.
