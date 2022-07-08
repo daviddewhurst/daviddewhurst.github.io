@@ -39,6 +39,10 @@
 <ul>
 <li><a href="#make-3"><code>make</code></a></li>
 </ul></li>
+<li><a href="#stochvolfactory"><code>StochVolFactory</code></a>
+<ul>
+<li><a href="#make-4"><code>make</code></a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -111,6 +115,29 @@ z_t &amp;= z_{t - 1} + l_t + \mathrm{scale\_level}_t w^z_t,\ z_0 = \mathrm{ic\_l
 </ul>
 <h3 id="make-3"><code>make</code></h3>
 <p>Creates a new SLLT model. The sites in the created model are guaranteed to be unique.</p>
+<p><em>Args:</em></p>
+<p>None</p>
+<h2 id="stochvolfactory"><code>StochVolFactory</code></h2>
+<p>A stochastic volatility model factory.</p>
+<p>This is a model for the log of an asset price <span class="math inline">\(S_t\)</span>. Define <span class="math inline">\(z_t = \log S_t\)</span>. The generative model for programs created by this factory is</p>
+<span class="math display">\[\begin{aligned}
+\mathrm{isp}\ \sigma_t &amp;= \mathrm{isp}\ \sigma_{t - 1} + \mathrm{d}t_t\ \mathrm{loc\_ispvol}_t\ +
+     \sqrt{\mathrm{d}t_t}\ \mathrm{scale\_ispvol}_t\ w^{\mathrm{isp}\sigma}_t,\ l_0 = \mathrm{ic\_logvol} \\
+z_t &amp;= z_{t - 1} + \mathrm{d}t_t\mathrm{loc}_t + \sqrt{\mathrm{d}t_t}\sigma_t w^z_t,\ z_0 = \mathrm{ic},
+\end{aligned}\]</span>
+<p>where <span class="math inline">\(w^\cdot_t \sim \mathrm{Normal}(0, 1)\)</span>, <span class="math inline">\(t_0 \leq t \leq t_1\)</span>, and <span class="math inline">\(\mathrm{isp}\)</span> is the inverse softplus function, <span class="math inline">\(\mathrm{isp}(y) = \log(-1 + \exp y)\)</span>.</p>
+<p><em>Args:</em></p>
+<ul>
+<li><code>dt (Block || torch.tensor || pyro.distributions)</code>: time discretization. If a <code>pyro.distributions</code> object, it should be an atomless distribution with non-negative support and will be interpreted as <span class="math inline">\(p(dt) = \prod_{t_0\leq t\leq t_1} p(dt_t)\)</span>, not as a single draw. Passing a distributions object can be a useful method for modeling jump-y asset prices (e.g., <span class="math inline">\(p(dt_t) = \mathrm{Gamma}(dt_t | \alpha, \beta)\)</span> generates the variance gamma process). However, doing this also makes the model non-identifiable in the scale parameter(s).</li>
+<li><code>loc_ispvol (Block || torch.tensor || pyro.distributions)</code>: location parameter of the isp volatility process</li>
+<li><code>vol_ispvol (Block || torch.tensor || pyro.distributions)</code>: scale/volatility parameter of the isp volatility process</li>
+<li><code>ic_ispvol (torch.tensor || pyro.distributions)</code>: initial condition of the isp_volatility process</li>
+<li><code>scale_level (Block || torch.tensor || pyro.distributions)</code>: scale parameter for <span class="math inline">\(z_t\)</span></li>
+<li><code>loc (Block || torch.tensor || pyro.distributions)</code>: location parameter for the log asset price process.</li>
+<li><code>ic (torch.tensor || pyro.distributions)</code>: initial condition for the log asset price process</li>
+</ul>
+<h3 id="make-4"><code>make</code></h3>
+<p>Creates a new StochVol model. The sites in the created model are guaranteed to be unique.</p>
 <p><em>Args:</em></p>
 <p>None</p>
 </body>
