@@ -26,6 +26,7 @@ to which I often apply the tools of
 + Agent-based modeling
 
 #### Software
++ [`sts-zoo`](https://davidrushingdewhurst.com/sts-zoo/): a collection of wild animals created by combining [`stsb3`](https://davidrushingdewhurst.com/stsb3/) blocks
 + [`libcpolymorphic`](https://gitlab.com/daviddewhurst/libcpolymorphic): a universal probabilistic programming language hosted in C; distinguished by (a) enabling open-world sample-based inference without tracing (b) zero heap usage; very much pre-alpha and a work in progress
 + [`libpolymorphic`](https://gitlab.com/daviddewhurst/libpolymorphic): a universal record-based probabilistic programming language,
 hosted in C++.
