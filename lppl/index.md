@@ -7,6 +7,8 @@ Open-universe probabilistic programming in (almost modern) C++, done in exactly 
 + Explicit PRNG state (reproducibility)
 + Algebraic sum types (`std::variant`) everywhere instead of boxing (`std::any`)
 
+Open-source (LGPL3), available at [this webpage](https://gitlab.com/drdewhurst/lppl/-/tree/develop).
+
 ### Examples
 
 Here's a very basic normal model with a latent `loc` and `log_scale`:
@@ -72,10 +74,14 @@ Posterior means =
 ```
 which again checks out.
 
+### Inference
+
+`lppl` currently supports only the most basic of inference algorithms: likelihood weighting and ancestor Metropolis. Happily, both methods can be trivially used to do inference with open-universe models, though they're very inefficient (well, more precisely, they rely on the quality of the prior distribution).
 
 ### Coming attractions
 + optionally zero dynamic allocation (yes, even in open-universe models)
-+ other inference algorithms (generic importance sampling, some MCMC methods, particle filtering, ...)
++ other inference algorithms (generic importance sampling, particle filtering, more precise MCMC methods...)
+    + some inference algorithms may end up going in separate libraries, since they might depend on external libraries (e.g., [Adept](http://www.met.reading.ac.uk/clouds/adept/) for neural network-based inference). This is all very hypothetical anyway.
 + more query types, and composability of queries
 
 Documentation pages coming Real Soon Now (TM), but for now all header files have documentation, so read that.
