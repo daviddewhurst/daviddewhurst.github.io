@@ -9,6 +9,8 @@ Open-universe probabilistic programming in (almost modern) C++, done in exactly 
 
 Open-source (LGPL3), available at [this webpage](https://gitlab.com/drdewhurst/lppl/-/tree/develop).
 
+[Documentation!](./docs/index.html)
+
 ### Examples
 
 Here's a very basic normal model with a latent `loc` and `log_scale`:
@@ -83,5 +85,3 @@ which again checks out.
 + other inference algorithms (generic importance sampling, particle filtering, more precise MCMC methods...)
     + some inference algorithms may end up going in separate libraries, since they might depend on external libraries (e.g., [Adept](http://www.met.reading.ac.uk/clouds/adept/) for neural network-based inference). This is all very hypothetical anyway.
 + more query types, and composability of queries
-
-Documentation pages coming Real Soon Now (TM), but for now all header files have documentation, so read that.

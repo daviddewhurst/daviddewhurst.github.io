@@ -1,0 +1,34 @@
+var annotated_dup =
+[
+    [ "Distributions", null, [
+      [ "Categorical", "class_distributions_1_1_categorical.html", "class_distributions_1_1_categorical" ],
+      [ "DiscreteUniform", "class_distributions_1_1_discrete_uniform.html", null ],
+      [ "Distribution", "class_distributions_1_1_distribution.html", null ],
+      [ "Gamma", "class_distributions_1_1_gamma.html", "class_distributions_1_1_gamma" ],
+      [ "Generate", "class_distributions_1_1_generate.html", "class_distributions_1_1_generate" ],
+      [ "LogProb", "class_distributions_1_1_log_prob.html", "class_distributions_1_1_log_prob" ],
+      [ "Normal", "class_distributions_1_1_normal.html", "class_distributions_1_1_normal" ],
+      [ "Poisson", "class_distributions_1_1_poisson.html", null ],
+      [ "StdDistribution", "class_distributions_1_1_std_distribution.html", null ],
+      [ "tracker_t", "class_distributions_1_1tracker__t.html", null ],
+      [ "Uniform", "class_distributions_1_1_uniform.html", null ]
+    ] ],
+    [ "Dists", "struct_dists.html", null ],
+    [ "eval_collection_t", "structeval__collection__t.html", "structeval__collection__t" ],
+    [ "HLCategorical", "struct_h_l_categorical.html", null ],
+    [ "HLGamma", "struct_h_l_gamma.html", null ],
+    [ "HLNormal", "struct_h_l_normal.html", null ],
+    [ "inf_options_t", "structinf__options__t.html", null ],
+    [ "metro_options_t", "structmetro__options__t.html", null ],
+    [ "MetropolisState", "struct_metropolis_state.html", null ],
+    [ "node_t", "structnode__t.html", "structnode__t" ],
+    [ "overloaded", "structoverloaded.html", null ],
+    [ "Proposal", "struct_proposal.html", null ],
+    [ "Queryer", "class_queryer.html", "class_queryer" ],
+    [ "QueryerCollection", "class_queryer_collection.html", "class_queryer_collection" ],
+    [ "record_t", "structrecord__t.html", "structrecord__t" ],
+    [ "WeightedMean", "class_weighted_mean.html", "class_weighted_mean" ],
+    [ "WeightedRecord", "class_weighted_record.html", "class_weighted_record" ],
+    [ "XOR64PRNG", "struct_x_o_r64_p_r_n_g.html", null ],
+    [ "XOR64State", "struct_x_o_r64_state.html", null ]
+];
