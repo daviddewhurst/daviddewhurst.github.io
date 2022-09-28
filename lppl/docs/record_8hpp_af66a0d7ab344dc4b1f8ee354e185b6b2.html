@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.3.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.4.0</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,12 @@ $(document).ready(function(){initNavTree('record_8hpp_af66a0d7ab344dc4b1f8ee354e
 </div><div class="memdoc">
 
 <p>Node-level interpretations. </p>
-<p ><b>standard</b>: no special interpretation <b>replay</b>: the node should be replayed through the record, pretending as though the value in the node had been sampled from the distribution, with no other changes to node structure other than updated log probability <b>condition</b>: the node should be conditioned on the value in the node (and hence the node is converted into an observed node) <b>block</b>: converts the node to untraced randomness </p>
+<ul>
+<li><b>standard</b>: no special interpretation</li>
+<li><b>replay</b>: the node should be replayed through the record, pretending as though the value in the node had been sampled from the distribution, with no other changes to node structure other than updated log probability</li>
+<li><b>condition</b>: the node should be conditioned on the value in the node (and hence the node is converted into an observed node)</li>
+<li><b>block</b>: converts the node to untraced randomness </li>
+</ul>
 
 </div>
 </div>

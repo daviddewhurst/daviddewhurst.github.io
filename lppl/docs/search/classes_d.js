@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['stddistribution_0',['StdDistribution',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20double_2c_20std_3a_3agamma_5fdistribution_3c_20double_20_3e_20_3e_1',['StdDistribution&lt; double, std::gamma_distribution&lt; double &gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20double_2c_20std_3a_3anormal_5fdistribution_3c_3e_20_3e_2',['StdDistribution&lt; double, std::normal_distribution&lt;&gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20double_2c_20std_3a_3auniform_5freal_5fdistribution_3c_3e_20_3e_3',['StdDistribution&lt; double, std::uniform_real_distribution&lt;&gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20int_2c_20std_3a_3auniform_5fint_5fdistribution_3c_3e_20_3e_4',['StdDistribution&lt; int, std::uniform_int_distribution&lt;&gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20unsigned_20long_2c_20std_3a_3adiscrete_5fdistribution_3c_20int_20_3e_20_3e_5',['StdDistribution&lt; unsigned long, std::discrete_distribution&lt; int &gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20unsigned_2c_20std_3a_3apoisson_5fdistribution_3c_20unsigned_20_3e_20_3e_6',['StdDistribution&lt; unsigned, std::poisson_distribution&lt; unsigned &gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]]
+  ['uniform_0',['Uniform',['../class_distributions_1_1_uniform.html',1,'Distributions']]]
 ];

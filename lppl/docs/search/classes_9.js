@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['overloaded_0',['overloaded',['../structoverloaded.html',1,'']]]
+  ['plate_0',['plate',['../structplate.html',1,'']]],
+  ['poisson_1',['Poisson',['../class_distributions_1_1_poisson.html',1,'Distributions']]],
+  ['proposal_2',['Proposal',['../struct_proposal.html',1,'']]]
 ];

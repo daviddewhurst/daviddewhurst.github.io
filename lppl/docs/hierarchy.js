@@ -52,6 +52,9 @@ var hierarchy =
     [ "Distributions::LogProb< unsigned long >", "class_distributions_1_1_log_prob.html", null ],
     [ "MetropolisState< Ts >", "struct_metropolis_state.html", null ],
     [ "node_t< D >", "structnode__t.html", null ],
+    [ "plate< D >", "structplate.html", [
+      [ "static_plate< D, N >", "structstatic__plate.html", null ]
+    ] ],
     [ "Proposal< I, D_I, D_O >", "struct_proposal.html", null ],
     [ "Queryer< V, O, Ts >", "class_queryer.html", null ],
     [ "Queryer< double, O, Ts... >", "class_queryer.html", [
@@ -65,10 +68,6 @@ var hierarchy =
     ] ],
     [ "record_t< Ts >", "structrecord__t.html", null ],
     [ "record_t< Ts... >", "structrecord__t.html", null ],
-    [ "Distributions::tracker_t< V >", "class_distributions_1_1tracker__t.html", null ],
     [ "XOR64PRNG", "struct_x_o_r64_p_r_n_g.html", null ],
-    [ "XOR64State", "struct_x_o_r64_state.html", null ],
-    [ "Ts", null, [
-      [ "overloaded< Ts >", "structoverloaded.html", null ]
-    ] ]
+    [ "XOR64State", "struct_x_o_r64_state.html", null ]
 ];
