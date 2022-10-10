@@ -53,6 +53,7 @@ var hierarchy =
     [ "MetropolisState< Ts >", "struct_metropolis_state.html", null ],
     [ "node_t< D >", "structnode__t.html", null ],
     [ "plate< D >", "structplate.html", [
+      [ "shared_static_plate< D, N >", "structshared__static__plate.html", null ],
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
     ] ],
     [ "Proposal< I, D_I, D_O >", "struct_proposal.html", null ],

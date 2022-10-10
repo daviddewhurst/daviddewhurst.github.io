@@ -25,6 +25,13 @@
 var NAVTREE =
 [
   [ "lppl", "index.html", [
+    [ "<tt>lppl</tt>", "md__r_e_a_d_m_e.html", [
+      [ "Build", "md__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Test", "md__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "Documentation", "md__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "Examples", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "License etc.", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

@@ -26,6 +26,7 @@ var annotated_dup =
     [ "Queryer", "class_queryer.html", "class_queryer" ],
     [ "QueryerCollection", "class_queryer_collection.html", "class_queryer_collection" ],
     [ "record_t", "structrecord__t.html", "structrecord__t" ],
+    [ "shared_static_plate", "structshared__static__plate.html", "structshared__static__plate" ],
     [ "static_plate", "structstatic__plate.html", "structstatic__plate" ],
     [ "WeightedMean", "class_weighted_mean.html", "class_weighted_mean" ],
     [ "WeightedRecord", "class_weighted_record.html", "class_weighted_record" ],

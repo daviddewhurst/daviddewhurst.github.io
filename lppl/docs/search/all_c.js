@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['plate_0',['plate',['../structplate.html',1,'']]],
-  ['plate_2ehpp_1',['plate.hpp',['../plate_8hpp.html',1,'']]],
-  ['poisson_2',['Poisson',['../class_distributions_1_1_poisson.html',1,'Distributions']]],
-  ['pp_5ft_3',['pp_t',['../effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084',1,'effects.hpp']]],
-  ['proposal_4',['Proposal',['../struct_proposal.html',1,'']]]
+  ['observe_0',['observe',['../record_8hpp_aa89d6abad2f9b42055af844b453b589f.html#aa89d6abad2f9b42055af844b453b589f',1,'observe(std::string address, D dist, V value):&#160;record.hpp'],['../record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a',1,'observe(record_t&lt; Ts... &gt; &amp;record, std::string address, D dist, V value):&#160;record.hpp']]]
 ];

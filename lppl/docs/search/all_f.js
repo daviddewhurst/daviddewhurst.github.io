@@ -1,13 +1,9 @@
 var searchData=
 [
-  ['sample_0',['sample',['../structeval__collection__t_a601d4b7ab63ceae469fda6f48f51ccdc.html#a601d4b7ab63ceae469fda6f48f51ccdc',1,'eval_collection_t::sample()'],['../record_8hpp_a7bc0be6c04bcca65c3767d66962c8ede.html#a7bc0be6c04bcca65c3767d66962c8ede',1,'sample(std::string address, D dist, RNG &amp;rng):&#160;record.hpp'],['../record_8hpp_a991ef05f16016c5590133610f642891b.html#a991ef05f16016c5590133610f642891b',1,'sample(record_t&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng):&#160;record.hpp']]],
-  ['static_5fplate_1',['static_plate',['../structstatic__plate.html',1,'static_plate&lt; D, N &gt;'],['../structstatic__plate_af37c8514342a8de1afb02c177aea4aa4.html#af37c8514342a8de1afb02c177aea4aa4',1,'static_plate::static_plate()']]],
-  ['stddistribution_2',['StdDistribution',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20double_2c_20std_3a_3agamma_5fdistribution_3c_20double_20_3e_20_3e_3',['StdDistribution&lt; double, std::gamma_distribution&lt; double &gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20double_2c_20std_3a_3anormal_5fdistribution_3c_3e_20_3e_4',['StdDistribution&lt; double, std::normal_distribution&lt;&gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20double_2c_20std_3a_3auniform_5freal_5fdistribution_3c_3e_20_3e_5',['StdDistribution&lt; double, std::uniform_real_distribution&lt;&gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20int_2c_20std_3a_3auniform_5fint_5fdistribution_3c_3e_20_3e_6',['StdDistribution&lt; int, std::uniform_int_distribution&lt;&gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20unsigned_20long_2c_20std_3a_3adiscrete_5fdistribution_3c_20int_20_3e_20_3e_7',['StdDistribution&lt; unsigned long, std::discrete_distribution&lt; int &gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['stddistribution_3c_20unsigned_2c_20std_3a_3apoisson_5fdistribution_3c_20unsigned_20_3e_20_3e_8',['StdDistribution&lt; unsigned, std::poisson_distribution&lt; unsigned &gt; &gt;',['../class_distributions_1_1_std_distribution.html',1,'Distributions']]],
-  ['string_9',['string',['../class_distributions_1_1_normal_ae7d66348dcedf935eb152114df126ce7.html#ae7d66348dcedf935eb152114df126ce7',1,'Distributions::Normal::string()'],['../class_distributions_1_1_categorical_a827dd45381f02728bea822649096b208.html#a827dd45381f02728bea822649096b208',1,'Distributions::Categorical::string()'],['../class_distributions_1_1_gamma_a40d8a81c41dc8be6cf3abedfd5da11d8.html#a40d8a81c41dc8be6cf3abedfd5da11d8',1,'Distributions::Gamma::string()'],['../structnode__t_a14525c58d635aea01e0745499219e557.html#a14525c58d635aea01e0745499219e557',1,'node_t::string()']]]
+  ['record_2ehpp_0',['record.hpp',['../record_8hpp.html',1,'']]],
+  ['record_5finterp_5ft_1',['record_interp_t',['../record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b',1,'record.hpp']]],
+  ['record_5ft_2',['record_t',['../structrecord__t.html',1,'']]],
+  ['record_5ft_3c_20ts_2e_2e_2e_20_3e_3',['record_t&lt; Ts... &gt;',['../structrecord__t.html',1,'']]],
+  ['replay_4',['replay',['../effects_8hpp_a677a422f53278f701ebdd098c7085603.html#a677a422f53278f701ebdd098c7085603',1,'replay(pp_t&lt; I, O, Ts... &gt; &amp;f):&#160;effects.hpp'],['../effects_8hpp_a5c2f87c584994d4c2ae5a7df9cfee19d.html#a5c2f87c584994d4c2ae5a7df9cfee19d',1,'replay(pp_t&lt; I, O, Ts... &gt; &amp;f, std::string address, V value):&#160;effects.hpp']]],
+  ['rng_2ehpp_5',['rng.hpp',['../rng_8hpp.html',1,'']]]
 ];
