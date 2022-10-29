@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.5.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.0</span>
    </div>
   </td>
  </tr>
@@ -99,16 +99,16 @@ $(document).ready(function(){initNavTree('class_queryer.html',''); initResizable
 <p>Interface to all querying mechanisms for sample-based inference (and possibly other inference algorithms). Much computation that is associated with inference is implemented by subclasses of <a class="el" href="class_queryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a> (rather than in inference algorithms themselves, as is often done).  
  <a href="class_queryer.html#details">More...</a></p>
 
-<p><code>#include &lt;query.hpp&gt;</code></p>
+<p><code>#include &quot;query.hpp&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)=0</td></tr>
-<tr class="memdesc:a9f1340e43b14ad0da03b5a51c5a38717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">More...</a><br /></td></tr>
-<tr class="separator:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc4cad1eebb8f9911809f5630a2e14b5"><td class="memItemLeft" align="right" valign="top">virtual V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_queryer_acc4cad1eebb8f9911809f5630a2e14b5.html#acc4cad1eebb8f9911809f5630a2e14b5">emit</a> ()=0</td></tr>
 <tr class="memdesc:acc4cad1eebb8f9911809f5630a2e14b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query.  <a href="class_queryer_acc4cad1eebb8f9911809f5630a2e14b5.html#acc4cad1eebb8f9911809f5630a2e14b5">More...</a><br /></td></tr>
 <tr class="separator:acc4cad1eebb8f9911809f5630a2e14b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)=0</td></tr>
+<tr class="memdesc:a9f1340e43b14ad0da03b5a51c5a38717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">More...</a><br /></td></tr>
+<tr class="separator:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename V, typename O, typename... Ts&gt;<br />

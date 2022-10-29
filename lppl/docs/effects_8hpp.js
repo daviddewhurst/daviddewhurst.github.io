@@ -1,6 +1,5 @@
 var effects_8hpp =
 [
-    [ "Dists< D >", "struct_dists.html", null ],
     [ "pp_t", "effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084", null ],
     [ "block", "effects_8hpp_a8ecca98390102198148e31ab8f853fab.html#a8ecca98390102198148e31ab8f853fab", null ],
     [ "block_observe", "effects_8hpp_a6ad3c007520eec8eae71e2054c3a8ec3.html#a6ad3c007520eec8eae71e2054c3a8ec3", null ],

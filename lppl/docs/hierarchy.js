@@ -1,6 +1,5 @@
 var hierarchy =
 [
-    [ "Dists< D >", "struct_dists.html", null ],
     [ "eval_collection_t< O, Ts >", "structeval__collection__t.html", null ],
     [ "Distributions::Generate< V >", "class_distributions_1_1_generate.html", [
       [ "Distributions::Distribution< unsigned long >", "class_distributions_1_1_distribution.html", null ],
@@ -56,7 +55,7 @@ var hierarchy =
       [ "shared_static_plate< D, N >", "structshared__static__plate.html", null ],
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
     ] ],
-    [ "Proposal< I, D_I, D_O >", "struct_proposal.html", null ],
+    [ "proposal< Out >", "structproposal.html", null ],
     [ "Queryer< V, O, Ts >", "class_queryer.html", null ],
     [ "Queryer< double, O, Ts... >", "class_queryer.html", [
       [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", null ]

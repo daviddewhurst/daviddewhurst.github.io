@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['observe_0',['observe',['../record_8hpp_aa89d6abad2f9b42055af844b453b589f.html#aa89d6abad2f9b42055af844b453b589f',1,'observe(std::string address, D dist, V value):&#160;record.hpp'],['../record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a',1,'observe(record_t&lt; Ts... &gt; &amp;record, std::string address, D dist, V value):&#160;record.hpp']]]
+  ['normal_0',['Normal',['../class_distributions_1_1_normal_a99d5b8d87b1f78ce532371562f64c50f.html#a99d5b8d87b1f78ce532371562f64c50f',1,'Distributions::Normal::Normal(double loc, double scale)'],['../class_distributions_1_1_normal_a81bc262db5fed1e0aeb3de9ef1fde6fd.html#a81bc262db5fed1e0aeb3de9ef1fde6fd',1,'Distributions::Normal::Normal(double loc)'],['../class_distributions_1_1_normal_af62e51ec40dc2eedc3b9ca49ebdc7197.html#af62e51ec40dc2eedc3b9ca49ebdc7197',1,'Distributions::Normal::Normal()']]]
 ];

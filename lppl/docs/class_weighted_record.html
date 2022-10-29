@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.5.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.0</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('class_weighted_record.html',''); initR
 <p>A collection of weighted records. This is the "traditional" empirical posterior distribution as implemented by many trace-based probabilistic programming languages. The memory use of this object scales as O(num_samples).  
  <a href="class_weighted_record.html#details">More...</a></p>
 
-<p><code>#include &lt;query.hpp&gt;</code></p>
+<p><code>#include &quot;query.hpp&quot;</code></p>
 <div class="dynheader">
 Inheritance diagram for WeightedRecord&lt; typename, O, Ts &gt;:</div>
 <div class="dyncontent">
@@ -114,39 +114,39 @@ Inheritance diagram for WeightedRecord&lt; typename, O, Ts &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a68e1849f45d1543e88ace9f9e5c1a4da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weighted_record_a68e1849f45d1543e88ace9f9e5c1a4da.html#a68e1849f45d1543e88ace9f9e5c1a4da">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="memdesc:a68e1849f45d1543e88ace9f9e5c1a4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="class_weighted_record_a68e1849f45d1543e88ace9f9e5c1a4da.html#a68e1849f45d1543e88ace9f9e5c1a4da">More...</a><br /></td></tr>
-<tr class="separator:a68e1849f45d1543e88ace9f9e5c1a4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58eebda3a18e1344d4d7a3b3359700a3"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="structeval__collection__t.html">eval_collection_t</a>&lt; O, Ts... &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weighted_record_a58eebda3a18e1344d4d7a3b3359700a3.html#a58eebda3a18e1344d4d7a3b3359700a3">emit</a> ()</td></tr>
 <tr class="memdesc:a58eebda3a18e1344d4d7a3b3359700a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query.  <a href="class_weighted_record_a58eebda3a18e1344d4d7a3b3359700a3.html#a58eebda3a18e1344d4d7a3b3359700a3">More...</a><br /></td></tr>
 <tr class="separator:a58eebda3a18e1344d4d7a3b3359700a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)=0</td></tr>
-<tr class="memdesc:a9f1340e43b14ad0da03b5a51c5a38717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">More...</a><br /></td></tr>
-<tr class="separator:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e1849f45d1543e88ace9f9e5c1a4da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_weighted_record_a68e1849f45d1543e88ace9f9e5c1a4da.html#a68e1849f45d1543e88ace9f9e5c1a4da">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memdesc:a68e1849f45d1543e88ace9f9e5c1a4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="class_weighted_record_a68e1849f45d1543e88ace9f9e5c1a4da.html#a68e1849f45d1543e88ace9f9e5c1a4da">More...</a><br /></td></tr>
+<tr class="separator:a68e1849f45d1543e88ace9f9e5c1a4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc4cad1eebb8f9911809f5630a2e14b5"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="structeval__collection__t.html">eval_collection_t</a>&lt; O, Ts... &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_queryer_acc4cad1eebb8f9911809f5630a2e14b5.html#acc4cad1eebb8f9911809f5630a2e14b5">emit</a> ()=0</td></tr>
 <tr class="memdesc:acc4cad1eebb8f9911809f5630a2e14b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query.  <a href="class_queryer_acc4cad1eebb8f9911809f5630a2e14b5.html#acc4cad1eebb8f9911809f5630a2e14b5">More...</a><br /></td></tr>
 <tr class="separator:acc4cad1eebb8f9911809f5630a2e14b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)=0</td></tr>
+<tr class="memdesc:a9f1340e43b14ad0da03b5a51c5a38717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="class_queryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">More...</a><br /></td></tr>
+<tr class="separator:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a883f0ace09926118fe71a630c0f14430"><td class="memItemLeft" align="right" valign="top"><a id="a883f0ace09926118fe71a630c0f14430" name="a883f0ace09926118fe71a630c0f14430"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
-<tr class="separator:a883f0ace09926118fe71a630c0f14430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c97697e89c50f0bbf17b6687c9cb085"><td class="memItemLeft" align="right" valign="top"><a id="a2c97697e89c50f0bbf17b6687c9cb085" name="a2c97697e89c50f0bbf17b6687c9cb085"></a>
-std::vector&lt; <a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>v</b></td></tr>
-<tr class="separator:a2c97697e89c50f0bbf17b6687c9cb085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0fe732e7aa98e6a6a2cf449155f25a"><td class="memItemLeft" align="right" valign="top"><a id="abf0fe732e7aa98e6a6a2cf449155f25a" name="abf0fe732e7aa98e6a6a2cf449155f25a"></a>
-std::vector&lt; O &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>o</b></td></tr>
-<tr class="separator:abf0fe732e7aa98e6a6a2cf449155f25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4024bed298a2d4471733b4e915d7c770"><td class="memItemLeft" align="right" valign="top"><a id="a4024bed298a2d4471733b4e915d7c770" name="a4024bed298a2d4471733b4e915d7c770"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>_lse_weights</b></td></tr>
-<tr class="separator:a4024bed298a2d4471733b4e915d7c770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3394e6ac3fc9f4c425a2ea47923a845"><td class="memItemLeft" align="right" valign="top"><a id="ac3394e6ac3fc9f4c425a2ea47923a845" name="ac3394e6ac3fc9f4c425a2ea47923a845"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>_alpha</b></td></tr>
 <tr class="separator:ac3394e6ac3fc9f4c425a2ea47923a845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4024bed298a2d4471733b4e915d7c770"><td class="memItemLeft" align="right" valign="top"><a id="a4024bed298a2d4471733b4e915d7c770" name="a4024bed298a2d4471733b4e915d7c770"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>_lse_weights</b></td></tr>
+<tr class="separator:a4024bed298a2d4471733b4e915d7c770"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a675a412e303d5088a97e0e65ac0ed4c2"><td class="memItemLeft" align="right" valign="top"><a id="a675a412e303d5088a97e0e65ac0ed4c2" name="a675a412e303d5088a97e0e65ac0ed4c2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>_r</b></td></tr>
 <tr class="separator:a675a412e303d5088a97e0e65ac0ed4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0fe732e7aa98e6a6a2cf449155f25a"><td class="memItemLeft" align="right" valign="top"><a id="abf0fe732e7aa98e6a6a2cf449155f25a" name="abf0fe732e7aa98e6a6a2cf449155f25a"></a>
+std::vector&lt; O &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>o</b></td></tr>
+<tr class="separator:abf0fe732e7aa98e6a6a2cf449155f25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c97697e89c50f0bbf17b6687c9cb085"><td class="memItemLeft" align="right" valign="top"><a id="a2c97697e89c50f0bbf17b6687c9cb085" name="a2c97697e89c50f0bbf17b6687c9cb085"></a>
+std::vector&lt; <a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>v</b></td></tr>
+<tr class="separator:a2c97697e89c50f0bbf17b6687c9cb085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883f0ace09926118fe71a630c0f14430"><td class="memItemLeft" align="right" valign="top"><a id="a883f0ace09926118fe71a630c0f14430" name="a883f0ace09926118fe71a630c0f14430"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>w</b></td></tr>
+<tr class="separator:a883f0ace09926118fe71a630c0f14430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>

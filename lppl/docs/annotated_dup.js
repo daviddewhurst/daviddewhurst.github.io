@@ -12,7 +12,6 @@ var annotated_dup =
       [ "StdDistribution", "class_distributions_1_1_std_distribution.html", null ],
       [ "Uniform", "class_distributions_1_1_uniform.html", null ]
     ] ],
-    [ "Dists", "struct_dists.html", null ],
     [ "eval_collection_t", "structeval__collection__t.html", "structeval__collection__t" ],
     [ "HLCategorical", "struct_h_l_categorical.html", null ],
     [ "HLGamma", "struct_h_l_gamma.html", null ],
@@ -22,7 +21,7 @@ var annotated_dup =
     [ "MetropolisState", "struct_metropolis_state.html", null ],
     [ "node_t", "structnode__t.html", "structnode__t" ],
     [ "plate", "structplate.html", null ],
-    [ "Proposal", "struct_proposal.html", null ],
+    [ "proposal", "structproposal.html", "structproposal" ],
     [ "Queryer", "class_queryer.html", "class_queryer" ],
     [ "QueryerCollection", "class_queryer_collection.html", "class_queryer_collection" ],
     [ "record_t", "structrecord__t.html", "structrecord__t" ],
