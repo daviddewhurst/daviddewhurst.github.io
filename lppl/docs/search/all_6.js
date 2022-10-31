@@ -2,7 +2,7 @@ var searchData=
 [
   ['gamma_0',['Gamma',['../class_distributions_1_1_gamma.html',1,'Distributions::Gamma'],['../class_distributions_1_1_gamma_a48d14d6e84f47cbcda99c0ae08ad91e8.html#a48d14d6e84f47cbcda99c0ae08ad91e8',1,'Distributions::Gamma::Gamma(double k, double theta)'],['../class_distributions_1_1_gamma_a6951e8ce6b9bf95eee10db8bbd28e6b5.html#a6951e8ce6b9bf95eee10db8bbd28e6b5',1,'Distributions::Gamma::Gamma(double theta)'],['../class_distributions_1_1_gamma_ac3b6230f7c4efa79acf33666c02354b8.html#ac3b6230f7c4efa79acf33666c02354b8',1,'Distributions::Gamma::Gamma()']]],
   ['generate_1',['Generate',['../class_distributions_1_1_generate.html',1,'Distributions']]],
-  ['generate_2',['generate',['../class_distributions_1_1_generate_a918aa657dfceefc99017bf98e359bdc9.html#a918aa657dfceefc99017bf98e359bdc9',1,'Distributions::Generate::generate()'],['../structproposal_ab13686a8443f02d0a58dbe5772ed3aad.html#ab13686a8443f02d0a58dbe5772ed3aad',1,'proposal::generate()']]],
+  ['generate_2',['generate',['../class_distributions_1_1_generate_a918aa657dfceefc99017bf98e359bdc9.html#a918aa657dfceefc99017bf98e359bdc9',1,'Distributions::Generate::generate()'],['../structproposal_a0285332f40c327a56fd61e06d132e76d.html#a0285332f40c327a56fd61e06d132e76d',1,'proposal::generate()']]],
   ['generate_3c_20double_20_3e_3',['Generate&lt; double &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]],
   ['generate_3c_20int_20_3e_4',['Generate&lt; int &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]],
   ['generate_3c_20unsigned_20_3e_5',['Generate&lt; unsigned &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]],
