@@ -6,7 +6,7 @@ description: about
 
 #### Description
 
-+ [Husband](./photos/wife.jpg) and [father](./photos/kids-chairs.jpg)
++ [Husband](./photos/wife.jpg) and [father](./photos/kids-weird.jpg)
 + Senior scientist at [Charles River Analytics](https://cra.com/)
 + Former lead data scientist at [MassMutual](https://datascience.massmutual.com/) and graduate fellow at [MITRE](https://compfi.org/).
 
