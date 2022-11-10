@@ -68,6 +68,7 @@ var hierarchy =
     ] ],
     [ "record_t< Ts >", "structrecord__t.html", null ],
     [ "record_t< Ts... >", "structrecord__t.html", null ],
+    [ "Score< I >", "struct_score.html", null ],
     [ "XOR64PRNG", "struct_x_o_r64_p_r_n_g.html", null ],
     [ "XOR64State", "struct_x_o_r64_state.html", null ]
 ];
