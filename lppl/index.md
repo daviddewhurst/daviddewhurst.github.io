@@ -12,7 +12,7 @@ There's lots of [documentation](./docs/index.html)! You can also download the la
 
 ### Examples
 
-Runnable examples are in the `examples` directory in the source. These will be slowly migrated to the `lppl-examples` repository [here](https://gitlab.com/drdewhurst/lppl-examples/-/tree/master/), which also includes visualizations.
+Go [here](./examples/index.md).
 
 ### Inference
 
