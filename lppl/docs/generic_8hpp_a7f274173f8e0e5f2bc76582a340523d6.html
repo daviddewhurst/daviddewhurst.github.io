@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -100,7 +107,7 @@ template&lt;typename I , typename O , typename V , template&lt; class, class, cl
         <tr>
           <td class="memname">V importance_sampling </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
         </tr>
         <tr>
@@ -136,13 +143,14 @@ template&lt;typename I , typename O , typename V , template&lt; class, class, cl
 </div><div class="memdoc">
 
 <p>Importance sampling using a generic proposal distribution. </p>
+<p >Suppose the generative model factors as \( p(x,z) = p(x|z)p(z) \). The proposal distribution has density \( q(z|x) \). Then the weights passed to the queryer are \( \log w = \log p(x|z) + \log p(z) - \log q(z|x)\).</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">I</td><td>The input type of the program on which to perform inference </td></tr>
     <tr><td class="paramname">O</td><td>The output type of the program on which to perform inference </td></tr>
     <tr><td class="paramname">V</td><td>The type emitted by the queryer </td></tr>
     <tr><td class="paramname">Q</td><td>The queryer type </td></tr>
-    <tr><td class="paramname">P</td><td>The proposal type </td></tr>
+    <tr><td class="paramname">P</td><td>The proposal type. A type is a proposal type if calling operator() with zero arguments returns a record of type <a class="el" href="structrecord__t.html">record_t&lt;Ts...&gt;</a> </td></tr>
     <tr><td class="paramname">Ts</td><td>The collection of types used in the probabilistic program </td></tr>
   </table>
   </dd>
@@ -157,7 +165,7 @@ template&lt;typename I , typename O , typename V , template&lt; class, class, cl
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>V the resutl of calling the queryer's emit method </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>V the result of calling the queryer's emit method </dd></dl>
 
 </div>
 </div>

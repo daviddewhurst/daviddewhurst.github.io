@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['hlcategorical_0',['HLCategorical',['../struct_h_l_categorical.html',1,'']]],
-  ['hlgamma_1',['HLGamma',['../struct_h_l_gamma.html',1,'']]],
-  ['hlnormal_2',['HLNormal',['../struct_h_l_normal.html',1,'']]]
+  ['inf_5foptions_5ft_0',['inf_options_t',['../structinf__options__t.html',1,'']]]
 ];

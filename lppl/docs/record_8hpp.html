@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -117,7 +124,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A fundamental data structure that includes address, distribution, sampled value type, score, whether the value was observed, and a markov process over interpretations.  <a href="structnode__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord__t.html">record_t&lt; Ts &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A fundamental data structure that holds an unordered_map of addresses to nodes, an insertion order, and a record-level interpretation.  <a href="structrecord__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A fundamental data structure that holds a mapping from addresses to nodes, an insertion order, and a record-level interpretation.  <a href="structrecord__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -126,6 +133,10 @@ Typedefs</h2></td></tr>
 template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a615c3e26ba1e9b2d5fe28023d218544e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>node_map_t</b> = std::unordered_map&lt; std::string, var_node_t&lt; Ts... &gt; &gt;</td></tr>
 <tr class="separator:a615c3e26ba1e9b2d5fe28023d218544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf9cf3c04bf7ff49b58b94a963be084"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:afdf9cf3c04bf7ff49b58b94a963be084"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a> = std::function&lt; O(<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;, I)&gt;</td></tr>
+<tr class="memdesc:afdf9cf3c04bf7ff49b58b94a963be084"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shorthand for probabilistic program type. Probabilistic programs are callables that take a single input of type I, output a single value of type O, and contain an arbitrary positive number of distributions.  <a href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">More...</a><br /></td></tr>
+<tr class="separator:afdf9cf3c04bf7ff49b58b94a963be084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a05e8ce47737ce51bc5dacea733c482"><td class="memTemplParams" colspan="2"><a id="a0a05e8ce47737ce51bc5dacea733c482" name="a0a05e8ce47737ce51bc5dacea733c482"></a>
 template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a0a05e8ce47737ce51bc5dacea733c482"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>var_node_t</b> = std::variant&lt; <a class="el" href="structnode__t.html">node_t</a>&lt; Ts &gt;... &gt;</td></tr>
@@ -200,11 +211,11 @@ template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
 <tr class="separator:a61743a702b68a441e12af956e81d339a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a979a768437d370f2fad974a72cb86b9a"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a979a768437d370f2fad974a72cb86b9a"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a979a768437d370f2fad974a72cb86b9a.html#a979a768437d370f2fad974a72cb86b9a">loglikelihood</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;record)</td></tr>
-<tr class="memdesc:a979a768437d370f2fad974a72cb86b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the cumulative log-likelihood of the record. The log-likelihood is defined as the sum of the log probability of all nodes with obs = true.  <a href="record_8hpp_a979a768437d370f2fad974a72cb86b9a.html#a979a768437d370f2fad974a72cb86b9a">More...</a><br /></td></tr>
+<tr class="memdesc:a979a768437d370f2fad974a72cb86b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the cumulative log-likelihood of the record, \( \log p(x|z) \). The log-likelihood is defined as the sum of the log probability of all nodes with obs = true.  <a href="record_8hpp_a979a768437d370f2fad974a72cb86b9a.html#a979a768437d370f2fad974a72cb86b9a">More...</a><br /></td></tr>
 <tr class="separator:a979a768437d370f2fad974a72cb86b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbd8b330bb1d078949c82bf96615ed0"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a2cbd8b330bb1d078949c82bf96615ed0"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a2cbd8b330bb1d078949c82bf96615ed0.html#a2cbd8b330bb1d078949c82bf96615ed0">logprob</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;record)</td></tr>
-<tr class="memdesc:a2cbd8b330bb1d078949c82bf96615ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the cumulative log probability of the record.  <a href="record_8hpp_a2cbd8b330bb1d078949c82bf96615ed0.html#a2cbd8b330bb1d078949c82bf96615ed0">More...</a><br /></td></tr>
+<tr class="memdesc:a2cbd8b330bb1d078949c82bf96615ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the cumulative log probability of the record, \( \log p(x, z) \).  <a href="record_8hpp_a2cbd8b330bb1d078949c82bf96615ed0.html#a2cbd8b330bb1d078949c82bf96615ed0">More...</a><br /></td></tr>
 <tr class="separator:a2cbd8b330bb1d078949c82bf96615ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a547ca9c02e881d0db9fa4ec397a7f63a"><td class="memTemplParams" colspan="2">template&lt;typename D , typename V , typename... Ts&gt; </td></tr>
 <tr class="memitem:a547ca9c02e881d0db9fa4ec397a7f63a"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a">observe</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;record, std::string address, D dist, V value)</td></tr>
@@ -216,7 +227,7 @@ template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
 <tr class="separator:aa89d6abad2f9b42055af844b453b589f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a991ef05f16016c5590133610f642891b"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
 <tr class="memitem:a991ef05f16016c5590133610f642891b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a991ef05f16016c5590133610f642891b.html#a991ef05f16016c5590133610f642891b">sample</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="memdesc:a991ef05f16016c5590133610f642891b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a value into a node stored at the address by drawing a value from the specified distribution. Returns the underlying value (the .value attribute) of the created node.  <a href="record_8hpp_a991ef05f16016c5590133610f642891b.html#a991ef05f16016c5590133610f642891b">More...</a><br /></td></tr>
+<tr class="memdesc:a991ef05f16016c5590133610f642891b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a value into a node stored at the address by drawing a value from the specified distribution. Returns the underlying value of the created node.  <a href="record_8hpp_a991ef05f16016c5590133610f642891b.html#a991ef05f16016c5590133610f642891b">More...</a><br /></td></tr>
 <tr class="separator:a991ef05f16016c5590133610f642891b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc0be6c04bcca65c3767d66962c8ede"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG &gt; </td></tr>
 <tr class="memitem:a7bc0be6c04bcca65c3767d66962c8ede"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a7bc0be6c04bcca65c3767d66962c8ede.html#a7bc0be6c04bcca65c3767d66962c8ede">sample</a> (std::string address, D dist, RNG &amp;rng)</td></tr>

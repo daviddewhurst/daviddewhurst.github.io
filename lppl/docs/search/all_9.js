@@ -10,5 +10,6 @@ var searchData=
   ['logprob_3c_20int_20_3e_7',['LogProb&lt; int &gt;',['../class_distributions_1_1_log_prob.html',1,'Distributions']]],
   ['logprob_3c_20unsigned_20_3e_8',['LogProb&lt; unsigned &gt;',['../class_distributions_1_1_log_prob.html',1,'Distributions']]],
   ['logprob_3c_20unsigned_20long_20_3e_9',['LogProb&lt; unsigned long &gt;',['../class_distributions_1_1_log_prob.html',1,'Distributions']]],
-  ['logsumexp_5fstreaming_10',['logsumexp_streaming',['../class_weighted_record_a80e973c5eae8f8df28a70e1a2f5212af.html#a80e973c5eae8f8df28a70e1a2f5212af',1,'WeightedRecord::logsumexp_streaming()'],['../class_weighted_mean_a80e973c5eae8f8df28a70e1a2f5212af.html#a80e973c5eae8f8df28a70e1a2f5212af',1,'WeightedMean::logsumexp_streaming()'],['../query_8hpp_a80e973c5eae8f8df28a70e1a2f5212af.html#a80e973c5eae8f8df28a70e1a2f5212af',1,'logsumexp_streaming():&#160;query.hpp']]]
+  ['logsumexp_5fstreaming_10',['logsumexp_streaming',['../class_weighted_a80e973c5eae8f8df28a70e1a2f5212af.html#a80e973c5eae8f8df28a70e1a2f5212af',1,'Weighted::logsumexp_streaming()'],['../query_8hpp_a80e973c5eae8f8df28a70e1a2f5212af.html#a80e973c5eae8f8df28a70e1a2f5212af',1,'logsumexp_streaming():&#160;query.hpp']]],
+  ['lse_5fweights_11',['lse_weights',['../class_weighted_ad6309297c201988a3683e89ee2c8e768.html#ad6309297c201988a3683e89ee2c8e768',1,'Weighted']]]
 ];

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -102,12 +109,12 @@ $(document).ready(function(){initNavTree('generic_8hpp.html',''); initResizable(
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7f274173f8e0e5f2bc76582a340523d6"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename P , typename... Ts&gt; </td></tr>
-<tr class="memitem:a7f274173f8e0e5f2bc76582a340523d6"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6">importance_sampling</a> (<a class="el" href="effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, P &amp;<a class="el" href="structproposal.html">proposal</a>, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memitem:a7f274173f8e0e5f2bc76582a340523d6"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6">importance_sampling</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, P &amp;<a class="el" href="structproposal.html">proposal</a>, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="memdesc:a7f274173f8e0e5f2bc76582a340523d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importance sampling using a generic proposal distribution.  <a href="generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6">More...</a><br /></td></tr>
 <tr class="separator:a7f274173f8e0e5f2bc76582a340523d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba90dc2794a0819c6f52954338bb7557"><td class="memTemplParams" colspan="2"><a id="aba90dc2794a0819c6f52954338bb7557" name="aba90dc2794a0819c6f52954338bb7557"></a>
 template&lt;typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename P , typename... Ts&gt; </td></tr>
-<tr class="memitem:aba90dc2794a0819c6f52954338bb7557"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>is_step</b> (<a class="el" href="effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, P &amp;<a class="el" href="structproposal.html">proposal</a>, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memitem:aba90dc2794a0819c6f52954338bb7557"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>is_step</b> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, P &amp;<a class="el" href="structproposal.html">proposal</a>, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="separator:aba90dc2794a0819c6f52954338bb7557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

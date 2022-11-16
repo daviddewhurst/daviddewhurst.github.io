@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['metro_5foptions_5ft_0',['metro_options_t',['../structmetro__options__t.html',1,'']]],
-  ['metropolisstate_1',['MetropolisState',['../struct_metropolis_state.html',1,'']]]
+  ['node_5ft_0',['node_t',['../structnode__t.html',1,'']]],
+  ['normal_1',['Normal',['../class_distributions_1_1_normal.html',1,'Distributions']]]
 ];

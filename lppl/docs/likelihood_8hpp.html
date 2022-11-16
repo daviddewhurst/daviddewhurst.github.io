@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -111,12 +118,12 @@ $(document).ready(function(){initNavTree('likelihood_8hpp.html',''); initResizab
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a131d1bac1d8a34eeb5d39bd4cccf27f4"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename... Ts&gt; </td></tr>
-<tr class="memitem:a131d1bac1d8a34eeb5d39bd4cccf27f4"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="likelihood_8hpp_a131d1bac1d8a34eeb5d39bd4cccf27f4.html#a131d1bac1d8a34eeb5d39bd4cccf27f4">likelihood_weighting</a> (<a class="el" href="effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memitem:a131d1bac1d8a34eeb5d39bd4cccf27f4"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="likelihood_8hpp_a131d1bac1d8a34eeb5d39bd4cccf27f4.html#a131d1bac1d8a34eeb5d39bd4cccf27f4">likelihood_weighting</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="memdesc:a131d1bac1d8a34eeb5d39bd4cccf27f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importance sampling using the prior distribution as the proposal.  <a href="likelihood_8hpp_a131d1bac1d8a34eeb5d39bd4cccf27f4.html#a131d1bac1d8a34eeb5d39bd4cccf27f4">More...</a><br /></td></tr>
 <tr class="separator:a131d1bac1d8a34eeb5d39bd4cccf27f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5728f7da741b81807c36d24f66582728"><td class="memTemplParams" colspan="2"><a id="a5728f7da741b81807c36d24f66582728" name="a5728f7da741b81807c36d24f66582728"></a>
 template&lt;typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename... Ts&gt; </td></tr>
-<tr class="memitem:a5728f7da741b81807c36d24f66582728"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lw_step</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, <a class="el" href="effects_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memitem:a5728f7da741b81807c36d24f66582728"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lw_step</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, <a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="separator:a5728f7da741b81807c36d24f66582728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

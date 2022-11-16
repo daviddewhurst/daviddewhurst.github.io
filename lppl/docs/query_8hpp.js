@@ -1,9 +1,11 @@
 var query_8hpp =
 [
-    [ "eval_collection_t< O, Ts >", "structeval__collection__t.html", "structeval__collection__t" ],
+    [ "collection_t", "structcollection__t.html", null ],
     [ "inf_options_t", "structinf__options__t.html", null ],
     [ "Queryer< V, O, Ts >", "class_queryer.html", "class_queryer" ],
     [ "QueryerCollection< V, O, Q, Ts >", "class_queryer_collection.html", "class_queryer_collection" ],
+    [ "record_collection_t< O, Ts >", "structrecord__collection__t.html", "structrecord__collection__t" ],
+    [ "Weighted< V, O, Ts >", "class_weighted.html", "class_weighted" ],
     [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", "class_weighted_mean" ],
     [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", "class_weighted_record" ],
     [ "logsumexp_streaming", "query_8hpp_a80e973c5eae8f8df28a70e1a2f5212af.html#a80e973c5eae8f8df28a70e1a2f5212af", null ],

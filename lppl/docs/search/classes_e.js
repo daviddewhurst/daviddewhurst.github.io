@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['weightedmean_0',['WeightedMean',['../class_weighted_mean.html',1,'']]],
-  ['weightedrecord_1',['WeightedRecord',['../class_weighted_record.html',1,'']]]
+  ['xor64prng_0',['XOR64PRNG',['../struct_x_o_r64_p_r_n_g.html',1,'']]],
+  ['xor64state_1',['XOR64State',['../struct_x_o_r64_state.html',1,'']]]
 ];

@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -107,7 +114,8 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Computes the cumulative log probability of the record. </p>
+<p>Computes the cumulative log probability of the record, \( \log p(x, z) \). </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>reimplement as instance of generic fold</dd></dl>
 
 </div>
 </div>

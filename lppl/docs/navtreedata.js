@@ -32,6 +32,7 @@ var NAVTREE =
       [ "Examples", "md__r_e_a_d_m_e.html#autotoc_md4", null ],
       [ "License etc.", "md__r_e_a_d_m_e.html#autotoc_md5", null ]
     ] ],
+    [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

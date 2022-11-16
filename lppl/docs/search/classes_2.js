@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['eval_5fcollection_5ft_0',['eval_collection_t',['../structeval__collection__t.html',1,'']]]
+  ['gamma_0',['Gamma',['../class_distributions_1_1_gamma.html',1,'Distributions']]],
+  ['generate_1',['Generate',['../class_distributions_1_1_generate.html',1,'Distributions']]],
+  ['generate_3c_20double_20_3e_2',['Generate&lt; double &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]],
+  ['generate_3c_20int_20_3e_3',['Generate&lt; int &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]],
+  ['generate_3c_20unsigned_20_3e_4',['Generate&lt; unsigned &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]],
+  ['generate_3c_20unsigned_20long_20_3e_5',['Generate&lt; unsigned long &gt;',['../class_distributions_1_1_generate.html',1,'Distributions']]]
 ];

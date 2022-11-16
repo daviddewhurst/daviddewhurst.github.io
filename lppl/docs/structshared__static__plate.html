@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -96,7 +103,7 @@ $(document).ready(function(){initNavTree('structshared__static__plate.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a generic shared pointer plated distribution (i.e., product of independent distributions with equal law)  
+<p>Defines a generic shared pointer plated distribution.  
  <a href="structshared__static__plate.html#details">More...</a></p>
 
 <p><code>#include &quot;plate.hpp&quot;</code></p>
@@ -116,6 +123,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5348668cbac09115097bea068a00b6cd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structshared__static__plate_a5348668cbac09115097bea068a00b6cd.html#a5348668cbac09115097bea068a00b6cd">shared_static_plate</a> (Ts... ts)</td></tr>
 <tr class="memdesc:a5348668cbac09115097bea068a00b6cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new shared pointer static plate.  <a href="structshared__static__plate_a5348668cbac09115097bea068a00b6cd.html#a5348668cbac09115097bea068a00b6cd">More...</a><br /></td></tr>
 <tr class="separator:a5348668cbac09115097bea068a00b6cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1ec85ad0e2686a11e99fad04442682"><td class="memItemLeft" align="right" valign="top"><a id="aba1ec85ad0e2686a11e99fad04442682" name="aba1ec85ad0e2686a11e99fad04442682"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>logprob</b> (std::array&lt; typename <a class="el" href="structplate.html">plate</a>&lt; D &gt;::DistValueType, N &gt; *value)</td></tr>
+<tr class="separator:aba1ec85ad0e2686a11e99fad04442682"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a960e6cb718f6732b6cdcc926544343dc"><td class="memItemLeft" align="right" valign="top"><a id="a960e6cb718f6732b6cdcc926544343dc" name="a960e6cb718f6732b6cdcc926544343dc"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>logprob</b> (std::shared_ptr&lt; std::array&lt; typename <a class="el" href="structplate.html">plate</a>&lt; D &gt;::DistValueType, N &gt; &gt; value)</td></tr>
 <tr class="separator:a960e6cb718f6732b6cdcc926544343dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +155,10 @@ D&#160;</td><td class="memItemRight" valign="bottom"><b>dist</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename D, size_t N&gt;<br />
-struct shared_static_plate&lt; D, N &gt;</div><p >Defines a generic shared pointer plated distribution (i.e., product of independent distributions with equal law) </p>
+struct shared_static_plate&lt; D, N &gt;</div><p >Defines a generic shared pointer plated distribution. </p>
+<ul>
+<li>Suppose that \( z \sim p(z|D) \). Then this struct defines the distribution \( z_1,...,z_N \sim \prod_{1\leq n \leq N} p(z_n|D)\).</li>
+</ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">D</td><td>the underlying distribution type </td></tr>

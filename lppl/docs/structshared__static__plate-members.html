@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -98,10 +105,11 @@ $(document).ready(function(){initNavTree('structshared__static__plate.html','');
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>dist</b> (defined in <a class="el" href="structplate.html">plate&lt; D &gt;</a>)</td><td class="entry"><a class="el" href="structplate.html">plate&lt; D &gt;</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>DistValueType</b> typedef (defined in <a class="el" href="structplate.html">plate&lt; D &gt;</a>)</td><td class="entry"><a class="el" href="structplate.html">plate&lt; D &gt;</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>logprob</b>(std::shared_ptr&lt; std::array&lt; typename plate&lt; D &gt;::DistValueType, N &gt; &gt; value) (defined in <a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a>)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>plate</b>(Ts... ts) (defined in <a class="el" href="structplate.html">plate&lt; D &gt;</a>)</td><td class="entry"><a class="el" href="structplate.html">plate&lt; D &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>sample</b>(RNG &amp;rng) (defined in <a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a>)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structshared__static__plate_a5348668cbac09115097bea068a00b6cd.html#a5348668cbac09115097bea068a00b6cd">shared_static_plate</a>(Ts... ts)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>string</b>() const (defined in <a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a>)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>logprob</b>(std::array&lt; typename plate&lt; D &gt;::DistValueType, N &gt; *value) (defined in <a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a>)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>plate</b>(Ts... ts) (defined in <a class="el" href="structplate.html">plate&lt; D &gt;</a>)</td><td class="entry"><a class="el" href="structplate.html">plate&lt; D &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>sample</b>(RNG &amp;rng) (defined in <a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a>)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structshared__static__plate_a5348668cbac09115097bea068a00b6cd.html#a5348668cbac09115097bea068a00b6cd">shared_static_plate</a>(Ts... ts)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>string</b>() const (defined in <a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a>)</td><td class="entry"><a class="el" href="structshared__static__plate.html">shared_static_plate&lt; D, N &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

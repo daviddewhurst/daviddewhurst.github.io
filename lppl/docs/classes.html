@@ -16,6 +16,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -25,7 +32,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.6.3</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
    </div>
   </td>
  </tr>
@@ -92,54 +99,51 @@ $(document).ready(function(){initNavTree('classes.html',''); initResizable(); })
   <div class="headertitle"><div class="title">Class Index</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="qindex"><a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_E">E</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_Q">Q</a>&#160;|&#160;<a class="qindex" href="#letter_R">R</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_W">W</a>&#160;|&#160;<a class="qindex" href="#letter_X">X</a></div>
+<div class="qindex"><a class="qindex" href="#letter_C">C</a>&#160;|&#160;<a class="qindex" href="#letter_D">D</a>&#160;|&#160;<a class="qindex" href="#letter_G">G</a>&#160;|&#160;<a class="qindex" href="#letter_H">H</a>&#160;|&#160;<a class="qindex" href="#letter_I">I</a>&#160;|&#160;<a class="qindex" href="#letter_L">L</a>&#160;|&#160;<a class="qindex" href="#letter_M">M</a>&#160;|&#160;<a class="qindex" href="#letter_N">N</a>&#160;|&#160;<a class="qindex" href="#letter_P">P</a>&#160;|&#160;<a class="qindex" href="#letter_Q">Q</a>&#160;|&#160;<a class="qindex" href="#letter_R">R</a>&#160;|&#160;<a class="qindex" href="#letter_S">S</a>&#160;|&#160;<a class="qindex" href="#letter_U">U</a>&#160;|&#160;<a class="qindex" href="#letter_W">W</a>&#160;|&#160;<a class="qindex" href="#letter_X">X</a></div>
 <div class="classindex">
 <dl class="classindex even">
 <dt class="alphachar"><a id="letter_C" name="letter_C">C</a></dt>
-<dd><a class="el" href="class_distributions_1_1_categorical.html">Categorical</a> (Distributions)</dd></dl>
+<dd><a class="el" href="class_distributions_1_1_categorical.html">Categorical</a> (Distributions)</dd><dd><a class="el" href="structcollection__t.html">collection_t</a></dd></dl>
 <dl class="classindex odd">
 <dt class="alphachar"><a id="letter_D" name="letter_D">D</a></dt>
 <dd><a class="el" href="class_distributions_1_1_discrete_uniform.html">DiscreteUniform</a> (Distributions)</dd><dd><a class="el" href="class_distributions_1_1_distribution.html">Distribution</a> (Distributions)</dd></dl>
 <dl class="classindex even">
-<dt class="alphachar"><a id="letter_E" name="letter_E">E</a></dt>
-<dd><a class="el" href="structeval__collection__t.html">eval_collection_t</a></dd></dl>
-<dl class="classindex odd">
 <dt class="alphachar"><a id="letter_G" name="letter_G">G</a></dt>
 <dd><a class="el" href="class_distributions_1_1_gamma.html">Gamma</a> (Distributions)</dd><dd><a class="el" href="class_distributions_1_1_generate.html">Generate</a> (Distributions)</dd></dl>
-<dl class="classindex even">
+<dl class="classindex odd">
 <dt class="alphachar"><a id="letter_H" name="letter_H">H</a></dt>
 <dd><a class="el" href="struct_h_l_categorical.html">HLCategorical</a></dd><dd><a class="el" href="struct_h_l_gamma.html">HLGamma</a></dd><dd><a class="el" href="struct_h_l_normal.html">HLNormal</a></dd></dl>
-<dl class="classindex odd">
+<dl class="classindex even">
 <dt class="alphachar"><a id="letter_I" name="letter_I">I</a></dt>
 <dd><a class="el" href="structinf__options__t.html">inf_options_t</a></dd></dl>
-<dl class="classindex even">
+<dl class="classindex odd">
 <dt class="alphachar"><a id="letter_L" name="letter_L">L</a></dt>
 <dd><a class="el" href="class_distributions_1_1_log_prob.html">LogProb</a> (Distributions)</dd></dl>
-<dl class="classindex odd">
+<dl class="classindex even">
 <dt class="alphachar"><a id="letter_M" name="letter_M">M</a></dt>
 <dd><a class="el" href="structmetro__options__t.html">metro_options_t</a></dd><dd><a class="el" href="struct_metropolis_state.html">MetropolisState</a></dd></dl>
-<dl class="classindex even">
+<dl class="classindex odd">
 <dt class="alphachar"><a id="letter_N" name="letter_N">N</a></dt>
 <dd><a class="el" href="structnode__t.html">node_t</a></dd><dd><a class="el" href="class_distributions_1_1_normal.html">Normal</a> (Distributions)</dd></dl>
-<dl class="classindex odd">
+<dl class="classindex even">
 <dt class="alphachar"><a id="letter_P" name="letter_P">P</a></dt>
 <dd><a class="el" href="structplate.html">plate</a></dd><dd><a class="el" href="class_distributions_1_1_poisson.html">Poisson</a> (Distributions)</dd><dd><a class="el" href="structproposal.html">proposal</a></dd></dl>
-<dl class="classindex even">
+<dl class="classindex odd">
 <dt class="alphachar"><a id="letter_Q" name="letter_Q">Q</a></dt>
 <dd><a class="el" href="class_queryer.html">Queryer</a></dd><dd><a class="el" href="class_queryer_collection.html">QueryerCollection</a></dd></dl>
-<dl class="classindex odd">
-<dt class="alphachar"><a id="letter_R" name="letter_R">R</a></dt>
-<dd><a class="el" href="structrecord__t.html">record_t</a></dd></dl>
 <dl class="classindex even">
+<dt class="alphachar"><a id="letter_R" name="letter_R">R</a></dt>
+<dd><a class="el" href="structrecord__collection__t.html">record_collection_t</a></dd><dd><a class="el" href="structrecord__t.html">record_t</a></dd></dl>
+<dl class="classindex odd">
 <dt class="alphachar"><a id="letter_S" name="letter_S">S</a></dt>
 <dd><a class="el" href="struct_score.html">Score</a></dd><dd><a class="el" href="structshared__static__plate.html">shared_static_plate</a></dd><dd><a class="el" href="structstatic__plate.html">static_plate</a></dd><dd><a class="el" href="class_distributions_1_1_std_distribution.html">StdDistribution</a> (Distributions)</dd></dl>
-<dl class="classindex odd">
+<dl class="classindex even">
 <dt class="alphachar"><a id="letter_U" name="letter_U">U</a></dt>
 <dd><a class="el" href="class_distributions_1_1_uniform.html">Uniform</a> (Distributions)</dd></dl>
-<dl class="classindex even">
-<dt class="alphachar"><a id="letter_W" name="letter_W">W</a></dt>
-<dd><a class="el" href="class_weighted_mean.html">WeightedMean</a></dd><dd><a class="el" href="class_weighted_record.html">WeightedRecord</a></dd></dl>
 <dl class="classindex odd">
+<dt class="alphachar"><a id="letter_W" name="letter_W">W</a></dt>
+<dd><a class="el" href="class_weighted.html">Weighted</a></dd><dd><a class="el" href="class_weighted_mean.html">WeightedMean</a></dd><dd><a class="el" href="class_weighted_record.html">WeightedRecord</a></dd></dl>
+<dl class="classindex even">
 <dt class="alphachar"><a id="letter_X" name="letter_X">X</a></dt>
 <dd><a class="el" href="struct_x_o_r64_p_r_n_g.html">XOR64PRNG</a></dd><dd><a class="el" href="struct_x_o_r64_state.html">XOR64State</a></dd></dl>
 </div>

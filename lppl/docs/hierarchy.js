@@ -1,6 +1,8 @@
 var hierarchy =
 [
-    [ "eval_collection_t< O, Ts >", "structeval__collection__t.html", null ],
+    [ "collection_t", "structcollection__t.html", [
+      [ "record_collection_t< O, Ts >", "structrecord__collection__t.html", null ]
+    ] ],
     [ "Distributions::Generate< V >", "class_distributions_1_1_generate.html", [
       [ "Distributions::Distribution< unsigned long >", "class_distributions_1_1_distribution.html", null ],
       [ "Distributions::Distribution< int >", "class_distributions_1_1_distribution.html", null ],
@@ -56,15 +58,21 @@ var hierarchy =
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
     ] ],
     [ "proposal< Out >", "structproposal.html", null ],
-    [ "Queryer< V, O, Ts >", "class_queryer.html", null ],
-    [ "Queryer< double, O, Ts... >", "class_queryer.html", [
-      [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", null ]
+    [ "Queryer< V, O, Ts >", "class_queryer.html", [
+      [ "Weighted< double, O, Ts... >", "class_weighted.html", [
+        [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", null ]
+      ] ],
+      [ "Weighted< std::unique_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_weighted.html", [
+        [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", null ]
+      ] ]
     ] ],
-    [ "Queryer< std::unique_ptr< eval_collection_t< O, Ts... > >, O, Ts... >", "class_queryer.html", [
-      [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", null ]
-    ] ],
+    [ "Queryer< double, O, Ts... >", "class_queryer.html", null ],
+    [ "Queryer< std::unique_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_queryer.html", null ],
     [ "Queryer< std::unique_ptr< std::unordered_map< std::string, V > >, O, Ts... >", "class_queryer.html", [
       [ "QueryerCollection< V, O, Q, Ts >", "class_queryer_collection.html", null ]
+    ] ],
+    [ "Queryer< V, O, Ts... >", "class_queryer.html", [
+      [ "Weighted< V, O, Ts >", "class_weighted.html", null ]
     ] ],
     [ "record_t< Ts >", "structrecord__t.html", null ],
     [ "record_t< Ts... >", "structrecord__t.html", null ],
