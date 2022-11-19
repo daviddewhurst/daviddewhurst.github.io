@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.1</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ template&lt;typename V , typename O , typename... Ts&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns \(\log Z = \log \sum_{1 \leq n \leq N} w_n \). </p>
+<p>Returns \(\log Z = \log \sum_{1 \leq n \leq N} \exp w_n \). </p>
 <p >The interpretation of this number depends on the inference algorithm used with the queryer. If an importance sampling algorithm is used, this is the evidence. This number should always be equal to 1 when using a MCMC algorithm.</p>
 <dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
