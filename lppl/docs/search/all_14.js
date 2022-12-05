@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xor64prng_0',['XOR64PRNG',['../struct_x_o_r64_p_r_n_g.html',1,'']]],
-  ['xor64state_1',['XOR64State',['../struct_x_o_r64_state.html',1,'']]]
+  ['value_5fcollection_5ft_0',['value_collection_t',['../structvalue__collection__t.html',1,'']]],
+  ['value_5fcollection_5ft_3c_20record_5ft_3c_20ts_2e_2e_2e_20_3e_20_3e_1',['value_collection_t&lt; record_t&lt; Ts... &gt; &gt;',['../structvalue__collection__t.html',1,'']]]
 ];

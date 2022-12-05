@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
    </div>
   </td>
  </tr>
@@ -101,20 +101,28 @@ $(document).ready(function(){initNavTree('record_8hpp_af66a0d7ab344dc4b1f8ee354e
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2">interp_t</a></td>
+          <td class="memname">enum class <a class="el" href="record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2">interp_t</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Node-level interpretations. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
 <ul>
-<li><b>standard</b>: no special interpretation</li>
-<li><b>replay</b>: the node should be replayed through the record, pretending as though the value in the node had been sampled from the distribution, with no other changes to node structure other than updated log probability</li>
-<li><b>condition</b>: the node should be conditioned on the value in the node (and hence the node is converted into an observed node)</li>
-<li><b>block</b>: converts the node to untraced randomness </li>
+<li>interp_t::<b>standard</b>: no special interpretation</li>
+<li>interp_t::<b>replay</b>: the node should be replayed through the record, pretending as though the value in the node had been sampled from the distribution, with no other changes to node structure other than updated log probability</li>
+<li>interp_t::<b>condition</b>: the node should be conditioned on the value in the node (and hence the node is converted into an observed node)</li>
+<li>interp_t::<b>block</b>: converts the node to untraced randomness </li>
 </ul>
 
 </div>

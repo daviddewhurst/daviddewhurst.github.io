@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('structinf__options__t.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structinf__options__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">inf_options_t Struct Reference</div></div>
@@ -107,21 +108,33 @@ $(document).ready(function(){initNavTree('structinf__options__t.html',''); initR
  <a href="structinf__options__t.html#details">More...</a></p>
 
 <p><code>#include &quot;query.hpp&quot;</code></p>
-<div class="dynheader">
-Inheritance diagram for inf_options_t:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="structinf__options__t.png" usemap="#inf_5Foptions_5Ft_map" alt=""/>
-  <map id="inf_5Foptions_5Ft_map" name="inf_5Foptions_5Ft_map">
-<area href="structmetro__options__t.html" title="inf_options_t augmented with metropolis-specific arguments:" alt="metro_options_t" shape="rect" coords="0,56,100,80"/>
-  </map>
-</div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a7a527171ba1013859ca6f3f477bdd88c"><td class="memItemLeft" align="right" valign="top"><a id="a7a527171ba1013859ca6f3f477bdd88c" name="a7a527171ba1013859ca6f3f477bdd88c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inf_options_t</b> (size_t num_iterations, unsigned seed=2022)</td></tr>
+<tr class="separator:a7a527171ba1013859ca6f3f477bdd88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec52f6cccbb9b08fc9a23c284a7e42e"><td class="memItemLeft" align="right" valign="top"><a id="a4ec52f6cccbb9b08fc9a23c284a7e42e" name="a4ec52f6cccbb9b08fc9a23c284a7e42e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>inf_options_t</b> (size_t thin, size_t burn, size_t num_iterations, unsigned seed=2022)</td></tr>
+<tr class="separator:a4ec52f6cccbb9b08fc9a23c284a7e42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:acc711b56a8a3d97cc1832039b0fc2a2d"><td class="memItemLeft" align="right" valign="top"><a id="acc711b56a8a3d97cc1832039b0fc2a2d" name="acc711b56a8a3d97cc1832039b0fc2a2d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_burn</b></td></tr>
+<tr class="separator:acc711b56a8a3d97cc1832039b0fc2a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567671ba49f63a997ba0a8d304c3ca3b"><td class="memItemLeft" align="right" valign="top"><a id="a567671ba49f63a997ba0a8d304c3ca3b" name="a567671ba49f63a997ba0a8d304c3ca3b"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_num_complete</b></td></tr>
+<tr class="separator:a567671ba49f63a997ba0a8d304c3ca3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c1a180fbb257ec22393c77b3d434ab"><td class="memItemLeft" align="right" valign="top"><a id="af2c1a180fbb257ec22393c77b3d434ab" name="af2c1a180fbb257ec22393c77b3d434ab"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_num_iterations</b></td></tr>
 <tr class="separator:af2c1a180fbb257ec22393c77b3d434ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f39f29cf0d2a9bd42ec0345bc28017"><td class="memItemLeft" align="right" valign="top"><a id="aa8f39f29cf0d2a9bd42ec0345bc28017" name="aa8f39f29cf0d2a9bd42ec0345bc28017"></a>
+unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>_seed</b></td></tr>
+<tr class="separator:aa8f39f29cf0d2a9bd42ec0345bc28017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff4e757ef124f440ae2725e22ffbf29"><td class="memItemLeft" align="right" valign="top"><a id="aeff4e757ef124f440ae2725e22ffbf29" name="aeff4e757ef124f440ae2725e22ffbf29"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_thin</b></td></tr>
+<tr class="separator:aeff4e757ef124f440ae2725e22ffbf29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Options used by all inference algorithms. </p>

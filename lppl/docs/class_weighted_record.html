@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('class_weighted_record.html',''); initR
 </div><!--header-->
 <div class="contents">
 
-<p>A collection of weighted records. This is the "traditional" empirical posterior distribution as implemented by many trace-based probabilistic programming languages. The memory use of this object scales as O(num_samples).  
+<p>A collection of weighted records.  
  <a href="class_weighted_record.html#details">More...</a></p>
 
 <p><code>#include &quot;query.hpp&quot;</code></p>
@@ -168,7 +168,8 @@ std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename, typename O, typename... Ts&gt;<br />
-class WeightedRecord&lt; typename, O, Ts &gt;</div><p >A collection of weighted records. This is the "traditional" empirical posterior distribution as implemented by many trace-based probabilistic programming languages. The memory use of this object scales as O(num_samples). </p>
+class WeightedRecord&lt; typename, O, Ts &gt;</div><p >A collection of weighted records. </p>
+<p >This is the empirical joint posterior distribution. The memory use of this object scales as O(num_samples). </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/<a class="el" href="query_8hpp.html">query.hpp</a></li>
 </ul>

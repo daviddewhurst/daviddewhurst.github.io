@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['importance_5fsampling_0',['importance_sampling',['../generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6',1,'generic.hpp']]]
+  ['inference_0',['inference',['../inference_8hpp_a5e3c1deb39a39ab857da460a8f09d99a.html#a5e3c1deb39a39ab857da460a8f09d99a',1,'inference.hpp']]]
 ];

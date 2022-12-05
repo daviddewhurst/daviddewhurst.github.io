@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['query_2ehpp_0',['query.hpp',['../query_8hpp.html',1,'']]],
-  ['queryer_1',['Queryer',['../class_queryer.html',1,'']]],
-  ['queryer_3c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_2',['Queryer&lt; double, O, Ts... &gt;',['../class_queryer.html',1,'']]],
-  ['queryer_3c_20std_3a_3aunique_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_3',['Queryer&lt; std::unique_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../class_queryer.html',1,'']]],
-  ['queryer_3c_20std_3a_3aunique_5fptr_3c_20std_3a_3aunordered_5fmap_3c_20std_3a_3astring_2c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_4',['Queryer&lt; std::unique_ptr&lt; std::unordered_map&lt; std::string, V &gt; &gt;, O, Ts... &gt;',['../class_queryer.html',1,'']]],
-  ['queryer_3c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_5',['Queryer&lt; V, O, Ts... &gt;',['../class_queryer.html',1,'']]],
-  ['queryercollection_6',['QueryerCollection',['../class_queryer_collection.html',1,'']]]
+  ['plate_0',['plate',['../structplate.html',1,'']]],
+  ['plate_2ehpp_1',['plate.hpp',['../plate_8hpp.html',1,'']]],
+  ['poisson_2',['Poisson',['../class_distributions_1_1_poisson.html',1,'Distributions']]],
+  ['pp_5ft_3',['pp_t',['../record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084',1,'record.hpp']]],
+  ['proposal_4',['proposal',['../structproposal.html',1,'']]],
+  ['proposal_2ehpp_5',['proposal.hpp',['../proposal_8hpp.html',1,'']]],
+  ['propose_6',['propose',['../proposal_8hpp_a4fccb5a99fc2c0720e3895f475d42c5d.html#a4fccb5a99fc2c0720e3895f475d42c5d',1,'proposal.hpp']]]
 ];

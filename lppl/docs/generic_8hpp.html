@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
    </div>
   </td>
  </tr>
@@ -97,25 +97,22 @@ $(document).ready(function(){initNavTree('generic_8hpp.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">generic.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="effects_8hpp.html">effects.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="query_8hpp.html">query.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="record_8hpp.html">record.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="inference_8hpp.html">inference/inference.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="proposal_8hpp.html">inference/proposal.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a7f274173f8e0e5f2bc76582a340523d6"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename P , typename... Ts&gt; </td></tr>
-<tr class="memitem:a7f274173f8e0e5f2bc76582a340523d6"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6">importance_sampling</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, P &amp;<a class="el" href="structproposal.html">proposal</a>, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="memdesc:a7f274173f8e0e5f2bc76582a340523d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importance sampling using a generic proposal distribution.  <a href="generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6">More...</a><br /></td></tr>
-<tr class="separator:a7f274173f8e0e5f2bc76582a340523d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba90dc2794a0819c6f52954338bb7557"><td class="memTemplParams" colspan="2"><a id="aba90dc2794a0819c6f52954338bb7557" name="aba90dc2794a0819c6f52954338bb7557"></a>
-template&lt;typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename P , typename... Ts&gt; </td></tr>
-<tr class="memitem:aba90dc2794a0819c6f52954338bb7557"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>is_step</b> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, P &amp;<a class="el" href="structproposal.html">proposal</a>, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="separator:aba90dc2794a0819c6f52954338bb7557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhas__proposal_3_01_importance_sampling_01_4.html">has_proposal&lt; ImportanceSampling &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_importance_sampling.html">ImportanceSampling&lt; I, O, V, Q, Ts &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under LGPL v3 </p>

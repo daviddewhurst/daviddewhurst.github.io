@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.7.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
    </div>
   </td>
  </tr>
@@ -101,20 +101,28 @@ $(document).ready(function(){initNavTree('record_8hpp_a33754e8df42d882a7d18d9f5c
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b">record_interp_t</a></td>
+          <td class="memname">enum class <a class="el" href="record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b">record_interp_t</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Record-level intepretation. Setting a record-level interpretation apart from <b>r_standard</b> will force calls to sample/oberve to disregard any node-level interpretation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
+<p>Record-level intepretation. Setting a record-level interpretation apart from record_interp_t::<b>standard</b> will force calls to sample/oberve to disregard any node-level interpretation. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
 <ul>
-<li><b>r_standard</b>: no special interpretation</li>
-<li><b>r_replay</b>: replay the record through the program</li>
-<li><b>r_block_obs</b>: block all observed sites</li>
-<li><b>r_block_sample</b>: block all sample sites </li>
+<li>record_interp_t::<b>standard</b>: no special interpretation</li>
+<li>record_interp_t::<b>replay</b>: replay the record through the program</li>
+<li>record_interp_t::<b>block_obs</b>: block all observed sites</li>
+<li>record_interp_t::<b>block_sample</b>: block all sample sites </li>
 </ul>
 
 </div>

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['ancestor_5fmetropolis_0',['ancestor_metropolis',['../base_8hpp_aba8efd09abb720b4b0c77036f5589863.html#aba8efd09abb720b4b0c77036f5589863',1,'base.hpp']]]
+  ['block_0',['block',['../effects_8hpp_a8ecca98390102198148e31ab8f853fab.html#a8ecca98390102198148e31ab8f853fab',1,'effects.hpp']]],
+  ['block_5fobserve_1',['block_observe',['../effects_8hpp_a6ad3c007520eec8eae71e2054c3a8ec3.html#a6ad3c007520eec8eae71e2054c3a8ec3',1,'effects.hpp']]],
+  ['block_5fsample_2',['block_sample',['../effects_8hpp_a20ec37d2991ccc9501c28a6984c01980.html#a20ec37d2991ccc9501c28a6984c01980',1,'effects.hpp']]]
 ];

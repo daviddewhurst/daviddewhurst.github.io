@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['plate_2ehpp_0',['plate.hpp',['../plate_8hpp.html',1,'']]],
-  ['proposal_2ehpp_1',['proposal.hpp',['../proposal_8hpp.html',1,'']]]
+  ['likelihood_2ehpp_0',['likelihood.hpp',['../likelihood_8hpp.html',1,'']]]
 ];

@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['importance_5fsampling_0',['importance_sampling',['../generic_8hpp_a7f274173f8e0e5f2bc76582a340523d6.html#a7f274173f8e0e5f2bc76582a340523d6',1,'generic.hpp']]],
-  ['inf_5foptions_5ft_1',['inf_options_t',['../structinf__options__t.html',1,'']]],
-  ['interp_5ft_2',['interp_t',['../record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2',1,'record.hpp']]]
+  ['has_5fproposal_0',['has_proposal',['../structhas__proposal.html',1,'']]],
+  ['has_5fproposal_3c_20importancesampling_20_3e_1',['has_proposal&lt; ImportanceSampling &gt;',['../structhas__proposal_3_01_importance_sampling_01_4.html',1,'']]],
+  ['hlcategorical_2',['HLCategorical',['../struct_h_l_categorical.html',1,'']]],
+  ['hlgamma_3',['HLGamma',['../struct_h_l_gamma.html',1,'']]],
+  ['hlnormal_4',['HLNormal',['../struct_h_l_normal.html',1,'']]]
 ];
