@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl: Inference&lt; A, I, O, V, Q, HasProposal, Ts &gt; Struct Template Reference</title>
+<title>lppl: Inference&lt; A, I, O, V, Q, Ts &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.1</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('struct_inference.html',''); initResiza
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="struct_inference-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Inference&lt; A, I, O, V, Q, HasProposal, Ts &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Inference&lt; A, I, O, V, Q, Ts &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -111,29 +111,33 @@ $(document).ready(function(){initNavTree('struct_inference.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3f0e566f358ac11d3161bc94722bb867"><td class="memItemLeft" align="right" valign="top"><a id="a3f0e566f358ac11d3161bc94722bb867" name="a3f0e566f358ac11d3161bc94722bb867"></a>
+<tr class="memitem:a72e6d2cc4107aa938dfef9c918322035"><td class="memItemLeft" align="right" valign="top"><a id="a72e6d2cc4107aa938dfef9c918322035" name="a72e6d2cc4107aa938dfef9c918322035"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Inference</b> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="separator:a3f0e566f358ac11d3161bc94722bb867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c8bfa9bf1a685e70e1d459c1b384c8"><td class="memTemplParams" colspan="2"><a id="a94c8bfa9bf1a685e70e1d459c1b384c8" name="a94c8bfa9bf1a685e70e1d459c1b384c8"></a>
-template&lt;class P &gt; </td></tr>
-<tr class="memitem:a94c8bfa9bf1a685e70e1d459c1b384c8"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (I &amp;input, P &amp;<a class="el" href="structproposal.html">proposal</a>)</td></tr>
-<tr class="separator:a94c8bfa9bf1a685e70e1d459c1b384c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a72e6d2cc4107aa938dfef9c918322035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefb7532f2a84871231727baf9b28e48"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class G = A&gt; </td></tr>
+<tr class="memitem:acefb7532f2a84871231727baf9b28e48"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt;!<a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value, V &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_inference_acefb7532f2a84871231727baf9b28e48.html#acefb7532f2a84871231727baf9b28e48">operator()</a> (I &amp;input)</td></tr>
+<tr class="memdesc:acefb7532f2a84871231727baf9b28e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the specified inference algorithm with the specified queryer.  <a href="struct_inference_acefb7532f2a84871231727baf9b28e48.html#acefb7532f2a84871231727baf9b28e48">More...</a><br /></td></tr>
+<tr class="separator:acefb7532f2a84871231727baf9b28e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8962baa5df8571013bf39b4324be2dd"><td class="memTemplParams" colspan="2">template&lt;class P , template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class G = A&gt; </td></tr>
+<tr class="memitem:ac8962baa5df8571013bf39b4324be2dd"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value, V &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_inference_ac8962baa5df8571013bf39b4324be2dd.html#ac8962baa5df8571013bf39b4324be2dd">operator()</a> (I &amp;input, P &amp;<a class="el" href="structproposal.html">proposal</a>)</td></tr>
+<tr class="memdesc:ac8962baa5df8571013bf39b4324be2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the specified inference algorithm with the specified queryer using the specified proposal distribution.  <a href="struct_inference_ac8962baa5df8571013bf39b4324be2dd.html#ac8962baa5df8571013bf39b4324be2dd">More...</a><br /></td></tr>
+<tr class="separator:ac8962baa5df8571013bf39b4324be2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a84f310db09e0964c577f999dede79949"><td class="memItemLeft" align="right" valign="top"><a id="a84f310db09e0964c577f999dede79949" name="a84f310db09e0964c577f999dede79949"></a>
+<tr class="memitem:a6a74d159d26ef563908f469c3a1ef6a9"><td class="memItemLeft" align="right" valign="top"><a id="a6a74d159d26ef563908f469c3a1ef6a9" name="a6a74d159d26ef563908f469c3a1ef6a9"></a>
 <a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
-<tr class="separator:a84f310db09e0964c577f999dede79949"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d9e3c440af504e48cb25b0314cd6a9"><td class="memItemLeft" align="right" valign="top"><a id="a79d9e3c440af504e48cb25b0314cd6a9" name="a79d9e3c440af504e48cb25b0314cd6a9"></a>
+<tr class="separator:a6a74d159d26ef563908f469c3a1ef6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bd8fcb3c6f2ab7c81623a4ec6febbe"><td class="memItemLeft" align="right" valign="top"><a id="a21bd8fcb3c6f2ab7c81623a4ec6febbe" name="a21bd8fcb3c6f2ab7c81623a4ec6febbe"></a>
 <a class="el" href="structinf__options__t.html">inf_options_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>opts</b></td></tr>
-<tr class="separator:a79d9e3c440af504e48cb25b0314cd6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d08c8bc0ec5e403b6cd5f2c25c08b0"><td class="memItemLeft" align="right" valign="top"><a id="ab3d08c8bc0ec5e403b6cd5f2c25c08b0" name="ab3d08c8bc0ec5e403b6cd5f2c25c08b0"></a>
+<tr class="separator:a21bd8fcb3c6f2ab7c81623a4ec6febbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4495c7f84bd7adced17d10bcfbaa8ef6"><td class="memItemLeft" align="right" valign="top"><a id="a4495c7f84bd7adced17d10bcfbaa8ef6" name="a4495c7f84bd7adced17d10bcfbaa8ef6"></a>
 Q&lt; V, O, Ts... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>queryer</b></td></tr>
-<tr class="separator:ab3d08c8bc0ec5e403b6cd5f2c25c08b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4495c7f84bd7adced17d10bcfbaa8ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class A, typename I, typename O, typename V, template&lt; class, class, class... &gt; class Q, bool HasProposal = has_proposal&lt;A&gt;::value, typename... Ts&gt;<br />
-struct Inference&lt; A, I, O, V, Q, HasProposal, Ts &gt;</div><p >Universal base class for inference methods. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class A, typename I, typename O, typename V, template&lt; class, class, class... &gt; class Q, typename... Ts&gt;<br />
+struct Inference&lt; A, I, O, V, Q, Ts &gt;</div><p >Universal base class for inference methods. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">A</td><td>The class template of the inference method </td></tr>

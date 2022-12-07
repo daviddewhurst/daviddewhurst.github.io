@@ -43,15 +43,14 @@ var hierarchy =
     [ "HLGamma", "struct_h_l_gamma.html", null ],
     [ "HLNormal", "struct_h_l_normal.html", null ],
     [ "inf_options_t", "structinf__options__t.html", null ],
-    [ "Inference< A, I, O, V, Q, HasProposal, Ts >", "struct_inference.html", null ],
-    [ "Inference< A, I, O, V, Q, false, Ts... >", "struct_inference_3_01_a_00_01_i_00_01_o_00_01_v_00_01_q_00_01false_00_01_ts_8_8_8_01_4.html", null ],
-    [ "Inference< AncestorMetropolis, I, O, V, Q, false, Ts... >", "struct_inference.html", [
+    [ "Inference< A, I, O, V, Q, Ts >", "struct_inference.html", null ],
+    [ "Inference< AncestorMetropolis, I, O, V, Q, Ts... >", "struct_inference.html", [
       [ "AncestorMetropolis< I, O, V, Q, Ts >", "struct_ancestor_metropolis.html", null ]
     ] ],
-    [ "Inference< ImportanceSampling, I, O, V, Q, true, Ts... >", "struct_inference.html", [
+    [ "Inference< ImportanceSampling, I, O, V, Q, Ts... >", "struct_inference.html", [
       [ "ImportanceSampling< I, O, V, Q, Ts >", "struct_importance_sampling.html", null ]
     ] ],
-    [ "Inference< LikelihoodWeighting, I, O, V, Q, false, Ts... >", "struct_inference.html", [
+    [ "Inference< LikelihoodWeighting, I, O, V, Q, Ts... >", "struct_inference.html", [
       [ "LikelihoodWeighting< I, O, V, Q, Ts >", "struct_likelihood_weighting.html", null ]
     ] ],
     [ "Distributions::LogProb< V >", "class_distributions_1_1_log_prob.html", [
@@ -76,7 +75,7 @@ var hierarchy =
       [ "Weighted< double, O, Ts... >", "class_weighted.html", [
         [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", null ]
       ] ],
-      [ "Weighted< std::unique_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_weighted.html", [
+      [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_weighted.html", [
         [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", null ]
       ] ],
       [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "class_weighted.html", [
@@ -84,7 +83,7 @@ var hierarchy =
       ] ]
     ] ],
     [ "Queryer< double, O, Ts... >", "class_queryer.html", null ],
-    [ "Queryer< std::unique_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_queryer.html", null ],
+    [ "Queryer< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_queryer.html", null ],
     [ "Queryer< std::unique_ptr< std::unordered_map< std::string, V > >, O, Ts... >", "class_queryer.html", [
       [ "QueryerCollection< V, O, Q, Ts >", "class_queryer_collection.html", null ]
     ] ],

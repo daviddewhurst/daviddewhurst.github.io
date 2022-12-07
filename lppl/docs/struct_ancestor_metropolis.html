@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.1</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ Inheritance diagram for AncestorMetropolis&lt; I, O, V, Q, Ts &gt;:</div>
  <div class="center">
   <img src="struct_ancestor_metropolis.png" usemap="#AncestorMetropolis_3C_20I_2C_20O_2C_20V_2C_20Q_2C_20Ts_20_3E_map" alt=""/>
   <map id="AncestorMetropolis_3C_20I_2C_20O_2C_20V_2C_20Q_2C_20Ts_20_3E_map" name="AncestorMetropolis_3C_20I_2C_20O_2C_20V_2C_20Q_2C_20Ts_20_3E_map">
-<area href="struct_inference.html" alt="Inference&lt; AncestorMetropolis, I, O, V, Q, false, Ts... &gt;" shape="rect" coords="0,0,338,24"/>
+<area href="struct_inference.html" alt="Inference&lt; AncestorMetropolis, I, O, V, Q, Ts... &gt;" shape="rect" coords="0,0,302,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -125,26 +125,29 @@ V&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (I &amp;i
 <tr class="memitem:a8f024bd0cfa155c6b08986d8b08b035e"><td class="memItemLeft" align="right" valign="top"><a id="a8f024bd0cfa155c6b08986d8b08b035e" name="a8f024bd0cfa155c6b08986d8b08b035e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>step</b> (<a class="el" href="struct_metropolis_state.html">MetropolisState</a>&lt; Ts... &gt; &amp;state, <a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, I input, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="separator:a8f024bd0cfa155c6b08986d8b08b035e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_struct_inference"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_inference')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_inference.html">Inference&lt; AncestorMetropolis, I, O, V, Q, false, Ts... &gt;</a></td></tr>
-<tr class="memitem:a3f0e566f358ac11d3161bc94722bb867 inherit pub_methods_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a3f0e566f358ac11d3161bc94722bb867" name="a3f0e566f358ac11d3161bc94722bb867"></a>
+<tr class="inherit_header pub_methods_struct_inference"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_inference')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_inference.html">Inference&lt; AncestorMetropolis, I, O, V, Q, Ts... &gt;</a></td></tr>
+<tr class="memitem:a72e6d2cc4107aa938dfef9c918322035 inherit pub_methods_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a72e6d2cc4107aa938dfef9c918322035" name="a72e6d2cc4107aa938dfef9c918322035"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Inference</b> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, Q&lt; V, O, Ts... &gt; &amp;queryer, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="separator:a3f0e566f358ac11d3161bc94722bb867 inherit pub_methods_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c8bfa9bf1a685e70e1d459c1b384c8 inherit pub_methods_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a94c8bfa9bf1a685e70e1d459c1b384c8" name="a94c8bfa9bf1a685e70e1d459c1b384c8"></a>
-V&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (I &amp;input, P &amp;<a class="el" href="structproposal.html">proposal</a>)</td></tr>
-<tr class="separator:a94c8bfa9bf1a685e70e1d459c1b384c8 inherit pub_methods_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a72e6d2cc4107aa938dfef9c918322035 inherit pub_methods_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefb7532f2a84871231727baf9b28e48 inherit pub_methods_struct_inference"><td class="memItemLeft" align="right" valign="top">std::enable_if_t&lt;!<a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value, V &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_inference_acefb7532f2a84871231727baf9b28e48.html#acefb7532f2a84871231727baf9b28e48">operator()</a> (I &amp;input)</td></tr>
+<tr class="memdesc:acefb7532f2a84871231727baf9b28e48 inherit pub_methods_struct_inference"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the specified inference algorithm with the specified queryer.  <a href="struct_inference_acefb7532f2a84871231727baf9b28e48.html#acefb7532f2a84871231727baf9b28e48">More...</a><br /></td></tr>
+<tr class="separator:acefb7532f2a84871231727baf9b28e48 inherit pub_methods_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8962baa5df8571013bf39b4324be2dd inherit pub_methods_struct_inference"><td class="memItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value, V &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_inference_ac8962baa5df8571013bf39b4324be2dd.html#ac8962baa5df8571013bf39b4324be2dd">operator()</a> (I &amp;input, P &amp;<a class="el" href="structproposal.html">proposal</a>)</td></tr>
+<tr class="memdesc:ac8962baa5df8571013bf39b4324be2dd inherit pub_methods_struct_inference"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the specified inference algorithm with the specified queryer using the specified proposal distribution.  <a href="struct_inference_ac8962baa5df8571013bf39b4324be2dd.html#ac8962baa5df8571013bf39b4324be2dd">More...</a><br /></td></tr>
+<tr class="separator:ac8962baa5df8571013bf39b4324be2dd inherit pub_methods_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_struct_inference"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_inference')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_inference.html">Inference&lt; AncestorMetropolis, I, O, V, Q, false, Ts... &gt;</a></td></tr>
-<tr class="memitem:a84f310db09e0964c577f999dede79949 inherit pub_attribs_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a84f310db09e0964c577f999dede79949" name="a84f310db09e0964c577f999dede79949"></a>
+<tr class="inherit_header pub_attribs_struct_inference"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_inference')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_inference.html">Inference&lt; AncestorMetropolis, I, O, V, Q, Ts... &gt;</a></td></tr>
+<tr class="memitem:a6a74d159d26ef563908f469c3a1ef6a9 inherit pub_attribs_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a6a74d159d26ef563908f469c3a1ef6a9" name="a6a74d159d26ef563908f469c3a1ef6a9"></a>
 <a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
-<tr class="separator:a84f310db09e0964c577f999dede79949 inherit pub_attribs_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79d9e3c440af504e48cb25b0314cd6a9 inherit pub_attribs_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a79d9e3c440af504e48cb25b0314cd6a9" name="a79d9e3c440af504e48cb25b0314cd6a9"></a>
+<tr class="separator:a6a74d159d26ef563908f469c3a1ef6a9 inherit pub_attribs_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21bd8fcb3c6f2ab7c81623a4ec6febbe inherit pub_attribs_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a21bd8fcb3c6f2ab7c81623a4ec6febbe" name="a21bd8fcb3c6f2ab7c81623a4ec6febbe"></a>
 <a class="el" href="structinf__options__t.html">inf_options_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>opts</b></td></tr>
-<tr class="separator:a79d9e3c440af504e48cb25b0314cd6a9 inherit pub_attribs_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d08c8bc0ec5e403b6cd5f2c25c08b0 inherit pub_attribs_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="ab3d08c8bc0ec5e403b6cd5f2c25c08b0" name="ab3d08c8bc0ec5e403b6cd5f2c25c08b0"></a>
+<tr class="separator:a21bd8fcb3c6f2ab7c81623a4ec6febbe inherit pub_attribs_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4495c7f84bd7adced17d10bcfbaa8ef6 inherit pub_attribs_struct_inference"><td class="memItemLeft" align="right" valign="top"><a id="a4495c7f84bd7adced17d10bcfbaa8ef6" name="a4495c7f84bd7adced17d10bcfbaa8ef6"></a>
 Q&lt; V, O, Ts... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>queryer</b></td></tr>
-<tr class="separator:ab3d08c8bc0ec5e403b6cd5f2c25c08b0 inherit pub_attribs_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4495c7f84bd7adced17d10bcfbaa8ef6 inherit pub_attribs_struct_inference"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename I, typename O, typename V, template&lt; class, class, class... &gt; class Q, typename... Ts&gt;<br />
@@ -156,7 +159,7 @@ struct AncestorMetropolis&lt; I, O, V, Q, Ts &gt;</div><p >Metropolis Hastings u
     <tr><td class="paramname">O</td><td>The output type of the program on which to perform inference </td></tr>
     <tr><td class="paramname">V</td><td>The type emitted by the queryer </td></tr>
     <tr><td class="paramname">Q</td><td>The queryer type </td></tr>
-    <tr><td class="paramname">Ts</td><td>The collection of types used in the probabilistic program </td></tr>
+    <tr><td class="paramname">Ts</td><td>The distribution types used in the probabilistic program </td></tr>
   </table>
   </dd>
 </dl>
