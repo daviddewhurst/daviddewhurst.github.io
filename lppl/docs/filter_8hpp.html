@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
    </div>
   </td>
  </tr>
@@ -96,13 +96,46 @@ $(document).ready(function(){initNavTree('filter_8hpp.html',''); initResizable()
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">filter.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="effects_8hpp.html">effects.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;<a class="el" href="record_8hpp.html">record.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="effects_8hpp.html">effects.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inference_8hpp.html">inference/inference.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="proposal_8hpp.html">inference/proposal.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="query_8hpp.html">query.hpp</a>&gt;</code><br />
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_filter.html">Filter&lt; A, I, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic filtering inference algorithm.  <a href="struct_filter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a7db045fbb50994ade70eba0fe3998920"><td class="memTemplParams" colspan="2">template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a7db045fbb50994ade70eba0fe3998920"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920">FilterQueryerType</a> = <a class="el" href="class_weighted_record.html">WeightedRecord</a>&lt; <a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt;, O, Ts... &gt;</td></tr>
+<tr class="memdesc:a7db045fbb50994ade70eba0fe3998920"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying queryer type used by filtering algorithms.  <a href="filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920">More...</a><br /></td></tr>
+<tr class="separator:a7db045fbb50994ade70eba0fe3998920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a443aa6b39238c79408b42d09302758f6"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class Q, typename... &gt; class A, typename I , typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a443aa6b39238c79408b42d09302758f6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="struct_filter.html">Filter</a>&lt; A, I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a443aa6b39238c79408b42d09302758f6.html#a443aa6b39238c79408b42d09302758f6">filter</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920">FilterQueryerType</a>&lt; O, Ts... &gt; &amp;queryer, <a class="el" href="structtransition.html">transition</a>&lt; O, Ts... &gt; &amp;trans, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memdesc:a443aa6b39238c79408b42d09302758f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a filtering algorithm.  <a href="filter_8hpp_a443aa6b39238c79408b42d09302758f6.html#a443aa6b39238c79408b42d09302758f6">More...</a><br /></td></tr>
+<tr class="separator:a443aa6b39238c79408b42d09302758f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2149f360fe4460771f7a1b92803618f1"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename RNG , typename... Ts&gt; </td></tr>
+<tr class="memitem:a2149f360fe4460771f7a1b92803618f1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a2149f360fe4460771f7a1b92803618f1.html#a2149f360fe4460771f7a1b92803618f1">filter_effect</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="structtransition.html">transition</a>&lt; O, Ts... &gt; &amp;kernel, bool &amp;has_been_called, RNG &amp;rng)</td></tr>
+<tr class="memdesc:a2149f360fe4460771f7a1b92803618f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an arbitrary probabilistic program into a dynamic version.  <a href="filter_8hpp_a2149f360fe4460771f7a1b92803618f1.html#a2149f360fe4460771f7a1b92803618f1">More...</a><br /></td></tr>
+<tr class="separator:a2149f360fe4460771f7a1b92803618f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under LGPL v3 </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->

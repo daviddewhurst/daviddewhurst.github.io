@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
    </div>
   </td>
  </tr>
@@ -137,6 +137,24 @@ template&lt;typename D , typename V , typename... Ts&gt; </div>
 </div><div class="memdoc">
 
 <p>Scores the passed value against the distribution, storing the result in the record at the specified address. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">D</td><td>The type of distribution from which to sample </td></tr>
+    <tr><td class="paramname">V</td><td>The value type </td></tr>
+    <tr><td class="paramname">Ts</td><td>The distribution types contained in the passed record </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>the record into which to store the scored value </td></tr>
+    <tr><td class="paramname">address</td><td>the address at which to store the scored value </td></tr>
+    <tr><td class="paramname">dist</td><td>the distribution against which to score values </td></tr>
+    <tr><td class="paramname">v</td><td>the value to be scored against the distribution </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>V the scored value </dd></dl>
 
 </div>
 </div>

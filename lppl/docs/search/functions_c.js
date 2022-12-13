@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reduce_0',['reduce',['../structvalue__collection__t_a7d544f36a66ca75ba3ae27ea34a584dd.html#a7d544f36a66ca75ba3ae27ea34a584dd',1,'value_collection_t']]],
-  ['replay_1',['replay',['../effects_8hpp_a677a422f53278f701ebdd098c7085603.html#a677a422f53278f701ebdd098c7085603',1,'replay(pp_t&lt; I, O, Ts... &gt; &amp;f):&#160;effects.hpp'],['../effects_8hpp_a5c2f87c584994d4c2ae5a7df9cfee19d.html#a5c2f87c584994d4c2ae5a7df9cfee19d',1,'replay(pp_t&lt; I, O, Ts... &gt; &amp;f, std::string address, V value):&#160;effects.hpp']]]
+  ['prob_5fat_0',['prob_at',['../structvalue__collection__t_aca6a6411f3531c3ac55ef3b0e702e1e3.html#aca6a6411f3531c3ac55ef3b0e702e1e3',1,'value_collection_t']]],
+  ['propose_1',['propose',['../proposal_8hpp_a4fccb5a99fc2c0720e3895f475d42c5d.html#a4fccb5a99fc2c0720e3895f475d42c5d',1,'proposal.hpp']]]
 ];

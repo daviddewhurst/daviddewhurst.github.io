@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
    </div>
   </td>
  </tr>
@@ -134,7 +134,7 @@ template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
 <tr class="separator:a1afaabe9d8b1c4dcff47ee48e0bd8b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20ec37d2991ccc9501c28a6984c01980"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a20ec37d2991ccc9501c28a6984c01980"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="effects_8hpp_a20ec37d2991ccc9501c28a6984c01980.html#a20ec37d2991ccc9501c28a6984c01980">block_sample</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f)</td></tr>
-<tr class="memdesc:a20ec37d2991ccc9501c28a6984c01980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks all sample sites. This could be useful for performing a stochastic optimization task, for example.  <a href="effects_8hpp_a20ec37d2991ccc9501c28a6984c01980.html#a20ec37d2991ccc9501c28a6984c01980">More...</a><br /></td></tr>
+<tr class="memdesc:a20ec37d2991ccc9501c28a6984c01980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks all sample sites. This could be useful for performing a stochastic optimization task.  <a href="effects_8hpp_a20ec37d2991ccc9501c28a6984c01980.html#a20ec37d2991ccc9501c28a6984c01980">More...</a><br /></td></tr>
 <tr class="separator:a20ec37d2991ccc9501c28a6984c01980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df9cd97174fc85d597b1d674d40998d"><td class="memTemplParams" colspan="2"><a id="a7df9cd97174fc85d597b1d674d40998d" name="a7df9cd97174fc85d597b1d674d40998d"></a>
 template&lt;typename D , typename V , typename I , typename O , typename... Ts&gt; </td></tr>
@@ -144,6 +144,14 @@ template&lt;typename D , typename V , typename I , typename O , typename... Ts&g
 <tr class="memitem:a4c6c7751a054f403ed0e003dd29647f7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="effects_8hpp_a4c6c7751a054f403ed0e003dd29647f7.html#a4c6c7751a054f403ed0e003dd29647f7">condition</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f, std::string address, V value)</td></tr>
 <tr class="memdesc:a4c6c7751a054f403ed0e003dd29647f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Conditions the site at the address, if it exists, to be observed at the passed value.  <a href="effects_8hpp_a4c6c7751a054f403ed0e003dd29647f7.html#a4c6c7751a054f403ed0e003dd29647f7">More...</a><br /></td></tr>
 <tr class="separator:a4c6c7751a054f403ed0e003dd29647f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8462a1e3d133b2ff5b9ae82608091d80"><td class="memTemplParams" colspan="2"><a id="a8462a1e3d133b2ff5b9ae82608091d80" name="a8462a1e3d133b2ff5b9ae82608091d80"></a>
+template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a8462a1e3d133b2ff5b9ae82608091d80"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>replace</b> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;&amp;f)</td></tr>
+<tr class="separator:a8462a1e3d133b2ff5b9ae82608091d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f61203681bbfb38734bbd31f17adc7"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a78f61203681bbfb38734bbd31f17adc7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="effects_8hpp_a78f61203681bbfb38734bbd31f17adc7.html#a78f61203681bbfb38734bbd31f17adc7">replace</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;f)</td></tr>
+<tr class="memdesc:a78f61203681bbfb38734bbd31f17adc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces probabilistic program-specified distributions with the distributions in any subsequently passed record.  <a href="effects_8hpp_a78f61203681bbfb38734bbd31f17adc7.html#a78f61203681bbfb38734bbd31f17adc7">More...</a><br /></td></tr>
+<tr class="separator:a78f61203681bbfb38734bbd31f17adc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd3ea677ecab83bb12236028eef1af15"><td class="memTemplParams" colspan="2"><a id="acd3ea677ecab83bb12236028eef1af15" name="acd3ea677ecab83bb12236028eef1af15"></a>
 template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:acd3ea677ecab83bb12236028eef1af15"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>replay</b> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; &amp;&amp;f)</td></tr>

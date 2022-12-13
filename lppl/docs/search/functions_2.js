@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['display_0',['display',['../record_8hpp_a61743a702b68a441e12af956e81d339a.html#a61743a702b68a441e12af956e81d339a',1,'record.hpp']]]
+  ['categorical_0',['Categorical',['../class_distributions_1_1_categorical_adbbfc11dfa7baecebaf635d92e1c10e2.html#adbbfc11dfa7baecebaf635d92e1c10e2',1,'Distributions::Categorical::Categorical(std::vector&lt; double &gt; probs)'],['../class_distributions_1_1_categorical_a533e1c4bfcba0cbcbace27d1d7eee3a1.html#a533e1c4bfcba0cbcbace27d1d7eee3a1',1,'Distributions::Categorical::Categorical(int dim)'],['../class_distributions_1_1_categorical_af9847150b5fc1b9e048d9165d76b63ef.html#af9847150b5fc1b9e048d9165d76b63ef',1,'Distributions::Categorical::Categorical()']]],
+  ['clear_1',['clear',['../class_weighted_ac2b43a34dffa5cc32bf763b5c58c4792.html#ac2b43a34dffa5cc32bf763b5c58c4792',1,'Weighted::clear()'],['../class_weighted_value_3_01std_1_1unique__ptr_3_01value__collection__t_3_01_v_01_4_01_4_00_01_o_00_01_ts_8_8_8_01_4_ae55515dd913aa328b8d24dc39b394173.html#ae55515dd913aa328b8d24dc39b394173',1,'WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;::clear()'],['../class_weighted_record_a6220bd4ee9fc917c1837ea2e126a2560.html#a6220bd4ee9fc917c1837ea2e126a2560',1,'WeightedRecord::clear()'],['../structrecord__t_a41ab7b2378d3ef83cd71e9b89b25f66e.html#a41ab7b2378d3ef83cd71e9b89b25f66e',1,'record_t::clear()']]],
+  ['condition_2',['condition',['../effects_8hpp_a4c6c7751a054f403ed0e003dd29647f7.html#a4c6c7751a054f403ed0e003dd29647f7',1,'effects.hpp']]],
+  ['copy_5funobserved_5ffrom_5fother_3',['copy_unobserved_from_other',['../structrecord__t_a75575f8ed42d23f7ccb47ce3793e4024.html#a75575f8ed42d23f7ccb47ce3793e4024',1,'record_t']]]
 ];

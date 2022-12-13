@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.8.1</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
    </div>
   </td>
  </tr>
@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('record_8hpp.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;forward_list&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
@@ -129,13 +130,17 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:af600285f9ec0fe06d30c434f93027810"><td class="memTemplParams" colspan="2">template&lt;typename D &gt; </td></tr>
+<tr class="memitem:af600285f9ec0fe06d30c434f93027810"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a> = decltype(std::declval&lt; D &gt;().<a class="el" href="record_8hpp_a7bc0be6c04bcca65c3767d66962c8ede.html#a7bc0be6c04bcca65c3767d66962c8ede">sample</a>(__COMPILERNG__))</td></tr>
+<tr class="memdesc:af600285f9ec0fe06d30c434f93027810"><td class="mdescLeft">&#160;</td><td class="mdescRight">The return type of calling sample on a distribution object.  <a href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">More...</a><br /></td></tr>
+<tr class="separator:af600285f9ec0fe06d30c434f93027810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a615c3e26ba1e9b2d5fe28023d218544e"><td class="memTemplParams" colspan="2"><a id="a615c3e26ba1e9b2d5fe28023d218544e" name="a615c3e26ba1e9b2d5fe28023d218544e"></a>
 template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a615c3e26ba1e9b2d5fe28023d218544e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>node_map_t</b> = std::unordered_map&lt; std::string, var_node_t&lt; Ts... &gt; &gt;</td></tr>
 <tr class="separator:a615c3e26ba1e9b2d5fe28023d218544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdf9cf3c04bf7ff49b58b94a963be084"><td class="memTemplParams" colspan="2">template&lt;typename I , typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:afdf9cf3c04bf7ff49b58b94a963be084"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a> = std::function&lt; O(<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;, I)&gt;</td></tr>
-<tr class="memdesc:afdf9cf3c04bf7ff49b58b94a963be084"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shorthand for probabilistic program type. Probabilistic programs are callables that take a single input of type I, output a single value of type O, and contain an arbitrary positive number of distributions.  <a href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">More...</a><br /></td></tr>
+<tr class="memdesc:afdf9cf3c04bf7ff49b58b94a963be084"><td class="mdescLeft">&#160;</td><td class="mdescRight">A shorthand for probabilistic program type. Probabilistic programs are callables that take a single input of type I, output a single value of type O, and contain an arbitrary positive number of distributions of type Ts...  <a href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">More...</a><br /></td></tr>
 <tr class="separator:afdf9cf3c04bf7ff49b58b94a963be084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a05e8ce47737ce51bc5dacea733c482"><td class="memTemplParams" colspan="2"><a id="a0a05e8ce47737ce51bc5dacea733c482" name="a0a05e8ce47737ce51bc5dacea733c482"></a>
 template&lt;typename... Ts&gt; </td></tr>
@@ -148,17 +153,26 @@ template&lt;typename... Ts&gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:af66a0d7ab344dc4b1f8ee354e185b6b2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2">interp_t</a> { <b>__standard__</b>
+<tr class="memitem:af66a0d7ab344dc4b1f8ee354e185b6b2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2">interp_t</a> { <br />
+&#160;&#160;<b>__standard__</b>
 , <b>__replay__</b>
+, <b>__replace__</b>
 , <b>__condition__</b>
-, <b>__block__</b>
+, <br />
+&#160;&#160;<b>__block__</b>
+<br />
  }</td></tr>
 <tr class="memdesc:af66a0d7ab344dc4b1f8ee354e185b6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Node-level interpretations.  <a href="record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2">More...</a><br /></td></tr>
 <tr class="separator:af66a0d7ab344dc4b1f8ee354e185b6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33754e8df42d882a7d18d9f5ce96ba7b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b">record_interp_t</a> { <b>__standard__</b>
+<tr class="memitem:a33754e8df42d882a7d18d9f5ce96ba7b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b">record_interp_t</a> { <br />
+&#160;&#160;<b>__standard__</b>
 , <b>__replay__</b>
-, <b>__block_obs__</b>
+, <b>__replace__</b>
+, <b>__rewrite__</b>
+, <br />
+&#160;&#160;<b>__block_obs__</b>
 , <b>__block_sample__</b>
+<br />
  }</td></tr>
 <tr class="memdesc:a33754e8df42d882a7d18d9f5ce96ba7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record-level intepretation. Setting a record-level interpretation apart from record_interp_t::<b>standard</b> will force calls to sample/oberve to disregard any node-level interpretation.  <a href="record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b">More...</a><br /></td></tr>
 <tr class="separator:a33754e8df42d882a7d18d9f5ce96ba7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,14 +183,14 @@ Functions</h2></td></tr>
 template&lt;typename D , typename V , typename... Ts&gt; </td></tr>
 <tr class="memitem:a580514392733671a6e8fc6fc1b842e1a"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_block_observe</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D, V value)</td></tr>
 <tr class="separator:a580514392733671a6e8fc6fc1b842e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfd93af0e32213c75b97f175929f18eb"><td class="memTemplParams" colspan="2"><a id="acfd93af0e32213c75b97f175929f18eb" name="acfd93af0e32213c75b97f175929f18eb"></a>
+<tr class="memitem:a587bb18bcd132a40468989e358fc590e"><td class="memTemplParams" colspan="2"><a id="a587bb18bcd132a40468989e358fc590e" name="a587bb18bcd132a40468989e358fc590e"></a>
 template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:acfd93af0e32213c75b97f175929f18eb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_block_sample</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="separator:acfd93af0e32213c75b97f175929f18eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab20a681adb21e8a13035dcb9faf04cf3"><td class="memTemplParams" colspan="2"><a id="ab20a681adb21e8a13035dcb9faf04cf3" name="ab20a681adb21e8a13035dcb9faf04cf3"></a>
+<tr class="memitem:a587bb18bcd132a40468989e358fc590e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_block_sample</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
+<tr class="separator:a587bb18bcd132a40468989e358fc590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5d61940da7b7d33939b4d2682d03bb"><td class="memTemplParams" colspan="2"><a id="aab5d61940da7b7d33939b4d2682d03bb" name="aab5d61940da7b7d33939b4d2682d03bb"></a>
 template&lt;typename D , typename... Ts&gt; </td></tr>
-<tr class="memitem:ab20a681adb21e8a13035dcb9faf04cf3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_condition</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist)</td></tr>
-<tr class="separator:ab20a681adb21e8a13035dcb9faf04cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5d61940da7b7d33939b4d2682d03bb"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_condition</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist)</td></tr>
+<tr class="separator:aab5d61940da7b7d33939b4d2682d03bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5e12431cfe765aaa65fe1cdf1f55e45"><td class="memTemplParams" colspan="2"><a id="ae5e12431cfe765aaa65fe1cdf1f55e45" name="ae5e12431cfe765aaa65fe1cdf1f55e45"></a>
 template&lt;typename D , typename V , typename... Ts&gt; </td></tr>
 <tr class="memitem:ae5e12431cfe765aaa65fe1cdf1f55e45"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_observe</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;record, std::string address, D dist, V value)</td></tr>
@@ -189,22 +203,34 @@ template&lt;typename D , typename V , typename... Ts&gt; </td></tr>
 template&lt;typename D , typename V , typename... Ts&gt; </td></tr>
 <tr class="memitem:ad744b3928a22d7427d593502ffd23ce8"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_observe_with_record_interp</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;record, std::string address, D dist, V value)</td></tr>
 <tr class="separator:ad744b3928a22d7427d593502ffd23ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea556cefcc5b2460f92c5f0fb091f793"><td class="memTemplParams" colspan="2"><a id="aea556cefcc5b2460f92c5f0fb091f793" name="aea556cefcc5b2460f92c5f0fb091f793"></a>
+<tr class="memitem:ae94f525124a159296cc7c4dcfa2535e8"><td class="memTemplParams" colspan="2"><a id="ae94f525124a159296cc7c4dcfa2535e8" name="ae94f525124a159296cc7c4dcfa2535e8"></a>
 template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:aea556cefcc5b2460f92c5f0fb091f793"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_replay</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="separator:aea556cefcc5b2460f92c5f0fb091f793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c70342e157f93a06d649165a903cb0"><td class="memTemplParams" colspan="2"><a id="ac7c70342e157f93a06d649165a903cb0" name="ac7c70342e157f93a06d649165a903cb0"></a>
+<tr class="memitem:ae94f525124a159296cc7c4dcfa2535e8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_replace</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D orig_dist, RNG &amp;rng)</td></tr>
+<tr class="separator:ae94f525124a159296cc7c4dcfa2535e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1561d48ec97291702455533c5298cdef"><td class="memTemplParams" colspan="2"><a id="a1561d48ec97291702455533c5298cdef" name="a1561d48ec97291702455533c5298cdef"></a>
+template&lt;typename D , typename V , typename... Ts&gt; </td></tr>
+<tr class="memitem:a1561d48ec97291702455533c5298cdef"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_replace_observe</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D orig_dist, V value)</td></tr>
+<tr class="separator:a1561d48ec97291702455533c5298cdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c70d7a73bc661b09f9c1c949be60d4"><td class="memTemplParams" colspan="2"><a id="a78c70d7a73bc661b09f9c1c949be60d4" name="a78c70d7a73bc661b09f9c1c949be60d4"></a>
 template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:ac7c70342e157f93a06d649165a903cb0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_sample_with_node_interp</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="separator:ac7c70342e157f93a06d649165a903cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b80f7f924a5fe06dc762a1d254576e6"><td class="memTemplParams" colspan="2"><a id="a0b80f7f924a5fe06dc762a1d254576e6" name="a0b80f7f924a5fe06dc762a1d254576e6"></a>
+<tr class="memitem:a78c70d7a73bc661b09f9c1c949be60d4"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_replay</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
+<tr class="separator:a78c70d7a73bc661b09f9c1c949be60d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ba1ea7b85b31c15e291533272938c72"><td class="memTemplParams" colspan="2"><a id="a8ba1ea7b85b31c15e291533272938c72" name="a8ba1ea7b85b31c15e291533272938c72"></a>
 template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:a0b80f7f924a5fe06dc762a1d254576e6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_sample_with_record_interp</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="separator:a0b80f7f924a5fe06dc762a1d254576e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21325f994d38a7becbc05f256604b52"><td class="memTemplParams" colspan="2"><a id="af21325f994d38a7becbc05f256604b52" name="af21325f994d38a7becbc05f256604b52"></a>
+<tr class="memitem:a8ba1ea7b85b31c15e291533272938c72"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_rewrite</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D orig_dist, RNG &amp;rng)</td></tr>
+<tr class="separator:a8ba1ea7b85b31c15e291533272938c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad374507a2359fbbe60ae35d6010e98fc"><td class="memTemplParams" colspan="2"><a id="ad374507a2359fbbe60ae35d6010e98fc" name="ad374507a2359fbbe60ae35d6010e98fc"></a>
 template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:af21325f994d38a7becbc05f256604b52"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_standard</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="separator:af21325f994d38a7becbc05f256604b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad374507a2359fbbe60ae35d6010e98fc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_sample_with_node_interp</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
+<tr class="separator:ad374507a2359fbbe60ae35d6010e98fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf2a670b84a096649ebaa2e2eb10ffc0"><td class="memTemplParams" colspan="2"><a id="abf2a670b84a096649ebaa2e2eb10ffc0" name="abf2a670b84a096649ebaa2e2eb10ffc0"></a>
+template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
+<tr class="memitem:abf2a670b84a096649ebaa2e2eb10ffc0"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_sample_with_record_interp</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
+<tr class="separator:abf2a670b84a096649ebaa2e2eb10ffc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d4a62f4bd1de5c1e2c7f4ea9c0f08a2"><td class="memTemplParams" colspan="2"><a id="a2d4a62f4bd1de5c1e2c7f4ea9c0f08a2" name="a2d4a62f4bd1de5c1e2c7f4ea9c0f08a2"></a>
+template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
+<tr class="memitem:a2d4a62f4bd1de5c1e2c7f4ea9c0f08a2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_standard</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
+<tr class="separator:a2d4a62f4bd1de5c1e2c7f4ea9c0f08a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61743a702b68a441e12af956e81d339a"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a61743a702b68a441e12af956e81d339a"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a61743a702b68a441e12af956e81d339a.html#a61743a702b68a441e12af956e81d339a">display</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;record)</td></tr>
 <tr class="memdesc:a61743a702b68a441e12af956e81d339a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string representation of the record. Does not display node- or record-level interpretations.  <a href="record_8hpp_a61743a702b68a441e12af956e81d339a.html#a61743a702b68a441e12af956e81d339a">More...</a><br /></td></tr>
@@ -225,10 +251,10 @@ template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
 <tr class="memitem:aa89d6abad2f9b42055af844b453b589f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_aa89d6abad2f9b42055af844b453b589f.html#aa89d6abad2f9b42055af844b453b589f">observe</a> (std::string address, D dist, V value)</td></tr>
 <tr class="memdesc:aa89d6abad2f9b42055af844b453b589f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a node with specified address by scoring passed value from corresponding distribution.  <a href="record_8hpp_aa89d6abad2f9b42055af844b453b589f.html#aa89d6abad2f9b42055af844b453b589f">More...</a><br /></td></tr>
 <tr class="separator:aa89d6abad2f9b42055af844b453b589f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991ef05f16016c5590133610f642891b"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:a991ef05f16016c5590133610f642891b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a991ef05f16016c5590133610f642891b.html#a991ef05f16016c5590133610f642891b">sample</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
-<tr class="memdesc:a991ef05f16016c5590133610f642891b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a value into a node stored at the address by drawing a value from the specified distribution. Returns the underlying value of the created node.  <a href="record_8hpp_a991ef05f16016c5590133610f642891b.html#a991ef05f16016c5590133610f642891b">More...</a><br /></td></tr>
-<tr class="separator:a991ef05f16016c5590133610f642891b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39cef9c0f44f42fe552d94a792a3c938"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG , typename... Ts&gt; </td></tr>
+<tr class="memitem:a39cef9c0f44f42fe552d94a792a3c938"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a39cef9c0f44f42fe552d94a792a3c938.html#a39cef9c0f44f42fe552d94a792a3c938">sample</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng)</td></tr>
+<tr class="memdesc:a39cef9c0f44f42fe552d94a792a3c938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples a value into a node stored at the address by drawing a value from the specified distribution. Returns the underlying value of the created node.  <a href="record_8hpp_a39cef9c0f44f42fe552d94a792a3c938.html#a39cef9c0f44f42fe552d94a792a3c938">More...</a><br /></td></tr>
+<tr class="separator:a39cef9c0f44f42fe552d94a792a3c938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc0be6c04bcca65c3767d66962c8ede"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG &gt; </td></tr>
 <tr class="memitem:a7bc0be6c04bcca65c3767d66962c8ede"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structnode__t.html">node_t</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="record_8hpp_a7bc0be6c04bcca65c3767d66962c8ede.html#a7bc0be6c04bcca65c3767d66962c8ede">sample</a> (std::string address, D dist, RNG &amp;rng)</td></tr>
 <tr class="memdesc:a7bc0be6c04bcca65c3767d66962c8ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a node with specified address by sampling value from corresponding distribution, then scoring it.  <a href="record_8hpp_a7bc0be6c04bcca65c3767d66962c8ede.html#a7bc0be6c04bcca65c3767d66962c8ede">More...</a><br /></td></tr>

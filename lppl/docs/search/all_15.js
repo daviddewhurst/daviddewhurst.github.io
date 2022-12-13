@@ -9,6 +9,7 @@ var searchData=
   ['weighted_5fvalue_6',['weighted_value',['../query_8hpp_a6730945dbee8b6c3a3d1e32c4a8a3c78.html#a6730945dbee8b6c3a3d1e32c4a8a3c78',1,'query.hpp']]],
   ['weightedmean_7',['WeightedMean',['../class_weighted_mean.html',1,'']]],
   ['weightedrecord_8',['WeightedRecord',['../class_weighted_record.html',1,'']]],
-  ['weightedvalue_9',['WeightedValue',['../class_weighted_value.html',1,'']]],
-  ['weightedvalue_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_10',['WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../class_weighted_value_3_01std_1_1unique__ptr_3_01value__collection__t_3_01_v_01_4_01_4_00_01_o_00_01_ts_8_8_8_01_4.html',1,'']]]
+  ['weightedrecord_3c_20filtervaluetype_3c_20o_2c_20ts_2e_2e_2e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_9',['WeightedRecord&lt; FilterValueType&lt; O, Ts... &gt;, O, Ts... &gt;',['../class_weighted_record.html',1,'']]],
+  ['weightedvalue_10',['WeightedValue',['../class_weighted_value.html',1,'']]],
+  ['weightedvalue_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_11',['WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../class_weighted_value_3_01std_1_1unique__ptr_3_01value__collection__t_3_01_v_01_4_01_4_00_01_o_00_01_ts_8_8_8_01_4.html',1,'']]]
 ];

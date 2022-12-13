@@ -44,6 +44,9 @@ var hierarchy =
     [ "HLNormal", "struct_h_l_normal.html", null ],
     [ "inf_options_t", "structinf__options__t.html", null ],
     [ "Inference< A, I, O, V, Q, Ts >", "struct_inference.html", null ],
+    [ "Inference< A, I, O, FilterValueType< O, Ts... >, WeightedRecord, Ts... >", "struct_inference.html", [
+      [ "Filter< A, I, O, Ts >", "struct_filter.html", null ]
+    ] ],
     [ "Inference< AncestorMetropolis, I, O, V, Q, Ts... >", "struct_inference.html", [
       [ "AncestorMetropolis< I, O, V, Q, Ts >", "struct_ancestor_metropolis.html", null ]
     ] ],
@@ -71,12 +74,17 @@ var hierarchy =
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
     ] ],
     [ "proposal< Out >", "structproposal.html", null ],
+    [ "proposal< Out... >", "structproposal.html", [
+      [ "transition< O, Ts... >", "structtransition.html", null ],
+      [ "transition< O, Out >", "structtransition.html", null ]
+    ] ],
     [ "Queryer< V, O, Ts >", "class_queryer.html", [
+      [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_weighted.html", [
+        [ "WeightedRecord< FilterValueType< O, Ts... >, O, Ts... >", "class_weighted_record.html", null ],
+        [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", null ]
+      ] ],
       [ "Weighted< double, O, Ts... >", "class_weighted.html", [
         [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", null ]
-      ] ],
-      [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_weighted.html", [
-        [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", null ]
       ] ],
       [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "class_weighted.html", [
         [ "WeightedValue< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "class_weighted_value_3_01std_1_1unique__ptr_3_01value__collection__t_3_01_v_01_4_01_4_00_01_o_00_01_ts_8_8_8_01_4.html", null ]
