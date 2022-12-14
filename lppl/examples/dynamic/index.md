@@ -6,7 +6,7 @@ Using this inferred value and some knowledge of system dynamics, we might also w
 of thelatent state, \\(z_{t+s}\\).
 Such tasks are common in finance (inferring latent fundamental value now and forecasting future fundamental value), 
 biology (forecasting unobserved chemical concentrations given biomarker samples), and other fields. 
-In the language of probabilistic modeling, we would formulate this problme as follows: given a likelihood function \\(p(x_t | z_t)\\), a prior distribution
+In the language of probabilistic modeling, we would formulate this problem as follows: given a likelihood function \\(p(x_t | z_t)\\), a prior distribution
 \\(p(z_0)\\), and hypothesized transition dynamics \\(p(z_t | x_{t-1}, z_{t-1})\\), infer the following quantities: (a) the same-timestep posterior distribution
 \\(p(z_t | x_t)\\); (b) the \\(s\\) step ahead forecast distribution \\(p(z_{t + s} | x_t)\\). 
 
@@ -18,11 +18,11 @@ This walkthrough covers examples of each.
 We'll focus on a simple hierarchical model of a univariate observation with latent location parameter. The variance of the location parameter is also unknown.
 Mathematically, we are considering the model
 
-\\[x \sim Normal(z, 0.5);\qquad z \sim Normal(100.0, \exp(\ell)); \qquad \ell \sim Normal(0.0, 1.0)\\]
+\\[x \sim Normal(z, 0.5);\qquad z \sim Normal(100.0, \exp(\ell)); \qquad \ell \sim Normal(0.0, 0.5)\\]
 
 For this example, we'll also assume extremely simple random walk transition dynamics, i.e., 
 
-\\[z_t \sim Normal(z_{t-1}, \exp(\ell_{t-1}));\qquad \ell_t \sim Normal(\ell_{t-1}, 1.0) .\\]
+\\[z_t \sim Normal(z_{t-1}, \exp(\ell_{t-1}));\qquad \ell_t \sim Normal(\ell_{t-1}, 0.5) .\\]
 
 Expressing this model in `lppl` could be done multiple ways. Here we're focusing on two -- one that'll be easy to use with built-in filtering algorithms, and another
 that's designed for a custom mean-field filtering algorihm of our own design. 
@@ -106,7 +106,7 @@ we want -- the mean values of `"latent"` and `"log_latent_scale"` -- out of the 
 ## DIY filtering
 
 Of course, you can be obstinate and not use the built-in algorithms. 
-Maybe you dislike the forced usage of `WeightedRecord` queryer (which uses \\(O(n_samples)\\) memory), or maybe you want to roll your own update logic.
+Maybe you dislike the forced usage of `WeightedRecord` queryer (which uses \\(O(n\_samples)\\) memory), or maybe you want to roll your own update logic.
 Let's rewrite the model to eschew `transition` and `Filter` in favor of lower-level inference and query machinery:
 
 ```cpp
