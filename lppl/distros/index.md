@@ -2,7 +2,11 @@
 
 Clicking a link will result in an attempted download of a `.zip` file to your machine.
 
+GPLv3 licensed
 + [latest](./lppl-vlatest.zip)
++ [v0.10.0](./lppl-v0.10.0.zip)
+
+LGPLv3 licensed
 + [v0.9.0](./lppl-v0.9.0.zip)
 + [v0.8.1](./lppl-v0.8.1.zip)
 + [v0.8.0](./lppl-v0.8.0.zip)
