@@ -7,8 +7,10 @@ Open-universe probabilistic programming in (almost modern) C++, done in exactly 
 + Explicit PRNG state (reproducibility)
 + Algebraic sum types (`std::variant`) everywhere instead of boxing (`std::any`)
 
-Open-source (LGPL3), all source available at [this webpage](https://gitlab.com/drdewhurst/lppl/-/tree/develop). 
+It's open-source and available at [this webpage](https://gitlab.com/drdewhurst/lppl/-/tree/develop). 
 There's lots of [documentation](./docs/index.html)! You can also download the latest [tagged version](./distros/lppl-vlatest.zip) of the source, or see [all versions](./distros/index.md). 
+
+> :warning: Versions of `lppl` greater than v0.9.0 will change licenses from LGPL3 to GPL3.
 
 ### Examples
 
