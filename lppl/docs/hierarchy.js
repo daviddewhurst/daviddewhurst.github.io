@@ -37,7 +37,9 @@ var hierarchy =
     [ "Distributions::Generate< int >", "class_distributions_1_1_generate.html", null ],
     [ "Distributions::Generate< unsigned >", "class_distributions_1_1_generate.html", null ],
     [ "Distributions::Generate< unsigned long >", "class_distributions_1_1_generate.html", null ],
+    [ "generic_metropolis_helper", "structgeneric__metropolis__helper.html", null ],
     [ "has_proposal< C >", "structhas__proposal.html", null ],
+    [ "has_proposal< GenericMetropolis >", "structhas__proposal_3_01_generic_metropolis_01_4.html", null ],
     [ "has_proposal< ImportanceSampling >", "structhas__proposal_3_01_importance_sampling_01_4.html", null ],
     [ "HLCategorical< N >", "struct_h_l_categorical.html", null ],
     [ "HLGamma", "struct_h_l_gamma.html", null ],
@@ -49,6 +51,9 @@ var hierarchy =
     ] ],
     [ "Inference< AncestorMetropolis, I, O, V, Q, Ts... >", "struct_inference.html", [
       [ "AncestorMetropolis< I, O, V, Q, Ts >", "struct_ancestor_metropolis.html", null ]
+    ] ],
+    [ "Inference< GenericMetropolis, I, O, V, Q, Ts... >", "struct_inference.html", [
+      [ "GenericMetropolis< I, O, V, Q, Ts >", "struct_generic_metropolis.html", null ]
     ] ],
     [ "Inference< ImportanceSampling, I, O, V, Q, Ts... >", "struct_inference.html", [
       [ "ImportanceSampling< I, O, V, Q, Ts >", "struct_importance_sampling.html", null ]
@@ -69,6 +74,7 @@ var hierarchy =
     [ "Distributions::LogProb< unsigned long >", "class_distributions_1_1_log_prob.html", null ],
     [ "MetropolisState< Ts >", "struct_metropolis_state.html", null ],
     [ "node_t< D >", "structnode__t.html", null ],
+    [ "Optimizer< V, O, Ts >", "class_optimizer.html", null ],
     [ "plate< D >", "structplate.html", [
       [ "shared_static_plate< D, N >", "structshared__static__plate.html", null ],
       [ "static_plate< D, N >", "structstatic__plate.html", null ]

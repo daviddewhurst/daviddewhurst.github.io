@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.10.0</span>
    </div>
   </td>
  </tr>
@@ -117,13 +117,13 @@ $(document).ready(function(){initNavTree('record_8hpp_af66a0d7ab344dc4b1f8ee354e
 </div><div class="memdoc">
 
 <p>Node-level interpretations. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
 <ul>
-<li>interp_t::<b>standard</b>: no special interpretation</li>
-<li>interp_t::<b>replay</b>: the node should be replayed through the record, pretending as though the value in the node had been sampled from the distribution, with no other changes to node structure other than updated log probability</li>
-<li>interp_t::<b>replace</b>: the distribution in the calling function should be replaced by the distribution stored in the record at this address</li>
-<li>interp_t::<b>condition</b>: the node should be conditioned on the value in the node (and hence the node is converted into an observed node)</li>
-<li>interp_t::<b>block</b>: converts the node to untraced randomness </li>
+<li>interp_t::standard: no special interpretation</li>
+<li>interp_t::replay: the node should be replayed through the record, pretending as though the value in the node had been sampled from the distribution, with no other changes to node structure other than updated log probability</li>
+<li>interp_t::replace: the distribution in the calling function should be replaced by the distribution stored in the record at this address</li>
+<li>interp_t::condition: the node should be conditioned on the value in the node (and hence the node is converted into an observed node)</li>
+<li>interp_t::block: converts the node to untraced randomness</li>
+<li>interp_t::propose: the node has been proposed </li>
 </ul>
 
 </div>

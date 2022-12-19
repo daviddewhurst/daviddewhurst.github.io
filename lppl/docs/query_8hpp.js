@@ -2,6 +2,7 @@ var query_8hpp =
 [
     [ "collection_t", "structcollection__t.html", null ],
     [ "inf_options_t", "structinf__options__t.html", null ],
+    [ "Optimizer< V, O, Ts >", "class_optimizer.html", "class_optimizer" ],
     [ "Queryer< V, O, Ts >", "class_queryer.html", "class_queryer" ],
     [ "QueryerCollection< V, O, Q, Ts >", "class_queryer_collection.html", "class_queryer_collection" ],
     [ "record_collection_t< O, Ts >", "structrecord__collection__t.html", "structrecord__collection__t" ],

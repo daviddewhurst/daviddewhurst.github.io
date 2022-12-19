@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.10.0</span>
    </div>
   </td>
  </tr>
@@ -116,15 +116,15 @@ $(document).ready(function(){initNavTree('record_8hpp_a33754e8df42d882a7d18d9f5c
 </table>
 </div><div class="memdoc">
 
-<p>Record-level intepretation. Setting a record-level interpretation apart from record_interp_t::<b>standard</b> will force calls to sample/oberve to disregard any node-level interpretation. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
+<p>Record-level intepretation. Setting a record-level interpretation apart from record_interp_t::standard will force calls to sample/oberve to disregard any node-level interpretation. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>refactor as enum class</dd></dl>
 <ul>
-<li>record_interp_t::<b>standard</b>: no special interpretation</li>
-<li>record_interp_t::<b>replay</b>: replay the record through the program</li>
-<li>record_interp_t::<b>replace</b>: replace distribution in each sample call with the one in the record</li>
-<li>record_interp_t::<b>rewrite</b>: replace followed by replay</li>
-<li>record_interp_t::<b>block_obs</b>: block all observed sites</li>
-<li>record_interp_t::<b>block_sample</b>: block all sample sites </li>
+<li>record_interp_t::standard: no special interpretation</li>
+<li>record_interp_t::replay: replay the record through the program</li>
+<li>record_interp_t::replace: replace distribution in each sample call with the one in the record</li>
+<li>record_interp_t::rewrite: replace followed by replay</li>
+<li>record_interp_t::block_obs: block all observed sites</li>
+<li>record_interp_t::block_sample: block all sample sites </li>
 </ul>
 
 </div>

@@ -5,6 +5,7 @@ var searchData=
   ['inference_2',['Inference',['../struct_inference.html',1,'']]],
   ['inference_3c_20a_2c_20i_2c_20o_2c_20filtervaluetype_3c_20o_2c_20ts_2e_2e_2e_20_3e_2c_20weightedrecord_2c_20ts_2e_2e_2e_20_3e_3',['Inference&lt; A, I, O, FilterValueType&lt; O, Ts... &gt;, WeightedRecord, Ts... &gt;',['../struct_inference.html',1,'']]],
   ['inference_3c_20ancestormetropolis_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_4',['Inference&lt; AncestorMetropolis, I, O, V, Q, Ts... &gt;',['../struct_inference.html',1,'']]],
-  ['inference_3c_20importancesampling_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_5',['Inference&lt; ImportanceSampling, I, O, V, Q, Ts... &gt;',['../struct_inference.html',1,'']]],
-  ['inference_3c_20likelihoodweighting_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_6',['Inference&lt; LikelihoodWeighting, I, O, V, Q, Ts... &gt;',['../struct_inference.html',1,'']]]
+  ['inference_3c_20genericmetropolis_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_5',['Inference&lt; GenericMetropolis, I, O, V, Q, Ts... &gt;',['../struct_inference.html',1,'']]],
+  ['inference_3c_20importancesampling_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_6',['Inference&lt; ImportanceSampling, I, O, V, Q, Ts... &gt;',['../struct_inference.html',1,'']]],
+  ['inference_3c_20likelihoodweighting_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_7',['Inference&lt; LikelihoodWeighting, I, O, V, Q, Ts... &gt;',['../struct_inference.html',1,'']]]
 ];

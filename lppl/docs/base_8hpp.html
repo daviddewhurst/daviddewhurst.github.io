@@ -32,7 +32,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">lppl<span id="projectnumber">&#160;v0.9.0</span>
+   <div id="projectname">lppl<span id="projectnumber">&#160;v0.10.0</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,8 @@ $(document).ready(function(){initNavTree('base_8hpp.html',''); initResizable(); 
   <div class="headertitle"><div class="title">base.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cmath&gt;</code><br />
 <code>#include &lt;functional&gt;</code><br />
@@ -110,16 +111,26 @@ $(document).ready(function(){initNavTree('base_8hpp.html',''); initResizable(); 
 <code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;distributions.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="record_8hpp.html">record.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="effects_8hpp.html">effects.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="query_8hpp.html">query.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="inference_8hpp.html">inference/inference.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="proposal_8hpp.html">inference/proposal.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ancestor_metropolis.html">AncestorMetropolis&lt; I, O, V, Q, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metropolis Hastings using the prior distribution as the proposal.  <a href="struct_ancestor_metropolis.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structgeneric__metropolis__helper.html">generic_metropolis_helper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes symmetric difference and intersection of address spaces.  <a href="structgeneric__metropolis__helper.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_generic_metropolis.html">GenericMetropolis&lt; I, O, V, Q, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic Metropolis-Hastings algorithm with user-specified proposal distribution.  <a href="struct_generic_metropolis.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhas__proposal_3_01_generic_metropolis_01_4.html">has_proposal&lt; GenericMetropolis &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_metropolis_state.html">MetropolisState&lt; Ts &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +141,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ae1ac4144d0be160409d133563c9da55a"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="base_8hpp_ae1ac4144d0be160409d133563c9da55a.html#ae1ac4144d0be160409d133563c9da55a">log_accept_prior</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;orig_r, <a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;new_r)</td></tr>
 <tr class="memdesc:ae1ac4144d0be160409d133563c9da55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log acceptance probability for use when proposing from the prior.  <a href="base_8hpp_ae1ac4144d0be160409d133563c9da55a.html#ae1ac4144d0be160409d133563c9da55a">More...</a><br /></td></tr>
 <tr class="separator:ae1ac4144d0be160409d133563c9da55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfc5a7b7c740b0b3d129875ca704fe7e"><td class="memTemplParams" colspan="2">template&lt;typename ROrig , typename RNew &gt; </td></tr>
+<tr class="memitem:acfc5a7b7c740b0b3d129875ca704fe7e"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="base_8hpp_acfc5a7b7c740b0b3d129875ca704fe7e.html#acfc5a7b7c740b0b3d129875ca704fe7e">proposal_log_prob</a> (<a class="el" href="structgeneric__metropolis__helper.html">generic_metropolis_helper</a> &amp;helper, ROrig &amp;r_orig, RNew &amp;r_new)</td></tr>
+<tr class="memdesc:acfc5a7b7c740b0b3d129875ca704fe7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the log probability of one record given another.  <a href="base_8hpp_acfc5a7b7c740b0b3d129875ca704fe7e.html#acfc5a7b7c740b0b3d129875ca704fe7e">More...</a><br /></td></tr>
+<tr class="separator:acfc5a7b7c740b0b3d129875ca704fe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under LGPL v3 </p>
+<div class="textblock"><p >This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under GPL v3 </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

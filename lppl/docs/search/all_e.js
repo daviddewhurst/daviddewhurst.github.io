@@ -8,5 +8,6 @@ var searchData=
   ['proposal_5',['proposal',['../structproposal.html',1,'']]],
   ['proposal_2ehpp_6',['proposal.hpp',['../proposal_8hpp.html',1,'']]],
   ['proposal_3c_20out_2e_2e_2e_20_3e_7',['proposal&lt; Out... &gt;',['../structproposal.html',1,'']]],
-  ['propose_8',['propose',['../proposal_8hpp_a4fccb5a99fc2c0720e3895f475d42c5d.html#a4fccb5a99fc2c0720e3895f475d42c5d',1,'proposal.hpp']]]
+  ['proposal_5flog_5fprob_8',['proposal_log_prob',['../base_8hpp_acfc5a7b7c740b0b3d129875ca704fe7e.html#acfc5a7b7c740b0b3d129875ca704fe7e',1,'base.hpp']]],
+  ['propose_9',['propose',['../proposal_8hpp_a4fccb5a99fc2c0720e3895f475d42c5d.html#a4fccb5a99fc2c0720e3895f475d42c5d',1,'proposal.hpp']]]
 ];
