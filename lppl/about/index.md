@@ -15,8 +15,6 @@ No other existing PPL accomplishes all of these objectives.
 
 ## Background/theory
 
-### Background
-
 Probabilistic programming elevates the modeling of uncertainty to a first-class programming language construct and automates
 inference over these models.
 Uncertainty is important because most real-world phenomena are either fundamentally random in nature (e.g., many physical processes)
@@ -24,8 +22,6 @@ or are so magnificently complex that the only tractable way to reason about them
 Automation of inference is important because -- no other way to put it -- doing inference "well" (accurately, as precisely as the data allows, quickly, and memory efficient-ly) is hard. 
 It's also almost entirely orthogonal to the modeler's objectives of describing phenomena and asking questions; it's the answers that matter, not how the questions are answered.
 Therefore, automating inference lets modelers save precious mental energy.
-
-### Theory/architecture
 
 `lppl` is a record- and sample-based probabilistic programming language (PPL). "Record-based" means that random choices taken during the execution of a
 program are recorded in a data structure (the "record") as they are taken. (This is more commonly known as "trace-based", language I eschew for reasons I
@@ -48,13 +44,27 @@ Blue boxes denote things that the user has to (solid borders) or may choose to (
 Namely, the user has to write a probabilistic program that has an input type `I`, an output type `O`, and contains distribution types `Ts...`, has to specify an input to
 the program, and may choose to specify additional values that occur within the program.
 
-+ All probabilistic programs (`pp_t<I, O, Ts...>` in C++) take a single input of type `I`. Yes, even purely generative ones. Sorry, that's just how it is, pass an empty tuple or
+### Probabilistic programs
++ All probabilistic programs ([`pp_t<I, O, Ts...>`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084)) take a single input of type `I`. Yes, even purely generative ones. Sorry, that's just how it is, pass an empty tuple or
 something if your program really doesn't take any inputs. They output something of type `O`.
 + They are parameterized over the distribution types `Ts...` contained within them. 
 This is because it may be possible to specialize inference algorithms or query logic based on the types of distributions the program contains.
 For example, a probabilistic program containing only `Normal` distributions is fundamentally different from one that contains both `Normal` and `Gamma` distributions -- in 
 the first case, I know that I can create an ADVI approximate inference algorithm for the program without applying any transformations to any latent rvs, while in the second
 case I need to apply a log transform to the `Gamma` rvs.
++ They contain [`sample`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_a39cef9c0f44f42fe552d94a792a3c938.html#a39cef9c0f44f42fe552d94a792a3c938) and [`observe`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a) statements. `sample` means you want to sample a value from a probability distribution and store it in the record at the address
+that you specified. `observe` means that you observed a value, and you want to score how likely it is against some probability distribution and store it in the record at the address that you specified.
+
+### Effects
++ You might want to change how your probabilistic program is interpreted. For example, you might want to additionally specify that the value of `"n_clusters"` in your
+open-universe clustering model is actually equal to 6 for a particular experiment.
+You can apply an [effect](https://davidrushingdewhurst.com/lppl/docs/effects_8hpp.html) to the probabilistic program that changes the interpretation of `sample` and/or
+`observe` calls. For example, you could write 
+```cpp
+auto conditioned_clustering_model = condition(clustering_model, "n_clusters", 6);
+```
+to achieve the desired outcome here.
+
 
 The green box is what you get at the end -- the result of a query, which is, you know, what you asked for.
 
