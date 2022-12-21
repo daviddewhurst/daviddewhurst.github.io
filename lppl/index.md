@@ -3,11 +3,11 @@
 Open-universe probabilistic programming in (almost modern) C++, done in exactly the idiosyncratic way that I want to do it.
 
 + Record-based (which essentially means trace-based, but we don't hide the tracing from you)
-+ Sample-based, with posterior queries by default computed online rather than after sampling is complete (resulting in potentially `O(1)` memory use rather than `O(N)`)
++ Sample-based, with posterior queries by default computed online rather than after sampling is complete -- defaulting to constant memory complexity
 + Explicit PRNG state (reproducibility)
-+ Algebraic sum types (`std::variant`) everywhere instead of boxing (`std::any`)
++ Algebraic sum types everywhere instead of boxing
 
-Here's a familiar friend:
+This should look familiar.
 
 ```cpp
 template<size_t N>
@@ -44,12 +44,12 @@ There's lots of [documentation](./docs/index.html)! You can also download the la
 `lppl` supports the following inference algorithms:
 
 + importance sampling
-    + likelihood weighting
-    + generic importance sampling with user-defined proposal
+    + [likelihood weighting](https://davidrushingdewhurst.com/lppl/docs/struct_likelihood_weighting.html)
+    + [generic importance sampling](https://davidrushingdewhurst.com/lppl/docs/struct_importance_sampling.html) with user-defined proposal
 + metropolis-hastings
-    + ancestor metropolis
-    + generic metropolis with user-defined proposal
-+ generic filtering
+    + [ancestor metropolis](https://davidrushingdewhurst.com/lppl/docs/struct_ancestor_metropolis.html)
+    + [generic metropolis](https://davidrushingdewhurst.com/lppl/docs/struct_generic_metropolis.html) with user-defined proposal
++ [generic filtering](https://davidrushingdewhurst.com/lppl/docs/struct_filter.html) using any inference algorithm to compute updates
 
 More algorithms to come...
 
@@ -58,3 +58,5 @@ More algorithms to come...
 + other inference algorithms (CSIS, ADVI, ...)
     + some inference algorithms may end up going in separate libraries, since they might depend on external libraries (e.g., [Adept](http://www.met.reading.ac.uk/clouds/adept/) for neural network-based inference). This is all very hypothetical anyway.
 + more query types, and composability of queries
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />The `lppl` webpage and its subpages are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
