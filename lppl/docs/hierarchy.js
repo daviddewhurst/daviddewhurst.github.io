@@ -1,80 +1,75 @@
 var hierarchy =
 [
+    [ "Distributions::arity< D >", "structDistributions_1_1arity.html", null ],
+    [ "Distributions::arity< Categorical >", "structDistributions_1_1arity_3_01Categorical_01_4.html", null ],
+    [ "Distributions::arity< DiscreteUniform >", "structDistributions_1_1arity_3_01DiscreteUniform_01_4.html", null ],
+    [ "Distributions::arity< Gamma >", "structDistributions_1_1arity_3_01Gamma_01_4.html", null ],
+    [ "Distributions::arity< Normal >", "structDistributions_1_1arity_3_01Normal_01_4.html", null ],
+    [ "Distributions::arity< Poisson >", "structDistributions_1_1arity_3_01Poisson_01_4.html", null ],
+    [ "Distributions::arity< Uniform >", "structDistributions_1_1arity_3_01Uniform_01_4.html", null ],
     [ "collection_t", "structcollection__t.html", [
       [ "value_collection_t< record_t< Ts... > >", "structvalue__collection__t.html", [
         [ "record_collection_t< O, Ts >", "structrecord__collection__t.html", null ]
       ] ],
       [ "value_collection_t< V >", "structvalue__collection__t.html", null ]
     ] ],
-    [ "Distributions::Generate< V >", "class_distributions_1_1_generate.html", [
-      [ "Distributions::Distribution< unsigned long >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< int >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< double >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< unsigned >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< V >", "class_distributions_1_1_distribution.html", [
-        [ "Distributions::StdDistribution< unsigned long, std::discrete_distribution< int > >", "class_distributions_1_1_std_distribution.html", [
-          [ "Distributions::Categorical", "class_distributions_1_1_categorical.html", null ]
+    [ "Distributions::Generate< V >", "classDistributions_1_1Generate.html", [
+      [ "Distributions::Distribution< V >", "classDistributions_1_1Distribution.html", [
+        [ "Distributions::StdDistribution< double, std::normal_distribution<> >", "classDistributions_1_1StdDistribution.html", [
+          [ "Distributions::Normal", "classDistributions_1_1Normal.html", null ]
         ] ],
-        [ "Distributions::StdDistribution< int, std::uniform_int_distribution<> >", "class_distributions_1_1_std_distribution.html", [
-          [ "Distributions::DiscreteUniform", "class_distributions_1_1_discrete_uniform.html", null ]
+        [ "Distributions::StdDistribution< double, std::uniform_real_distribution<> >", "classDistributions_1_1StdDistribution.html", [
+          [ "Distributions::Uniform", "classDistributions_1_1Uniform.html", null ]
         ] ],
-        [ "Distributions::StdDistribution< double, std::gamma_distribution< double > >", "class_distributions_1_1_std_distribution.html", [
-          [ "Distributions::Gamma", "class_distributions_1_1_gamma.html", null ]
+        [ "Distributions::StdDistribution< int, std::uniform_int_distribution<> >", "classDistributions_1_1StdDistribution.html", [
+          [ "Distributions::DiscreteUniform", "classDistributions_1_1DiscreteUniform.html", null ]
         ] ],
-        [ "Distributions::StdDistribution< double, std::normal_distribution<> >", "class_distributions_1_1_std_distribution.html", [
-          [ "Distributions::Normal", "class_distributions_1_1_normal.html", null ]
+        [ "Distributions::StdDistribution< unsigned, std::poisson_distribution< unsigned > >", "classDistributions_1_1StdDistribution.html", [
+          [ "Distributions::Poisson", "classDistributions_1_1Poisson.html", null ]
         ] ],
-        [ "Distributions::StdDistribution< unsigned, std::poisson_distribution< unsigned > >", "class_distributions_1_1_std_distribution.html", [
-          [ "Distributions::Poisson", "class_distributions_1_1_poisson.html", null ]
+        [ "Distributions::StdDistribution< double, std::gamma_distribution< double > >", "classDistributions_1_1StdDistribution.html", [
+          [ "Distributions::Gamma", "classDistributions_1_1Gamma.html", null ]
         ] ],
-        [ "Distributions::StdDistribution< double, std::uniform_real_distribution<> >", "class_distributions_1_1_std_distribution.html", [
-          [ "Distributions::Uniform", "class_distributions_1_1_uniform.html", null ]
+        [ "Distributions::StdDistribution< unsigned long, std::discrete_distribution< int > >", "classDistributions_1_1StdDistribution.html", [
+          [ "Distributions::Categorical", "classDistributions_1_1Categorical.html", null ]
         ] ],
-        [ "Distributions::StdDistribution< V, DT >", "class_distributions_1_1_std_distribution.html", null ]
+        [ "Distributions::StdDistribution< V, DT >", "classDistributions_1_1StdDistribution.html", null ]
       ] ]
     ] ],
-    [ "Distributions::Generate< double >", "class_distributions_1_1_generate.html", null ],
-    [ "Distributions::Generate< int >", "class_distributions_1_1_generate.html", null ],
-    [ "Distributions::Generate< unsigned >", "class_distributions_1_1_generate.html", null ],
-    [ "Distributions::Generate< unsigned long >", "class_distributions_1_1_generate.html", null ],
     [ "generic_metropolis_helper", "structgeneric__metropolis__helper.html", null ],
     [ "has_proposal< C >", "structhas__proposal.html", null ],
-    [ "has_proposal< GenericMetropolis >", "structhas__proposal_3_01_generic_metropolis_01_4.html", null ],
-    [ "has_proposal< ImportanceSampling >", "structhas__proposal_3_01_importance_sampling_01_4.html", null ],
-    [ "HLCategorical< N >", "struct_h_l_categorical.html", null ],
-    [ "HLGamma", "struct_h_l_gamma.html", null ],
-    [ "HLNormal", "struct_h_l_normal.html", null ],
+    [ "has_proposal< GenericMetropolis >", "structhas__proposal_3_01GenericMetropolis_01_4.html", null ],
+    [ "has_proposal< ImportanceSampling >", "structhas__proposal_3_01ImportanceSampling_01_4.html", null ],
     [ "inf_options_t", "structinf__options__t.html", null ],
-    [ "Inference< A, I, O, V, Q, Ts >", "struct_inference.html", null ],
-    [ "Inference< A, I, O, FilterValueType< O, Ts... >, WeightedRecord, Ts... >", "struct_inference.html", [
-      [ "Filter< A, I, O, Ts >", "struct_filter.html", null ]
+    [ "Inference< A, I, O, V, Q, Ts >", "structInference.html", null ],
+    [ "Inference< A, I, O, FilterValueType< O, Ts... >, WeightedRecord, Ts... >", "structInference.html", [
+      [ "Filter< A, I, O, Ts >", "structFilter.html", null ]
     ] ],
-    [ "Inference< AncestorMetropolis, I, O, V, Q, Ts... >", "struct_inference.html", [
-      [ "AncestorMetropolis< I, O, V, Q, Ts >", "struct_ancestor_metropolis.html", null ]
+    [ "Inference< AncestorMetropolis, I, O, V, Q, Ts... >", "structInference.html", [
+      [ "AncestorMetropolis< I, O, V, Q, Ts >", "structAncestorMetropolis.html", null ]
     ] ],
-    [ "Inference< GenericMetropolis, I, O, V, Q, Ts... >", "struct_inference.html", [
-      [ "GenericMetropolis< I, O, V, Q, Ts >", "struct_generic_metropolis.html", null ]
+    [ "Inference< GenericMetropolis, I, O, V, Q, Ts... >", "structInference.html", [
+      [ "GenericMetropolis< I, O, V, Q, Ts >", "structGenericMetropolis.html", null ]
     ] ],
-    [ "Inference< ImportanceSampling, I, O, V, Q, Ts... >", "struct_inference.html", [
-      [ "ImportanceSampling< I, O, V, Q, Ts >", "struct_importance_sampling.html", null ]
+    [ "Inference< ImportanceSampling, I, O, V, Q, Ts... >", "structInference.html", [
+      [ "ImportanceSampling< I, O, V, Q, Ts >", "structImportanceSampling.html", null ]
     ] ],
-    [ "Inference< LikelihoodWeighting, I, O, V, Q, Ts... >", "struct_inference.html", [
-      [ "LikelihoodWeighting< I, O, V, Q, Ts >", "struct_likelihood_weighting.html", null ]
+    [ "Inference< LikelihoodWeighting, I, O, V, Q, Ts... >", "structInference.html", [
+      [ "LikelihoodWeighting< I, O, V, Q, Ts >", "structLikelihoodWeighting.html", null ]
     ] ],
-    [ "Distributions::LogProb< V >", "class_distributions_1_1_log_prob.html", [
-      [ "Distributions::Distribution< unsigned long >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< int >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< double >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< unsigned >", "class_distributions_1_1_distribution.html", null ],
-      [ "Distributions::Distribution< V >", "class_distributions_1_1_distribution.html", null ]
+    [ "Distributions::input_types< D >", "structDistributions_1_1input__types.html", null ],
+    [ "Distributions::input_types< Categorical >", "structDistributions_1_1input__types_3_01Categorical_01_4.html", null ],
+    [ "Distributions::input_types< DiscreteUniform >", "structDistributions_1_1input__types_3_01DiscreteUniform_01_4.html", null ],
+    [ "Distributions::input_types< Gamma >", "structDistributions_1_1input__types_3_01Gamma_01_4.html", null ],
+    [ "Distributions::input_types< Normal >", "structDistributions_1_1input__types_3_01Normal_01_4.html", null ],
+    [ "Distributions::input_types< Poisson >", "structDistributions_1_1input__types_3_01Poisson_01_4.html", null ],
+    [ "Distributions::input_types< Uniform >", "structDistributions_1_1input__types_3_01Uniform_01_4.html", null ],
+    [ "Distributions::LogProb< V >", "classDistributions_1_1LogProb.html", [
+      [ "Distributions::Distribution< V >", "classDistributions_1_1Distribution.html", null ]
     ] ],
-    [ "Distributions::LogProb< double >", "class_distributions_1_1_log_prob.html", null ],
-    [ "Distributions::LogProb< int >", "class_distributions_1_1_log_prob.html", null ],
-    [ "Distributions::LogProb< unsigned >", "class_distributions_1_1_log_prob.html", null ],
-    [ "Distributions::LogProb< unsigned long >", "class_distributions_1_1_log_prob.html", null ],
-    [ "MetropolisState< Ts >", "struct_metropolis_state.html", null ],
+    [ "MetropolisState< Ts >", "structMetropolisState.html", null ],
     [ "node_t< D >", "structnode__t.html", null ],
-    [ "Optimizer< V, O, Ts >", "class_optimizer.html", null ],
+    [ "Optimizer< V, O, Ts >", "classOptimizer.html", null ],
     [ "plate< D >", "structplate.html", [
       [ "shared_static_plate< D, N >", "structshared__static__plate.html", null ],
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
@@ -84,31 +79,25 @@ var hierarchy =
       [ "transition< O, Ts... >", "structtransition.html", null ],
       [ "transition< O, Out >", "structtransition.html", null ]
     ] ],
-    [ "Queryer< V, O, Ts >", "class_queryer.html", [
-      [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_weighted.html", [
-        [ "WeightedRecord< FilterValueType< O, Ts... >, O, Ts... >", "class_weighted_record.html", null ],
-        [ "WeightedRecord< typename, O, Ts >", "class_weighted_record.html", null ]
+    [ "Queryer< V, O, Ts >", "classQueryer.html", [
+      [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "classWeighted.html", [
+        [ "WeightedValue< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html", null ]
       ] ],
-      [ "Weighted< double, O, Ts... >", "class_weighted.html", [
-        [ "WeightedMean< typename, O, Ts >", "class_weighted_mean.html", null ]
+      [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "classWeighted.html", [
+        [ "WeightedRecord< typename, O, Ts >", "classWeightedRecord.html", null ]
       ] ],
-      [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "class_weighted.html", [
-        [ "WeightedValue< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "class_weighted_value_3_01std_1_1unique__ptr_3_01value__collection__t_3_01_v_01_4_01_4_00_01_o_00_01_ts_8_8_8_01_4.html", null ]
+      [ "Weighted< double, O, Ts... >", "classWeighted.html", [
+        [ "WeightedMean< typename, O, Ts >", "classWeightedMean.html", null ]
       ] ]
     ] ],
-    [ "Queryer< double, O, Ts... >", "class_queryer.html", null ],
-    [ "Queryer< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "class_queryer.html", null ],
-    [ "Queryer< std::unique_ptr< std::unordered_map< std::string, V > >, O, Ts... >", "class_queryer.html", [
-      [ "QueryerCollection< V, O, Q, Ts >", "class_queryer_collection.html", null ]
+    [ "Queryer< std::unique_ptr< std::unordered_map< std::string, V > >, O, Ts... >", "classQueryer.html", [
+      [ "QueryerCollection< V, O, Q, Ts >", "classQueryerCollection.html", null ]
     ] ],
-    [ "Queryer< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "class_queryer.html", null ],
-    [ "Queryer< V, O, Ts... >", "class_queryer.html", [
-      [ "Weighted< V, O, Ts >", "class_weighted.html", null ]
+    [ "Queryer< V, O, Ts... >", "classQueryer.html", [
+      [ "Weighted< V, O, Ts >", "classWeighted.html", null ]
     ] ],
     [ "record_t< Ts >", "structrecord__t.html", null ],
     [ "record_t< Ts... >", "structrecord__t.html", null ],
-    [ "Score< I >", "struct_score.html", null ],
-    [ "WeightedValue< V, O, Ts >", "class_weighted_value.html", null ],
-    [ "XOR64PRNG", "struct_x_o_r64_p_r_n_g.html", null ],
-    [ "XOR64State", "struct_x_o_r64_state.html", null ]
+    [ "Score< I >", "structScore.html", null ],
+    [ "WeightedValue< V, O, Ts >", "classWeightedValue.html", null ]
 ];

@@ -1,9 +1,12 @@
 var record_8hpp =
 [
-    [ "node_t< D >", "structnode__t.html", "structnode__t" ],
-    [ "record_t< Ts >", "structrecord__t.html", "structrecord__t" ],
+    [ "node_t", "structnode__t.html", "structnode__t" ],
+    [ "record_t", "structrecord__t.html", "structrecord__t" ],
     [ "DSType", "record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810", null ],
+    [ "node_map_t", "record_8hpp.html#a615c3e26ba1e9b2d5fe28023d218544e", null ],
     [ "pp_t", "record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084", null ],
+    [ "var_node_t", "record_8hpp.html#a0a05e8ce47737ce51bc5dacea733c482", null ],
+    [ "var_ret_t", "record_8hpp.html#a4225f535628c9a4e258c2c668adf0a19", null ],
     [ "interp_t", "record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2", [
       [ "standard", "record_8hpp.html#af66a0d7ab344dc4b1f8ee354e185b6b2ac00f0c4675b91fb8b918e4079a0b1bac", null ],
       [ "replay", "record_8hpp.html#af66a0d7ab344dc4b1f8ee354e185b6b2ab2dbeb695fa205804b1e5e72650ad2bb", null ],
@@ -20,11 +23,25 @@ var record_8hpp =
       [ "block_obs", "record_8hpp.html#a33754e8df42d882a7d18d9f5ce96ba7ba08ea27a5da32b5886f8fde7a28f2e9d1", null ],
       [ "block_sample", "record_8hpp.html#a33754e8df42d882a7d18d9f5ce96ba7bad3bc13098b578f2853836f3992c2f6a7", null ]
     ] ],
+    [ "_block_observe", "record_8hpp.html#a580514392733671a6e8fc6fc1b842e1a", null ],
+    [ "_block_sample", "record_8hpp.html#a87e8a510401098d33bcac176912b2c5d", null ],
+    [ "_condition", "record_8hpp.html#a9251736e6594566477e941b5010bda16", null ],
+    [ "_observe", "record_8hpp.html#ae5e12431cfe765aaa65fe1cdf1f55e45", null ],
+    [ "_observe_with_node_interp", "record_8hpp.html#a5b07c814d885b542de42bca0a708bc1c", null ],
+    [ "_observe_with_record_interp", "record_8hpp.html#ad744b3928a22d7427d593502ffd23ce8", null ],
+    [ "_replace", "record_8hpp.html#a53109bd8d6887b49c737c96f14f48e09", null ],
+    [ "_replace_observe", "record_8hpp.html#a1561d48ec97291702455533c5298cdef", null ],
+    [ "_replay", "record_8hpp.html#a595956c763314ce0f00a78a7ccb61e29", null ],
+    [ "_rewrite", "record_8hpp.html#a6412f8ecdcfd8dd8bc304338363fa859", null ],
+    [ "_sample_with_node_interp", "record_8hpp.html#a1220700e3f19be602d593cd2c7a44d92", null ],
+    [ "_sample_with_record_interp", "record_8hpp.html#a66090658bc18a12387bbb7da1adab761", null ],
+    [ "_standard", "record_8hpp.html#a097205cd99ee475e68767fd5bd2678b5", null ],
     [ "display", "record_8hpp_a61743a702b68a441e12af956e81d339a.html#a61743a702b68a441e12af956e81d339a", null ],
     [ "loglikelihood", "record_8hpp_a979a768437d370f2fad974a72cb86b9a.html#a979a768437d370f2fad974a72cb86b9a", null ],
     [ "logprob", "record_8hpp_a2cbd8b330bb1d078949c82bf96615ed0.html#a2cbd8b330bb1d078949c82bf96615ed0", null ],
     [ "observe", "record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a", null ],
-    [ "observe", "record_8hpp_aa89d6abad2f9b42055af844b453b589f.html#aa89d6abad2f9b42055af844b453b589f", null ],
-    [ "sample", "record_8hpp_a39cef9c0f44f42fe552d94a792a3c938.html#a39cef9c0f44f42fe552d94a792a3c938", null ],
-    [ "sample", "record_8hpp_a7bc0be6c04bcca65c3767d66962c8ede.html#a7bc0be6c04bcca65c3767d66962c8ede", null ]
+    [ "observe", "record_8hpp.html#a58a50b1a85a5dfe92fd2637e6921570a", null ],
+    [ "sample", "record_8hpp_af77cbf37e8e287b1c525391a1792b1e2.html#af77cbf37e8e287b1c525391a1792b1e2", null ],
+    [ "sample", "record_8hpp.html#ad29f618b00064a7fbeb2e84c80fe2684", null ],
+    [ "__COMPILERNG__", "record_8hpp.html#ac3b5e6c1b0a6cc30325d805532018282", null ]
 ];

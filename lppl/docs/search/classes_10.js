@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uniform_0',['Uniform',['../class_distributions_1_1_uniform.html',1,'Distributions']]]
+  ['uniform_208',['Uniform',['../classDistributions_1_1Uniform.html',1,'Distributions']]]
 ];

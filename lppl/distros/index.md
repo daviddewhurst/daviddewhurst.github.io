@@ -4,6 +4,7 @@ Clicking a link will result in an attempted download of a `.zip` file to your ma
 
 GPLv3 licensed
 + [latest](./lppl-vlatest.zip)
++ [v0.10.1](./lppl-v0.10.1.zip)
 + [v0.10.0](./lppl-v0.10.0.zip)
 
 LGPLv3 licensed

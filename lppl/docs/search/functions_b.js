@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['observe_0',['observe',['../record_8hpp_aa89d6abad2f9b42055af844b453b589f.html#aa89d6abad2f9b42055af844b453b589f',1,'observe(std::string address, D dist, V value):&#160;record.hpp'],['../record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a',1,'observe(record_t&lt; Ts... &gt; &amp;record, std::string address, D dist, V value):&#160;record.hpp']]],
-  ['operator_28_29_1',['operator()',['../struct_inference_ac8962baa5df8571013bf39b4324be2dd.html#ac8962baa5df8571013bf39b4324be2dd',1,'Inference::operator()(I &amp;input, P &amp;proposal)'],['../struct_inference_acefb7532f2a84871231727baf9b28e48.html#acefb7532f2a84871231727baf9b28e48',1,'Inference::operator()(I &amp;input)'],['../struct_generic_metropolis_a66ebea25fb774c54441827d869c923e7.html#a66ebea25fb774c54441827d869c923e7',1,'GenericMetropolis::operator()()']]],
-  ['optimizer_2',['Optimizer',['../class_optimizer_adce3c1df35818e1c5f551a5f2073c542.html#adce3c1df35818e1c5f551a5f2073c542',1,'Optimizer']]],
-  ['optimum_5fvalue_3',['optimum_value',['../class_optimizer_af343f3e7b21276d4f5f6d501d6dd704f.html#af343f3e7b21276d4f5f6d501d6dd704f',1,'Optimizer']]]
+  ['observe_264',['observe',['../record_8hpp.html#a58a50b1a85a5dfe92fd2637e6921570a',1,'observe(std::string address, D dist, V value):&#160;record.hpp'],['../record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a',1,'observe(record_t&lt; Ts... &gt; &amp;record, std::string address, D dist, V value):&#160;record.hpp']]],
+  ['operator_28_29_265',['operator()',['../structInference_aef2992182cb3c2322413a0be87522756.html#aef2992182cb3c2322413a0be87522756',1,'Inference::operator()(I &amp;input, P &amp;proposal)'],['../structInference_a0f29c8a9197e8af9e358d2eba39866cf.html#a0f29c8a9197e8af9e358d2eba39866cf',1,'Inference::operator()(I &amp;input)'],['../structGenericMetropolis_a66ebea25fb774c54441827d869c923e7.html#a66ebea25fb774c54441827d869c923e7',1,'GenericMetropolis::operator()()']]],
+  ['optimizer_266',['Optimizer',['../classOptimizer_adce3c1df35818e1c5f551a5f2073c542.html#adce3c1df35818e1c5f551a5f2073c542',1,'Optimizer']]],
+  ['optimum_5fvalue_267',['optimum_value',['../classOptimizer_af343f3e7b21276d4f5f6d501d6dd704f.html#af343f3e7b21276d4f5f6d501d6dd704f',1,'Optimizer']]]
 ];

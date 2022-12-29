@@ -1,4 +1,5 @@
 var structproposal =
 [
-    [ "generate", "structproposal_a0285332f40c327a56fd61e06d132e76d.html#a0285332f40c327a56fd61e06d132e76d", null ]
+    [ "generate", "structproposal_a4f54f6c7916f413a5a553c17888ce6fc.html#a4f54f6c7916f413a5a553c17888ce6fc", null ],
+    [ "operator()", "structproposal.html#a8d1ebb297b4e268bd990bf55c0f80eec", null ]
 ];
