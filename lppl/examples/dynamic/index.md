@@ -10,7 +10,7 @@ In the language of probabilistic modeling, we would formulate this problem as fo
 \\(p(z_0)\\), and hypothesized transition dynamics \\(p(z_t | x_{t-1}, z_{t-1})\\), infer the following quantities: (a) the same-timestep posterior distribution
 \\(p(z_t | x_t)\\); (b) the \\(s\\) step ahead forecast distribution \\(p(z_{t + s} | x_t)\\). 
 
-You can use `lppl` probabilistic programs and inference algorithms to solve filtering problems either by using built-in functionality -- specifically, the [`Filter` class](https://davidrushingdewhurst.com/lppl/docs/struct_filter.html) -- or by rolling your own filtering algorithms using more primitive inference algorithms and constructs. 
+You can use `lppl` probabilistic programs and inference algorithms to solve filtering problems either by using built-in functionality -- specifically, the [`Filter` class](https://davidrushingdewhurst.com/lppl/docs/structFilter.html) -- or by rolling your own filtering algorithms using more primitive inference algorithms and constructs. 
 This walkthrough covers examples of each.
 
 ## Mathematical model
@@ -29,7 +29,7 @@ that's designed for a custom mean-field filtering algorihm of our own design.
 
 ## Built-in filtering
 
-All `lppl` probabilistic programs are callables taking an l-value reference to a `record_t<Ts...>` as the first argument (`Ts...` are the types of distributions within the
+All `lppl` probabilistic programs are callables taking a `record_t<Ts...>&` as the first argument (`Ts...` are the types of distributions within the
 program) and the input to the program as the second argument.
 Here's an implementation of the normal model described above:
 ```cpp
@@ -76,7 +76,7 @@ struct normal_trans_kernel : transition<double, Normal> {
 };
 ```
 Transition kernels derive from `transition<O, Ts...>` (`O` is the output type of the probabilistic program) and have to define `void update(FilterValueType<O, Ts...>&)`
-and `std::pair<record_t<Ts...>, double> generate()`. `update` takes in an empirical posterior distribution \\(p(z_t | x_t)\\) (see [documentation](https://davidrushingdewhurst.com/lppl/docs/proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b)) and does...something that's up to you!...to update its internal state, which can be used to parameterized the transition dynamics \\(p(z_{t+1}|x_t, z_t)\\).
+and `std::pair<record_t<Ts...>, double> generate()`. `update` takes in an empirical posterior distribution \\(p(z_t | x_t)\\) (see [documentation](https://davidrushingdewhurst.com/lppl/docs/structtransition.html)) and does...something that's up to you!...to update its internal state, which can be used to parameterized the transition dynamics \\(p(z_{t+1}|x_t, z_t)\\).
 `generate` actually constructs those transition dynamics and returns a record sampled from this distribution. 
 Computing the updates to `loc` and `log_scale` do exactly what we outlined above. 
 (The Monte Carlo mean of `log_scale` is due to laziness, not inability to compute the exact enumerated weighted mean; for the exact mean, use [`prob_at`](https://davidrushingdewhurst.com/lppl/docs/structvalue__collection__t_aca6a6411f3531c3ac55ef3b0e702e1e3.html#aca6a6411f3531c3ac55ef3b0e702e1e3) to get the posterior log probability of each record, then grab the value from the `"log_latent_scale"` site in each record and compute the weighted sum.)

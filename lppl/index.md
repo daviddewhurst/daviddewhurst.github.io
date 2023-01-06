@@ -11,7 +11,8 @@ This should look familiar.
 
 ```cpp
 template<size_t N>
-std::tuple<double, double> linear_regression(record_t<Normal, Gamma>& r, std::shared_ptr<data_1d<N>> data) {
+std::tuple<double, double> 
+linear_regression(record_t<Normal, Gamma>& r, std::shared_ptr<data_1d<N>> data) {
     auto intercept = sample(r, "intercept", Normal(), rng);
     auto slope = sample(r, "slope", Normal(), rng);
     auto scale = sample(r, "scale", Gamma(), rng);
@@ -44,12 +45,12 @@ There's lots of [documentation](./docs/index.html)! You can also download the la
 `lppl` supports the following inference algorithms:
 
 + importance sampling
-    + [likelihood weighting](https://davidrushingdewhurst.com/lppl/docs/struct_likelihood_weighting.html)
-    + [generic importance sampling](https://davidrushingdewhurst.com/lppl/docs/struct_importance_sampling.html) with user-defined proposal
+    + [likelihood weighting](https://davidrushingdewhurst.com/lppl/docs/structLikelihoodWeighting.html)
+    + [generic importance sampling](https://davidrushingdewhurst.com/lppl/docs/structImportanceSampling.html) with user-defined proposal
 + metropolis-hastings
-    + [ancestor metropolis](https://davidrushingdewhurst.com/lppl/docs/struct_ancestor_metropolis.html)
-    + [generic metropolis](https://davidrushingdewhurst.com/lppl/docs/struct_generic_metropolis.html) with user-defined proposal
-+ [generic filtering](https://davidrushingdewhurst.com/lppl/docs/struct_filter.html) using any inference algorithm to compute updates
+    + [ancestor metropolis](https://davidrushingdewhurst.com/lppl/docs/structAncestorMetropolis.html)
+    + [generic metropolis](https://davidrushingdewhurst.com/lppl/docs/structGenericMetropolis.html) with user-defined proposal
++ [generic filtering](https://davidrushingdewhurst.com/lppl/docs/structFilter.html) using any inference algorithm to compute updates
 
 More algorithms to come...
 

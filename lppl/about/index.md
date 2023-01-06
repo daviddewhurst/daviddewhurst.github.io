@@ -7,7 +7,7 @@ accumulated over time.
 
 `lppl` is a low-resource universal probabilistic programming language (PPL) embedded in modern C++ that uses no third-party libraries.
 I wrote/am writing `lppl` because I think it's possible to satisfy three criteria simultaneously:
-1. **enable open-universe modeling and inference** -- i.e., embodying and performing inference over models with an *a priori* unbounded number of unobserved random variables. Think statistical inference over a space of computer programs.
+1. **enable open-universe modeling and inference** -- i.e., embodying and performing inference over models with an *a priori* unbounded number of unobserved random variables. Think statistical inference over a rich space of computer programs.
 2. **exhibit high performance in a low-resource environment** -- many operational environments don't support the computing power required to serve (let alone train!) 100 million (let alone billion!) parameter deep neural networks or a constant internet connection for inference in the cloud. Probabilistic programming at the edge should still be possible even with these constraints. 
 3. **ensure robustness and deployability** -- you should be able to write a probabilistic program once and compile it for your MBP, an IP camera with 8MB RAM, or a supercomputer -- and be sure that it'll play nicely with existing applications on any of those platforms.
 
@@ -53,10 +53,10 @@ something if your program really doesn't take any inputs. They output something 
 They are parameterized over the distribution types `Ts...` contained within them.
 This is because it may be possible to specialize inference algorithms or query logic based on the types of distributions the program contains.
 For example, a probabilistic program containing only `Normal` distributions is fundamentally different from one that contains both `Normal` and `Gamma` distributions -- in 
-the first case, I know that I can create an ADVI approximate inference algorithm for the program without applying any transformations to any latent rvs, while in the second
+the first case, I know that I can create a variational posterior for the program without applying any transformations to any latent rvs, while in the second
 case I need to apply a log transform to the `Gamma` rvs.
 
-Probabilistic programs contain at least one [`sample`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_a39cef9c0f44f42fe552d94a792a3c938.html#a39cef9c0f44f42fe552d94a792a3c938) and/or [`observe`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a) statement. 
+Probabilistic programs contain at least one [`sample`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_af77cbf37e8e287b1c525391a1792b1e2.html#af77cbf37e8e287b1c525391a1792b1e2) and/or [`observe`](https://davidrushingdewhurst.com/lppl/docs/record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a) statement. 
 `sample` means you want to sample a value from a probability distribution and store it in the record at the address
 that you specified. `observe` means that you observed a value, and you want to score how likely it is against some probability distribution and store it in the record at the address that you specified.
 
@@ -91,14 +91,14 @@ It is the user's job to understand the semantics of the weight computed by an in
 If in doubt, read the documentation!
 
 By default, inference is an online algorithm that has *constant memory complexity* (constant in the number of samples).
-Inference algorithms, implemented as subclasses of [`Inference`](https://davidrushingdewhurst.com/lppl/docs/struct_inference.html),
+Inference algorithms, implemented as subclasses of [`Inference`](https://davidrushingdewhurst.com/lppl/docs/structInference.html),
 overload `operator()`. Calling `operator()(I& input)` or `operator()(I& input, P& proposal)` (depending on whether the inference algorithm
 used requires a proposal distribution, which is declared using [`has_proposal`](https://davidrushingdewhurst.com/lppl/docs/structhas__proposal.html))
-iteratively updates a [`Queryer`](https://davidrushingdewhurst.com/lppl/docs/class_queryer.html) subclass whose job it is to compute the query results.
-These queryers can either maintain the constant memory complexity -- e.g., as does [`WeightedMean`](https://davidrushingdewhurst.com/lppl/docs/class_weighted_mean.html) -- or can persist samples for later computations.
+iteratively updates a [`Queryer`](https://davidrushingdewhurst.com/lppl/docs/classQueryer.html) subclass whose job it is to compute the query results.
+These queryers can either maintain the constant memory complexity -- e.g., as does [`WeightedMean`](https://davidrushingdewhurst.com/lppl/docs/classWeightedMean.html) -- or can persist samples for later computations.
 
 The green box is what you get as the result of calling the inference algorithm's `operator()` -- the result of a query, which is, you know, what you asked for -- which in
-turn will be computed by calling the queryer's [`emit()`](https://davidrushingdewhurst.com/lppl/docs/class_queryer_acc4cad1eebb8f9911809f5630a2e14b5.html#acc4cad1eebb8f9911809f5630a2e14b5) method. 
+turn will be computed by calling the queryer's [`emit()`](https://davidrushingdewhurst.com/lppl/docs/classQueryer.html#acc4cad1eebb8f9911809f5630a2e14b5) method. 
 
 ## Best practices
 
@@ -111,8 +111,8 @@ so they can revert to their original state every time an execution of the probab
 + **Inputs should be cheap to copy.** In the spirit of pure functional probabilistic programs, the inputs to them are copied. User be warned.
 + **Know your queryer's memory profile.** By default, inference and querying are constant memory (in the number of samples) operations, enabling indefinite operation
 with little memory use. However, this does *not* mean that querying is guaranteed to be constant memory -- the only guarantee is that *inference algorithms*
-are constant memory. Many queryers persist samples from the posterior distribution -- e.g., [`WeightedValue`](https://davidrushingdewhurst.com/lppl/docs/class_weighted_value.html), which computes the 
-empirical marginal posterior distribution of a single address, or [`WeightedRecord`](https://davidrushingdewhurst.com/lppl/docs/class_weighted_record.html), which computes the empirical full posterior distribution. These queryers' memory usage scales linearly in the number of samples.
+are constant memory. Many queryers persist samples from the posterior distribution -- e.g., [`WeightedValue`](https://davidrushingdewhurst.com/lppl/docs/classWeightedValue.html), which computes the 
+empirical marginal posterior distribution of a single address, or [`WeightedRecord`](https://davidrushingdewhurst.com/lppl/docs/classWeightedRecord.html), which computes the empirical full posterior distribution. These queryers' memory usage scales linearly in the number of samples.
 
 
 ## Examples (just kidding)
