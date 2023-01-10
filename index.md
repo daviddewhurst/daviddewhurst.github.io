@@ -12,7 +12,7 @@ description: about
 
 ## Interests
 
-I develop probabilistic AI for military and financial applications, focusing on non-kinetic grey-zone conflict. This includes
+I develop probabilistic AI for military and financial applications, focusing on non-kinetic grey-zone conflict and risk quantification. These include
 
 + Financial resilience
 + Information operations
@@ -29,6 +29,7 @@ to which I often apply the tools of
 
 ### Things
 + [`lppl`](https://davidrushingdewhurst.com/lppl/): the last probabilistic programming language (lppl) I will ever write, hosted in C++, probably never finished
+    + [`glppl`](https://davidrushingdewhurst.com/glppl/): translation of probabilistic programs into probability distributions over directed graphical models
     + [`lppl-examples`](https://davidrushingdewhurst.com/lppl/examples/): using lppl for various modeling and inference tasks.
 + [`stsb3`](https://davidrushingdewhurst.com/stsb3/) Structural time series, round 3. Restriction and refinement
 of `stsb2` grammar and extension of modeling capabilities, deeply integrated with Pyro and pytorch.

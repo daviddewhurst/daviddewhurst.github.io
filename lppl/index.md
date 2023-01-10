@@ -38,7 +38,11 @@ There's lots of [documentation](./docs/index.html)! You can also download the la
 
 + [About](./about/index.md)
 + [Examples](./examples/index.md)
-+ [Tests](https://gitlab.com/drdewhurst/lppl/-/tree/master/test)
++ [Tests](https://gitlab.com/drdewhurst/lppl/-/tree/master/test
+
+### Associated tools
+s
++ [`glppl`](../glppl/index.md) transforms `lppl` programs into probability distributions over directed graphical models.
 
 ### Inference
 
