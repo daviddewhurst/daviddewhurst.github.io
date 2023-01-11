@@ -38,7 +38,7 @@ You need to have a recent version of `lppl`. Running `setup.sh` from the directo
 
 ## License etc.
 
-`glppl` is licensed under the GPL v3. In brief, this means that you may use `glppl` in your software however you like, but you must openly release the source code of your software and license it under the GPL v3.
-If you would like a license exception which would allow you to use `glppl` in proprietary software without releasing your source code, please contact lppl@davidrushingdewhurst.com.
+`glppl` is licensed under the GPL v3.
+If you would like a license exception, please contact lppl@davidrushingdewhurst.com.
 
 Copyright David Rushing Dewhurst, 2022 - present.
