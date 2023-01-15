@@ -4,11 +4,11 @@
 
 ## Tests/Examples
 
-Here: https://gitlab.com/drdewhurst/hop9/-/tree/master/test.
+Here: [https://gitlab.com/drdewhurst/hop9/-/tree/master/test](https://gitlab.com/drdewhurst/hop9/-/tree/master/test).
 
 ## Documentation
 
-Here: https://davidrushingdewhurst.com/hop9/docs/index.html
+Here: [https://davidrushingdewhurst.com/hop9/docs/index.html](https://davidrushingdewhurst.com/hop9/docs/index.html)
 
 ## License
 
