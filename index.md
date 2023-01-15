@@ -36,6 +36,7 @@ of `stsb2` grammar and extension of modeling capabilities, deeply integrated wit
     + [`sts-zoo`](https://davidrushingdewhurst.com/sts-zoo/): a collection of wild animals created by combining [`stsb3`](https://davidrushingdewhurst.com/stsb3/) blocks
 
 ### Smaller things
++ [`hop9`](https://davidrushingdewhurst.com/hop9/): HTN planning with state variables -- similar to [`pyhop`](https://github.com/oubiwann/pyhop/blob/master/pyhop/hop.py) but in C++.
 + [`sf_wrap`](https://gitlab.com/drdewhurst/sf_wrap): lifting arbitrary python code to probabilistic programs. Open-sourced from work done at Charles River Analytics.
 
 ## Links
