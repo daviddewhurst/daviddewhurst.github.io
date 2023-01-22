@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['todo_20list_125',['Todo List',['../todo.html',1,'']]],
-  ['transfer_126',['transfer',['../proposal_8hpp_a79c9d7f09c86b395a28147d1f42cd463.html#a79c9d7f09c86b395a28147d1f42cd463',1,'proposal.hpp']]],
-  ['transition_127',['transition',['../structtransition.html',1,'']]],
-  ['transition_3c_20o_2c_20ts_2e_2e_2e_20_3e_128',['transition&lt; O, Ts... &gt;',['../structtransition.html',1,'']]]
+  ['sample_106',['sample',['../record_8hpp_af77cbf37e8e287b1c525391a1792b1e2.html#af77cbf37e8e287b1c525391a1792b1e2',1,'sample(record_t&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng):&#160;record.hpp'],['../record_8hpp.html#ad29f618b00064a7fbeb2e84c80fe2684',1,'sample(std::string address, D dist, RNG &amp;rng):&#160;record.hpp'],['../structvalue__collection__t_a0cc2e22d1bc323df460dff4db62c31d8.html#a0cc2e22d1bc323df460dff4db62c31d8',1,'value_collection_t::sample(RNG &amp;rng, size_t n)'],['../structvalue__collection__t_acea1a098f0395ef553cc79cd43498b25.html#acea1a098f0395ef553cc79cd43498b25',1,'value_collection_t::sample(RNG &amp;rng)']]],
+  ['sample_5foutput_107',['sample_output',['../structrecord__collection__t_ab5ce03279b9c73679fc5943cdade18b6.html#ab5ce03279b9c73679fc5943cdade18b6',1,'record_collection_t::sample_output(RNG &amp;rng, size_t n)'],['../structrecord__collection__t_a03c5e0c4d0953f422f5cb11dd647d7e1.html#a03c5e0c4d0953f422f5cb11dd647d7e1',1,'record_collection_t::sample_output(RNG &amp;rng)']]],
+  ['score_108',['score',['../score_8hpp_a8574a84f6308b056e2c2da8b9b6fe609.html#a8574a84f6308b056e2c2da8b9b6fe609',1,'score.hpp']]],
+  ['score_109',['Score',['../structScore.html',1,'']]],
+  ['score_2ehpp_110',['score.hpp',['../score_8hpp.html',1,'']]],
+  ['shared_5fstatic_5fplate_111',['shared_static_plate',['../structshared__static__plate_a5348668cbac09115097bea068a00b6cd.html#a5348668cbac09115097bea068a00b6cd',1,'shared_static_plate::shared_static_plate()'],['../structshared__static__plate.html',1,'shared_static_plate&lt; D, N &gt;']]],
+  ['static_5fplate_112',['static_plate',['../structstatic__plate_af37c8514342a8de1afb02c177aea4aa4.html#af37c8514342a8de1afb02c177aea4aa4',1,'static_plate::static_plate()'],['../structstatic__plate.html',1,'static_plate&lt; D, N &gt;']]],
+  ['stddistribution_113',['StdDistribution',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['stddistribution_3c_20double_2c_20std_3a_3agamma_5fdistribution_3c_20double_20_3e_20_3e_114',['StdDistribution&lt; double, std::gamma_distribution&lt; double &gt; &gt;',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['stddistribution_3c_20double_2c_20std_3a_3anormal_5fdistribution_3c_3e_20_3e_115',['StdDistribution&lt; double, std::normal_distribution&lt;&gt; &gt;',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['stddistribution_3c_20double_2c_20std_3a_3auniform_5freal_5fdistribution_3c_3e_20_3e_116',['StdDistribution&lt; double, std::uniform_real_distribution&lt;&gt; &gt;',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['stddistribution_3c_20int_2c_20std_3a_3auniform_5fint_5fdistribution_3c_3e_20_3e_117',['StdDistribution&lt; int, std::uniform_int_distribution&lt;&gt; &gt;',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['stddistribution_3c_20unsigned_20long_2c_20std_3a_3adiscrete_5fdistribution_3c_20int_20_3e_20_3e_118',['StdDistribution&lt; unsigned long, std::discrete_distribution&lt; int &gt; &gt;',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['stddistribution_3c_20unsigned_2c_20std_3a_3apoisson_5fdistribution_3c_20unsigned_20_3e_20_3e_119',['StdDistribution&lt; unsigned, std::poisson_distribution&lt; unsigned &gt; &gt;',['../classDistributions_1_1StdDistribution.html',1,'Distributions']]],
+  ['step_120',['step',['../structFilter_a55470147619bfaefd829c145dabee690.html#a55470147619bfaefd829c145dabee690',1,'Filter::step(I &amp;input)'],['../structFilter_a086dc9cd47b2c47ea47e4fe28d4ed26c.html#a086dc9cd47b2c47ea47e4fe28d4ed26c',1,'Filter::step(I &amp;input, P &amp;proposal)']]],
+  ['string_121',['string',['../classDistributions_1_1Categorical_a827dd45381f02728bea822649096b208.html#a827dd45381f02728bea822649096b208',1,'Distributions::Categorical::string()'],['../classDistributions_1_1Gamma_a40d8a81c41dc8be6cf3abedfd5da11d8.html#a40d8a81c41dc8be6cf3abedfd5da11d8',1,'Distributions::Gamma::string()'],['../structnode__t_a14525c58d635aea01e0745499219e557.html#a14525c58d635aea01e0745499219e557',1,'node_t::string()'],['../classDistributions_1_1Normal_ae7d66348dcedf935eb152114df126ce7.html#ae7d66348dcedf935eb152114df126ce7',1,'Distributions::Normal::string()']]]
 ];

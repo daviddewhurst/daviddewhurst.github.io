@@ -37,6 +37,7 @@ var record_8hpp =
     [ "_sample_with_record_interp", "record_8hpp.html#a66090658bc18a12387bbb7da1adab761", null ],
     [ "_standard", "record_8hpp.html#a097205cd99ee475e68767fd5bd2678b5", null ],
     [ "display", "record_8hpp_a61743a702b68a441e12af956e81d339a.html#a61743a702b68a441e12af956e81d339a", null ],
+    [ "loglatent", "record_8hpp.html#a2c7f87217a56a6ac302c911cc990503b", null ],
     [ "loglikelihood", "record_8hpp_a979a768437d370f2fad974a72cb86b9a.html#a979a768437d370f2fad974a72cb86b9a", null ],
     [ "logprob", "record_8hpp_a2cbd8b330bb1d078949c82bf96615ed0.html#a2cbd8b330bb1d078949c82bf96615ed0", null ],
     [ "observe", "record_8hpp_a547ca9c02e881d0db9fa4ec397a7f63a.html#a547ca9c02e881d0db9fa4ec397a7f63a", null ],

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['uniform_129',['Uniform',['../classDistributions_1_1Uniform.html',1,'Distributions']]],
-  ['update_130',['update',['../classQueryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717',1,'Queryer::update()'],['../classWeighted_a410bcb3f2521bde1ad1d7c31fa6b3a73.html#a410bcb3f2521bde1ad1d7c31fa6b3a73',1,'Weighted::update()'],['../classQueryerCollection_a2984ba7edcfcb0b5b511f2f4d03cb771.html#a2984ba7edcfcb0b5b511f2f4d03cb771',1,'QueryerCollection::update()'],['../classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4_a44899ae13bb26a4fc26d06701b30a88f.html#a44899ae13bb26a4fc26d06701b30a88f',1,'WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;::update()'],['../classWeightedRecord_a68e1849f45d1543e88ace9f9e5c1a4da.html#a68e1849f45d1543e88ace9f9e5c1a4da',1,'WeightedRecord::update()'],['../classWeightedMean_ad8eb38ff082ea8061e7d4cf6605ae5eb.html#ad8eb38ff082ea8061e7d4cf6605ae5eb',1,'WeightedMean::update()']]]
+  ['todo_20list_122',['Todo List',['../todo.html',1,'']]],
+  ['transfer_123',['transfer',['../proposal_8hpp_a79c9d7f09c86b395a28147d1f42cd463.html#a79c9d7f09c86b395a28147d1f42cd463',1,'proposal.hpp']]],
+  ['transition_124',['transition',['../structtransition.html',1,'']]],
+  ['transition_3c_20o_2c_20ts_2e_2e_2e_20_3e_125',['transition&lt; O, Ts... &gt;',['../structtransition.html',1,'']]]
 ];

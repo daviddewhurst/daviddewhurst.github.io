@@ -36,7 +36,6 @@ var hierarchy =
         [ "Distributions::StdDistribution< V, DT >", "classDistributions_1_1StdDistribution.html", null ]
       ] ]
     ] ],
-    [ "generic_metropolis_helper", "structgeneric__metropolis__helper.html", null ],
     [ "has_proposal< C >", "structhas__proposal.html", null ],
     [ "has_proposal< GenericMetropolis >", "structhas__proposal_3_01GenericMetropolis_01_4.html", null ],
     [ "has_proposal< ImportanceSampling >", "structhas__proposal_3_01ImportanceSampling_01_4.html", null ],
@@ -69,7 +68,6 @@ var hierarchy =
     ] ],
     [ "MetropolisState< Ts >", "structMetropolisState.html", null ],
     [ "node_t< D >", "structnode__t.html", null ],
-    [ "Optimizer< V, O, Ts >", "classOptimizer.html", null ],
     [ "plate< D >", "structplate.html", [
       [ "shared_static_plate< D, N >", "structshared__static__plate.html", null ],
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
@@ -94,6 +92,7 @@ var hierarchy =
       [ "QueryerCollection< V, O, Q, Ts >", "classQueryerCollection.html", null ]
     ] ],
     [ "Queryer< V, O, Ts... >", "classQueryer.html", [
+      [ "Optimizer< V, O, Ts >", "classOptimizer.html", null ],
       [ "Weighted< V, O, Ts >", "classWeighted.html", null ]
     ] ],
     [ "record_t< Ts >", "structrecord__t.html", null ],

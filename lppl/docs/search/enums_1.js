@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['record_5finterp_5ft_291',['record_interp_t',['../record_8hpp_a33754e8df42d882a7d18d9f5ce96ba7b.html#a33754e8df42d882a7d18d9f5ce96ba7b',1,'record.hpp']]]
+  ['kernel_285',['kernel',['../inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517',1,'inference.hpp']]]
 ];

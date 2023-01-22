@@ -1,5 +1,5 @@
 var structGenericMetropolis =
 [
-    [ "operator()", "structGenericMetropolis_a66ebea25fb774c54441827d869c923e7.html#a66ebea25fb774c54441827d869c923e7", null ],
-    [ "step", "structGenericMetropolis.html#a7e70a08f5da1ca69d4e0952c1ae778a3", null ]
+    [ "operator()", "structGenericMetropolis_afe702671ac6902c4f9c519a0d75760e6.html#afe702671ac6902c4f9c519a0d75760e6", null ],
+    [ "step", "structGenericMetropolis.html#a8b812ef1aad69a08db49c26aaa31df5b", null ]
 ];

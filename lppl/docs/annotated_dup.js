@@ -29,7 +29,6 @@ var annotated_dup =
     [ "AncestorMetropolis", "structAncestorMetropolis.html", "structAncestorMetropolis" ],
     [ "collection_t", "structcollection__t.html", "structcollection__t" ],
     [ "Filter", "structFilter.html", "structFilter" ],
-    [ "generic_metropolis_helper", "structgeneric__metropolis__helper.html", "structgeneric__metropolis__helper" ],
     [ "GenericMetropolis", "structGenericMetropolis.html", "structGenericMetropolis" ],
     [ "has_proposal", "structhas__proposal.html", "structhas__proposal" ],
     [ "has_proposal< GenericMetropolis >", "structhas__proposal_3_01GenericMetropolis_01_4.html", "structhas__proposal_3_01GenericMetropolis_01_4" ],
