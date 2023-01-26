@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['samplecategorical_26',['sampleCategorical',['../ccyan__distributions_8c_a60fc2b8084b5ecf1a4692ed592188070.html#a60fc2b8084b5ecf1a4692ed592188070',1,'sampleCategorical(const struct Categorical *dist, struct rngstate *state):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a60fc2b8084b5ecf1a4692ed592188070.html#a60fc2b8084b5ecf1a4692ed592188070',1,'sampleCategorical(const struct Categorical *dist, struct rngstate *state):&#160;ccyan_distributions.c']]],
-  ['samplegamma_27',['sampleGamma',['../ccyan__distributions_8c_a39518acc3d5fdc9484fb8a02edd45e61.html#a39518acc3d5fdc9484fb8a02edd45e61',1,'sampleGamma(const struct Gamma *dist, struct rngstate *state):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a39518acc3d5fdc9484fb8a02edd45e61.html#a39518acc3d5fdc9484fb8a02edd45e61',1,'sampleGamma(const struct Gamma *dist, struct rngstate *state):&#160;ccyan_distributions.c']]],
-  ['samplenormal_28',['sampleNormal',['../ccyan__distributions_8c_a1c420b6c3d49768fc055497b168e662f.html#a1c420b6c3d49768fc055497b168e662f',1,'sampleNormal(const struct Normal *dist, struct rngstate *state):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a1c420b6c3d49768fc055497b168e662f.html#a1c420b6c3d49768fc055497b168e662f',1,'sampleNormal(const struct Normal *dist, struct rngstate *state):&#160;ccyan_distributions.c']]]
-];

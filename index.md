@@ -28,10 +28,10 @@ to which I often apply the tools of
 ## Open-source software
 
 ### Things
-+ [`lppl`](https://davidrushingdewhurst.com/lppl/): the last probabilistic programming language (lppl) I will ever write, hosted in C++, probably never finished
-    + [`glppl`](https://davidrushingdewhurst.com/glppl/): translation of probabilistic programs into probability distributions over directed graphical models
-    + [`ccyan`](https://davidrushingdewhurst.com/ccyan/): compilation target of `glppl`'s graphical model program synthesis functionality.
-    + [`lppl-examples`](https://davidrushingdewhurst.com/lppl/examples/): using lppl for various modeling and inference tasks.
++ [`lppl`](./lppl/): the last probabilistic programming language (lppl) I will ever write, hosted in C++, probably never finished
+    + [`glppl`](./glppl/): translation of probabilistic programs into probability distributions over directed graphical models
+    + [`ccyan`](./ccyan/): compilation target of `glppl`'s graphical model program synthesis functionality.
+    + [`lppl-examples`](./lppl/examples/): using lppl for various modeling and inference tasks.
 + [`stsb3`](https://davidrushingdewhurst.com/stsb3/) Structural time series, round 3. Restriction and refinement
 of `stsb2` grammar and extension of modeling capabilities, deeply integrated with Pyro and pytorch.
     + [`sts-zoo`](https://davidrushingdewhurst.com/sts-zoo/): a collection of wild animals created by combining [`stsb3`](https://davidrushingdewhurst.com/stsb3/) blocks
