@@ -27,7 +27,7 @@ by converting it to a pure sample-based program, e.g. `auto f = to_pp(g);`, wher
 `glppl` is also useful for doing inference over open-universe probabilistic programs when you intend to deploy inferred models
 for prediction or forecasting. Using `glppl`, you can infer the MLE, MAP, or full posterior over graph structures and choose one or
 more of these structures to deploy. `glppl` contains *alpha* functionality to automatically translate your graph probabilistic program into
-a bespoke memory-safe (zero dynamic allocation) C99 probabilistic graphical model library.
+a bespoke memory-safe (zero dynamic allocation) C99 probabilistic graphical model library constructed from [`ccyan`](../ccyan/) primitives. 
 
 As always, read the [documentation](./docs/index.html), get the [source](https://gitlab.com/drdewhurst/lppl-graph), download [tagged versions](./distros/index.md).
 

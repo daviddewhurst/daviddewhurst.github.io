@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['logprobcategorical_21',['logprobCategorical',['../ccyan__distributions_8c_a70cc965928e29ad7f13685aa81f4fdd9.html#a70cc965928e29ad7f13685aa81f4fdd9',1,'logprobCategorical(const struct Categorical *dist, const unsigned value):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a70cc965928e29ad7f13685aa81f4fdd9.html#a70cc965928e29ad7f13685aa81f4fdd9',1,'logprobCategorical(const struct Categorical *dist, const unsigned value):&#160;ccyan_distributions.c']]],
+  ['logprobgamma_22',['logprobGamma',['../ccyan__distributions_8c_a78cce982fa3029be736ea37fe3b919c3.html#a78cce982fa3029be736ea37fe3b919c3',1,'logprobGamma(const struct Gamma *dist, const double value):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a78cce982fa3029be736ea37fe3b919c3.html#a78cce982fa3029be736ea37fe3b919c3',1,'logprobGamma(const struct Gamma *dist, const double value):&#160;ccyan_distributions.c']]],
+  ['logprobnormal_23',['logprobNormal',['../ccyan__distributions_8c_adb2d511581217cea599e2936d6bb8eeb.html#adb2d511581217cea599e2936d6bb8eeb',1,'logprobNormal(const struct Normal *dist, const double value):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_adb2d511581217cea599e2936d6bb8eeb.html#adb2d511581217cea599e2936d6bb8eeb',1,'logprobNormal(const struct Normal *dist, const double value):&#160;ccyan_distributions.c']]]
+];
