@@ -26,10 +26,12 @@ by converting it to a pure sample-based program, e.g. `auto f = to_pp(g);`, wher
 
 `glppl` is also useful for doing inference over open-universe probabilistic programs when you intend to deploy inferred models
 for prediction or forecasting. Using `glppl`, you can infer the MLE, MAP, or full posterior over graph structures and choose one or
-more of these structures to deploy. In a future version of `glppl`, we intend to implement automatic translation of `glppl` posteriors into
-graphical models written in C99 for maximum portability. Stay tuned...
+more of these structures to deploy. `glppl` contains *alpha* functionality to automatically translate your graph probabilistic program into
+a bespoke memory-safe (zero dynamic allocation) C99 probabilistic graphical model library.
 
 As always, read the [documentation](./docs/index.html), get the [source](https://gitlab.com/drdewhurst/lppl-graph), download [tagged versions](./distros/index.md).
+
+> ⚠️ Versions of `glppl` greater than v0.1.0 have changed licenses from GPL3 to AGPL3. Please [contact us](mailto:lppl@davidrushingdewhurst.com) if you are interested in a license exception.
 
 ## Install
 
@@ -38,7 +40,7 @@ You need to have a recent version of `lppl`. Running `setup.sh` from the directo
 
 ## License etc.
 
-`glppl` is licensed under the GPL v3.
+`glppl` is licensed under the AGPL v3.
 If you would like a license exception, please contact lppl@davidrushingdewhurst.com.
 
 Copyright David Rushing Dewhurst, 2022 - present.

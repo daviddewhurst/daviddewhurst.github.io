@@ -24,10 +24,12 @@
 */
 var NAVTREE =
 [
-  [ "lppl-graph", "index.html", [
+  [ "glppl", "index.html", [
     [ "<tt>glppl</tt>", "md_README.html", [
-      [ "License etc.", "md_README.html#autotoc_md1", null ]
+      [ "Install", "md_README.html#autotoc_md1", null ],
+      [ "License etc.", "md_README.html#autotoc_md2", null ]
     ] ],
+    [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

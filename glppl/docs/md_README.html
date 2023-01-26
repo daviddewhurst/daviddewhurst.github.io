@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl-graph: &lt;tt&gt;glppl&lt;/tt&gt;</title>
+<title>glppl: &lt;tt&gt;glppl&lt;/tt&gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">lppl-graph
-   &#160;<span id="projectnumber">v0.1.0</span>
+   <div id="projectname">glppl
+   &#160;<span id="projectnumber">v0.2.0</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <div class="title"><code>glppl</code> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Translation of <a href="https://davidrushingdewhurst.com/lppl/"><code>lppl</code></a> probabilistic programs into graphical models.</p>
+<div class="textblock"><p>Translation of <a href="https://davidrushingdewhurst.com/lppl/"><code>lppl</code></a> probabilistic programs into directed graphical models.</p>
 <p>An <code>lppl</code> program to infer the posterior location and scale parameter of a normal distribution could look like this: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> normal_model(record_t&lt;Normal, Gamma&gt;&amp; r, <span class="keywordtype">double</span> obs) {</div>
 <div class="line">    <span class="keyword">auto</span> loc = sample(r, <span class="stringliteral">&quot;loc&quot;</span>, Normal(0.0, 1.0), rng);</div>
 <div class="line">    <span class="keyword">auto</span> scale = sample(r, <span class="stringliteral">&quot;scale&quot;</span>, Gamma(1.0, 0.5), rng);</div>
@@ -104,12 +104,15 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <div class="line">    <span class="keyword">auto</span> scale = sample_g&lt;Gamma&gt;(gr, <span class="stringliteral">&quot;scale&quot;</span>, rng)(1.0, 0.5);</div>
 <div class="line">    <span class="keywordflow">return</span> observe_g&lt;Normal&gt;(gr, <span class="stringliteral">&quot;data&quot;</span>, obs)(loc, scale);</div>
 <div class="line">}</div>
-<div class="ttc" id="astructgr__pair_html"><div class="ttname"><a href="structgr__pair.html">gr_pair</a></div><div class="ttdef"><b>Definition:</b> graph.hpp:141</div></div>
-<div class="ttc" id="astructgraph__node_html"><div class="ttname"><a href="structgraph__node.html">graph_node</a></div><div class="ttdoc">A fundamental data structure of which a graph intermediate representation is composed.</div><div class="ttdef"><b>Definition:</b> graph.hpp:34</div></div>
-</div><!-- fragment --><p> In return for the miniscule amount of extra complexity, you get a graph data structure suitable for static analysis, faster inference algorithms, and code generation. You can still use any <code>glppl</code> program with <code>lppl</code> inference algorithms and queryers by converting it to a pure sample-based program, e.g. <code>auto f = to_pp(g);</code>, where <code>g</code> is a <code>glppl</code> program and <code>f</code> is an <code>lppl</code> program.</p>
+<div class="ttc" id="astructgr__pair_html"><div class="ttname"><a href="structgr__pair.html">gr_pair</a></div><div class="ttdef"><b>Definition:</b> graph.hpp:142</div></div>
+<div class="ttc" id="astructgraph__node_html"><div class="ttname"><a href="structgraph__node.html">graph_node</a></div><div class="ttdoc">A fundamental data structure of which a graph intermediate representation is composed.</div><div class="ttdef"><b>Definition:</b> graph.hpp:35</div></div>
+</div><!-- fragment --><p> In return for the miniscule amount of extra complexity, you get a graph data structure suitable for static analysis, more specialized inference algorithms, and/or code generation. You can still use any <code>glppl</code> program with <code>lppl</code> inference algorithms and queryers by converting it to a pure sample-based program, e.g. <code>auto f = to_pp(g);</code>, where <code>g</code> is a <code>glppl</code> program and <code>f</code> is an <code>lppl</code> program.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Install</h1>
+<p>You need to have a recent version of <code>lppl</code>. Running <code>setup.sh</code> from the directory into which you cloned <code>glppl</code> will do the trick.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
 License etc.</h1>
-<p><code>glppl</code> is licensed under the GPL v3. In brief, this means that you may use <code>glppl</code> in your software however you like, but you must openly release the source code of your software and license it under the GPL v3. If you would like a license exception which would allow you to use <code>glppl</code> in proprietary software without releasing your source code, please contact <a href="#" onclick="location.href='mai'+'lto:'+'lpp'+'l@'+'dav'+'id'+'rus'+'hi'+'ngd'+'ew'+'hur'+'st'+'.co'+'m'; return false;">lppl@<span style="display: none;">.nosp@m.</span>davi<span style="display: none;">.nosp@m.</span>drush<span style="display: none;">.nosp@m.</span>ingd<span style="display: none;">.nosp@m.</span>ewhur<span style="display: none;">.nosp@m.</span>st.c<span style="display: none;">.nosp@m.</span>om</a>.</p>
+<p><code>glppl</code> is licensed under the AGPL V3. If you would like a license exception please contact <a href="#" onclick="location.href='mai'+'lto:'+'lpp'+'l@'+'dav'+'id'+'rus'+'hi'+'ngd'+'ew'+'hur'+'st'+'.co'+'m'; return false;">lppl@<span style="display: none;">.nosp@m.</span>davi<span style="display: none;">.nosp@m.</span>drush<span style="display: none;">.nosp@m.</span>ingd<span style="display: none;">.nosp@m.</span>ewhur<span style="display: none;">.nosp@m.</span>st.c<span style="display: none;">.nosp@m.</span>om</a>.</p>
 <p>Copyright David Rushing Dewhurst, 2022 - present. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->

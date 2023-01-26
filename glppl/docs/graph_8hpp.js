@@ -25,5 +25,6 @@ var graph_8hpp =
     [ "sample_g", "graph_8hpp_a16a1a7904c34f6d772c8670a57e896c6.html#a16a1a7904c34f6d772c8670a57e896c6", null ],
     [ "stringify", "graph_8hpp.html#a2f04fc937f3b77d86a2f0be362bee5c2", null ],
     [ "stringify", "graph_8hpp.html#ababd9f96d70a4c29cefb20856ba8df03", null ],
-    [ "to_pp", "graph_8hpp_a09c561aeb1f1bead96bf07a94ffb090e.html#a09c561aeb1f1bead96bf07a94ffb090e", null ]
+    [ "to_pp", "graph_8hpp_a09c561aeb1f1bead96bf07a94ffb090e.html#a09c561aeb1f1bead96bf07a94ffb090e", null ],
+    [ "value_g", "graph_8hpp_adfe0662a986e747d1e2c3af537690b3c.html#adfe0662a986e747d1e2c3af537690b3c", null ]
 ];

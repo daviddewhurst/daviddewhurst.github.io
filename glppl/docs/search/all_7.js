@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['to_5fpp_24',['to_pp',['../graph_8hpp_a09c561aeb1f1bead96bf07a94ffb090e.html#a09c561aeb1f1bead96bf07a94ffb090e',1,'graph.hpp']]]
+  ['node_5fspec_23',['node_spec',['../structnode__spec.html',1,'']]]
 ];

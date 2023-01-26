@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logprob_38',['logprob',['../structgraph__node_a27826ef580c89854996e909a8b29ded1.html#a27826ef580c89854996e909a8b29ded1',1,'graph_node']]]
+  ['display_77',['display',['../graph_8hpp_a81a686afac44d206dcc11078015dbe8f.html#a81a686afac44d206dcc11078015dbe8f',1,'graph.hpp']]]
 ];

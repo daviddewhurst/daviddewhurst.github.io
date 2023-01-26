@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl-graph: lib/graph.hpp File Reference</title>
+<title>glppl: lib/graph.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">lppl-graph
-   &#160;<span id="projectnumber">v0.1.0</span>
+   <div id="projectname">glppl
+   &#160;<span id="projectnumber">v0.2.0</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,7 @@ $(document).ready(function(){initNavTree('graph_8hpp.html',''); initResizable();
 <code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;record.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="graph__distributions_8hpp.html">distributions/graph_distributions.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -134,7 +135,7 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a39dfd559b9d103def76244903e7939dd"><td class="memItemLeft" align="right" valign="top"><a id="a39dfd559b9d103def76244903e7939dd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>GLPPL_OPT_NULL</b>&#160;&#160;&#160;&quot;OPT(NULL)&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GLPPL_OPT_NULL</b>&#160;&#160;&#160;&quot;GLPPL_OPT(NULL)&quot;</td></tr>
 <tr class="separator:a39dfd559b9d103def76244903e7939dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -212,12 +213,16 @@ template&lt;&gt; </td></tr>
 <tr class="memitem:a09c561aeb1f1bead96bf07a94ffb090e"><td class="memTemplItemLeft" align="right" valign="top">pp_t&lt; I, <a class="el" href="structgr__output.html">gr_output</a>&lt; O, Ts... &gt;, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="graph_8hpp_a09c561aeb1f1bead96bf07a94ffb090e.html#a09c561aeb1f1bead96bf07a94ffb090e">to_pp</a> (<a class="el" href="graph_8hpp_a20ff33888c3c585d21ef564f4419bb4b.html#a20ff33888c3c585d21ef564f4419bb4b">gpp_t</a>&lt; I, O, Ts... &gt; &amp;f)</td></tr>
 <tr class="memdesc:a09c561aeb1f1bead96bf07a94ffb090e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a graph probabilistic program into a (record-based) probabilistic program.  <a href="graph_8hpp_a09c561aeb1f1bead96bf07a94ffb090e.html#a09c561aeb1f1bead96bf07a94ffb090e">More...</a><br /></td></tr>
 <tr class="separator:a09c561aeb1f1bead96bf07a94ffb090e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe0662a986e747d1e2c3af537690b3c"><td class="memTemplParams" colspan="2">template&lt;typename V , typename... Ts&gt; </td></tr>
+<tr class="memitem:adfe0662a986e747d1e2c3af537690b3c"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structgraph__node.html">graph_node</a>&lt; <a class="el" href="structValue.html">Value</a>&lt; V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="graph_8hpp_adfe0662a986e747d1e2c3af537690b3c.html#adfe0662a986e747d1e2c3af537690b3c">value_g</a> (<a class="el" href="structgr__pair.html">gr_pair</a>&lt; Ts... &gt; &amp;gr, std::string &amp;&amp;address, V value)</td></tr>
+<tr class="memdesc:adfe0662a986e747d1e2c3af537690b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a value node and places it in the graph.  <a href="graph_8hpp_adfe0662a986e747d1e2c3af537690b3c.html#adfe0662a986e747d1e2c3af537690b3c">More...</a><br /></td></tr>
+<tr class="separator:adfe0662a986e747d1e2c3af537690b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>David Rushing Dewhurst (<a href="#" onclick="location.href='mai'+'lto:'+'drd'+'@d'+'avi'+'dr'+'ush'+'in'+'gde'+'wh'+'urs'+'t.'+'com'; return false;">drd@d<span style="display: none;">.nosp@m.</span>avid<span style="display: none;">.nosp@m.</span>rushi<span style="display: none;">.nosp@m.</span>ngde<span style="display: none;">.nosp@m.</span>whurs<span style="display: none;">.nosp@m.</span>t.co<span style="display: none;">.nosp@m.</span>m</a>) </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.2.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2022-12-24</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 - present. Released under the GPL v3 license. </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 - present. Released under the AGPL V3 license. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
