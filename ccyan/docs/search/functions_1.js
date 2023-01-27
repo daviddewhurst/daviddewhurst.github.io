@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['rng_5fsample_5fdouble_24',['rng_sample_double',['../ccyan__distributions_8c_aa7e3e23902ce7eff8eb47a28a872c1fe.html#aa7e3e23902ce7eff8eb47a28a872c1fe',1,'rng_sample_double(struct rngstate *rng):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_abb51d57f020d3b511d9ecf6bace69c14.html#abb51d57f020d3b511d9ecf6bace69c14',1,'rng_sample_double(struct rngstate *state):&#160;ccyan_distributions.c']]],
-  ['rng_5fsample_5fuint64_25',['rng_sample_uint64',['../ccyan__distributions_8c_a4b5eef1e93805cca3c62b91b7d807be7.html#a4b5eef1e93805cca3c62b91b7d807be7',1,'rng_sample_uint64(struct rngstate *rng):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a8c7f480387a13e183f34f16b6fcd6e11.html#a8c7f480387a13e183f34f16b6fcd6e11',1,'rng_sample_uint64(struct rngstate *state):&#160;ccyan_distributions.c']]]
+  ['normalize_5fin_5fplace_29',['normalize_in_place',['../ccyan__util_8h_a856dbfb0c2a199d2bc0977afd7f9b267.html#a856dbfb0c2a199d2bc0977afd7f9b267',1,'ccyan_util.c']]]
 ];

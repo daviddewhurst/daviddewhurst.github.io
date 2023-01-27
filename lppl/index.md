@@ -1,5 +1,7 @@
 # `lppl`
 
+*(Disclaimer -- this page is written for geeks like me. A more publicly accessible explanation of the `lppl` vision is coming soon.)*
+
 Open-universe probabilistic programming in modern C++, done in exactly the idiosyncratic way that I want to do it.
 
 + Record-based (which essentially means trace-based, but we don't hide the tracing from you)

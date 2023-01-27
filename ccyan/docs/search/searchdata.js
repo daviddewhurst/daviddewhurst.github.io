@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "<cglnrs",
   1: "cgnr",
   2: "c",
-  3: "lrs",
+  3: "lnrs",
   4: "<"
 };
 

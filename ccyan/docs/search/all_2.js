@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamma_4',['Gamma',['../structGamma.html',1,'']]]
+  ['gamma_5',['Gamma',['../structGamma.html',1,'']]]
 ];
