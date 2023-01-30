@@ -2,9 +2,11 @@
 
 `glppl` contains functionality to automatically translate graph probabilistic programs into bespoke memory-safe C99 libraries, 
 enabling simulation, inference, and prediction in low-resource or real-time environments.
-(If you're coming from Somewhere Else On The Internet -- `glppl` is a probabilistic programming language that I wrote/am writing.
+
+*(If you're coming from Somewhere Else On The Internet -- `glppl` is a probabilistic programming language that I wrote/am writing.
 Probabilistic programming elevates probabilistic modeling and statistical inference to first-class programming language constructs.
-You can read about this here: https://davidrushingdewhurst.com/lppl/about/)
+You can read more about this here: [https://davidrushingdewhurst.com/lppl/about/](https://davidrushingdewhurst.com/lppl/about/).)*
+
 This page outlines an end-to-end example of how this probabilistic program generation process works. 
 Here, we'll translate a very simple graph probabilistic program into a C library 
 and use an automatically generated inference algorithm to infer the
