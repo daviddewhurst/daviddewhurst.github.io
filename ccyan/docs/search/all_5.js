@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rng_5fsample_5fdouble_12',['rng_sample_double',['../ccyan__distributions_8c_aa7e3e23902ce7eff8eb47a28a872c1fe.html#aa7e3e23902ce7eff8eb47a28a872c1fe',1,'rng_sample_double(struct rngstate *rng):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_abb51d57f020d3b511d9ecf6bace69c14.html#abb51d57f020d3b511d9ecf6bace69c14',1,'rng_sample_double(struct rngstate *state):&#160;ccyan_distributions.c']]],
-  ['rng_5fsample_5fuint64_13',['rng_sample_uint64',['../ccyan__distributions_8c_a4b5eef1e93805cca3c62b91b7d807be7.html#a4b5eef1e93805cca3c62b91b7d807be7',1,'rng_sample_uint64(struct rngstate *rng):&#160;ccyan_distributions.c'],['../ccyan__distributions_8h_a8c7f480387a13e183f34f16b6fcd6e11.html#a8c7f480387a13e183f34f16b6fcd6e11',1,'rng_sample_uint64(struct rngstate *state):&#160;ccyan_distributions.c']]],
-  ['rngstate_14',['rngstate',['../structrngstate.html',1,'']]]
+  ['make_5farray_5fargmax_5ffn_13',['MAKE_ARRAY_ARGMAX_FN',['../ccyan__util_8h_a7a73a479c8e585b3f946dd69be2a9b94.html#a7a73a479c8e585b3f946dd69be2a9b94',1,'ccyan_util.h']]],
+  ['make_5farray_5fcumsum_5ffn_14',['MAKE_ARRAY_CUMSUM_FN',['../ccyan__util_8h_a9820973ff0ce507c4544891398ea6e52.html#a9820973ff0ce507c4544891398ea6e52',1,'ccyan_util.h']]],
+  ['make_5farray_5fmax_5ffn_15',['MAKE_ARRAY_MAX_FN',['../ccyan__util_8h_a9f560536c0b79bd7a11bb745022041a3.html#a9f560536c0b79bd7a11bb745022041a3',1,'ccyan_util.h']]]
 ];

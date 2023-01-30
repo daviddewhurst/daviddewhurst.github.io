@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['categorical_18',['Categorical',['../structCategorical.html',1,'']]]
+  ['categorical_24',['Categorical',['../structCategorical.html',1,'']]]
 ];
