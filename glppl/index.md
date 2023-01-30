@@ -1,6 +1,7 @@
 # `glppl`
 
-Translation of [`lppl`](https://davidrushingdewhurst.com/lppl/) probabilistic programs into directed graphical models. 
+Translation of [`lppl`](https://davidrushingdewhurst.com/lppl/) probabilistic programs into directed graphical models.
+Optionally, [transiation of graphical models](./generation/) into portable, memory-safe C99 code.
 
 An `lppl` program to infer the posterior location and scale parameter of a normal distribution could look like this:
 ```cpp
