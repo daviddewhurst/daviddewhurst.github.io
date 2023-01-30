@@ -2,8 +2,11 @@
 
 `glppl` contains functionality to automatically translate graph probabilistic programs into bespoke memory-safe C99 libraries, 
 enabling simulation, inference, and prediction in low-resource or real-time environments.
-This is extensively documented in the [`construct_program`](https://davidrushingdewhurst.com/glppl/docs/translate_8hpp_a044bd01023d0fffbac9647dcfdb97e52.html#a044bd01023d0fffbac9647dcfdb97e52) and [`ccyan`](https://davidrushingdewhurst.com/ccyan/docs/index.html) documentation, but it's good to have an end-to-end
-example of how this works. Here, we'll translate a very simple graph probabilistic program into a C library 
+(If you're coming from Somewhere Else On The Internet -- `glppl` is a probabilistic programming language that I wrote/am writing.
+Probabilistic programming elevates probabilistic modeling and statistical inference to first-class programming language constructs.
+You can read about this here: https://davidrushingdewhurst.com/lppl/about/)
+This page outlines an end-to-end example of how this probabilistic program generation process works. 
+Here, we'll translate a very simple graph probabilistic program into a C library 
 and use an automatically generated inference algorithm to infer the
 posterior distribution over the model's latent random variables.
 This entire example is available in the [`examples`](https://gitlab.com/drdewhurst/lppl-graph/-/blob/examples/build/out/my_program_main.c.bak) branch of the `ccyan`
@@ -23,7 +26,8 @@ graph_node<Normal> normal_model(gr_pair<Normal, Gamma>& gr, double data_value) {
 }
 ```
 
-You could just do inference on this model and be done with it. However, given that you're reading the code generation tutorial, you probably want to translate this
+You could just do inference on this model and be done with it. 
+However, given that you're reading the code generation tutorial, you probably want to translate this
 to C and do inference on the generated code.
 To do this, you first populate a graph intermediate representation (a [graph_ir](https://davidrushingdewhurst.com/glppl/docs/structgraph__ir.html) -- essentially, a directed acyclic graph data structure with some additional annotations)
 and then translate that graph_ir into C:
@@ -111,7 +115,8 @@ Then you get a whole bunch of functions. As the code generation functionality ma
   \\(\log p(x | z) \\) (`my_program_accumulate_loglikelihood`), and \\(\log p(z) \\) (`my_program_accumulate_loglatent`).
 + Model execution under different interpretations of the model. Right now there are three different interpretations, but in the future there will probably be more.
   1. The standard interpretation -- sampling latent random variables and scoring observed random variables against their likeilhood functiosn conditioned on the values of latent random variables, i.e., \\( (x, z) \sim f(x, z)\\) -- `my_program_standard`.
-  2. The score interpretation -- given values for all latent and observed random variables, computing the joint probability of the state space under the model -- \\(\log p(x, z) | (x, z) \sim f(x, z) \\) -- `my_program_score`.
+  2. The score interpretation -- given values for all latent and observed random variables, computing the joint probability of the state space under the model -- 
+  \\(\log p(x, z),\ (x, z) \sim f(x, z) \\) -- `my_program_score`.
   3. The prediction interpretation -- given hypothesized values for the latent random variables, simulating possible values of the "observed" (in this case, *observable*) random variables -- \\(x \sim f(x | z) \\) -- `my_program_predict`.
 + Inference algorithms. In this case, since we passed `glppl_algos::likelihood_weighting{}` as an argument to `construct_program`, an instance of the
   likelihood weighting inference algorithm was automatically generated for us. Requesting an inference algorithm is `std::optional`; by default no inference
@@ -261,10 +266,10 @@ That's it.
 
 ## Comparison
 
-It's instructive to consider two ways of solving the same inference problem that we defined above.
+It's instructive to consider three ways of solving the same inference problem that we defined above.
 We just walked through one of them -- define it in `glppl`, automatically translate that to C, and then use that C library.
 The other sensible way to solve this is just to use `lppl` to define your program, queryer, and inference algorithm.
-For good measure, let's also compare another leading alternative -- [pyro](https://pyro.ai), a universal probabilistic programming language
+For good measure, we'll also compare another leading alternative -- [pyro](https://pyro.ai), a universal probabilistic programming language
 embedded in python (and one of the inspirations for `lppl`!)
 Here are the approaches, back to back.
 
