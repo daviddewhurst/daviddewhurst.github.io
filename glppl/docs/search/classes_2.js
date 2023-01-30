@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['node_5fspec_59',['node_spec',['../structnode__spec.html',1,'']]]
+  ['likelihood_5fweighting_60',['likelihood_weighting',['../structglppl__algos_1_1likelihood__weighting.html',1,'glppl_algos']]]
 ];

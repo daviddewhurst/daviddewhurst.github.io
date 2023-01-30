@@ -1,8 +1,11 @@
 var translate_8hpp =
 [
+    [ "likelihood_weighting", "structglppl__algos_1_1likelihood__weighting.html", null ],
     [ "program_info", "structprogram__info.html", "structprogram__info" ],
     [ "program_rep", "structprogram__rep.html", "structprogram__rep" ],
     [ "GLPPL_VERSION", "translate_8hpp.html#a2b16d9e00770c6377e57dfc8de248dc9", null ],
+    [ "construct_likelihood_weighting_declaration", "translate_8hpp.html#a3f72a5d3da3989c18a3c1797db4d34fb", null ],
+    [ "construct_likelihood_weighting_definition", "translate_8hpp.html#a13e4bdb03377154c8fd27788631c80d2", null ],
     [ "construct_program", "translate_8hpp_a044bd01023d0fffbac9647dcfdb97e52.html#a044bd01023d0fffbac9647dcfdb97e52", null ],
     [ "construct_program_body", "translate_8hpp.html#aec53a2bbdef408d337ee69fda79207a5", null ],
     [ "construct_program_c_file", "translate_8hpp.html#adc494a9c4a5f7d91813af649f8f65d0f", null ],

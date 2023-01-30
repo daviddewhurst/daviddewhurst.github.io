@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">glppl
-   &#160;<span id="projectnumber">v0.2.0</span>
+   &#160;<span id="projectnumber">v0.2.1</span>
    </div>
   </td>
  </tr>
@@ -102,14 +102,18 @@ $(document).ready(function(){initNavTree('translate_8hpp.html',''); initResizabl
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;ctime&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;variant&gt;</code><br />
 <code>#include &lt;distributions.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="graph_8hpp.html">graph.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="default__translations_8hpp.html">translate/default_translations.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structglppl__algos_1_1likelihood__weighting.html">glppl_algos::likelihood_weighting</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structprogram__info.html">program_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structprogram__rep.html">program_rep</a></td></tr>
@@ -123,6 +127,12 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a3f72a5d3da3989c18a3c1797db4d34fb"><td class="memItemLeft" align="right" valign="top"><a id="a3f72a5d3da3989c18a3c1797db4d34fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_likelihood_weighting_declaration</b> (<a class="el" href="structprogram__info.html">program_info</a> &amp;info, std::string &amp;h_file)</td></tr>
+<tr class="separator:a3f72a5d3da3989c18a3c1797db4d34fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e4bdb03377154c8fd27788631c80d2"><td class="memItemLeft" align="right" valign="top"><a id="a13e4bdb03377154c8fd27788631c80d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>construct_likelihood_weighting_definition</b> (<a class="el" href="structprogram__info.html">program_info</a> &amp;info, std::string &amp;c_file)</td></tr>
+<tr class="separator:a13e4bdb03377154c8fd27788631c80d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a044bd01023d0fffbac9647dcfdb97e52"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a044bd01023d0fffbac9647dcfdb97e52"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structprogram__rep.html">program_rep</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="translate_8hpp_a044bd01023d0fffbac9647dcfdb97e52.html#a044bd01023d0fffbac9647dcfdb97e52">construct_program</a> (<a class="el" href="structgr__pair.html">gr_pair</a>&lt; Ts... &gt; &amp;gr, <a class="el" href="structprogram__info.html">program_info</a> &amp;info, std::optional&lt; std::string &gt; file_=std::nullopt)</td></tr>
 <tr class="memdesc:a044bd01023d0fffbac9647dcfdb97e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translates a <a class="el" href="structgraph__ir.html" title="A graph intermediate representation of a causal model.">graph_ir</a> into a sample-based graphical model library built on ccyan primitives.  <a href="translate_8hpp_a044bd01023d0fffbac9647dcfdb97e52.html#a044bd01023d0fffbac9647dcfdb97e52">More...</a><br /></td></tr>

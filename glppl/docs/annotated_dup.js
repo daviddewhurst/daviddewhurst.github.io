@@ -1,5 +1,8 @@
 var annotated_dup =
 [
+    [ "glppl_algos", null, [
+      [ "likelihood_weighting", "structglppl__algos_1_1likelihood__weighting.html", null ]
+    ] ],
     [ "auxiliary_info", "structauxiliary__info.html", "structauxiliary__info" ],
     [ "auxiliary_info< Categorical >", "structauxiliary__info_3_01Categorical_01_4.html", "structauxiliary__info_3_01Categorical_01_4" ],
     [ "gr_output", "structgr__output.html", "structgr__output" ],

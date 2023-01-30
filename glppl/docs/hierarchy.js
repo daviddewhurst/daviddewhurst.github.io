@@ -13,6 +13,7 @@ var hierarchy =
       [ "graph_observe_node_construct< D, V, Ts >", "structgraph__observe__node__construct.html", null ],
       [ "graph_sample_node_construct< D, RNG, Ts >", "structgraph__sample__node__construct.html", null ]
     ] ],
+    [ "glppl_algos::likelihood_weighting", "structglppl__algos_1_1likelihood__weighting.html", null ],
     [ "node_spec", "structnode__spec.html", null ],
     [ "program_info", "structprogram__info.html", null ],
     [ "program_rep", "structprogram__rep.html", null ],

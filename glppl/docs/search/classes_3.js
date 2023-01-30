@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['program_5finfo_60',['program_info',['../structprogram__info.html',1,'']]],
-  ['program_5frep_61',['program_rep',['../structprogram__rep.html',1,'']]]
+  ['node_5fspec_61',['node_spec',['../structnode__spec.html',1,'']]]
 ];
