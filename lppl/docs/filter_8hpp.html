@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.11.0</span>
+   &#160;<span id="projectnumber">v0.12.0</span>
    </div>
   </td>
  </tr>
@@ -120,6 +120,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a17522d0130dca906556ef2cf0546c30a"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a17522d0130dca906556ef2cf0546c30a"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::variant&lt; Ts... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a17522d0130dca906556ef2cf0546c30a.html#a17522d0130dca906556ef2cf0546c30a">dist</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; double, Ts... &gt; &amp;cache, std::string address)</td></tr>
+<tr class="memdesc:a17522d0130dca906556ef2cf0546c30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes \(dist(r(a)) \sim D(r)\), where \(dist(r(a))\) is the distribution object associated with the address \(a\) and \(D(r)\) is the empirical <em>unweighted</em> distribution over records.  <a href="filter_8hpp_a17522d0130dca906556ef2cf0546c30a.html#a17522d0130dca906556ef2cf0546c30a">More...</a><br /></td></tr>
+<tr class="separator:a17522d0130dca906556ef2cf0546c30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bdb027e5add933343a4290febfcb66f"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class Q, typename... &gt; class A, typename I , typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a7bdb027e5add933343a4290febfcb66f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structFilter.html">Filter</a>&lt; A, I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a7bdb027e5add933343a4290febfcb66f.html#a7bdb027e5add933343a4290febfcb66f">filter</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920">FilterQueryerType</a>&lt; O, Ts... &gt; &amp;queryer, <a class="el" href="structtransition.html">transition</a>&lt; O, Ts... &gt; &amp;trans, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="memdesc:a7bdb027e5add933343a4290febfcb66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a filtering algorithm.  <a href="filter_8hpp_a7bdb027e5add933343a4290febfcb66f.html#a7bdb027e5add933343a4290febfcb66f">More...</a><br /></td></tr>
@@ -128,6 +132,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a7730b1dfbd5662c5efaeeb82a4285ada"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a7730b1dfbd5662c5efaeeb82a4285ada.html#a7730b1dfbd5662c5efaeeb82a4285ada">filter_effect</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="structtransition.html">transition</a>&lt; O, Ts... &gt; &amp;<a class="el" href="inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517">kernel</a>, bool &amp;has_been_called, RNG &amp;rng)</td></tr>
 <tr class="memdesc:a7730b1dfbd5662c5efaeeb82a4285ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an arbitrary probabilistic program into a dynamic version.  <a href="filter_8hpp_a7730b1dfbd5662c5efaeeb82a4285ada.html#a7730b1dfbd5662c5efaeeb82a4285ada">More...</a><br /></td></tr>
 <tr class="separator:a7730b1dfbd5662c5efaeeb82a4285ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf5c8d2d426abbf9cf9db6a62eda7a8"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a3cf5c8d2d426abbf9cf9db6a62eda7a8"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a3cf5c8d2d426abbf9cf9db6a62eda7a8.html#a3cf5c8d2d426abbf9cf9db6a62eda7a8">mean</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; double, Ts... &gt; &amp;cache, std::string address)</td></tr>
+<tr class="memdesc:a3cf5c8d2d426abbf9cf9db6a62eda7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes \(E_{r(a):\ r \sim D(r)}[r(a)]\), where \(D(r)\) is the empirical <em>unweighted</em> distribution over records.  <a href="filter_8hpp_a3cf5c8d2d426abbf9cf9db6a62eda7a8.html#a3cf5c8d2d426abbf9cf9db6a62eda7a8">More...</a><br /></td></tr>
+<tr class="separator:a3cf5c8d2d426abbf9cf9db6a62eda7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84230170ae05e431e85b7eb331cc552d"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a84230170ae05e431e85b7eb331cc552d"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a84230170ae05e431e85b7eb331cc552d.html#a84230170ae05e431e85b7eb331cc552d">score</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; double, Ts... &gt; &amp;cache)</td></tr>
+<tr class="memdesc:a84230170ae05e431e85b7eb331cc552d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the score \( E_{r \sim D(r)}[\sum_{a: a\ observed} p(r(a))]\), where \(D(r)\) is the empirical <em>unweighted</em> distribution over records.  <a href="filter_8hpp_a84230170ae05e431e85b7eb331cc552d.html#a84230170ae05e431e85b7eb331cc552d">More...</a><br /></td></tr>
+<tr class="separator:a84230170ae05e431e85b7eb331cc552d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under GPL v3 </p>

@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"structDistributions_1_1input__types_3_01Poisson_01_4.html":[2,0,0,17],
+"structDistributions_1_1input__types_3_01Poisson_01_4.html#a35224650fb2276b456e9490a1f72336e":[2,0,0,17,0],
+"structDistributions_1_1input__types_3_01Uniform_01_4.html":[2,0,0,18],
 "structDistributions_1_1input__types_3_01Uniform_01_4.html#a552a704c38b21e14eb8027f1cea68dfc":[2,0,0,18,0],
 "structFilter.html":[2,0,3],
 "structFilter.html#a05d27693188da1d23ce2e4d9e10e1355":[2,0,3,5],

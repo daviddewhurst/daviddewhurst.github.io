@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['has_5fproposal_157',['has_proposal',['../structhas__proposal.html',1,'']]],
-  ['has_5fproposal_3c_20genericmetropolis_20_3e_158',['has_proposal&lt; GenericMetropolis &gt;',['../structhas__proposal_3_01GenericMetropolis_01_4.html',1,'']]],
-  ['has_5fproposal_3c_20importancesampling_20_3e_159',['has_proposal&lt; ImportanceSampling &gt;',['../structhas__proposal_3_01ImportanceSampling_01_4.html',1,'']]]
+  ['has_5fproposal_160',['has_proposal',['../structhas__proposal.html',1,'']]],
+  ['has_5fproposal_3c_20genericmetropolis_20_3e_161',['has_proposal&lt; GenericMetropolis &gt;',['../structhas__proposal_3_01GenericMetropolis_01_4.html',1,'']]],
+  ['has_5fproposal_3c_20importancesampling_20_3e_162',['has_proposal&lt; ImportanceSampling &gt;',['../structhas__proposal_3_01ImportanceSampling_01_4.html',1,'']]]
 ];
