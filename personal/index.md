@@ -24,7 +24,7 @@ She is an extraordinarily talented artist, gardener, crafter, baker, and beekeep
 <p float="left">
 <img src="../photos/bee-wife-ring.jpg" width="500" />
 </p>
-This is a bee that landed on my wife's finger. I am not fond of such events, but she doens't seem to care.
+This is a bee that landed on my wife's finger. She doesn't seem to care when this happens.
 
 
 We have three children:
