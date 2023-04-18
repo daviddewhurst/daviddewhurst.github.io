@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['query_2ehpp_95',['query.hpp',['../query_8hpp.html',1,'']]],
-  ['queryer_96',['Queryer',['../classQueryer.html',1,'']]],
-  ['queryer_3c_20std_3a_3aunique_5fptr_3c_20std_3a_3aunordered_5fmap_3c_20std_3a_3astring_2c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_97',['Queryer&lt; std::unique_ptr&lt; std::unordered_map&lt; std::string, V &gt; &gt;, O, Ts... &gt;',['../classQueryer.html',1,'']]],
-  ['queryer_3c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_98',['Queryer&lt; V, O, Ts... &gt;',['../classQueryer.html',1,'']]],
-  ['queryercollection_99',['QueryerCollection',['../classQueryerCollection.html',1,'']]]
+  ['query_2ehpp_119',['query.hpp',['../query_8hpp.html',1,'']]],
+  ['queryer_120',['Queryer',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20std_3a_3aunique_5fptr_3c_20std_3a_3aunordered_5fmap_3c_20std_3a_3astring_2c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_121',['Queryer&lt; std::unique_ptr&lt; std::unordered_map&lt; std::string, V &gt; &gt;, O, Ts... &gt;',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_122',['Queryer&lt; V, O, Ts... &gt;',['../classQueryer.html',1,'']]],
+  ['queryercollection_123',['QueryerCollection',['../classQueryerCollection.html',1,'']]]
 ];

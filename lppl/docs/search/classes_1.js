@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['categorical_152',['Categorical',['../classDistributions_1_1Categorical.html',1,'Distributions']]],
-  ['collection_5ft_153',['collection_t',['../structcollection__t.html',1,'']]]
+  ['beta_187',['Beta',['../classDistributions_1_1Beta.html',1,'Distributions']]],
+  ['bounded_188',['bounded',['../structbounded.html',1,'']]]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.12.0</span>
+   &#160;<span id="projectnumber">v0.13.0</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('record_8hpp_a979a768437d370f2fad974a72
 
 <div class="contents">
 <a id="a979a768437d370f2fad974a72cb86b9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a979a768437d370f2fad974a72cb86b9a">&#9670;&nbsp;</a></span>loglikelihood()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a979a768437d370f2fad974a72cb86b9a">&#9670;&nbsp;</a></span>loglikelihood() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -107,8 +107,20 @@ template&lt;typename... Ts&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Computes the cumulative log-likelihood of the record, \( \log p(x|z) \). The log-likelihood is defined as the sum of the log probability of all nodes with obs = true. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>reimplement as instance of generic fold</dd></dl>
+<p>Computes the cumulative log-likelihood of the record, \( \sum_{a\ observed} \log p(r(a)) \). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Ts</td><td>The types of the distributions in the program </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">record</td><td>the record for which to compute the log likelihood </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
 
 </div>
 </div>

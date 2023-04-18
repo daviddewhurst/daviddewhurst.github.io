@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['discreteuniform_154',['DiscreteUniform',['../classDistributions_1_1DiscreteUniform.html',1,'Distributions']]],
-  ['distribution_155',['Distribution',['../classDistributions_1_1Distribution.html',1,'Distributions']]]
+  ['categorical_189',['Categorical',['../classDistributions_1_1Categorical.html',1,'Distributions']]],
+  ['collection_5ft_190',['collection_t',['../structcollection__t.html',1,'']]]
 ];
