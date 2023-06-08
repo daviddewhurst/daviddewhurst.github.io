@@ -11,7 +11,4 @@ You need a C99 compiler and a recent version of CMake (well, if you want to use 
 
 ## License etc.
 
-`ccyan` is licensed under the AGPL v3.
-If you would like a license exception, please contact lppl@davidrushingdewhurst.com.
-
-Copyright David Rushing Dewhurst, 2023 - present.
+`ccyan` is licensed under the MIT license. Copyright David Rushing Dewhurst, 2023 - present.

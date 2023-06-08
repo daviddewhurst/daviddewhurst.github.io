@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">glppl
-   &#160;<span id="projectnumber">v0.2.1</span>
+   &#160;<span id="projectnumber">v0.3.0</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('default__translations_8hpp.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">default_translations.hpp File Reference</div>  </div>
@@ -126,6 +127,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtranslation_3_01Value_3_01unsigned_01long_01_4_01_4.html">translation&lt; Value&lt; unsigned long &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abfa970ebf3de6e24ebbad01b18d05d68"><td class="memItemLeft" align="right" valign="top"><a id="abfa970ebf3de6e24ebbad01b18d05d68"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GLPPL_NODE_TYPE_NULL</b>&#160;&#160;&#160;&quot;NODE_TYPE_NULL&quot;</td></tr>
+<tr class="separator:abfa970ebf3de6e24ebbad01b18d05d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a883dc43a0203907ce6e2dcd220e38873"><td class="memItemLeft" align="right" valign="top"><a id="a883dc43a0203907ce6e2dcd220e38873"></a>
@@ -134,6 +141,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>all_param</b> (std::v
 <tr class="memitem:a4e4b0acb3b49579a87b415ca74f3044f"><td class="memItemLeft" align="right" valign="top"><a id="a4e4b0acb3b49579a87b415ca74f3044f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>any_param</b> (std::vector&lt; std::string &gt; &amp;v)</td></tr>
 <tr class="separator:a4e4b0acb3b49579a87b415ca74f3044f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b3f268dd92dc0a67b5e8c55d1381f23"><td class="memTemplParams" colspan="2"><a id="a0b3f268dd92dc0a67b5e8c55d1381f23"></a>
+template&lt;typename D &gt; </td></tr>
+<tr class="memitem:a0b3f268dd92dc0a67b5e8c55d1381f23"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>node_type</b> ()</td></tr>
+<tr class="separator:a0b3f268dd92dc0a67b5e8c55d1381f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130016cd0823ac9538d95a0019ae4969"><td class="memItemLeft" align="right" valign="top"><a id="a130016cd0823ac9538d95a0019ae4969"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a130016cd0823ac9538d95a0019ae4969"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>node_type&lt; Categorical &gt;</b> ()</td></tr>
+<tr class="separator:a130016cd0823ac9538d95a0019ae4969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2812dec17160e3bfadbb0c42e30c1137"><td class="memItemLeft" align="right" valign="top"><a id="a2812dec17160e3bfadbb0c42e30c1137"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a2812dec17160e3bfadbb0c42e30c1137"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>node_type&lt; Gamma &gt;</b> ()</td></tr>
+<tr class="separator:a2812dec17160e3bfadbb0c42e30c1137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7876c72f6316b246f263e6bae93ae897"><td class="memItemLeft" align="right" valign="top"><a id="a7876c72f6316b246f263e6bae93ae897"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:a7876c72f6316b246f263e6bae93ae897"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>node_type&lt; Normal &gt;</b> ()</td></tr>
+<tr class="separator:a7876c72f6316b246f263e6bae93ae897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a3e951e218b02e3494bd5110fc7716"><td class="memTemplParams" colspan="2"><a id="ac3a3e951e218b02e3494bd5110fc7716"></a>
 template&lt;class D &gt; </td></tr>
 <tr class="memitem:ac3a3e951e218b02e3494bd5110fc7716"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>parent_params</b> (<a class="el" href="structgraph__node.html">graph_node</a>&lt; D &gt; &amp;gn)</td></tr>
@@ -147,7 +170,7 @@ template&lt;typename D &gt; </td></tr>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>David Rushing Dewhurst (<a href="#" onclick="location.href='mai'+'lto:'+'drd'+'@d'+'avi'+'dr'+'ush'+'in'+'gde'+'wh'+'urs'+'t.'+'com'; return false;">drd@d<span style="display: none;">.nosp@m.</span>avid<span style="display: none;">.nosp@m.</span>rushi<span style="display: none;">.nosp@m.</span>ngde<span style="display: none;">.nosp@m.</span>whurs<span style="display: none;">.nosp@m.</span>t.co<span style="display: none;">.nosp@m.</span>m</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.2.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2023-01-18</dd></dl>
-<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2023 - present. Released under the AGPL V3 license. </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2023 - present. Released under the MIT license. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

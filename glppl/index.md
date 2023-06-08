@@ -32,16 +32,9 @@ a bespoke memory-safe (zero dynamic allocation) C99 probabilistic graphical mode
 
 As always, read the [documentation](./docs/index.html), get the [source](https://gitlab.com/drdewhurst/lppl-graph), download [tagged versions](./distros/index.md).
 
-> ⚠️ Versions of `glppl` greater than v0.1.0 have changed licenses from GPL3 to AGPL3. Please [contact us](mailto:lppl@davidrushingdewhurst.com) if you are interested in a license exception.
-
 ## Install
 
 You need to have a recent version of `lppl`. Running `setup.sh` from the directory into which you cloned
 `glppl` will do the trick.
-
-## License etc.
-
-`glppl` is licensed under the AGPL v3.
-If you would like a license exception, please contact lppl@davidrushingdewhurst.com.
 
 Copyright David Rushing Dewhurst, 2022 - present.
