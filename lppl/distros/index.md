@@ -7,7 +7,6 @@ MIT licensed
 + [v0.14.1](./lppl-v0.14.1.zip)
 
 GPLv3 licensed
-+ [latest](./lppl-vlatest.zip)
 + [v0.13.0](./lppl-v0.13.0.zip)
 + [v0.12.1](./lppl-v0.12.1.zip)
 + [v0.12.0](./lppl-v0.12.0.zip)
