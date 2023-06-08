@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['queryer_238',['Queryer',['../classQueryer.html',1,'']]],
-  ['queryer_3c_20std_3a_3aunique_5fptr_3c_20std_3a_3aunordered_5fmap_3c_20std_3a_3astring_2c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_239',['Queryer&lt; std::unique_ptr&lt; std::unordered_map&lt; std::string, V &gt; &gt;, O, Ts... &gt;',['../classQueryer.html',1,'']]],
-  ['queryer_3c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_240',['Queryer&lt; V, O, Ts... &gt;',['../classQueryer.html',1,'']]],
-  ['queryercollection_241',['QueryerCollection',['../classQueryerCollection.html',1,'']]]
+  ['queryer_221',['Queryer',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20optimizer_2c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_222',['Queryer&lt; Optimizer, V, O, Ts... &gt;',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20weighted_2c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_223',['Queryer&lt; Weighted, V, O, Ts... &gt;',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20weightedmean_2c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_224',['Queryer&lt; WeightedMean, double, O, Ts... &gt;',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20weightedrecord_2c_20std_3a_3ashared_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_225',['Queryer&lt; WeightedRecord, std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../classQueryer.html',1,'']]],
+  ['queryer_3c_20weightedvalue_2c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_226',['Queryer&lt; WeightedValue, std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classQueryer.html',1,'']]]
 ];

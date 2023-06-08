@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.13.0</span>
+   &#160;<span id="projectnumber">v0.14.1</span>
    </div>
   </td>
  </tr>
@@ -103,8 +103,9 @@ Inheritance diagram for WeightedValue&lt; std::unique_ptr&lt; value_collection_t
  <div class="center">
   <img src="classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.png" usemap="#WeightedValue_3C_20std::unique_5Fptr_3C_20value_5Fcollection_5Ft_3C_20V_20_3E_20_3E_2C_20O_2C_20Ts..._20_3E_map" alt=""/>
   <map id="WeightedValue_3C_20std::unique_5Fptr_3C_20value_5Fcollection_5Ft_3C_20V_20_3E_20_3E_2C_20O_2C_20Ts..._20_3E_map" name="WeightedValue_3C_20std::unique_5Fptr_3C_20value_5Fcollection_5Ft_3C_20V_20_3E_20_3E_2C_20O_2C_20Ts..._20_3E_map">
-<area href="classWeighted.html" alt="Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;" shape="rect" coords="0,56,414,80"/>
-<area href="classQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit..." alt="Queryer&lt; V, O, Ts &gt;" shape="rect" coords="0,0,414,24"/>
+<area href="classQueryer.html" alt="Queryer&lt; WeightedValue, std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;" shape="rect" coords="0,56,471,80"/>
+<area href="classWeighted.html" alt="Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;" shape="rect" coords="481,56,952,80"/>
+<area href="classQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit..." alt="Queryer&lt; Impl, V, O, Ts &gt;" shape="rect" coords="481,0,952,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -118,12 +119,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ae55515dd913aa328b8d24dc39b394173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the instance. <br /></td></tr>
 <tr class="separator:ae55515dd913aa328b8d24dc39b394173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a818ad8be1822c104e76e985a2fe9fff7"><td class="memItemLeft" align="right" valign="top"><a id="a818ad8be1822c104e76e985a2fe9fff7"></a>
-std::unique_ptr&lt; <a class="el" href="structvalue__collection__t.html">value_collection_t</a>&lt; V &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html#a818ad8be1822c104e76e985a2fe9fff7">emit</a> ()</td></tr>
-<tr class="memdesc:a818ad8be1822c104e76e985a2fe9fff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query. <br /></td></tr>
+std::unique_ptr&lt; <a class="el" href="structvalue__collection__t.html">value_collection_t</a>&lt; V &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>emit</b> ()</td></tr>
 <tr class="separator:a818ad8be1822c104e76e985a2fe9fff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44899ae13bb26a4fc26d06701b30a88f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4_a44899ae13bb26a4fc26d06701b30a88f.html#a44899ae13bb26a4fc26d06701b30a88f">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="memdesc:a44899ae13bb26a4fc26d06701b30a88f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4_a44899ae13bb26a4fc26d06701b30a88f.html#a44899ae13bb26a4fc26d06701b30a88f">More...</a><br /></td></tr>
+<tr class="memitem:a44899ae13bb26a4fc26d06701b30a88f"><td class="memItemLeft" align="right" valign="top"><a id="a44899ae13bb26a4fc26d06701b30a88f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="separator:a44899ae13bb26a4fc26d06701b30a88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classQueryer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQueryer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQueryer.html">Queryer&lt; WeightedValue, std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;</a></td></tr>
+<tr class="memitem:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_classQueryer"><td class="memItemLeft" align="right" valign="top"><a id="a665793e9eb312fd8ccd5106d4578aab6"></a>
+std::unique_ptr&lt; <a class="el" href="structvalue__collection__t.html">value_collection_t</a>&lt; V &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer.html#a665793e9eb312fd8ccd5106d4578aab6">emit</a> ()</td></tr>
+<tr class="memdesc:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_classQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query. <br /></td></tr>
+<tr class="separator:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_classQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9257c5ea585561090319dba5784d981 inherit pub_methods_classQueryer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memdesc:af9257c5ea585561090319dba5784d981 inherit pub_methods_classQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="classQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">More...</a><br /></td></tr>
+<tr class="separator:af9257c5ea585561090319dba5784d981 inherit pub_methods_classQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classWeighted"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classWeighted')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classWeighted.html">Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;</a></td></tr>
 <tr class="memitem:ac2b43a34dffa5cc32bf763b5c58c4792 inherit pub_methods_classWeighted"><td class="memItemLeft" align="right" valign="top"><a id="ac2b43a34dffa5cc32bf763b5c58c4792"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeighted.html#ac2b43a34dffa5cc32bf763b5c58c4792">clear</a> ()</td></tr>
@@ -135,6 +143,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a410bcb3f2521bde1ad1d7c31fa6b3a73 inherit pub_methods_classWeighted"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeighted_a410bcb3f2521bde1ad1d7c31fa6b3a73.html#a410bcb3f2521bde1ad1d7c31fa6b3a73">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="memdesc:a410bcb3f2521bde1ad1d7c31fa6b3a73 inherit pub_methods_classWeighted"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes \(\log Z = \log \sum_{1 \leq n \leq N} \exp w_n \).  <a href="classWeighted_a410bcb3f2521bde1ad1d7c31fa6b3a73.html#a410bcb3f2521bde1ad1d7c31fa6b3a73">More...</a><br /></td></tr>
 <tr class="separator:a410bcb3f2521bde1ad1d7c31fa6b3a73 inherit pub_methods_classWeighted"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classQueryer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQueryer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQueryer.html">Queryer&lt; Impl, V, O, Ts &gt;</a></td></tr>
+<tr class="memitem:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_classQueryer"><td class="memItemLeft" align="right" valign="top"><a id="a665793e9eb312fd8ccd5106d4578aab6"></a>
+V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer.html#a665793e9eb312fd8ccd5106d4578aab6">emit</a> ()</td></tr>
+<tr class="memdesc:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_classQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query. <br /></td></tr>
+<tr class="separator:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_classQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9257c5ea585561090319dba5784d981 inherit pub_methods_classQueryer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memdesc:af9257c5ea585561090319dba5784d981 inherit pub_methods_classQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="classQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">More...</a><br /></td></tr>
+<tr class="separator:af9257c5ea585561090319dba5784d981 inherit pub_methods_classQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

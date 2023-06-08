@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl: proposal&lt; Out &gt; Struct Template Reference</title>
+<title>lppl: proposal&lt; Impl, Out &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.13.0</span>
+   &#160;<span id="projectnumber">v0.14.1</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('structproposal.html',''); initResizabl
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structproposal-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">proposal&lt; Out &gt; Struct Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">proposal&lt; Impl, Out &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -104,16 +104,16 @@ $(document).ready(function(){initNavTree('structproposal.html',''); initResizabl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f54f6c7916f413a5a553c17888ce6fc"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; <a class="el" href="structrecord__t.html">record_t</a>&lt; Out... &gt;, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structproposal_a4f54f6c7916f413a5a553c17888ce6fc.html#a4f54f6c7916f413a5a553c17888ce6fc">generate</a> ()=0</td></tr>
-<tr class="memdesc:a4f54f6c7916f413a5a553c17888ce6fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be overridden; proposes a record.  <a href="structproposal_a4f54f6c7916f413a5a553c17888ce6fc.html#a4f54f6c7916f413a5a553c17888ce6fc">More...</a><br /></td></tr>
-<tr class="separator:a4f54f6c7916f413a5a553c17888ce6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d1ebb297b4e268bd990bf55c0f80eec"><td class="memItemLeft" align="right" valign="top"><a id="a8d1ebb297b4e268bd990bf55c0f80eec"></a>
+<tr class="memitem:aeb72ba2381a51340428c1841f6c0ff04"><td class="memItemLeft" align="right" valign="top"><a id="aeb72ba2381a51340428c1841f6c0ff04"></a>
+std::pair&lt; <a class="el" href="structrecord__t.html">record_t</a>&lt; Out... &gt;, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>generate</b> ()</td></tr>
+<tr class="separator:aeb72ba2381a51340428c1841f6c0ff04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18c4d0d6160cc0a94d9e724b87f2a14"><td class="memItemLeft" align="right" valign="top"><a id="ab18c4d0d6160cc0a94d9e724b87f2a14"></a>
 std::pair&lt; <a class="el" href="structrecord__t.html">record_t</a>&lt; Out... &gt;, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> ()</td></tr>
-<tr class="separator:a8d1ebb297b4e268bd990bf55c0f80eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab18c4d0d6160cc0a94d9e724b87f2a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename... Out&gt;<br />
-struct proposal&lt; Out &gt;</h3>
+<div class="textblock"><h3>template&lt;class Impl, typename... Out&gt;<br />
+struct proposal&lt; Impl, Out &gt;</h3>
 
 <p>Abstract base class from which all proposals should inherit. </p>
 <p>Subclasses must implement a single method, generate, that takes no arguments and returns a record of distribution types Out...</p>

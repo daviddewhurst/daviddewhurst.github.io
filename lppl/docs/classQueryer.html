@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl: Queryer&lt; V, O, Ts &gt; Class Template Reference</title>
+<title>lppl: Queryer&lt; Impl, V, O, Ts &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.13.0</span>
+   &#160;<span id="projectnumber">v0.14.1</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('classQueryer.html',''); initResizable(
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classQueryer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Queryer&lt; V, O, Ts &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Queryer&lt; Impl, V, O, Ts &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('classQueryer.html',''); initResizable(
 
 <p><code>#include &quot;query.hpp&quot;</code></p>
 <div class="dynheader">
-Inheritance diagram for Queryer&lt; V, O, Ts &gt;:</div>
+Inheritance diagram for Queryer&lt; Impl, V, O, Ts &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="classQueryer.png" usemap="#Queryer_3C_20V_2C_20O_2C_20Ts_20_3E_map" alt=""/>
-  <map id="Queryer_3C_20V_2C_20O_2C_20Ts_20_3E_map" name="Queryer_3C_20V_2C_20O_2C_20Ts_20_3E_map">
+  <img src="classQueryer.png" usemap="#Queryer_3C_20Impl_2C_20V_2C_20O_2C_20Ts_20_3E_map" alt=""/>
+  <map id="Queryer_3C_20Impl_2C_20V_2C_20O_2C_20Ts_20_3E_map" name="Queryer_3C_20Impl_2C_20V_2C_20O_2C_20Ts_20_3E_map">
 <area href="classWeighted.html" alt="Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;" shape="rect" coords="0,56,425,80"/>
 <area href="classWeighted.html" alt="Weighted&lt; std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;" shape="rect" coords="435,56,860,80"/>
 <area href="classWeighted.html" alt="Weighted&lt; double, O, Ts... &gt;" shape="rect" coords="870,56,1295,80"/>
@@ -118,17 +118,17 @@ Inheritance diagram for Queryer&lt; V, O, Ts &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc4cad1eebb8f9911809f5630a2e14b5"><td class="memItemLeft" align="right" valign="top"><a id="acc4cad1eebb8f9911809f5630a2e14b5"></a>
-virtual V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer.html#acc4cad1eebb8f9911809f5630a2e14b5">emit</a> ()=0</td></tr>
-<tr class="memdesc:acc4cad1eebb8f9911809f5630a2e14b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query. <br /></td></tr>
-<tr class="separator:acc4cad1eebb8f9911809f5630a2e14b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)=0</td></tr>
-<tr class="memdesc:a9f1340e43b14ad0da03b5a51c5a38717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="classQueryer_a9f1340e43b14ad0da03b5a51c5a38717.html#a9f1340e43b14ad0da03b5a51c5a38717">More...</a><br /></td></tr>
-<tr class="separator:a9f1340e43b14ad0da03b5a51c5a38717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665793e9eb312fd8ccd5106d4578aab6"><td class="memItemLeft" align="right" valign="top"><a id="a665793e9eb312fd8ccd5106d4578aab6"></a>
+V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer.html#a665793e9eb312fd8ccd5106d4578aab6">emit</a> ()</td></tr>
+<tr class="memdesc:a665793e9eb312fd8ccd5106d4578aab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query. <br /></td></tr>
+<tr class="separator:a665793e9eb312fd8ccd5106d4578aab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9257c5ea585561090319dba5784d981"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memdesc:af9257c5ea585561090319dba5784d981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="classQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">More...</a><br /></td></tr>
+<tr class="separator:af9257c5ea585561090319dba5784d981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename V, typename O, typename... Ts&gt;<br />
-class Queryer&lt; V, O, Ts &gt;</h3>
+<div class="textblock"><h3>template&lt;template&lt; typename, typename, typename... &gt; class Impl, typename V, typename O, typename... Ts&gt;<br />
+class Queryer&lt; Impl, V, O, Ts &gt;</h3>
 
 <p>Interface to all querying mechanisms for sample-based inference (and possibly other inference algorithms). Much computation that is associated with inference is implemented by subclasses of <a class="el" href="classQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a> (rather than in inference algorithms themselves, as is often done). </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>

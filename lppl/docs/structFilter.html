@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl: Filter&lt; A, I, O, Ts &gt; Struct Template Reference</title>
+<title>lppl: Filter&lt; A, TransKernel, I, O, Ts &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.13.0</span>
+   &#160;<span id="projectnumber">v0.14.1</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('structFilter.html',''); initResizable(
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Filter&lt; A, I, O, Ts &gt; Struct Template Reference</div>  </div>
+<div class="title">Filter&lt; A, TransKernel, I, O, Ts &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -103,43 +103,43 @@ $(document).ready(function(){initNavTree('structFilter.html',''); initResizable(
 
 <p><code>#include &quot;filter.hpp&quot;</code></p>
 <div class="dynheader">
-Inheritance diagram for Filter&lt; A, I, O, Ts &gt;:</div>
+Inheritance diagram for Filter&lt; A, TransKernel, I, O, Ts &gt;:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="structFilter.png" usemap="#Filter_3C_20A_2C_20I_2C_20O_2C_20Ts_20_3E_map" alt=""/>
-  <map id="Filter_3C_20A_2C_20I_2C_20O_2C_20Ts_20_3E_map" name="Filter_3C_20A_2C_20I_2C_20O_2C_20Ts_20_3E_map">
+  <img src="structFilter.png" usemap="#Filter_3C_20A_2C_20TransKernel_2C_20I_2C_20O_2C_20Ts_20_3E_map" alt=""/>
+  <map id="Filter_3C_20A_2C_20TransKernel_2C_20I_2C_20O_2C_20Ts_20_3E_map" name="Filter_3C_20A_2C_20TransKernel_2C_20I_2C_20O_2C_20Ts_20_3E_map">
 <area href="structInference.html" alt="Inference&lt; A, I, O, FilterValueType&lt; O, Ts... &gt;, WeightedRecord, Ts... &gt;" shape="rect" coords="0,0,433,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3556f9c07168751b93584c6f514e203e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilter_a3556f9c07168751b93584c6f514e203e.html#a3556f9c07168751b93584c6f514e203e">Filter</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920">FilterQueryerType</a>&lt; O, Ts... &gt; &amp;queryer, <a class="el" href="structtransition.html">transition</a>&lt; O, Ts... &gt; &amp;trans, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts, size_t seed=2022)</td></tr>
-<tr class="memdesc:a3556f9c07168751b93584c6f514e203e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="structFilter.html" title="A generic filtering inference algorithm.">Filter</a> object.  <a href="structFilter_a3556f9c07168751b93584c6f514e203e.html#a3556f9c07168751b93584c6f514e203e">More...</a><br /></td></tr>
-<tr class="separator:a3556f9c07168751b93584c6f514e203e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55470147619bfaefd829c145dabee690"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class G = A&gt; </td></tr>
-<tr class="memitem:a55470147619bfaefd829c145dabee690"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value==kernel::none, <a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structFilter_a55470147619bfaefd829c145dabee690.html#a55470147619bfaefd829c145dabee690">step</a> (I &amp;input)</td></tr>
-<tr class="memdesc:a55470147619bfaefd829c145dabee690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one filtering step.  <a href="structFilter_a55470147619bfaefd829c145dabee690.html#a55470147619bfaefd829c145dabee690">More...</a><br /></td></tr>
-<tr class="separator:a55470147619bfaefd829c145dabee690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a086dc9cd47b2c47ea47e4fe28d4ed26c"><td class="memTemplParams" colspan="2">template&lt;class P , template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class G = A&gt; </td></tr>
-<tr class="memitem:a086dc9cd47b2c47ea47e4fe28d4ed26c"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value==kernel::full, <a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structFilter_a086dc9cd47b2c47ea47e4fe28d4ed26c.html#a086dc9cd47b2c47ea47e4fe28d4ed26c">step</a> (I &amp;input, P &amp;<a class="el" href="structproposal.html">proposal</a>)</td></tr>
-<tr class="memdesc:a086dc9cd47b2c47ea47e4fe28d4ed26c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one filtering step.  <a href="structFilter_a086dc9cd47b2c47ea47e4fe28d4ed26c.html#a086dc9cd47b2c47ea47e4fe28d4ed26c">More...</a><br /></td></tr>
-<tr class="separator:a086dc9cd47b2c47ea47e4fe28d4ed26c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f548faa4189483d146e72155dad9561"><td class="memItemLeft" align="right" valign="top"><a id="a7f548faa4189483d146e72155dad9561"></a>
+<tr class="memitem:ab96779565cf28c89b69c568bab5b1f63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFilter_ab96779565cf28c89b69c568bab5b1f63.html#ab96779565cf28c89b69c568bab5b1f63">Filter</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920">FilterQueryerType</a>&lt; O, Ts... &gt; &amp;queryer, <a class="el" href="structtransition.html">transition</a>&lt; TransKernel, O, Ts... &gt; &amp;trans, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts, size_t seed=2022)</td></tr>
+<tr class="memdesc:ab96779565cf28c89b69c568bab5b1f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="structFilter.html" title="A generic filtering inference algorithm.">Filter</a> object.  <a href="structFilter_ab96779565cf28c89b69c568bab5b1f63.html#ab96779565cf28c89b69c568bab5b1f63">More...</a><br /></td></tr>
+<tr class="separator:ab96779565cf28c89b69c568bab5b1f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f26f33c8f7733bd37fa1d61fbec5690"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class G = A&gt; </td></tr>
+<tr class="memitem:a3f26f33c8f7733bd37fa1d61fbec5690"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value==kernel::none, <a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structFilter_a3f26f33c8f7733bd37fa1d61fbec5690.html#a3f26f33c8f7733bd37fa1d61fbec5690">step</a> (I &amp;input)</td></tr>
+<tr class="memdesc:a3f26f33c8f7733bd37fa1d61fbec5690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one filtering step.  <a href="structFilter_a3f26f33c8f7733bd37fa1d61fbec5690.html#a3f26f33c8f7733bd37fa1d61fbec5690">More...</a><br /></td></tr>
+<tr class="separator:a3f26f33c8f7733bd37fa1d61fbec5690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26abc1397e3d4372e99fe82c3131b733"><td class="memTemplParams" colspan="2">template&lt;class P , template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class G = A&gt; </td></tr>
+<tr class="memitem:a26abc1397e3d4372e99fe82c3131b733"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if_t&lt; <a class="el" href="structhas__proposal.html">has_proposal</a>&lt; G &gt;::value==kernel::full, <a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structFilter_a26abc1397e3d4372e99fe82c3131b733.html#a26abc1397e3d4372e99fe82c3131b733">step</a> (I &amp;input, P &amp;<a class="el" href="structproposal.html">proposal</a>)</td></tr>
+<tr class="memdesc:a26abc1397e3d4372e99fe82c3131b733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one filtering step.  <a href="structFilter_a26abc1397e3d4372e99fe82c3131b733.html#a26abc1397e3d4372e99fe82c3131b733">More...</a><br /></td></tr>
+<tr class="separator:a26abc1397e3d4372e99fe82c3131b733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353005ceb355f2671ce71abfa376f2e0"><td class="memItemLeft" align="right" valign="top"><a id="a353005ceb355f2671ce71abfa376f2e0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>update_internal_state</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;posterior)</td></tr>
-<tr class="separator:a7f548faa4189483d146e72155dad9561"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a353005ceb355f2671ce71abfa376f2e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a08319b32ac6bc4a66d0ca7c4f3128780"><td class="memItemLeft" align="right" valign="top"><a id="a08319b32ac6bc4a66d0ca7c4f3128780"></a>
+<tr class="memitem:a801e56688f5e3e0e4a201bb047d582f8"><td class="memItemLeft" align="right" valign="top"><a id="a801e56688f5e3e0e4a201bb047d582f8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>has_been_called</b></td></tr>
-<tr class="separator:a08319b32ac6bc4a66d0ca7c4f3128780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05d27693188da1d23ce2e4d9e10e1355"><td class="memItemLeft" align="right" valign="top"><a id="a05d27693188da1d23ce2e4d9e10e1355"></a>
+<tr class="separator:a801e56688f5e3e0e4a201bb047d582f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a268210f58d45cea477a03a8031515f90"><td class="memItemLeft" align="right" valign="top"><a id="a268210f58d45cea477a03a8031515f90"></a>
 std::minstd_rand&#160;</td><td class="memItemRight" valign="bottom"><b>rng</b></td></tr>
-<tr class="separator:a05d27693188da1d23ce2e4d9e10e1355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b96f1c7f5d0412c7b8f6e2357167aa0"><td class="memItemLeft" align="right" valign="top"><a id="a1b96f1c7f5d0412c7b8f6e2357167aa0"></a>
-<a class="el" href="structtransition.html">transition</a>&lt; O, Ts... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>trans</b></td></tr>
-<tr class="separator:a1b96f1c7f5d0412c7b8f6e2357167aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a268210f58d45cea477a03a8031515f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96949875498c72b3ff34704e2c4495ed"><td class="memItemLeft" align="right" valign="top"><a id="a96949875498c72b3ff34704e2c4495ed"></a>
+<a class="el" href="structtransition.html">transition</a>&lt; TransKernel, O, Ts... &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>trans</b></td></tr>
+<tr class="separator:a96949875498c72b3ff34704e2c4495ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -168,8 +168,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a4495c7f84bd7adced17d10bcfbaa8ef6 inherit pro_attribs_structInference"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class A, typename I, typename O, typename... Ts&gt;<br />
-struct Filter&lt; A, I, O, Ts &gt;</h3>
+<div class="textblock"><h3>template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class, typename... &gt; class A, class TransKernel, typename I, typename O, typename... Ts&gt;<br />
+struct Filter&lt; A, TransKernel, I, O, Ts &gt;</h3>
 
 <p>A generic filtering inference algorithm. </p>
 <p>Given a probabilistic program \(p(x,z) = p(x|z)p(z)\) and a user-supplied transition kernel, the model is converted into a dynamic filtering model \( p(x,z) = p(x_1 | z_1) p(z_1) \prod_{t\geq 2} p(x_t | z_t)p(z_t|x_{t-1}, z_{t-1})\) using filter_effect. At each timestep, inference is performed using the user-specified inference algorithm to recover an approximate posterior \(p(z_t | x_t)\). That approximate posterior is consumed by the transition callable to generate the new transition dynamics \(p(z_{t+1}|x_t, z_t)\) used in the next filtering step.</p>

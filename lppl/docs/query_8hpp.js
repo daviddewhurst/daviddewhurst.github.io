@@ -4,7 +4,6 @@ var query_8hpp =
     [ "inf_options_t", "structinf__options__t.html", "structinf__options__t" ],
     [ "Optimizer", "classOptimizer.html", "classOptimizer" ],
     [ "Queryer", "classQueryer.html", "classQueryer" ],
-    [ "QueryerCollection", "classQueryerCollection.html", "classQueryerCollection" ],
     [ "record_collection_t", "structrecord__collection__t.html", "structrecord__collection__t" ],
     [ "value_collection_t", "structvalue__collection__t.html", "structvalue__collection__t" ],
     [ "Weighted", "classWeighted.html", "classWeighted" ],
