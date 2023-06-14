@@ -7,8 +7,8 @@ description: about
 ## Description
 
 + [Husband](./photos/wife.jpg) and [father](./photos/all-three-kids-ellie-little.jpg)
-+ Senior scientist at [Charles River Analytics](https://cra.com/)
-+ Former lead data scientist at [MassMutual](https://datascience.massmutual.com/) and graduate fellow at [MITRE](https://compfi.org/).
++ Founder and president of [D R Dewhurst](https://drdewhurst.com), a strategic advisory firm.
++ Former senior scientist at [Charles River Analytics](https://cra.com/), lead data scientist at [MassMutual](https://datascience.massmutual.com/) and graduate fellow at [MITRE](https://compfi.org/).
 
 ## Interests
 
