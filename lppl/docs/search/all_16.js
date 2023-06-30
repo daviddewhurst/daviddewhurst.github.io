@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['weighted_152',['Weighted',['../classWeighted.html',1,'']]],
-  ['weighted_3c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_153',['Weighted&lt; double, O, Ts... &gt;',['../classWeighted.html',1,'']]],
-  ['weighted_3c_20std_3a_3ashared_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_154',['Weighted&lt; std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
-  ['weighted_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_155',['Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
-  ['weighted_5fmean_156',['weighted_mean',['../query_8hpp.html#aa2b1146bdab610a488759411a74b7a01',1,'query.hpp']]],
-  ['weighted_5frecord_157',['weighted_record',['../query_8hpp.html#a989473e47b96de47f265a40bc626299c',1,'query.hpp']]],
-  ['weighted_5fvalue_158',['weighted_value',['../query_8hpp.html#a6730945dbee8b6c3a3d1e32c4a8a3c78',1,'query.hpp']]],
-  ['weightedmean_159',['WeightedMean',['../classWeightedMean.html',1,'']]],
-  ['weightedrecord_160',['WeightedRecord',['../classWeightedRecord.html',1,'']]],
-  ['weightedvalue_161',['WeightedValue',['../classWeightedValue.html',1,'']]],
-  ['weightedvalue_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_162',['WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]]
+  ['weighted_166',['Weighted',['../classWeighted.html',1,'']]],
+  ['weighted_3c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_167',['Weighted&lt; double, O, Ts... &gt;',['../classWeighted.html',1,'']]],
+  ['weighted_3c_20std_3a_3ashared_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_168',['Weighted&lt; std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
+  ['weighted_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_169',['Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
+  ['weighted_5fmean_170',['weighted_mean',['../query_8hpp.html#aa2b1146bdab610a488759411a74b7a01',1,'query.hpp']]],
+  ['weighted_5frecord_171',['weighted_record',['../query_8hpp.html#a989473e47b96de47f265a40bc626299c',1,'query.hpp']]],
+  ['weighted_5fvalue_172',['weighted_value',['../query_8hpp.html#a6730945dbee8b6c3a3d1e32c4a8a3c78',1,'query.hpp']]],
+  ['weightedmean_173',['WeightedMean',['../classWeightedMean.html',1,'']]],
+  ['weightedrecord_174',['WeightedRecord',['../classWeightedRecord.html',1,'']]],
+  ['weightedvalue_175',['WeightedValue',['../classWeightedValue.html',1,'']]],
+  ['weightedvalue_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_176',['WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]]
 ];

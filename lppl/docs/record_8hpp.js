@@ -9,7 +9,7 @@ var record_8hpp =
     [ "param_store", "record_8hpp.html#aac1a0626672e6a19f7574871b13675b1", null ],
     [ "pp_t", "record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084", null ],
     [ "var_node_t", "record_8hpp.html#a0a05e8ce47737ce51bc5dacea733c482", null ],
-    [ "var_ret_t", "record_8hpp.html#a4225f535628c9a4e258c2c668adf0a19", null ],
+    [ "var_ret_t", "record_8hpp.html#afbf905451332eb0ba748a89e1e335033", null ],
     [ "interp_t", "record_8hpp_af66a0d7ab344dc4b1f8ee354e185b6b2.html#af66a0d7ab344dc4b1f8ee354e185b6b2", [
       [ "standard", "record_8hpp.html#af66a0d7ab344dc4b1f8ee354e185b6b2ac00f0c4675b91fb8b918e4079a0b1bac", null ],
       [ "replay", "record_8hpp.html#af66a0d7ab344dc4b1f8ee354e185b6b2ab2dbeb695fa205804b1e5e72650ad2bb", null ],

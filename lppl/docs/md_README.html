@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.1</span>
+   &#160;<span id="projectnumber">v0.14.2</span>
    </div>
   </td>
  </tr>
@@ -93,12 +93,13 @@ $(document).ready(function(){initNavTree('md_README.html',''); initResizable(); 
 <div class="title"><code>lppl</code> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Stands for "last probabilistic programming language" because eventually I have to write something other than PPLs.</p>
+<div class="textblock"><p><code>lppl</code> is a low-resource universal probabilistic programming framework.</p>
 <p>Homepage: <a href="https://davidrushingdewhurst.com/lppl/">https://davidrushingdewhurst.com/lppl/</a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Build</h1>
-<p><code>cd build &amp;&amp; cmake .. &amp;&amp; make</code>. Unsurprisingly, this requires cmake. On a less obvious note, building <code>lppl</code> requires (a) a compiler that supports C++ 20 and (b) CMake v3.20.0 or later.</p>
-<p><b>Please note</b> that <code>lppl</code> has been tested on Apple clang v12.0.0 and Mingw-w64 (unknown version). It <em>should</em> compile under any standards compliant C++20 compiler, but that is not guaranteed. Please submit build errors here: <a href="https://gitlab.com/drdewhurst/lppl/-/issues">https://gitlab.com/drdewhurst/lppl/-/issues</a>.</p>
+<p><code>cd build &amp;&amp; cmake .. &amp;&amp; make</code>. Requires (a) a compiler that supports C++ 20 and (b) CMake v3.20.0 or later.</p>
+<p><b>Please note</b> that <code>lppl</code> has been tested on Apple clang v12.0.0 on OSX, Mingw-w64 on Windows 10, and g++ 11.3.0 on ubuntu. It <em>should</em> compile under any standards compliant C++20 compiler, but that is not guaranteed. Please submit build errors here: <a href="https://gitlab.com/drdewhurst/lppl/-/issues">https://gitlab.com/drdewhurst/lppl/-/issues</a>. <br  />
+</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Test</h1>
 <p>Run any of the tests that show up in the <code>build</code> directory after you build. E.g., <code>./record_test</code>. <b>Please note</b> that deterministic results are guaranteed under specific hardware configurations, but not across operating systems.</p>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.1</span>
+   &#160;<span id="projectnumber">v0.14.2</span>
    </div>
   </td>
  </tr>
@@ -136,10 +136,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a9ce698e2acd80637aad070ab6bfa1808"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a9ce698e2acd80637aad070ab6bfa1808.html#a9ce698e2acd80637aad070ab6bfa1808">filter_effect</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="structtransition.html">transition</a>&lt; TransKernel, O, Ts... &gt; &amp;<a class="el" href="inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517">kernel</a>, bool &amp;has_been_called, RNG &amp;rng)</td></tr>
 <tr class="memdesc:a9ce698e2acd80637aad070ab6bfa1808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an arbitrary probabilistic program into a dynamic version.  <a href="filter_8hpp_a9ce698e2acd80637aad070ab6bfa1808.html#a9ce698e2acd80637aad070ab6bfa1808">More...</a><br /></td></tr>
 <tr class="separator:a9ce698e2acd80637aad070ab6bfa1808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a2c0e94506e020956fb901c4f321d93"><td class="memTemplParams" colspan="2">template&lt;typename O , typename... Ts&gt; </td></tr>
-<tr class="memitem:a7a2c0e94506e020956fb901c4f321d93"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a7a2c0e94506e020956fb901c4f321d93.html#a7a2c0e94506e020956fb901c4f321d93">mean</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double)&gt; &amp;&amp;map_, std::string address)</td></tr>
-<tr class="memdesc:a7a2c0e94506e020956fb901c4f321d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes \(E_{r(a):\ r \sim D(r)}[f(r(a))]\), where \(D(r)\) is the empirical distribution over records and \( f: double -&gt; double \).  <a href="filter_8hpp_a7a2c0e94506e020956fb901c4f321d93.html#a7a2c0e94506e020956fb901c4f321d93">More...</a><br /></td></tr>
-<tr class="separator:a7a2c0e94506e020956fb901c4f321d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838edf967317f13e96ede64b627116c5"><td class="memTemplParams" colspan="2">template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a838edf967317f13e96ede64b627116c5"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a838edf967317f13e96ede64b627116c5.html#a838edf967317f13e96ede64b627116c5">mean</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address)</td></tr>
+<tr class="memdesc:a838edf967317f13e96ede64b627116c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes \(E_{r(a):\ r \sim D(r)}[f(r(a))]\), where \(D(r)\) is the empirical distribution over records and \( f: double -&gt; double \).  <a href="filter_8hpp_a838edf967317f13e96ede64b627116c5.html#a838edf967317f13e96ede64b627116c5">More...</a><br /></td></tr>
+<tr class="separator:a838edf967317f13e96ede64b627116c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3c99d69b8efec1015660c11ace26d15"><td class="memTemplParams" colspan="2"><a id="ad3c99d69b8efec1015660c11ace26d15"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:ad3c99d69b8efec1015660c11ace26d15"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp.html#ad3c99d69b8efec1015660c11ace26d15">mean</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::string address)</td></tr>
@@ -149,10 +149,18 @@ template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:abe7d71ecf6b5979f563afd0d2fcba28c"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_abe7d71ecf6b5979f563afd0d2fcba28c.html#abe7d71ecf6b5979f563afd0d2fcba28c">score</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache)</td></tr>
 <tr class="memdesc:abe7d71ecf6b5979f563afd0d2fcba28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the score \( E_{r \sim D(r)}[\sum_{a: a\ observed} p(r(a))]\), where \(D(r)\) is the empirical <em>unweighted</em> distribution over records.  <a href="filter_8hpp_abe7d71ecf6b5979f563afd0d2fcba28c.html#abe7d71ecf6b5979f563afd0d2fcba28c">More...</a><br /></td></tr>
 <tr class="separator:abe7d71ecf6b5979f563afd0d2fcba28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c987bc75e64fbdc65be2d5397d9fa8"><td class="memTemplParams" colspan="2"><a id="a91c987bc75e64fbdc65be2d5397d9fa8"></a>
+template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a91c987bc75e64fbdc65be2d5397d9fa8"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stddev</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address)</td></tr>
+<tr class="separator:a91c987bc75e64fbdc65be2d5397d9fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a165294f29757d3a14d24c5499b8fb35c"><td class="memTemplParams" colspan="2"><a id="a165294f29757d3a14d24c5499b8fb35c"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a165294f29757d3a14d24c5499b8fb35c"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stddev</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::string address)</td></tr>
 <tr class="separator:a165294f29757d3a14d24c5499b8fb35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102b3f09996eda58a51705978b2af0c4"><td class="memTemplParams" colspan="2"><a id="a102b3f09996eda58a51705978b2af0c4"></a>
+template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a102b3f09996eda58a51705978b2af0c4"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variance</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address)</td></tr>
+<tr class="separator:a102b3f09996eda58a51705978b2af0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a0108e9b09b64b7902d2af276f358b"><td class="memTemplParams" colspan="2"><a id="ac7a0108e9b09b64b7902d2af276f358b"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:ac7a0108e9b09b64b7902d2af276f358b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variance</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::string address)</td></tr>

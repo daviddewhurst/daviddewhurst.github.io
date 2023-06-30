@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.1</span>
+   &#160;<span id="projectnumber">v0.14.2</span>
    </div>
   </td>
  </tr>
@@ -97,22 +97,28 @@ $(document).ready(function(){initNavTree('structNormalPolicy.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
-<p>Every distribution type is approximated by a normal distribution.  
+<p>Every continuous distribution type is approximated by a normal distribution.  
  <a href="structNormalPolicy.html#details">More...</a></p>
 
 <p><code>#include &quot;policies.hpp&quot;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0ddc28c198dbbf503ee5c977b473664d"><td class="memItemLeft" align="right" valign="top"><a id="a0ddc28c198dbbf503ee5c977b473664d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = <a class="el" href="structDistributions_1_1Normal.html">Normal</a></td></tr>
-<tr class="separator:a0ddc28c198dbbf503ee5c977b473664d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fdb983b33e4d9ba3f91f60f917ac508"><td class="memItemLeft" align="right" valign="top"><a id="a6fdb983b33e4d9ba3f91f60f917ac508"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>codom</b> = <a class="el" href="structDistributions_1_1output__domain.html">output_domain</a>&lt; D &gt;::value</td></tr>
+<tr class="separator:a6fdb983b33e4d9ba3f91f60f917ac508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a521df14110e10508fb8f5ed44206415c"><td class="memItemLeft" align="right" valign="top"><a id="a521df14110e10508fb8f5ed44206415c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>type</b> = std::conditional&lt; std::is_same_v&lt; underlying_type, double &gt;, <a class="el" href="structDistributions_1_1Normal.html">Normal</a>, D &gt;::type</td></tr>
+<tr class="separator:a521df14110e10508fb8f5ed44206415c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd073f87a2930e5612c6721f3672639a"><td class="memItemLeft" align="right" valign="top"><a id="afd073f87a2930e5612c6721f3672639a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>underlying_type</b> = codom::type</td></tr>
+<tr class="separator:afd073f87a2930e5612c6721f3672639a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename D&gt;<br />
 struct NormalPolicy&lt; D &gt;</h3>
 
-<p>Every distribution type is approximated by a normal distribution. </p>
+<p>Every continuous distribution type is approximated by a normal distribution. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">D</td><td>Input distribution type. </td></tr>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.1</span>
+   &#160;<span id="projectnumber">v0.14.2</span>
    </div>
   </td>
  </tr>
@@ -99,15 +99,19 @@ $(document).ready(function(){initNavTree('update_8hpp.html',''); initResizable()
 <div class="contents">
 <div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;variant&gt;</code><br />
+<code>#include &lt;functional_util.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="record_8hpp.html">record.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtyped__map.html">typed_map&lt; Policy, I, Ds &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtyped__map.html">typed_map&lt; Policy, Input, Ds &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unordered map with value type equal to a sum type of input type and one or more distribution types, parameterized by an update Policy.  <a href="structtyped__map.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUpdate.html">Update&lt; Impl, Policy, QueryResult, I, O, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><em>Experimental</em> base class of <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code>-based update logic.  <a href="structUpdate.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structUpdateFilter.html">UpdateFilter&lt; Impl, Policy, Queryer, Inference, I, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A filtering algorithm that operates on <a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a> objects.  <a href="structUpdateFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -119,14 +123,20 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aec468c85df6f603935d8a5bdb0969bc9"><td class="memTemplParams" colspan="2">template&lt;typename V , typename D , template&lt; typename &gt; class Policy, typename I , typename... Ts&gt; </td></tr>
-<tr class="memitem:aec468c85df6f603935d8a5bdb0969bc9"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="update_8hpp_aec468c85df6f603935d8a5bdb0969bc9.html#aec468c85df6f603935d8a5bdb0969bc9">observe_u</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D <a class="el" href="filter_8hpp_af4f7c688dd15dc34688064b92ce23a8c.html#af4f7c688dd15dc34688064b92ce23a8c">dist</a>, <a class="el" href="structtyped__map.html">typed_map</a>&lt; Policy, I, Ts... &gt; &amp;map_)</td></tr>
-<tr class="memdesc:aec468c85df6f603935d8a5bdb0969bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Observe a value from data contained in the <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code>.  <a href="update_8hpp_aec468c85df6f603935d8a5bdb0969bc9.html#aec468c85df6f603935d8a5bdb0969bc9">More...</a><br /></td></tr>
+<tr class="memitem:aacffbfc29afe8afed770cd1128800d13"><td class="memTemplParams" colspan="2"><a id="aacffbfc29afe8afed770cd1128800d13"></a>
+template&lt;template&lt; template&lt; typename &gt; class, typename, typename, typename... &gt; class Impl, template&lt; typename &gt; class Policy, class Queryer , class Inference , typename I , typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:aacffbfc29afe8afed770cd1128800d13"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structUpdateFilter.html">UpdateFilter</a>&lt; Impl, Policy, <a class="el" href="classQueryer.html">Queryer</a>, <a class="el" href="structInference.html">Inference</a>, I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="update_8hpp.html#aacffbfc29afe8afed770cd1128800d13">filter</a> (<a class="el" href="update_8hpp_a6914369b36912598e8788407d778a1a7.html#a6914369b36912598e8788407d778a1a7">upp_t</a>&lt; Policy, I, O, Ts... &gt; &amp;f, <a class="el" href="classQueryer.html">Queryer</a> &amp;q, <a class="el" href="structInference.html">Inference</a> &amp;infer)</td></tr>
+<tr class="memdesc:aacffbfc29afe8afed770cd1128800d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="structUpdateFilter.html" title="A filtering algorithm that operates on typed_map objects.">UpdateFilter</a>. <br /></td></tr>
+<tr class="separator:aacffbfc29afe8afed770cd1128800d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec468c85df6f603935d8a5bdb0969bc9"><td class="memTemplParams" colspan="2"><a id="aec468c85df6f603935d8a5bdb0969bc9"></a>
+template&lt;typename V , typename D , template&lt; typename &gt; class Policy, typename I , typename... Ts&gt; </td></tr>
+<tr class="memitem:aec468c85df6f603935d8a5bdb0969bc9"><td class="memTemplItemLeft" align="right" valign="top">V&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="update_8hpp.html#aec468c85df6f603935d8a5bdb0969bc9">observe_u</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, D <a class="el" href="filter_8hpp_af4f7c688dd15dc34688064b92ce23a8c.html#af4f7c688dd15dc34688064b92ce23a8c">dist</a>, <a class="el" href="structtyped__map.html">typed_map</a>&lt; Policy, I, Ts... &gt; &amp;map_)</td></tr>
+<tr class="memdesc:aec468c85df6f603935d8a5bdb0969bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Observe a value from data contained in the <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code>. <br /></td></tr>
 <tr class="separator:aec468c85df6f603935d8a5bdb0969bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a402aa2fde887e8ea2dc1ac40386f0f03"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG , template&lt; typename &gt; class Policy, typename I , typename... Ts&gt; </td></tr>
-<tr class="memitem:a402aa2fde887e8ea2dc1ac40386f0f03"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; typename Policy&lt; D &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="update_8hpp_a402aa2fde887e8ea2dc1ac40386f0f03.html#a402aa2fde887e8ea2dc1ac40386f0f03">sample_u</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, <a class="el" href="structtyped__map.html">typed_map</a>&lt; Policy, I, Ts... &gt; &amp;map_, RNG &amp;rng)</td></tr>
-<tr class="memdesc:a402aa2fde887e8ea2dc1ac40386f0f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a value from the addressed distribution in the <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code>  <a href="update_8hpp_a402aa2fde887e8ea2dc1ac40386f0f03.html#a402aa2fde887e8ea2dc1ac40386f0f03">More...</a><br /></td></tr>
-<tr class="separator:a402aa2fde887e8ea2dc1ac40386f0f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81c94fa3d6ae0a65f84d946984b9e1f"><td class="memTemplParams" colspan="2">template&lt;typename D , typename RNG , template&lt; typename &gt; class Policy, typename I , typename... Ts&gt; </td></tr>
+<tr class="memitem:ab81c94fa3d6ae0a65f84d946984b9e1f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt; D &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="update_8hpp_ab81c94fa3d6ae0a65f84d946984b9e1f.html#ab81c94fa3d6ae0a65f84d946984b9e1f">sample_u</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, <a class="el" href="structtyped__map.html">typed_map</a>&lt; Policy, I, Ts... &gt; &amp;map_, RNG &amp;rng)</td></tr>
+<tr class="memdesc:ab81c94fa3d6ae0a65f84d946984b9e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sample a value from the addressed distribution in the <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code>  <a href="update_8hpp_ab81c94fa3d6ae0a65f84d946984b9e1f.html#ab81c94fa3d6ae0a65f84d946984b9e1f">More...</a><br /></td></tr>
+<tr class="separator:ab81c94fa3d6ae0a65f84d946984b9e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6212f5d8b16445c40f9cc10e5313a1"><td class="memTemplParams" colspan="2">template&lt;template&lt; template&lt; typename &gt; class, typename, typename, typename... &gt; class Impl, template&lt; typename &gt; class Policy, typename QueryResult , typename I , typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a9a6212f5d8b16445c40f9cc10e5313a1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structUpdate.html">Update</a>&lt; Impl, Policy, QueryResult, I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="update_8hpp_a9a6212f5d8b16445c40f9cc10e5313a1.html#a9a6212f5d8b16445c40f9cc10e5313a1">update</a> (<a class="el" href="update_8hpp_a6914369b36912598e8788407d778a1a7.html#a6914369b36912598e8788407d778a1a7">upp_t</a>&lt; Policy, I, O, Ts... &gt; &amp;f)</td></tr>
 <tr class="memdesc:a9a6212f5d8b16445c40f9cc10e5313a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for Updater.  <a href="update_8hpp_a9a6212f5d8b16445c40f9cc10e5313a1.html#a9a6212f5d8b16445c40f9cc10e5313a1">More...</a><br /></td></tr>
