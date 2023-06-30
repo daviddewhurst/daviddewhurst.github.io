@@ -8,6 +8,7 @@ Open-universe probabilistic programming in modern C++, done in exactly the idios
 + Sample-based, with posterior queries by default computed online rather than after sampling is complete -- defaulting to constant memory complexity
 + Explicit PRNG state (reproducibility)
 + Algebraic sum types everywhere instead of boxing
++ Header-only
 
 This should look familiar.
 
