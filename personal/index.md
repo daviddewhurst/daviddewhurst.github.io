@@ -17,7 +17,7 @@ significantly different from much of the rest of the state.
 The house we lived in was built in 1920, 
 not ancient but enough for the walls to be constructed from 
 2x3s, not 2x4s (or, I guess, 2x6s...whatever people do these days). 
-The house we live in now is larger (like, 50% larger, which comes in handy with many children)
+The house we live in now is larger (like, 100% larger, which comes in handy with many children)
 and was built ten years later.
 
 <p float="left">
