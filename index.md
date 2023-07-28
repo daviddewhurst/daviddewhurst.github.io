@@ -40,4 +40,4 @@ of `stsb2` grammar and extension of modeling capabilities, deeply integrated wit
 
 ## Links
 + [personal](./personal/)
-+ [cv](./documents/drd-cv.pdf)
++ [resume](./documents/drd-resume.pdf)

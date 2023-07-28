@@ -5,19 +5,29 @@ description: about
 ---
 
 
-#### Personal
+### Personal
 
-My family and I live in a town called Wareham on the south coast of Massachusetts. 
+#### Location
+
+My family and I live in a town called Middleborough (though often spelled Middleboro) in southern
+Massachusetts. 
+We used to live in a town called Wareham on the south coast of Massachusetts. 
 It's a wonderful area that's less commonly-trafficked than the cape, at least by outsiders, and has a culture that I think is 
-significantly different from much of the rest of the state. My house was built in 1920, not ancient but enough for the walls to be constructed from 
+significantly different from much of the rest of the state.
+The house we lived in was built in 1920, 
+not ancient but enough for the walls to be constructed from 
 2x3s, not 2x4s (or, I guess, 2x6s...whatever people do these days). 
+The house we live in now is larger (like, 50% larger, which comes in handy with many children)
+and was built ten years later.
 
 <p float="left">
   <img src="../photos/october-water.jpg" width="500" />
   <img src="../photos/january-water.jpg" width="500" /> 
   <img src="../photos/january-snow-water.jpg" width="500" />
 </p>
-This is the view from my backyard at two different times of year -- October on the top, January in the middle, and January in the snow on the bottom. 
+This is the view from my Wareham house's backyard at two different times of year -- October on the top, January in the middle, and January in the snow on the bottom. 
+
+#### Family
 
 I met my wife, Casey Lyn Dewhurst (nee Comeau), in 2011. 
 She is an extraordinarily talented artist, gardener, crafter, baker, and beekeeper (or apiarist, if we're being fancy). She has beehives in three towns across southeastern Massachusetts and harvests delicious honey.
@@ -36,3 +46,6 @@ We have three children:
 They are good kids. Because they are kids, they are also very weird.
 
 I used to have hobbies. Now I work and parent.
+
+I have a set of [personal guiding princples](./philosophy/) that I try, 
+and sometimes fail, to follow.
