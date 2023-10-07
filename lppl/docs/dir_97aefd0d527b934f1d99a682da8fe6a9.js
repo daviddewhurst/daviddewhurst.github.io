@@ -14,8 +14,7 @@ var dir_97aefd0d527b934f1d99a682da8fe6a9 =
     ] ],
     [ "effects.hpp", "effects_8hpp.html", "effects_8hpp" ],
     [ "plate.hpp", "plate_8hpp.html", [
-      [ "plate", "structplate.html", "structplate" ],
-      [ "shared_static_plate", "structshared__static__plate.html", "structshared__static__plate" ],
+      [ "plate_base_", "structplate__base__.html", "structplate__base__" ],
       [ "static_plate", "structstatic__plate.html", "structstatic__plate" ]
     ] ],
     [ "query.hpp", "query_8hpp.html", "query_8hpp" ],

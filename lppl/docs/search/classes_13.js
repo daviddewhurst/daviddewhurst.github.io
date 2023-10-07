@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['weighted_272',['Weighted',['../classWeighted.html',1,'']]],
-  ['weighted_3c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_273',['Weighted&lt; double, O, Ts... &gt;',['../classWeighted.html',1,'']]],
-  ['weighted_3c_20std_3a_3ashared_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_274',['Weighted&lt; std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
-  ['weighted_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_275',['Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
-  ['weightedmean_276',['WeightedMean',['../classWeightedMean.html',1,'']]],
-  ['weightedrecord_277',['WeightedRecord',['../classWeightedRecord.html',1,'']]],
-  ['weightedvalue_278',['WeightedValue',['../classWeightedValue.html',1,'']]],
-  ['weightedvalue_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_279',['WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]]
+  ['weighted_270',['Weighted',['../classWeighted.html',1,'']]],
+  ['weighted_3c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_271',['Weighted&lt; double, O, Ts... &gt;',['../classWeighted.html',1,'']]],
+  ['weighted_3c_20std_3a_3ashared_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_272',['Weighted&lt; std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
+  ['weighted_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_273',['Weighted&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeighted.html',1,'']]],
+  ['weightedmean_274',['WeightedMean',['../classWeightedMean.html',1,'']]],
+  ['weightedrecord_275',['WeightedRecord',['../classWeightedRecord.html',1,'']]],
+  ['weightedvalue_276',['WeightedValue',['../classWeightedValue.html',1,'']]],
+  ['weightedvalue_3c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_277',['WeightedValue&lt; std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]]
 ];

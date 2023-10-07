@@ -73,8 +73,7 @@ var hierarchy =
     [ "parameter_match< D, Normal, O, Ts... >", "structparameter__match_3_01D_00_01Normal_00_01O_00_01Ts_8_8_8_01_4.html", null ],
     [ "parameter_match< Parameter< Constraint< BaseType > >, Parameter< Constraint< BaseType > >, O, Ts... >", "structparameter__match_3_01Parameter_3_01Constraint_3_01BaseType_01_4_01_4_00_01Parameter_3_01Co9a843d0040727a0941a5fc0f0d49a263.html", null ],
     [ "ParameterMatching< Policy, QueryResult, I, O, Ts >", "structParameterMatching.html", null ],
-    [ "plate< D >", "structplate.html", [
-      [ "shared_static_plate< D, N >", "structshared__static__plate.html", null ],
+    [ "plate_base_< D >", "structplate__base__.html", [
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
     ] ],
     [ "Distributions::Poisson", "structDistributions_1_1Poisson.html", null ],
