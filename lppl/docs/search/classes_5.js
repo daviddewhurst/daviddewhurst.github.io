@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gamma_192',['Gamma',['../structDistributions_1_1Gamma.html',1,'Distributions']]],
-  ['genericmetropolis_193',['GenericMetropolis',['../structGenericMetropolis.html',1,'']]]
+  ['gamma_197',['Gamma',['../structDistributions_1_1Gamma.html',1,'Distributions']]],
+  ['genericmetropolis_198',['GenericMetropolis',['../structGenericMetropolis.html',1,'']]]
 ];

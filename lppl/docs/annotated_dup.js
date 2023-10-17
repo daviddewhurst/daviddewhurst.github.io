@@ -51,6 +51,7 @@ var annotated_dup =
     [ "inf_options_t", "structinf__options__t.html", "structinf__options__t" ],
     [ "Inference", "structInference.html", "structInference" ],
     [ "LikelihoodWeighting", "structLikelihoodWeighting.html", "structLikelihoodWeighting" ],
+    [ "LogSumExpQ", "structLogSumExpQ.html", "structLogSumExpQ" ],
     [ "mapping", "structmapping.html", null ],
     [ "mapping< A< T >, A< T > >", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4.html", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4" ],
     [ "mapping< B, A >", "structmapping_3_01B_00_01A_01_4.html", "structmapping_3_01B_00_01A_01_4" ],

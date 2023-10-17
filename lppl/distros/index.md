@@ -4,6 +4,7 @@ Clicking a link will result in an attempted download of a `.zip` file to your ma
 
 MIT licensed
 + [latest](./lppl-vlatest.zip)
++ [v0.14.4](./lppl-v0.14.4.zip)
 + [v0.14.3](./lppl-v0.14.3.zip)
 + [v0.14.2](./lppl-v0.14.2.zip)
 + [v0.14.1](./lppl-v0.14.1.zip)

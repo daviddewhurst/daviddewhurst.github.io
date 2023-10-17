@@ -79,14 +79,23 @@ var hierarchy =
     [ "Distributions::Poisson", "structDistributions_1_1Poisson.html", null ],
     [ "proposal< Impl, Out >", "structproposal.html", null ],
     [ "Queryer< Impl, V, O, Ts >", "classQueryer.html", [
+      [ "LogSumExpQ< double, O, Ts... >", "structLogSumExpQ.html", [
+        [ "WeightedMean< typename, O, Ts >", "classWeightedMean.html", null ]
+      ] ],
       [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "classWeighted.html", [
         [ "WeightedValue< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html", null ]
       ] ],
       [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "classWeighted.html", [
         [ "WeightedRecord< typename, O, Ts >", "classWeightedRecord.html", null ]
+      ] ]
+    ] ],
+    [ "Queryer< LogSumExpQ, V, O, Ts... >", "classQueryer.html", [
+      [ "LogSumExpQ< V, O, Ts... >", "structLogSumExpQ.html", [
+        [ "Weighted< V, O, Ts >", "classWeighted.html", null ]
       ] ],
-      [ "Weighted< double, O, Ts... >", "classWeighted.html", [
-        [ "WeightedMean< typename, O, Ts >", "classWeightedMean.html", null ]
+      [ "LogSumExpQ< V, O, Ts >", "structLogSumExpQ.html", [
+        [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "classWeighted.html", null ],
+        [ "Weighted< std::shared_ptr< record_collection_t< O, Ts... > >, O, Ts... >", "classWeighted.html", null ]
       ] ]
     ] ],
     [ "Queryer< Optimizer, V, O, Ts... >", "classQueryer.html", [
