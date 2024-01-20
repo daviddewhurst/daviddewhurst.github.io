@@ -41,4 +41,4 @@ of `stsb2` grammar and extension of modeling capabilities, deeply integrated wit
 
 ## Links
 + [personal](./personal/)
-+ [get in touch](drd@davidrushingdewhurst.com)
++ get in touch: drd at davidrushingdewhurst.com (personal); david at drdewhurst.com (business)
