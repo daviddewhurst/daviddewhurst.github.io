@@ -6,13 +6,13 @@ description: about
 
 ## Description
 
-+ [Husband](./photos/wife.jpg) and [father](./photos/all-three-kids-ellie-little.jpg)
-+ Founder and president of [D R Dewhurst](https://drdewhurst.com), a strategic advisory firm.
++ [Husband](./photos/wife.jpg) and [father](./photos/all-three-kids-in-the-snow.jpg)
++ Founder and president of [D R Dewhurst, Inc.](https://drdewhurst.com), a strategic advisory firm.
 + Former senior scientist at [Charles River Analytics](https://cra.com/), lead data scientist at [MassMutual](https://datascience.massmutual.com/) and graduate fellow at [MITRE](https://compfi.org/).
 
-## Interests
+## Technical interests
 
-I develop probabilistic AI for military and financial applications, focusing on non-kinetic grey-zone conflict and risk quantification. Examples of these topics include
+I develop probabilistic AI for military and financial applications. Examples include:
 
 + Financial resilience
 + Information operations
@@ -41,4 +41,4 @@ of `stsb2` grammar and extension of modeling capabilities, deeply integrated wit
 
 ## Links
 + [personal](./personal/)
-+ [resume](./documents/drd-resume.pdf)
++ [get in touch](drd@davidrushingdewhurst.com)
