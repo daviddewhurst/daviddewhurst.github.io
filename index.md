@@ -32,6 +32,7 @@ to which I often apply the tools of
     + [`glppl`](./glppl/): translation of probabilistic programs into probability distributions over directed graphical models
     + [`ccyan`](./ccyan/): compilation target of `glppl`'s graphical model program synthesis functionality.
     + [`lppl-examples`](./lppl/examples/): using lppl for various modeling and inference tasks.
++ [`libmrf`](https://davidrushingdewhurst.com/libmrf/) Markov random fields in C. Depends only on `malloc` and `free` implementations.
 + [`stsb3`](https://davidrushingdewhurst.com/stsb3/) Structural time series, round 3. Restriction and refinement
 of `stsb2` grammar and extension of modeling capabilities, deeply integrated with Pyro and pytorch.
     + [`sts-zoo`](https://davidrushingdewhurst.com/sts-zoo/): a collection of wild animals created by combining [`stsb3`](https://davidrushingdewhurst.com/stsb3/) blocks
