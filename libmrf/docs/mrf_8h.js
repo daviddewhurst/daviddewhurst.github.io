@@ -4,6 +4,7 @@ var mrf_8h =
     [ "Factor2D", "structFactor2D.html", "structFactor2D" ],
     [ "Message", "structMessage.html", "structMessage" ],
     [ "Node", "structNode.html", "structNode" ],
+    [ "bp", "mrf_8h_a5a5d8f93bf14a9576f8e06b0559faff0.html#a5a5d8f93bf14a9576f8e06b0559faff0", null ],
     [ "compute_message", "mrf_8h_a1a46888cb2cef59dd539162b9aa84124.html#a1a46888cb2cef59dd539162b9aa84124", null ],
     [ "compute_univariate_marginal", "mrf_8h_a0a2b1453f057c6d709d9c19ed005f005.html#a0a2b1453f057c6d709d9c19ed005f005", null ],
     [ "connect_factor1d", "mrf_8h_aa9f512c6fbf8f548615053d4e0886439.html#aa9f512c6fbf8f548615053d4e0886439", null ],
@@ -27,5 +28,7 @@ var mrf_8h =
     [ "new_message_unassigned", "mrf_8h_abbe8d3eae22da5829154fce754888c46.html#abbe8d3eae22da5829154fce754888c46", null ],
     [ "new_message_unit", "mrf_8h_a69434991d8a446a7a2fd579fb091ad37.html#a69434991d8a446a7a2fd579fb091ad37", null ],
     [ "new_node", "mrf_8h_ac5e49dadc6fc7580feb702ae1c9bd171.html#ac5e49dadc6fc7580feb702ae1c9bd171", null ],
-    [ "send_messages", "mrf_8h_a93124f65d26cb3d36ab6e61eb274bca5.html#a93124f65d26cb3d36ab6e61eb274bca5", null ]
+    [ "reset_messages", "mrf_8h_ace5772c83f5393e40f1ce4f5d7d8ebd5.html#ace5772c83f5393e40f1ce4f5d7d8ebd5", null ],
+    [ "send_messages", "mrf_8h_a93124f65d26cb3d36ab6e61eb274bca5.html#a93124f65d26cb3d36ab6e61eb274bca5", null ],
+    [ "set_evidence", "mrf_8h_a777c8e00ac7edba9f43582da7af9c306.html#a777c8e00ac7edba9f43582da7af9c306", null ]
 ];

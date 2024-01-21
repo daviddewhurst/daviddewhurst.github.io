@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['message_16',['Message',['../structMessage.html',1,'']]],
-  ['message_5fat_17',['message_at',['../mrf_8c_adc03e3790587b80a292ddb053f6adcd0.html#adc03e3790587b80a292ddb053f6adcd0',1,'message_at(struct Message *msg, int ix):&#160;mrf.c'],['../mrf_8h_adc03e3790587b80a292ddb053f6adcd0.html#adc03e3790587b80a292ddb053f6adcd0',1,'message_at(struct Message *msg, int ix):&#160;mrf.c']]],
-  ['message_5fix_18',['message_ix',['../mrf_8c_aa70e5d11596f980d031e9c4e47a1f9cd.html#aa70e5d11596f980d031e9c4e47a1f9cd',1,'message_ix(struct Message *msg, int ix, double value):&#160;mrf.c'],['../mrf_8h_aa70e5d11596f980d031e9c4e47a1f9cd.html#aa70e5d11596f980d031e9c4e47a1f9cd',1,'message_ix(struct Message *msg, int ix, double value):&#160;mrf.c']]],
-  ['message_5fproduct_19',['message_product',['../mrf_8c_a045d3926eed030e916011145f35cb730.html#a045d3926eed030e916011145f35cb730',1,'message_product(struct Node *from, struct Node *to, struct Message *out_msg):&#160;mrf.c'],['../mrf_8h_a045d3926eed030e916011145f35cb730.html#a045d3926eed030e916011145f35cb730',1,'message_product(struct Node *from, struct Node *to, struct Message *out_msg):&#160;mrf.c']]],
-  ['mrf_2ec_20',['mrf.c',['../mrf_8c.html',1,'']]],
-  ['mrf_2eh_21',['mrf.h',['../mrf_8h.html',1,'']]]
+  ['factor1d_10',['Factor1D',['../structFactor1D.html',1,'']]],
+  ['factor1d_5fat_11',['factor1d_at',['../mrf_8c_a30d7ed3002d8adfe9c7b42c4d837db1f.html#a30d7ed3002d8adfe9c7b42c4d837db1f',1,'factor1d_at(struct Factor1D *fac, int ix):&#160;mrf.c'],['../mrf_8h_a30d7ed3002d8adfe9c7b42c4d837db1f.html#a30d7ed3002d8adfe9c7b42c4d837db1f',1,'factor1d_at(struct Factor1D *fac, int ix):&#160;mrf.c']]],
+  ['factor1d_5fix_12',['factor1d_ix',['../mrf_8c_a8d08f19bc6acef8d05ef8704e83060bd.html#a8d08f19bc6acef8d05ef8704e83060bd',1,'factor1d_ix(struct Factor1D *fac, int ix, double value):&#160;mrf.c'],['../mrf_8h_a8d08f19bc6acef8d05ef8704e83060bd.html#a8d08f19bc6acef8d05ef8704e83060bd',1,'factor1d_ix(struct Factor1D *fac, int ix, double value):&#160;mrf.c']]],
+  ['factor2d_13',['Factor2D',['../structFactor2D.html',1,'']]],
+  ['factor2d_5fat_14',['factor2d_at',['../mrf_8c_a556698fb71a342c0374fa7a3abdd8916.html#a556698fb71a342c0374fa7a3abdd8916',1,'factor2d_at(struct Factor2D *fac, int row, int col):&#160;mrf.c'],['../mrf_8h_a556698fb71a342c0374fa7a3abdd8916.html#a556698fb71a342c0374fa7a3abdd8916',1,'factor2d_at(struct Factor2D *fac, int row, int col):&#160;mrf.c']]],
+  ['factor2d_5fix_15',['factor2d_ix',['../mrf_8c_aba70985a2b78ab69ba3bdddf990d2baf.html#aba70985a2b78ab69ba3bdddf990d2baf',1,'factor2d_ix(struct Factor2D *fac, int row, int col, double value):&#160;mrf.c'],['../mrf_8h_aba70985a2b78ab69ba3bdddf990d2baf.html#aba70985a2b78ab69ba3bdddf990d2baf',1,'factor2d_ix(struct Factor2D *fac, int row, int col, double value):&#160;mrf.c']]],
+  ['find_5ffactor2d_16',['find_factor2d',['../mrf_8c_a5f1d004bd70588bd960410a001f887d9.html#a5f1d004bd70588bd960410a001f887d9',1,'mrf.c']]]
 ];

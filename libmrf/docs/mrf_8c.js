@@ -1,6 +1,7 @@
 var mrf_8c =
 [
     [ "all_message_product", "mrf_8c.html#af5ad2979bc79022b824f8793df644005", null ],
+    [ "bp", "mrf_8c_a5a5d8f93bf14a9576f8e06b0559faff0.html#a5a5d8f93bf14a9576f8e06b0559faff0", null ],
     [ "compute_message", "mrf_8c_a1a46888cb2cef59dd539162b9aa84124.html#a1a46888cb2cef59dd539162b9aa84124", null ],
     [ "compute_univariate_marginal", "mrf_8c_a0a2b1453f057c6d709d9c19ed005f005.html#a0a2b1453f057c6d709d9c19ed005f005", null ],
     [ "connect_factor1d", "mrf_8c_aa9f512c6fbf8f548615053d4e0886439.html#aa9f512c6fbf8f548615053d4e0886439", null ],
@@ -30,7 +31,12 @@ var mrf_8c =
     [ "new_message_unit", "mrf_8c_a69434991d8a446a7a2fd579fb091ad37.html#a69434991d8a446a7a2fd579fb091ad37", null ],
     [ "new_node", "mrf_8c_ac5e49dadc6fc7580feb702ae1c9bd171.html#ac5e49dadc6fc7580feb702ae1c9bd171", null ],
     [ "normalize_message", "mrf_8c.html#affaa17acb1fda6844602305180e0efe2", null ],
+    [ "reset_messages", "mrf_8c_ace5772c83f5393e40f1ce4f5d7d8ebd5.html#ace5772c83f5393e40f1ce4f5d7d8ebd5", null ],
     [ "send_messages", "mrf_8c_a93124f65d26cb3d36ab6e61eb274bca5.html#a93124f65d26cb3d36ab6e61eb274bca5", null ],
+    [ "set_evidence", "mrf_8c_a777c8e00ac7edba9f43582da7af9c306.html#a777c8e00ac7edba9f43582da7af9c306", null ],
+    [ "set_evidence_factor1d", "mrf_8c.html#a91e6b6e957dcf5ff6094839641cb6832", null ],
+    [ "set_evidence_factor2d_col", "mrf_8c.html#a55a314b33f33f756667343501fcaf47a", null ],
+    [ "set_evidence_factor2d_row", "mrf_8c.html#a6100a08e6a5a41c354265e6960d89d14", null ],
     [ "sum_out_col", "mrf_8c.html#ab89ba78b080ae92d8062b4158e086c93", null ],
     [ "sum_out_row", "mrf_8c.html#aad851313a191e3b648c85ca45e1874c0", null ]
 ];

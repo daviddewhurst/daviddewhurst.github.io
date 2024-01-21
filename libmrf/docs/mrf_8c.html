@@ -103,6 +103,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af5ad2979bc79022b824f8793df644005"><td class="memItemLeft" align="right" valign="top"><a id="af5ad2979bc79022b824f8793df644005"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>all_message_product</b> (struct <a class="el" href="structNode.html">Node</a> *node, struct <a class="el" href="structMessage.html">Message</a> *out_msg)</td></tr>
 <tr class="separator:af5ad2979bc79022b824f8793df644005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5d8f93bf14a9576f8e06b0559faff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mrf_8c_a5a5d8f93bf14a9576f8e06b0559faff0.html#a5a5d8f93bf14a9576f8e06b0559faff0">bp</a> (struct <a class="el" href="structNode.html">Node</a> **nodes, int num_nodes, int num_iterations)</td></tr>
+<tr class="memdesc:a5a5d8f93bf14a9576f8e06b0559faff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loopy belief propagation.  <a href="mrf_8c_a5a5d8f93bf14a9576f8e06b0559faff0.html#a5a5d8f93bf14a9576f8e06b0559faff0">More...</a><br /></td></tr>
+<tr class="separator:a5a5d8f93bf14a9576f8e06b0559faff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a46888cb2cef59dd539162b9aa84124"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mrf_8c_a1a46888cb2cef59dd539162b9aa84124.html#a1a46888cb2cef59dd539162b9aa84124">compute_message</a> (struct <a class="el" href="structNode.html">Node</a> *from, struct <a class="el" href="structNode.html">Node</a> *to, struct <a class="el" href="structMessage.html">Message</a> *out_msg)</td></tr>
 <tr class="memdesc:a1a46888cb2cef59dd539162b9aa84124"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the message from node i to node j.  <a href="mrf_8c_a1a46888cb2cef59dd539162b9aa84124.html#a1a46888cb2cef59dd539162b9aa84124">More...</a><br /></td></tr>
 <tr class="separator:a1a46888cb2cef59dd539162b9aa84124"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,9 +192,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize_messages</
 <tr class="memitem:affaa17acb1fda6844602305180e0efe2"><td class="memItemLeft" align="right" valign="top"><a id="affaa17acb1fda6844602305180e0efe2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>normalize_message</b> (struct <a class="el" href="structMessage.html">Message</a> *msg)</td></tr>
 <tr class="separator:affaa17acb1fda6844602305180e0efe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace5772c83f5393e40f1ce4f5d7d8ebd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mrf_8c_ace5772c83f5393e40f1ce4f5d7d8ebd5.html#ace5772c83f5393e40f1ce4f5d7d8ebd5">reset_messages</a> (struct <a class="el" href="structNode.html">Node</a> *n)</td></tr>
+<tr class="memdesc:ace5772c83f5393e40f1ce4f5d7d8ebd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all messages in the node's inbox to one.  <a href="mrf_8c_ace5772c83f5393e40f1ce4f5d7d8ebd5.html#ace5772c83f5393e40f1ce4f5d7d8ebd5">More...</a><br /></td></tr>
+<tr class="separator:ace5772c83f5393e40f1ce4f5d7d8ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93124f65d26cb3d36ab6e61eb274bca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mrf_8c_a93124f65d26cb3d36ab6e61eb274bca5.html#a93124f65d26cb3d36ab6e61eb274bca5">send_messages</a> (struct <a class="el" href="structNode.html">Node</a> *from)</td></tr>
 <tr class="memdesc:a93124f65d26cb3d36ab6e61eb274bca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends messages from the node to all of its neighbors.  <a href="mrf_8c_a93124f65d26cb3d36ab6e61eb274bca5.html#a93124f65d26cb3d36ab6e61eb274bca5">More...</a><br /></td></tr>
 <tr class="separator:a93124f65d26cb3d36ab6e61eb274bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777c8e00ac7edba9f43582da7af9c306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mrf_8c_a777c8e00ac7edba9f43582da7af9c306.html#a777c8e00ac7edba9f43582da7af9c306">set_evidence</a> (struct <a class="el" href="structNode.html">Node</a> *n, int value)</td></tr>
+<tr class="memdesc:a777c8e00ac7edba9f43582da7af9c306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition the variable to be equal to the value.  <a href="mrf_8c_a777c8e00ac7edba9f43582da7af9c306.html#a777c8e00ac7edba9f43582da7af9c306">More...</a><br /></td></tr>
+<tr class="separator:a777c8e00ac7edba9f43582da7af9c306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e6b6e957dcf5ff6094839641cb6832"><td class="memItemLeft" align="right" valign="top"><a id="a91e6b6e957dcf5ff6094839641cb6832"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_evidence_factor1d</b> (struct <a class="el" href="structFactor1D.html">Factor1D</a> *fac, int index)</td></tr>
+<tr class="separator:a91e6b6e957dcf5ff6094839641cb6832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a314b33f33f756667343501fcaf47a"><td class="memItemLeft" align="right" valign="top"><a id="a55a314b33f33f756667343501fcaf47a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_evidence_factor2d_col</b> (struct <a class="el" href="structFactor2D.html">Factor2D</a> *fac, int index)</td></tr>
+<tr class="separator:a55a314b33f33f756667343501fcaf47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6100a08e6a5a41c354265e6960d89d14"><td class="memItemLeft" align="right" valign="top"><a id="a6100a08e6a5a41c354265e6960d89d14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_evidence_factor2d_row</b> (struct <a class="el" href="structFactor2D.html">Factor2D</a> *fac, int index)</td></tr>
+<tr class="separator:a6100a08e6a5a41c354265e6960d89d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab89ba78b080ae92d8062b4158e086c93"><td class="memItemLeft" align="right" valign="top"><a id="ab89ba78b080ae92d8062b4158e086c93"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>sum_out_col</b> (struct <a class="el" href="structNode.html">Node</a> *from, struct <a class="el" href="structMessage.html">Message</a> *prod, struct <a class="el" href="structMessage.html">Message</a> *out_msg)</td></tr>
 <tr class="separator:ab89ba78b080ae92d8062b4158e086c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
