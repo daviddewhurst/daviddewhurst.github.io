@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -113,17 +113,26 @@ $(document).ready(function(){initNavTree('query_8hpp.html',''); initResizable();
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcollection__t.html">collection_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProductGenerator_1_1EmitType.html">ProductGenerator&lt; Impl, V, O, Ts &gt;::EmitType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Product of values (mapping from address to result type of underlying queryer) and distributions (mapping from address to first-encountered distribution at that address)  <a href="structProductGenerator_1_1EmitType.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinf__options__t.html">inf_options_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Options used by all inference algorithms.  <a href="structinf__options__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLogSumExpQ.html">LogSumExpQ&lt; V, O, Ts &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLogSumExpQ.html">LogSumExpQ&lt; typename, O, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a streaming log-sum-exp.  <a href="structLogSumExpQ.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOptimizer.html">Optimizer&lt; V, O, Ts &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimizes a value function and returns the argmax value.  <a href="classOptimizer.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOptimizer.html">Optimizer&lt; V, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimizes a value function and returns the argmax value.  <a href="structOptimizer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQueryer.html">Queryer&lt; Impl, V, O, Ts &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to all querying mechanisms for sample-based inference (and possibly other inference algorithms). Much computation that is associated with inference is implemented by subclasses of <a class="el" href="classQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a> (rather than in inference algorithms themselves, as is often done).  <a href="classQueryer.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProductGenerator.html">ProductGenerator&lt; Impl, V, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a queryer that returns a fully factored collection of views.  <a href="structProductGenerator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProductGenerator_1_1Q.html">ProductGenerator&lt; Impl, V, O, Ts &gt;::Q&lt; typename, typename,... &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A queryer that emits \(V[p(z|x)] = \prod_a V[p(z_a|x)]\).  <a href="structProductGenerator_1_1Q.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueryer.html">Queryer&lt; Impl, V, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface to all querying mechanisms for sample-based inference (and possibly other inference algorithms). Much computation that is associated with inference is implemented by subclasses of <a class="el" href="structQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a> (rather than in inference algorithms themselves, as is often done).  <a href="structQueryer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord__collection__t.html">record_collection_t&lt; O, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects records generated by an inference algorithm into an empirical posterior distribution over records and output values.  <a href="structrecord__collection__t.html#details">More...</a><br /></td></tr>
@@ -131,11 +140,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structvalue__collection__t.html">value_collection_t&lt; V &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of sampled values.  <a href="structvalue__collection__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeighted.html">Weighted&lt; V, O, Ts &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to all sample weights.  <a href="classWeighted.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWeighted.html">Weighted&lt; V, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access to all sample weights.  <a href="structWeighted.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeightedMean.html">WeightedMean&lt; typename, O, Ts &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean of the specified sample site. The memory usage of this object is O(1).  <a href="classWeightedMean.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean of the specified sample site with O(1) memory.  <a href="classWeightedMean.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structWeightedMeanStd.html">WeightedMeanStd&lt; typename, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the mean and standard deviation of the specified sample site with O(1) memory.  <a href="structWeightedMeanStd.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWeightedRecord.html">WeightedRecord&lt; typename, O, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A collection of weighted records.  <a href="classWeightedRecord.html#details">More...</a><br /></td></tr>
@@ -152,14 +164,22 @@ template&lt;typename V , typename O , template&lt; class, class, class... &gt; c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a0a6fb2c25dd59b000816e8179a3c4a59"><td class="memTemplParams" colspan="2"><a id="a0a6fb2c25dd59b000816e8179a3c4a59"></a>
+template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a0a6fb2c25dd59b000816e8179a3c4a59"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>log_sum_exp_q</b> ()</td></tr>
+<tr class="separator:a0a6fb2c25dd59b000816e8179a3c4a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b1c22f6d597c6fe786206d290c530c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="query_8hpp_a07b1c22f6d597c6fe786206d290c530c.html#a07b1c22f6d597c6fe786206d290c530c">logsumexp_streaming</a> (double &amp;_alpha, double &amp;_r, const double &amp;weight)</td></tr>
 <tr class="memdesc:a07b1c22f6d597c6fe786206d290c530c"><td class="mdescLeft">&#160;</td><td class="mdescRight">streaming logsumexp computation, see <a href="https://arxiv.org/abs/1805.02867">https://arxiv.org/abs/1805.02867</a>  <a href="query_8hpp_a07b1c22f6d597c6fe786206d290c530c.html#a07b1c22f6d597c6fe786206d290c530c">More...</a><br /></td></tr>
 <tr class="separator:a07b1c22f6d597c6fe786206d290c530c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2b1146bdab610a488759411a74b7a01"><td class="memTemplParams" colspan="2"><a id="aa2b1146bdab610a488759411a74b7a01"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:aa2b1146bdab610a488759411a74b7a01"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="query_8hpp.html#aa2b1146bdab610a488759411a74b7a01">weighted_mean</a> (std::string address)</td></tr>
-<tr class="memdesc:aa2b1146bdab610a488759411a74b7a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">factory function for <a class="el" href="classWeightedMean.html" title="Computes the mean of the specified sample site. The memory usage of this object is O(1).">WeightedMean</a> <br /></td></tr>
+<tr class="memdesc:aa2b1146bdab610a488759411a74b7a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">factory function for <a class="el" href="classWeightedMean.html" title="Computes the mean of the specified sample site with O(1) memory.">WeightedMean</a> <br /></td></tr>
 <tr class="separator:aa2b1146bdab610a488759411a74b7a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4889d16b339ea66a9db031513ee71e"><td class="memTemplParams" colspan="2"><a id="aed4889d16b339ea66a9db031513ee71e"></a>
+template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:aed4889d16b339ea66a9db031513ee71e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>weighted_mean_std</b> (std::string address)</td></tr>
+<tr class="separator:aed4889d16b339ea66a9db031513ee71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989473e47b96de47f265a40bc626299c"><td class="memTemplParams" colspan="2"><a id="a989473e47b96de47f265a40bc626299c"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a989473e47b96de47f265a40bc626299c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="query_8hpp.html#a989473e47b96de47f265a40bc626299c">weighted_record</a> ()</td></tr>
@@ -172,7 +192,7 @@ template&lt;typename V , typename O , typename... Ts&gt; </td></tr>
 <tr class="separator:a6730945dbee8b6c3a3d1e32c4a8a3c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under MIT license. </p>
+<div class="textblock"><p>This file is part of fmcs. Copyright David Rushing Dewhurst, 2022 - present. Some rights reserved. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

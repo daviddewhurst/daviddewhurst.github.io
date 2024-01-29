@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -96,8 +96,11 @@ $(document).ready(function(){initNavTree('plate_8hpp.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;cppitertools/zip.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="distributions_8hpp.html">distributions.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="record_8hpp.html">record.hpp</a>&gt;</code><br />
 </div><table class="memberdecls">
@@ -105,11 +108,17 @@ $(document).ready(function(){initNavTree('plate_8hpp.html',''); initResizable();
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structplate__base__.html">plate_base_&lt; D &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structslice__base__.html">slice_base_&lt; D, N &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structslice__plate.html">slice_plate&lt; D, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a vector of \(N\) random variables.  <a href="structslice__plate.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstatic__plate.html">static_plate&lt; D, N &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents \(N\) iid random variables.  <a href="structstatic__plate.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under MIT license </p>
+<div class="textblock"><p>This file is part of fmcs. Copyright David Rushing Dewhurst, 2022 - present. Some rights reserved. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

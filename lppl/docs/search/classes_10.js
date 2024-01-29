@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['transition_266',['transition',['../structtransition.html',1,'']]],
-  ['transition_3c_20transkernel_2c_20o_2c_20ts_2e_2e_2e_20_3e_267',['transition&lt; TransKernel, O, Ts... &gt;',['../structtransition.html',1,'']]],
-  ['typed_5fmap_268',['typed_map',['../structtyped__map.html',1,'']]]
+  ['sample_363',['Sample',['../structSample.html',1,'']]],
+  ['slice_5fbase_5f_364',['slice_base_',['../structslice__base__.html',1,'']]],
+  ['slice_5fplate_365',['slice_plate',['../structslice__plate.html',1,'']]],
+  ['static_5fplate_366',['static_plate',['../structstatic__plate.html',1,'']]]
 ];

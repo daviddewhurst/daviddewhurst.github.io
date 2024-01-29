@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['weighted_5fmean_352',['weighted_mean',['../query_8hpp.html#aa2b1146bdab610a488759411a74b7a01',1,'query.hpp']]],
-  ['weighted_5frecord_353',['weighted_record',['../query_8hpp.html#a989473e47b96de47f265a40bc626299c',1,'query.hpp']]],
-  ['weighted_5fvalue_354',['weighted_value',['../query_8hpp.html#a6730945dbee8b6c3a3d1e32c4a8a3c78',1,'query.hpp']]]
+  ['value_5fg_479',['value_g',['../graph_8hpp_adfe0662a986e747d1e2c3af537690b3c.html#adfe0662a986e747d1e2c3af537690b3c',1,'graph.hpp']]],
+  ['variance_480',['variance',['../filter_8hpp_a102b3f09996eda58a51705978b2af0c4.html#a102b3f09996eda58a51705978b2af0c4',1,'variance(FilterValueType&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address):&#160;filter.hpp'],['../filter_8hpp.html#ac7a0108e9b09b64b7902d2af276f358b',1,'variance(FilterValueType&lt; O, Ts... &gt; &amp;cache, std::string address):&#160;filter.hpp']]]
 ];

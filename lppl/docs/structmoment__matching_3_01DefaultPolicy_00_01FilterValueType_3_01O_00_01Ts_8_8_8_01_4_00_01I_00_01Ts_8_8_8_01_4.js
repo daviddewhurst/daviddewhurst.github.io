@@ -1,4 +1,0 @@
-var structmoment__matching_3_01DefaultPolicy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01Ts_8_8_8_01_4 =
-[
-    [ "operator()", "structmoment__matching_3_01DefaultPolicy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01Ts_8_8_8_01_4.html#a65df05a527c1247b0394579018117382", null ]
-];

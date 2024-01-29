@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('update_8hpp_ab81c94fa3d6ae0a65f84d9469
 template&lt;typename D , typename RNG , template&lt; typename &gt; class Policy, typename I , typename... Ts&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="record_8hpp_af600285f9ec0fe06d30c434f93027810.html#af600285f9ec0fe06d30c434f93027810">DSType</a>&lt;D&gt; sample_u </td>
+          <td class="memname"><a class="el" href="record_8hpp_a1c62a84e1d4e6502ab1f181f0fb5bd8e.html#a1c62a84e1d4e6502ab1f181f0fb5bd8e">DSType</a>&lt;D&gt; sample_u </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;&#160;</td>
           <td class="paramname"><em>r</em>, </td>
@@ -129,7 +129,7 @@ template&lt;typename D , typename RNG , template&lt; typename &gt; class Policy,
       </table>
 </div><div class="memdoc">
 
-<p>Sample a value from the addressed distribution in the <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code> </p>
+<p><a class="el" href="structSample.html">Sample</a> a value from the addressed distribution in the <code><a class="el" href="structtyped__map.html" title="A unordered map with value type equal to a sum type of input type and one or more distribution types,...">typed_map</a></code> </p>
 <p>For example, </p><div class="fragment"><div class="line"><span class="keyword">auto</span> loc = sample_u&lt;Normal&gt;(r, <span class="stringliteral">&quot;loc&quot;</span>, input, rng);</div>
 </div><!-- fragment --><p> corresponds to the semantics "sample the value for "loc" from the distribution contained
 in the map; my prior belief is that that distribution is Normal". </p>

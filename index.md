@@ -12,17 +12,14 @@ description: about
 
 ## Technical interests
 
-I develop probabilistic AI for military and financial applications. Examples include:
+I am interested in strategic economic competition and low-resource resilient edge cognition.
+I am aware that these have essentially nothing to do with each other; that's the way it is.
 
-+ Financial resilience
-+ Information operations
-+ Various aspects of cybersecurity
-
-to which I often apply the tools of
+Some fields I find useful to answer questions and develop capabilities in these areas are:
 
 + Probabilistic programming
 + Stochastic optimization
-+ Nonparametric and Bayesian structural time series
++ Nonparametric and Bayesian structural time series modeling
 + Agent-based modeling
 
 

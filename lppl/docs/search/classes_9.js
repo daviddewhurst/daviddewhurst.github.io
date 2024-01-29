@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['mapping_223',['mapping',['../structmapping.html',1,'']]],
-  ['mapping_3c_20a_3c_20t_20_3e_2c_20a_3c_20t_20_3e_20_3e_224',['mapping&lt; A&lt; T &gt;, A&lt; T &gt; &gt;',['../structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4.html',1,'']]],
-  ['mapping_3c_20b_2c_20a_20_3e_225',['mapping&lt; B, A &gt;',['../structmapping_3_01B_00_01A_01_4.html',1,'']]],
-  ['mapping_3c_20unbounded_3c_20double_20_3e_2c_20unit_5finterval_3c_20double_20_3e_20_3e_226',['mapping&lt; unbounded&lt; double &gt;, unit_interval&lt; double &gt; &gt;',['../structmapping_3_01unbounded_3_01double_01_4_00_01unit__interval_3_01double_01_4_01_4.html',1,'']]],
-  ['mapping_3c_20unbounded_3c_20t_20_3e_2c_20non_5fnegative_3c_20t_20_3e_20_3e_227',['mapping&lt; unbounded&lt; T &gt;, non_negative&lt; T &gt; &gt;',['../structmapping_3_01unbounded_3_01T_01_4_00_01non__negative_3_01T_01_4_01_4.html',1,'']]],
-  ['metropolisstate_228',['MetropolisState',['../structMetropolisState.html',1,'']]]
+  ['likelihood_5fweighting_296',['likelihood_weighting',['../structglppl__algos_1_1likelihood__weighting.html',1,'glppl_algos']]],
+  ['likelihoodweighting_297',['LikelihoodWeighting',['../structLikelihoodWeighting.html',1,'']]],
+  ['logsumexpq_298',['LogSumExpQ',['../structLogSumExpQ.html',1,'']]],
+  ['logsumexpq_3c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_299',['LogSumExpQ&lt; double, O, Ts... &gt;',['../structLogSumExpQ.html',1,'']]]
 ];

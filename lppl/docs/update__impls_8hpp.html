@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -96,7 +96,8 @@ $(document).ready(function(){initNavTree('update__impls_8hpp.html',''); initResi
 <div class="title">update_impls.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="distributions_8hpp.html">distributions.hpp</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;<a class="el" href="distributions_8hpp.html">distributions.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="filter_8hpp.html">inference/filter.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="update_8hpp.html">update.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="policies_8hpp.html">update/policies.hpp</a>&gt;</code><br />
@@ -113,7 +114,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identity function on parameter value.  <a href="structparameter__match_3_01Parameter_3_01Constraint_3_01BaseType_01_4_01_4_00_01Parameter_3_01Co9a843d0040727a0941a5fc0f0d49a263.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParameterMatching_3_01Policy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01O_00_01Ts_8_8_8_01_4.html">ParameterMatching&lt; Policy, FilterValueType&lt; O, Ts... &gt;, I, O, Ts... &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a variational appxoimation to posterior from posterior samples.  <a href="structParameterMatching_3_01Policy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01O_00_01Ts_8_8_8_01_4.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a variational approximation to posterior from posterior samples.  <a href="structParameterMatching_3_01Policy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01O_00_01Ts_8_8_8_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structParameterMatching_3_01Policy_00_01typename_01ProductGenerator_3_01WeightedMeanStd_00_01stdac003cef7be04bb8a9c465306a8cffaf.html">ParameterMatching&lt; Policy, typename ProductGenerator&lt; WeightedMeanStd, std::pair&lt; double, double &gt;, O, Ts... &gt;::EmitType, I, O, Ts... &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a variational approximation to posterior from (mean, standard deviation) pairs.  <a href="structParameterMatching_3_01Policy_00_01typename_01ProductGenerator_3_01WeightedMeanStd_00_01stdac003cef7be04bb8a9c465306a8cffaf.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -123,7 +127,7 @@ constexpr double&#160;</td><td class="memItemRight" valign="bottom"><b>min</b> (
 <tr class="separator:adf706f9e8c2b41b616a5fadcf8e27cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is part of lppl. Copyright David Rushing Dewhurst, 2023 - present. Released under MIT license </p>
+<div class="textblock"><p>This file is part of fmcs. Copyright David Rushing Dewhurst, 2023 - present. Some rights reserved. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -3,6 +3,7 @@ var structDistributions_1_1Beta =
     [ "Beta", "structDistributions_1_1Beta.html#a057412a0276720e27dd230d9d917358a", null ],
     [ "Beta", "structDistributions_1_1Beta.html#a0f058f1b97d676736daf3d2ddcecd3a9", null ],
     [ "Beta", "structDistributions_1_1Beta.html#ae0c671ae4bdb9f4cfd8427e3c3abfcf7", null ],
+    [ "Beta", "structDistributions_1_1Beta.html#ac7255e7569dd455b9368b1f418033963", null ],
     [ "logprob", "structDistributions_1_1Beta.html#ac955a45118424f5629c74c50f4ad9e01", null ],
     [ "sample", "structDistributions_1_1Beta.html#af29e00d6aebc7e10ecefb4d808e71b36", null ],
     [ "string", "structDistributions_1_1Beta.html#ae08df0ff3c583b84d48a681737148ada", null ],

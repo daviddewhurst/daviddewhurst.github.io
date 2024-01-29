@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,7 @@ template&lt;class TransKernel , typename I , typename O , typename RNG , typenam
       </table>
 </div><div class="memdoc">
 
-<p>Transforms an arbitrary probabilistic program into a dynamic version. </p>
+<p>Transforms an arbitrary probabilistic program and a user-defined transition kernel into a dynamic filtering program. </p>
 <p>Given a probabilistic program \(p(x,z) = p(x|z)p(z)\) and a user-supplied transition kernel, converts the model into a dynamic filtering model \( p(x,z) = p(x_1 | z_1) p(z_1) \prod_{t\geq 2} p(x_t | z_t)p(z_t|x_{t-1}, z_{t-1})\).</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">

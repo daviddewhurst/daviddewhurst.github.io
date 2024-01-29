@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('structParameterMatching_3_01Policy_00_
 </div><!--header-->
 <div class="contents">
 
-<p>Computes a variational appxoimation to posterior from posterior samples.  
+<p>Computes a variational approximation to posterior from posterior samples.  
  <a href="structParameterMatching_3_01Policy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01O_00_01Ts_8_8_8_01_4.html#details">More...</a></p>
 
 <p><code>#include &quot;update_impls.hpp&quot;</code></p>
@@ -143,7 +143,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><h3>template&lt;template&lt; typename &gt; class Policy, typename I, typename O, typename... Ts&gt;<br />
 struct ParameterMatching&lt; Policy, FilterValueType&lt; O, Ts... &gt;, I, O, Ts... &gt;</h3>
 
-<p>Computes a variational appxoimation to posterior from posterior samples. </p>
+<p>Computes a variational approximation to posterior from posterior samples. </p>
 <p>Given samples from the posterior (e.g., as computed by importance sampling or MCMC methods), <code>parameter_matching</code> computes a factorized functional approximation to the posterior suitable for use in message passing or as a new prior distribution for filtering applications.</p>
 <p><code>parameter_matching</code> assumes that the posterior factors as \(p(z_1,...|x) = \prod_{n \geq 1} p_{\psi_n&#39;}(z_n)\), where each component of the density has the same functional form as its counterpart in the prior. The algorithms to compute the optimal parameters \(\psi_n&#39;\) are left up to the implementation.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>

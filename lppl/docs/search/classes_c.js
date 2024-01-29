@@ -1,14 +1,11 @@
 var searchData=
 [
-  ['paramconstructor_241',['ParamConstructor',['../structParamConstructor.html',1,'']]],
-  ['parameter_242',['Parameter',['../structDistributions_1_1Parameter.html',1,'Distributions']]],
-  ['parameter_5fmatch_243',['parameter_match',['../structparameter__match.html',1,'']]],
-  ['parameter_5fmatch_3c_20d_2c_20gamma_2c_20o_2c_20ts_2e_2e_2e_20_3e_244',['parameter_match&lt; D, Gamma, O, Ts... &gt;',['../structparameter__match_3_01D_00_01Gamma_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
-  ['parameter_5fmatch_3c_20d_2c_20normal_2c_20o_2c_20ts_2e_2e_2e_20_3e_245',['parameter_match&lt; D, Normal, O, Ts... &gt;',['../structparameter__match_3_01D_00_01Normal_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
-  ['parameter_5fmatch_3c_20parameter_3c_20constraint_3c_20basetype_20_3e_20_3e_2c_20parameter_3c_20constraint_3c_20basetype_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_246',['parameter_match&lt; Parameter&lt; Constraint&lt; BaseType &gt; &gt;, Parameter&lt; Constraint&lt; BaseType &gt; &gt;, O, Ts... &gt;',['../structparameter__match_3_01Parameter_3_01Constraint_3_01BaseType_01_4_01_4_00_01Parameter_3_01Co9a843d0040727a0941a5fc0f0d49a263.html',1,'']]],
-  ['parametermatching_247',['ParameterMatching',['../structParameterMatching.html',1,'']]],
-  ['parametermatching_3c_20policy_2c_20filtervaluetype_3c_20o_2c_20ts_2e_2e_2e_20_3e_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_248',['ParameterMatching&lt; Policy, FilterValueType&lt; O, Ts... &gt;, I, O, Ts... &gt;',['../structParameterMatching_3_01Policy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
-  ['plate_5fbase_5f_249',['plate_base_',['../structplate__base__.html',1,'']]],
-  ['poisson_250',['Poisson',['../structDistributions_1_1Poisson.html',1,'Distributions']]],
-  ['proposal_251',['proposal',['../structproposal.html',1,'']]]
+  ['obs_318',['Obs',['../structObs.html',1,'']]],
+  ['optimizer_319',['Optimizer',['../structOptimizer.html',1,'']]],
+  ['output_5fdim_320',['output_dim',['../structDistributions_1_1output__dim.html',1,'Distributions']]],
+  ['output_5fdomain_321',['output_domain',['../structDistributions_1_1output__domain.html',1,'Distributions']]],
+  ['output_5fdomain_3c_20beta_20_3e_322',['output_domain&lt; Beta &gt;',['../structDistributions_1_1output__domain_3_01Beta_01_4.html',1,'Distributions']]],
+  ['output_5fdomain_3c_20gamma_20_3e_323',['output_domain&lt; Gamma &gt;',['../structDistributions_1_1output__domain_3_01Gamma_01_4.html',1,'Distributions']]],
+  ['output_5fdomain_3c_20normal_20_3e_324',['output_domain&lt; Normal &gt;',['../structDistributions_1_1output__domain_3_01Normal_01_4.html',1,'Distributions']]],
+  ['output_5fdomain_3c_20parameter_3c_20v_20_3e_20_3e_325',['output_domain&lt; Parameter&lt; V &gt; &gt;',['../structDistributions_1_1output__domain_3_01Parameter_3_01V_01_4_01_4.html',1,'Distributions']]]
 ];

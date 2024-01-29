@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('structUpdateFilter.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a572a63d31b0dfb4ac89b88e222f037da"><td class="memItemLeft" align="right" valign="top"><a id="a572a63d31b0dfb4ac89b88e222f037da"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>QueryResult</b> = decltype(std::declval&lt; <a class="el" href="classQueryer.html">Queryer</a> &gt;().emit())</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>QueryResult</b> = decltype(std::declval&lt; <a class="el" href="structQueryer.html">Queryer</a> &gt;().emit())</td></tr>
 <tr class="separator:a572a63d31b0dfb4ac89b88e222f037da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd83ed5e69acb7eb4ec930ee62c5267"><td class="memItemLeft" align="right" valign="top"><a id="a7bd83ed5e69acb7eb4ec930ee62c5267"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>typed_map_</b> = <a class="el" href="structtyped__map.html">typed_map</a>&lt; Policy, I, Ts... &gt;</td></tr>
@@ -116,7 +116,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>typed_map_</b> = <a 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6ac65157f5570132fbf9a6b524ecb89"><td class="memItemLeft" align="right" valign="top"><a id="ac6ac65157f5570132fbf9a6b524ecb89"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFilter</b> (<a class="el" href="update_8hpp_a6914369b36912598e8788407d778a1a7.html#a6914369b36912598e8788407d778a1a7">upp_t</a>&lt; Policy, I, O, Ts... &gt; &amp;f, <a class="el" href="classQueryer.html">Queryer</a> &amp;q, <a class="el" href="structInference.html">Inference</a> &amp;infer)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateFilter</b> (<a class="el" href="update_8hpp_a6914369b36912598e8788407d778a1a7.html#a6914369b36912598e8788407d778a1a7">upp_t</a>&lt; Policy, I, O, Ts... &gt; &amp;f, <a class="el" href="structQueryer.html">Queryer</a> &amp;q, <a class="el" href="structInference.html">Inference</a> &amp;infer)</td></tr>
 <tr class="separator:ac6ac65157f5570132fbf9a6b524ecb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6612736835d0ca57ed7cac1c07761d46"><td class="memItemLeft" align="right" valign="top"><a id="a6612736835d0ca57ed7cac1c07761d46"></a>
 <a class="el" href="structtyped__map.html">typed_map_</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>step</b> (<a class="el" href="structtyped__map.html">typed_map_</a> &amp;m)</td></tr>
@@ -131,7 +131,7 @@ Public Attributes</h2></td></tr>
 <a class="el" href="structInference.html">Inference</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>infer</b></td></tr>
 <tr class="separator:aa0a5f2d1cb717d2a20a371a9505800dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0459c562836436a29a17eb1f30a862e9"><td class="memItemLeft" align="right" valign="top"><a id="a0459c562836436a29a17eb1f30a862e9"></a>
-<a class="el" href="classQueryer.html">Queryer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>q</b></td></tr>
+<a class="el" href="structQueryer.html">Queryer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>q</b></td></tr>
 <tr class="separator:a0459c562836436a29a17eb1f30a862e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d515252a9137720b0c48d719ddf75c"><td class="memItemLeft" align="right" valign="top"><a id="a37d515252a9137720b0c48d719ddf75c"></a>
 <a class="el" href="structUpdate.html">Update</a>&lt; Impl, Policy, QueryResult, I, O, Ts... &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>updater</b></td></tr>
@@ -145,14 +145,14 @@ struct UpdateFilter&lt; Impl, Policy, Queryer, Inference, I, O, Ts &gt;</h3>
 <p>This algorithm performs the following steps:</p>
 <ul>
 <li>Samples from the posterior distribution using the <a class="el" href="structInference.html" title="Universal base class for inference methods.">Inference</a> algorithm</li>
-<li>Constructs a view of the posterior using the <a class="el" href="classQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a></li>
+<li>Constructs a view of the posterior using the <a class="el" href="structQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a></li>
 <li>Using the distribution mapping defined by the Policy, updates to a new prior distribution as specified by the Impl.</li>
 </ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Impl</td><td>the prior -&gt; posterior update implementation </td></tr>
     <tr><td class="paramname">Policy</td><td>the injection between distributions </td></tr>
-    <tr><td class="paramname"><a class="el" href="classQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a></td><td>the view of the posterior distribution </td></tr>
+    <tr><td class="paramname"><a class="el" href="structQueryer.html" title="Interface to all querying mechanisms for sample-based inference (and possibly other inference algorit...">Queryer</a></td><td>the view of the posterior distribution </td></tr>
     <tr><td class="paramname"><a class="el" href="structInference.html" title="Universal base class for inference methods.">Inference</a></td><td>the algorithm for drawing samples from the posterior distribution </td></tr>
     <tr><td class="paramname">I</td><td>the input type of the updateable probabilistic program </td></tr>
     <tr><td class="paramname">O</td><td>the output type of the updateable probabilistic program </td></tr>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v0.14.4</span>
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
   </td>
  </tr>
@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="separator:a1f3812379310a21efd103a613983b40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ce698e2acd80637aad070ab6bfa1808"><td class="memTemplParams" colspan="2">template&lt;class TransKernel , typename I , typename O , typename RNG , typename... Ts&gt; </td></tr>
 <tr class="memitem:a9ce698e2acd80637aad070ab6bfa1808"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a9ce698e2acd80637aad070ab6bfa1808.html#a9ce698e2acd80637aad070ab6bfa1808">filter_effect</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, <a class="el" href="structtransition.html">transition</a>&lt; TransKernel, O, Ts... &gt; &amp;<a class="el" href="inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517">kernel</a>, bool &amp;has_been_called, RNG &amp;rng)</td></tr>
-<tr class="memdesc:a9ce698e2acd80637aad070ab6bfa1808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an arbitrary probabilistic program into a dynamic version.  <a href="filter_8hpp_a9ce698e2acd80637aad070ab6bfa1808.html#a9ce698e2acd80637aad070ab6bfa1808">More...</a><br /></td></tr>
+<tr class="memdesc:a9ce698e2acd80637aad070ab6bfa1808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms an arbitrary probabilistic program and a user-defined transition kernel into a dynamic filtering program.  <a href="filter_8hpp_a9ce698e2acd80637aad070ab6bfa1808.html#a9ce698e2acd80637aad070ab6bfa1808">More...</a><br /></td></tr>
 <tr class="separator:a9ce698e2acd80637aad070ab6bfa1808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a838edf967317f13e96ede64b627116c5"><td class="memTemplParams" colspan="2">template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a838edf967317f13e96ede64b627116c5"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a838edf967317f13e96ede64b627116c5.html#a838edf967317f13e96ede64b627116c5">mean</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address)</td></tr>
@@ -157,17 +157,18 @@ template&lt;typename O , typename... Ts&gt; </td></tr>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a165294f29757d3a14d24c5499b8fb35c"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>stddev</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::string address)</td></tr>
 <tr class="separator:a165294f29757d3a14d24c5499b8fb35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102b3f09996eda58a51705978b2af0c4"><td class="memTemplParams" colspan="2"><a id="a102b3f09996eda58a51705978b2af0c4"></a>
-template&lt;typename O , typename... Ts&gt; </td></tr>
-<tr class="memitem:a102b3f09996eda58a51705978b2af0c4"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variance</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address)</td></tr>
+<tr class="memitem:a102b3f09996eda58a51705978b2af0c4"><td class="memTemplParams" colspan="2">template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a102b3f09996eda58a51705978b2af0c4"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp_a102b3f09996eda58a51705978b2af0c4.html#a102b3f09996eda58a51705978b2af0c4">variance</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::function&lt; double(double &amp;&amp;)&gt; &amp;&amp;map_, std::string address)</td></tr>
+<tr class="memdesc:a102b3f09996eda58a51705978b2af0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the weighted variance.  <a href="filter_8hpp_a102b3f09996eda58a51705978b2af0c4.html#a102b3f09996eda58a51705978b2af0c4">More...</a><br /></td></tr>
 <tr class="separator:a102b3f09996eda58a51705978b2af0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a0108e9b09b64b7902d2af276f358b"><td class="memTemplParams" colspan="2"><a id="ac7a0108e9b09b64b7902d2af276f358b"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
-<tr class="memitem:ac7a0108e9b09b64b7902d2af276f358b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><b>variance</b> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::string address)</td></tr>
+<tr class="memitem:ac7a0108e9b09b64b7902d2af276f358b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="filter_8hpp.html#ac7a0108e9b09b64b7902d2af276f358b">variance</a> (<a class="el" href="proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b">FilterValueType</a>&lt; O, Ts... &gt; &amp;cache, std::string address)</td></tr>
+<tr class="memdesc:ac7a0108e9b09b64b7902d2af276f358b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computation of variance with \(f = id\). <br /></td></tr>
 <tr class="separator:ac7a0108e9b09b64b7902d2af276f358b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is part of lppl. Copyright David Rushing Dewhurst, 2022 - present. Released under MIT license </p>
+<div class="textblock"><p>This file is part of fmcs. Copyright David Rushing Dewhurst, 2022 - present. Some rights reserved. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -2,8 +2,11 @@
 
 Clicking a link will result in an attempted download of a `.zip` file to your machine.
 
+GPLv3 licensed
++ [vlatest](./lppl-vlatest.zip)
++ [v1.0.0](./lppl-v1.0.0.zip)
+
 MIT licensed
-+ [latest](./lppl-vlatest.zip)
 + [v0.14.4](./lppl-v0.14.4.zip)
 + [v0.14.3](./lppl-v0.14.3.zip)
 + [v0.14.2](./lppl-v0.14.2.zip)

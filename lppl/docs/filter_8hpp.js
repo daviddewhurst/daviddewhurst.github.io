@@ -11,6 +11,6 @@ var filter_8hpp =
     [ "score", "filter_8hpp_abe7d71ecf6b5979f563afd0d2fcba28c.html#abe7d71ecf6b5979f563afd0d2fcba28c", null ],
     [ "stddev", "filter_8hpp.html#a91c987bc75e64fbdc65be2d5397d9fa8", null ],
     [ "stddev", "filter_8hpp.html#a165294f29757d3a14d24c5499b8fb35c", null ],
-    [ "variance", "filter_8hpp.html#a102b3f09996eda58a51705978b2af0c4", null ],
+    [ "variance", "filter_8hpp_a102b3f09996eda58a51705978b2af0c4.html#a102b3f09996eda58a51705978b2af0c4", null ],
     [ "variance", "filter_8hpp.html#ac7a0108e9b09b64b7902d2af276f358b", null ]
 ];
