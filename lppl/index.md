@@ -32,14 +32,14 @@ linear_regression(record_t<Normal, Gamma>& r, std::shared_ptr<data_1d<N>> data) 
 
 ```
 
-`lppl` is open-source and available at [this webpage](https://gitlab.com/drdewhurst/lppl/-/tree/develop). 
+`lppl` is open-source and available at [this webpage](https://gitlab.com/drdewhurst/fmcs). 
 There's lots of [documentation](./docs/index.html)! You can also download the latest [tagged version](./distros/lppl-vlatest.zip) of the source, or see [all versions](./distros/index.md). 
 
 ## Details
 
 + [About](./about/index.md)
 + [Examples](./examples/index.md)
-+ [Tests](https://gitlab.com/drdewhurst/lppl/-/tree/master/test)
++ [Tests](https://gitlab.com/drdewhurst/fncs/-/tree/master/test)
 
 ### Associated tools
 
