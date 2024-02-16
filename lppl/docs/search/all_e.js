@@ -19,7 +19,6 @@ var searchData=
   ['productgenerator_168',['ProductGenerator',['../structProductGenerator.html',1,'']]],
   ['program_5finfo_169',['program_info',['../structprogram__info.html',1,'']]],
   ['program_5frep_170',['program_rep',['../structprogram__rep.html',1,'']]],
-  ['proposal_171',['proposal',['../structproposal.html',1,'']]],
-  ['proposal_2ehpp_172',['proposal.hpp',['../proposal_8hpp.html',1,'']]],
-  ['propose_173',['propose',['../proposal_8hpp_a1bd13bb10e917c512f559ed8fd7f7edf.html#a1bd13bb10e917c512f559ed8fd7f7edf',1,'proposal.hpp']]]
+  ['proposal_2ehpp_171',['proposal.hpp',['../proposal_8hpp.html',1,'']]],
+  ['propose_172',['propose',['../proposal_8hpp_a1bd13bb10e917c512f559ed8fd7f7edf.html#a1bd13bb10e917c512f559ed8fd7f7edf',1,'proposal.hpp']]]
 ];

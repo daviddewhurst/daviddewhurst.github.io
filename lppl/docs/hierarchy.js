@@ -118,7 +118,6 @@ var hierarchy =
     [ "ProductGenerator< Impl, V, O, Ts >", "structProductGenerator.html", null ],
     [ "program_info", "structprogram__info.html", null ],
     [ "program_rep", "structprogram__rep.html", null ],
-    [ "proposal< Impl, Out >", "structproposal.html", null ],
     [ "Queryer< Impl, V, O, Ts >", "structQueryer.html", [
       [ "Weighted< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "structWeighted.html", [
         [ "WeightedValue< std::unique_ptr< value_collection_t< V > >, O, Ts... >", "classWeightedValue_3_01std_1_1unique__ptr_3_01value__collection__t_3_01V_01_4_01_4_00_01O_00_01Ts_8_8_8_01_4.html", null ]
@@ -170,7 +169,6 @@ var hierarchy =
     [ "slice_base_< D, N >", "structslice__base__.html", [
       [ "slice_plate< D, N >", "structslice__plate.html", null ]
     ] ],
-    [ "transition< Impl, O, Out >", "structtransition.html", null ],
     [ "translation< D >", "structtranslation.html", null ],
     [ "translation< Categorical >", "structtranslation_3_01Categorical_01_4.html", null ],
     [ "translation< Gamma >", "structtranslation_3_01Gamma_01_4.html", null ],
