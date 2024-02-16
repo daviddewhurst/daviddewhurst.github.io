@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v1.0.0</span>
+   &#160;<span id="projectnumber">v2.0.0</span>
    </div>
   </td>
  </tr>
@@ -115,35 +115,38 @@ Inheritance diagram for Optimizer&lt; V, O, Ts &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac9be25ecfc3761e170703cd378a56325"><td class="memItemLeft" align="right" valign="top"><a id="ac9be25ecfc3761e170703cd378a56325"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>map_fn_t</b> = std::function&lt; V(<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;, O &amp;, double &amp;w)&gt;</td></tr>
-<tr class="separator:ac9be25ecfc3761e170703cd378a56325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a03aee887fd3aef7a667e9d0976d0e"><td class="memItemLeft" align="right" valign="top"><a id="a20a03aee887fd3aef7a667e9d0976d0e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_fn_t</b> = std::function&lt; double(<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;, O &amp;, double &amp;w)&gt;</td></tr>
-<tr class="separator:a20a03aee887fd3aef7a667e9d0976d0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc25de18d4861401969925cd042f49e"><td class="memItemLeft" align="right" valign="top"><a id="aedc25de18d4861401969925cd042f49e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>map_fn_t</b> = std::function&lt; V(<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt; &gt; &amp;, O &amp;, double &amp;w)&gt;</td></tr>
+<tr class="separator:aedc25de18d4861401969925cd042f49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048dafa265d20b4299a2c020f8cfc4e5"><td class="memItemLeft" align="right" valign="top"><a id="a048dafa265d20b4299a2c020f8cfc4e5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>value_fn_t</b> = std::function&lt; double(<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt; &gt; &amp;, O &amp;, double &amp;w)&gt;</td></tr>
+<tr class="separator:a048dafa265d20b4299a2c020f8cfc4e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adce3c1df35818e1c5f551a5f2073c542"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOptimizer_adce3c1df35818e1c5f551a5f2073c542.html#adce3c1df35818e1c5f551a5f2073c542">Optimizer</a> (map_fn_t map_fn, value_fn_t value_fn)</td></tr>
 <tr class="memdesc:adce3c1df35818e1c5f551a5f2073c542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="structOptimizer.html" title="Optimizes a value function and returns the argmax value.">Optimizer</a> object.  <a href="structOptimizer_adce3c1df35818e1c5f551a5f2073c542.html#adce3c1df35818e1c5f551a5f2073c542">More...</a><br /></td></tr>
 <tr class="separator:adce3c1df35818e1c5f551a5f2073c542"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210a831cc33c18dabb43a6c7c294b8b6"><td class="memItemLeft" align="right" valign="top"><a id="a210a831cc33c18dabb43a6c7c294b8b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="separator:a210a831cc33c18dabb43a6c7c294b8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a552fea6bec1d7e19b059173548e1bc3b"><td class="memItemLeft" align="right" valign="top"><a id="a552fea6bec1d7e19b059173548e1bc3b"></a>
 V&#160;</td><td class="memItemRight" valign="bottom"><b>emit</b> ()</td></tr>
 <tr class="separator:a552fea6bec1d7e19b059173548e1bc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af343f3e7b21276d4f5f6d501d6dd704f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOptimizer_af343f3e7b21276d4f5f6d501d6dd704f.html#af343f3e7b21276d4f5f6d501d6dd704f">optimum_value</a> ()</td></tr>
 <tr class="memdesc:af343f3e7b21276d4f5f6d501d6dd704f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (approximate global) maximum of the value function.  <a href="structOptimizer_af343f3e7b21276d4f5f6d501d6dd704f.html#af343f3e7b21276d4f5f6d501d6dd704f">More...</a><br /></td></tr>
 <tr class="separator:af343f3e7b21276d4f5f6d501d6dd704f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30e6275a2b5b9e2de8565e68686b3f7"><td class="memItemLeft" align="right" valign="top"><a id="ac30e6275a2b5b9e2de8565e68686b3f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="separator:ac30e6275a2b5b9e2de8565e68686b3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673f1a56230a826d3cb9cdafeef80562"><td class="memItemLeft" align="right" valign="top"><a id="a673f1a56230a826d3cb9cdafeef80562"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt;&gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="separator:a673f1a56230a826d3cb9cdafeef80562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structQueryer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structQueryer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structQueryer.html">Queryer&lt; Optimizer, V, O, Ts... &gt;</a></td></tr>
 <tr class="memitem:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_structQueryer"><td class="memItemLeft" align="right" valign="top"><a id="a665793e9eb312fd8ccd5106d4578aab6"></a>
 V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueryer.html#a665793e9eb312fd8ccd5106d4578aab6">emit</a> ()</td></tr>
 <tr class="memdesc:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_structQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emits the result of the query. <br /></td></tr>
 <tr class="separator:a665793e9eb312fd8ccd5106d4578aab6 inherit pub_methods_structQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9257c5ea585561090319dba5784d981 inherit pub_methods_structQueryer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
-<tr class="memdesc:af9257c5ea585561090319dba5784d981 inherit pub_methods_structQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="structQueryer_af9257c5ea585561090319dba5784d981.html#af9257c5ea585561090319dba5784d981">More...</a><br /></td></tr>
-<tr class="separator:af9257c5ea585561090319dba5784d981 inherit pub_methods_structQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4021eedb162b64e995fdb8ecb9e34e9d inherit pub_methods_structQueryer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQueryer_a4021eedb162b64e995fdb8ecb9e34e9d.html#a4021eedb162b64e995fdb8ecb9e34e9d">update</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt;&gt; &amp;r, O output, double weight, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memdesc:a4021eedb162b64e995fdb8ecb9e34e9d inherit pub_methods_structQueryer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the state of the queryer.  <a href="structQueryer_a4021eedb162b64e995fdb8ecb9e34e9d.html#a4021eedb162b64e995fdb8ecb9e34e9d">More...</a><br /></td></tr>
+<tr class="separator:a4021eedb162b64e995fdb8ecb9e34e9d inherit pub_methods_structQueryer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>

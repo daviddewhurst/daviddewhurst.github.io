@@ -1,20 +1,15 @@
 var searchData=
 [
-  ['record_2ehpp_172',['record.hpp',['../record_8hpp.html',1,'']]],
-  ['record_5fcollection_5ft_173',['record_collection_t',['../structrecord__collection__t.html',1,'']]],
-  ['record_5finterpretation_174',['record_interpretation',['../record_8hpp.html#a5e779178e7dcd5972e424c72007d8406',1,'record.hpp']]],
-  ['record_5ft_175',['record_t',['../structrecord__t.html',1,'']]],
-  ['record_5ft_3c_20ts_2e_2e_2e_20_3e_176',['record_t&lt; Ts... &gt;',['../structrecord__t.html',1,'']]],
-  ['recordblock_177',['RecordBlock',['../structRecordBlock.html',1,'']]],
-  ['recordblock_3c_20obs_20_3e_178',['RecordBlock&lt; Obs &gt;',['../structRecordBlock_3_01Obs_01_4.html',1,'']]],
-  ['recordblock_3c_20sample_20_3e_179',['RecordBlock&lt; Sample &gt;',['../structRecordBlock_3_01Sample_01_4.html',1,'']]],
-  ['recordreplace_180',['RecordReplace',['../structRecordReplace.html',1,'']]],
-  ['recordreplay_181',['RecordReplay',['../structRecordReplay.html',1,'']]],
-  ['recordrewrite_182',['RecordRewrite',['../structRecordRewrite.html',1,'']]],
-  ['recordstandard_183',['RecordStandard',['../structRecordStandard.html',1,'']]],
-  ['reduce_184',['reduce',['../structvalue__collection__t_a7d544f36a66ca75ba3ae27ea34a584dd.html#a7d544f36a66ca75ba3ae27ea34a584dd',1,'value_collection_t']]],
-  ['replace_185',['replace',['../effects_8hpp.html#a198279bf867d0a900142960332726f15',1,'effects.hpp']]],
-  ['replay_186',['replay',['../effects_8hpp.html#a6422ceaa23253b264388d874203d1a44',1,'replay(pp_t&lt; I, O, Ts... &gt; &amp;f, std::string address, V value):&#160;effects.hpp'],['../effects_8hpp.html#a2d6785d0520d3e6c87a0c7e7a6c8e8a7',1,'replay(pp_t&lt; I, O, Ts... &gt; &amp;f):&#160;effects.hpp']]],
-  ['rw_5ftrans_5fkernel_187',['rw_trans_kernel',['../structtransition__kernels_1_1rw__trans__kernel_aaf58730d7988bfa5a5dd50c424a2f3de.html#aaf58730d7988bfa5a5dd50c424a2f3de',1,'transition_kernels::rw_trans_kernel::rw_trans_kernel(std::string address)'],['../structtransition__kernels_1_1rw__trans__kernel_a97c274b917deecbd4f73732cc46e4e11.html#a97c274b917deecbd4f73732cc46e4e11',1,'transition_kernels::rw_trans_kernel::rw_trans_kernel(std::string address, double loc, double scale)'],['../structtransition__kernels_1_1rw__trans__kernel.html',1,'transition_kernels::rw_trans_kernel&lt; D, Ts &gt;']]],
-  ['rw_5ftrans_5fkernel_3c_20distributions_3a_3agamma_2c_20ts_2e_2e_2e_20_3e_188',['rw_trans_kernel&lt; Distributions::Gamma, Ts... &gt;',['../structtransition__kernels_1_1rw__trans__kernel_3_01Distributions_1_1Gamma_00_01Ts_8_8_8_01_4.html',1,'transition_kernels']]]
+  ['sample_200',['Sample',['../structSample.html',1,'']]],
+  ['sample_201',['sample',['../record_8hpp_a76a476bf6b84416d6d106c3b290f5848.html#a76a476bf6b84416d6d106c3b290f5848',1,'sample(record_t&lt; DTypes&lt; Ts... &gt;&gt; &amp;r, std::string address, D dist, RNG &amp;rng, Map&lt; std::string, DSType&lt; D &gt;&gt; &amp;map_):&#160;record.hpp'],['../record_8hpp_a67a2e359ea25bfba4834689031533a35.html#a67a2e359ea25bfba4834689031533a35',1,'sample(record_t&lt; DTypes&lt; Ts... &gt;&gt; &amp;r, std::string address, D dist, RNG &amp;rng, std::optional&lt; DSType&lt; D &gt;&gt; maybe_value):&#160;record.hpp'],['../record_8hpp_a2ae32ceac91100ce3dd882bc5ccf82f3.html#a2ae32ceac91100ce3dd882bc5ccf82f3',1,'sample(record_t&lt; DTypes&lt; Ts... &gt;&gt; &amp;r, std::string address, D dist, RNG &amp;rng):&#160;record.hpp'],['../record_8hpp.html#ab7e0ce12b75997bbf70abf7ce8b1302f',1,'sample(D dist, RNG &amp;rng):&#160;record.hpp'],['../structvalue__collection__t_a0cc2e22d1bc323df460dff4db62c31d8.html#a0cc2e22d1bc323df460dff4db62c31d8',1,'value_collection_t::sample(RNG &amp;rng, size_t n)'],['../structvalue__collection__t_acea1a098f0395ef553cc79cd43498b25.html#acea1a098f0395ef553cc79cd43498b25',1,'value_collection_t::sample(RNG &amp;rng)'],['../structslice__plate_a9d284881ed42a30ff3c5468c683dd55c.html#a9d284881ed42a30ff3c5468c683dd55c',1,'slice_plate::sample()'],['../structstatic__plate_ad702af547f5b1fae478e3cdf939671c2.html#ad702af547f5b1fae478e3cdf939671c2',1,'static_plate::sample()'],['../structgraph__node_aa0e6993f31de43af572a75d5f4bf0d34.html#aa0e6993f31de43af572a75d5f4bf0d34',1,'graph_node::sample()']]],
+  ['sample_5fg_202',['sample_g',['../graph_8hpp_a16a1a7904c34f6d772c8670a57e896c6.html#a16a1a7904c34f6d772c8670a57e896c6',1,'graph.hpp']]],
+  ['sample_5foutput_203',['sample_output',['../structrecord__collection__t_a03c5e0c4d0953f422f5cb11dd647d7e1.html#a03c5e0c4d0953f422f5cb11dd647d7e1',1,'record_collection_t::sample_output(RNG &amp;rng)'],['../structrecord__collection__t_ab5ce03279b9c73679fc5943cdade18b6.html#ab5ce03279b9c73679fc5943cdade18b6',1,'record_collection_t::sample_output(RNG &amp;rng, size_t n)']]],
+  ['sample_5fstatement_204',['sample_statement',['../translate_8hpp_ad2734cb4d92d433279e4ec2e0c902d7f.html#ad2734cb4d92d433279e4ec2e0c902d7f',1,'sample_statement(graph_node&lt; Value&lt; V &gt;&gt; &amp;gn, std::string program_name, bool):&#160;translate.hpp'],['../translate_8hpp_aeef76f287f24030d902a6eda5e032a43.html#aeef76f287f24030d902a6eda5e032a43',1,'sample_statement(graph_node&lt; D &gt; &amp;gn, std::string program_name, bool observed=false):&#160;translate.hpp']]],
+  ['sample_5fu_205',['sample_u',['../update_8hpp_a1b5ea6f7bf2441dd5727763517759a32.html#a1b5ea6f7bf2441dd5727763517759a32',1,'update.hpp']]],
+  ['score_206',['score',['../particle_8hpp_abe7d71ecf6b5979f563afd0d2fcba28c.html#abe7d71ecf6b5979f563afd0d2fcba28c',1,'particle.hpp']]],
+  ['slice_5fbase_5f_207',['slice_base_',['../structslice__base__.html',1,'']]],
+  ['slice_5fplate_208',['slice_plate',['../structslice__plate.html',1,'']]],
+  ['static_5fplate_209',['static_plate',['../structstatic__plate.html',1,'']]],
+  ['string_210',['string',['../structnode__t_a14525c58d635aea01e0745499219e557.html#a14525c58d635aea01e0745499219e557',1,'node_t::string()'],['../structGamma_a40d8a81c41dc8be6cf3abedfd5da11d8.html#a40d8a81c41dc8be6cf3abedfd5da11d8',1,'Gamma::string()']]],
+  ['structure_211',['structure',['../structgraph__ir.html#ae5a82c3fea4b7ec8e83ab71e4c278d79',1,'graph_ir']]]
 ];

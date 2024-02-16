@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['filterqueryertype_485',['FilterQueryerType',['../filter_8hpp_a7db045fbb50994ade70eba0fe3998920.html#a7db045fbb50994ade70eba0fe3998920',1,'filter.hpp']]],
-  ['filtervaluetype_486',['FilterValueType',['../proposal_8hpp_a209fd2eced06bbe1e88598849b5ba07b.html#a209fd2eced06bbe1e88598849b5ba07b',1,'proposal.hpp']]]
+  ['endog_5fproposal_5ft_502',['endog_proposal_t',['../inference_8hpp_a5dae70029260babe4e5b21696350521f.html#a5dae70029260babe4e5b21696350521f',1,'inference.hpp']]],
+  ['exog_5fproposal_5ft_503',['exog_proposal_t',['../inference_8hpp_a0a6edfe9ff9499c729496f6ab7dcd37a.html#a0a6edfe9ff9499c729496f6ab7dcd37a',1,'inference.hpp']]]
 ];

@@ -1,5 +1,5 @@
 var structImportanceSampling =
 [
-    [ "operator()", "structImportanceSampling.html#a8f2d0e6379f286ef69b555dd1ce4fc0c", null ],
-    [ "step", "structImportanceSampling.html#ac49382b441dc3799d3f9fc47e80d01b2", null ]
+    [ "operator()", "structImportanceSampling.html#ad909ea1e189972b63190d8db6455ff9e", null ],
+    [ "step", "structImportanceSampling.html#a3afbdf7b52bbe9d8c36e82d19fe44ebd", null ]
 ];

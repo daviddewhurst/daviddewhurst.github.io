@@ -1,4 +1,4 @@
 var structhas__proposal =
 [
-    [ "value", "structhas__proposal.html#ae1414e50697f7532760cbefb42178e05", null ]
+    [ "type", "structhas__proposal.html#ad59441362a108b57ddb6ebfa3692e1bf", null ]
 ];

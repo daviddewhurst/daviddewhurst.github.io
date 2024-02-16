@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['defaultpolicy_261',['DefaultPolicy',['../structDefaultPolicy.html',1,'']]],
-  ['discreteuniform_262',['DiscreteUniform',['../structDistributions_1_1DiscreteUniform.html',1,'Distributions']]]
+  ['defaultpolicy_272',['DefaultPolicy',['../structDefaultPolicy.html',1,'']]],
+  ['discreteuniform_273',['DiscreteUniform',['../structDiscreteUniform.html',1,'']]],
+  ['distribution_274',['Distribution',['../structDistribution.html',1,'']]],
+  ['distribution_3c_20parameter_3c_20v_20_3e_2c_20v_3a_3atype_20_3e_275',['Distribution&lt; Parameter&lt; V &gt;, V::type &gt;',['../structDistribution.html',1,'']]],
+  ['dynamic_5fbounded_276',['dynamic_bounded',['../structdynamic__bounded.html',1,'']]],
+  ['dynamic_5fbounded_3c_20double_20_3e_277',['dynamic_bounded&lt; double &gt;',['../structdynamic__bounded_3_01double_01_4.html',1,'']]]
 ];

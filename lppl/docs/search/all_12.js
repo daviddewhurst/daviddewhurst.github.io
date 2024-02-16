@@ -1,16 +1,18 @@
 var searchData=
 [
-  ['sample_189',['Sample',['../structSample.html',1,'']]],
-  ['sample_190',['sample',['../record_8hpp_af77cbf37e8e287b1c525391a1792b1e2.html#af77cbf37e8e287b1c525391a1792b1e2',1,'sample(record_t&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng):&#160;record.hpp'],['../record_8hpp.html#ab7e0ce12b75997bbf70abf7ce8b1302f',1,'sample(D dist, RNG &amp;rng):&#160;record.hpp'],['../record_8hpp_aaaa7f66fdc03c94593d4a895dd662723.html#aaaa7f66fdc03c94593d4a895dd662723',1,'sample(record_t&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng, std::optional&lt; DSType&lt; D &gt;&gt; maybe_value):&#160;record.hpp'],['../record_8hpp_a7e235e80097880e593e0221e2681b76f.html#a7e235e80097880e593e0221e2681b76f',1,'sample(record_t&lt; Ts... &gt; &amp;r, std::string address, D dist, RNG &amp;rng, Map&lt; std::string, DSType&lt; D &gt;&gt; &amp;map_):&#160;record.hpp'],['../structvalue__collection__t_a0cc2e22d1bc323df460dff4db62c31d8.html#a0cc2e22d1bc323df460dff4db62c31d8',1,'value_collection_t::sample(RNG &amp;rng, size_t n)'],['../structvalue__collection__t_acea1a098f0395ef553cc79cd43498b25.html#acea1a098f0395ef553cc79cd43498b25',1,'value_collection_t::sample(RNG &amp;rng)'],['../structslice__plate_a9d284881ed42a30ff3c5468c683dd55c.html#a9d284881ed42a30ff3c5468c683dd55c',1,'slice_plate::sample()'],['../structstatic__plate_ad702af547f5b1fae478e3cdf939671c2.html#ad702af547f5b1fae478e3cdf939671c2',1,'static_plate::sample()'],['../structgraph__node_aa0e6993f31de43af572a75d5f4bf0d34.html#aa0e6993f31de43af572a75d5f4bf0d34',1,'graph_node::sample()']]],
-  ['sample_5fg_191',['sample_g',['../graph_8hpp_a16a1a7904c34f6d772c8670a57e896c6.html#a16a1a7904c34f6d772c8670a57e896c6',1,'graph.hpp']]],
-  ['sample_5foutput_192',['sample_output',['../structrecord__collection__t_a03c5e0c4d0953f422f5cb11dd647d7e1.html#a03c5e0c4d0953f422f5cb11dd647d7e1',1,'record_collection_t::sample_output(RNG &amp;rng)'],['../structrecord__collection__t_ab5ce03279b9c73679fc5943cdade18b6.html#ab5ce03279b9c73679fc5943cdade18b6',1,'record_collection_t::sample_output(RNG &amp;rng, size_t n)']]],
-  ['sample_5fstatement_193',['sample_statement',['../translate_8hpp_ad2734cb4d92d433279e4ec2e0c902d7f.html#ad2734cb4d92d433279e4ec2e0c902d7f',1,'sample_statement(graph_node&lt; Value&lt; V &gt;&gt; &amp;gn, std::string program_name, bool):&#160;translate.hpp'],['../translate_8hpp_aeef76f287f24030d902a6eda5e032a43.html#aeef76f287f24030d902a6eda5e032a43',1,'sample_statement(graph_node&lt; D &gt; &amp;gn, std::string program_name, bool observed=false):&#160;translate.hpp']]],
-  ['sample_5fu_194',['sample_u',['../update_8hpp_ab81c94fa3d6ae0a65f84d946984b9e1f.html#ab81c94fa3d6ae0a65f84d946984b9e1f',1,'update.hpp']]],
-  ['score_195',['score',['../filter_8hpp_abe7d71ecf6b5979f563afd0d2fcba28c.html#abe7d71ecf6b5979f563afd0d2fcba28c',1,'filter.hpp']]],
-  ['slice_5fbase_5f_196',['slice_base_',['../structslice__base__.html',1,'']]],
-  ['slice_5fplate_197',['slice_plate',['../structslice__plate.html',1,'']]],
-  ['static_5fplate_198',['static_plate',['../structstatic__plate.html',1,'']]],
-  ['step_199',['step',['../structFilter_a3f26f33c8f7733bd37fa1d61fbec5690.html#a3f26f33c8f7733bd37fa1d61fbec5690',1,'Filter::step(I &amp;input)'],['../structFilter_a26abc1397e3d4372e99fe82c3131b733.html#a26abc1397e3d4372e99fe82c3131b733',1,'Filter::step(I &amp;input, P &amp;proposal)']]],
-  ['string_200',['string',['../structnode__t_a14525c58d635aea01e0745499219e557.html#a14525c58d635aea01e0745499219e557',1,'node_t::string()'],['../structDistributions_1_1Gamma_a9ac0543cfedcd640042aef842d9b4140.html#a9ac0543cfedcd640042aef842d9b4140',1,'Distributions::Gamma::string()']]],
-  ['structure_201',['structure',['../structgraph__ir.html#ae5a82c3fea4b7ec8e83ab71e4c278d79',1,'graph_ir']]]
+  ['to_5fpp_212',['to_pp',['../graph_8hpp_a09c561aeb1f1bead96bf07a94ffb090e.html#a09c561aeb1f1bead96bf07a94ffb090e',1,'graph.hpp']]],
+  ['todo_20list_213',['Todo List',['../todo.html',1,'']]],
+  ['transfer_214',['transfer',['../proposal_8hpp_ad50147df1aa1dff4c9bea6c8c85940e0.html#ad50147df1aa1dff4c9bea6c8c85940e0',1,'proposal.hpp']]],
+  ['transition_215',['transition',['../structtransition.html',1,'']]],
+  ['translate_2ehpp_216',['translate.hpp',['../translate_8hpp.html',1,'']]],
+  ['translation_217',['translation',['../structtranslation.html',1,'']]],
+  ['translation_3c_20categorical_20_3e_218',['translation&lt; Categorical &gt;',['../structtranslation_3_01Categorical_01_4.html',1,'']]],
+  ['translation_3c_20gamma_20_3e_219',['translation&lt; Gamma &gt;',['../structtranslation_3_01Gamma_01_4.html',1,'']]],
+  ['translation_3c_20normal_20_3e_220',['translation&lt; Normal &gt;',['../structtranslation_3_01Normal_01_4.html',1,'']]],
+  ['translation_3c_20value_3c_20double_20_3e_20_3e_221',['translation&lt; Value&lt; double &gt; &gt;',['../structtranslation_3_01Value_3_01double_01_4_01_4.html',1,'']]],
+  ['translation_3c_20value_3c_20int_20_3e_20_3e_222',['translation&lt; Value&lt; int &gt; &gt;',['../structtranslation_3_01Value_3_01int_01_4_01_4.html',1,'']]],
+  ['translation_3c_20value_3c_20unsigned_20_3e_20_3e_223',['translation&lt; Value&lt; unsigned &gt; &gt;',['../structtranslation_3_01Value_3_01unsigned_01_4_01_4.html',1,'']]],
+  ['translation_3c_20value_3c_20unsigned_20long_20_3e_20_3e_224',['translation&lt; Value&lt; unsigned long &gt; &gt;',['../structtranslation_3_01Value_3_01unsigned_01long_01_4_01_4.html',1,'']]],
+  ['triangular_225',['Triangular',['../structTriangular.html',1,'']]],
+  ['typed_5fmap_226',['typed_map',['../structtyped__map.html',1,'']]]
 ];

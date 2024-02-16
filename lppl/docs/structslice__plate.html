@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v1.0.0</span>
+   &#160;<span id="projectnumber">v2.0.0</span>
    </div>
   </td>
  </tr>
@@ -117,11 +117,11 @@ Public Member Functions</h2></td></tr>
 template&lt;typename... Ts&gt; </td></tr>
 <tr class="memitem:a47407a925f0f3df531089c2ae1990399"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>slice_plate</b> (std::shared_ptr&lt; std::array&lt; Ts, N &gt;&gt;... ts)</td></tr>
 <tr class="separator:a47407a925f0f3df531089c2ae1990399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3debd75b1d8852193abbd73c4031fafe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structslice__plate_a3debd75b1d8852193abbd73c4031fafe.html#a3debd75b1d8852193abbd73c4031fafe">logprob</a> (std::shared_ptr&lt; std::array&lt; <a class="el" href="record_8hpp_a1c62a84e1d4e6502ab1f181f0fb5bd8e.html#a1c62a84e1d4e6502ab1f181f0fb5bd8e">DSType</a>&lt; D &gt;, N &gt;&gt; value)</td></tr>
+<tr class="memitem:a3debd75b1d8852193abbd73c4031fafe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structslice__plate_a3debd75b1d8852193abbd73c4031fafe.html#a3debd75b1d8852193abbd73c4031fafe">logprob</a> (std::shared_ptr&lt; std::array&lt; <a class="el" href="distribution__traits_8hpp_a1c62a84e1d4e6502ab1f181f0fb5bd8e.html#a1c62a84e1d4e6502ab1f181f0fb5bd8e">DSType</a>&lt; D &gt;, N &gt;&gt; value)</td></tr>
 <tr class="memdesc:a3debd75b1d8852193abbd73c4031fafe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes \( \sum_{1\leq n \leq N} \log p(x_n | z_n)\).  <a href="structslice__plate_a3debd75b1d8852193abbd73c4031fafe.html#a3debd75b1d8852193abbd73c4031fafe">More...</a><br /></td></tr>
 <tr class="separator:a3debd75b1d8852193abbd73c4031fafe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d284881ed42a30ff3c5468c683dd55c"><td class="memTemplParams" colspan="2">template&lt;typename RNG &gt; </td></tr>
-<tr class="memitem:a9d284881ed42a30ff3c5468c683dd55c"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; std::array&lt; <a class="el" href="record_8hpp_a1c62a84e1d4e6502ab1f181f0fb5bd8e.html#a1c62a84e1d4e6502ab1f181f0fb5bd8e">DSType</a>&lt; D &gt;, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structslice__plate_a9d284881ed42a30ff3c5468c683dd55c.html#a9d284881ed42a30ff3c5468c683dd55c">sample</a> (RNG &amp;rng)</td></tr>
+<tr class="memitem:a9d284881ed42a30ff3c5468c683dd55c"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; std::array&lt; <a class="el" href="distribution__traits_8hpp_a1c62a84e1d4e6502ab1f181f0fb5bd8e.html#a1c62a84e1d4e6502ab1f181f0fb5bd8e">DSType</a>&lt; D &gt;, N &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structslice__plate_a9d284881ed42a30ff3c5468c683dd55c.html#a9d284881ed42a30ff3c5468c683dd55c">sample</a> (RNG &amp;rng)</td></tr>
 <tr class="memdesc:a9d284881ed42a30ff3c5468c683dd55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Samples \(x_1,...,x_N \sim p(x_n | z_n)\).  <a href="structslice__plate_a9d284881ed42a30ff3c5468c683dd55c.html#a9d284881ed42a30ff3c5468c683dd55c">More...</a><br /></td></tr>
 <tr class="separator:a9d284881ed42a30ff3c5468c683dd55c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f68a2703478763ac5407e57f7c0f214"><td class="memItemLeft" align="right" valign="top"><a id="a1f68a2703478763ac5407e57f7c0f214"></a>
@@ -137,7 +137,7 @@ template&lt;typename... Ts&gt; </td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_structslice__base__"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structslice__base__')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structslice__base__.html">slice_base_&lt; D, N &gt;</a></td></tr>
 <tr class="memitem:a6d749e92c12f9fed5a3a5e98da98ac85 inherit pub_types_structslice__base__"><td class="memItemLeft" align="right" valign="top"><a id="a6d749e92c12f9fed5a3a5e98da98ac85"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>tuple_type</b> = typename <a class="el" href="structDistributions_1_1input__types.html">input_types</a>&lt; D &gt;::value</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>tuple_type</b> = typename <a class="el" href="structinput__types.html">input_types</a>&lt; D &gt;::value</td></tr>
 <tr class="separator:a6d749e92c12f9fed5a3a5e98da98ac85 inherit pub_types_structslice__base__"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structslice__base__"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structslice__base__')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structslice__base__.html">slice_base_&lt; D, N &gt;</a></td></tr>
 <tr class="memitem:a4d1bd182eae81ad23e83c0e3bea3cdf8 inherit pub_attribs_structslice__base__"><td class="memItemLeft" align="right" valign="top"><a id="a4d1bd182eae81ad23e83c0e3bea3cdf8"></a>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['beta_258',['Beta',['../structDistributions_1_1Beta.html',1,'Distributions']]]
+  ['beta_269',['Beta',['../structBeta.html',1,'']]]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v1.0.0</span>
+   &#160;<span id="projectnumber">v2.0.0</span>
    </div>
   </td>
  </tr>
@@ -129,14 +129,14 @@ Functions</h2></td></tr>
 <tr class="memitem:a2083fca7d446b58462e614353d130b77"><td class="memItemLeft" align="right" valign="top"><a id="a2083fca7d446b58462e614353d130b77"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>in</b> (std::string a, std::vector&lt; std::string &gt; vec)</td></tr>
 <tr class="separator:a2083fca7d446b58462e614353d130b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fccb5a99fc2c0720e3895f475d42c5d"><td class="memTemplParams" colspan="2">template&lt;typename D , typename P , typename RNG , typename... Ts&gt; </td></tr>
-<tr class="memitem:a4fccb5a99fc2c0720e3895f475d42c5d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="proposal_8hpp_a4fccb5a99fc2c0720e3895f475d42c5d.html#a4fccb5a99fc2c0720e3895f475d42c5d">propose</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r, std::string address, P &amp;&amp;<a class="el" href="filter_8hpp_af4f7c688dd15dc34688064b92ce23a8c.html#af4f7c688dd15dc34688064b92ce23a8c">dist</a>, RNG &amp;rng)</td></tr>
-<tr class="memdesc:a4fccb5a99fc2c0720e3895f475d42c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propose a value from distribution of type P into a model node of type D.  <a href="proposal_8hpp_a4fccb5a99fc2c0720e3895f475d42c5d.html#a4fccb5a99fc2c0720e3895f475d42c5d">More...</a><br /></td></tr>
-<tr class="separator:a4fccb5a99fc2c0720e3895f475d42c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ebe899ab760657f6d3eb712d4d5b4d4"><td class="memTemplParams" colspan="2">template&lt;typename D , typename... Out&gt; </td></tr>
-<tr class="memitem:a3ebe899ab760657f6d3eb712d4d5b4d4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="proposal_8hpp_a3ebe899ab760657f6d3eb712d4d5b4d4.html#a3ebe899ab760657f6d3eb712d4d5b4d4">transfer</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Out... &gt; &amp;r_out, std::string address, <a class="el" href="structnode__t.html">node_t</a>&lt; D &gt; &amp;&amp;n)</td></tr>
-<tr class="memdesc:a3ebe899ab760657f6d3eb712d4d5b4d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers a newly created node into a record of a compatible type.  <a href="proposal_8hpp_a3ebe899ab760657f6d3eb712d4d5b4d4.html#a3ebe899ab760657f6d3eb712d4d5b4d4">More...</a><br /></td></tr>
-<tr class="separator:a3ebe899ab760657f6d3eb712d4d5b4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd13bb10e917c512f559ed8fd7f7edf"><td class="memTemplParams" colspan="2">template&lt;typename D , typename P , typename RNG , typename... Ts&gt; </td></tr>
+<tr class="memitem:a1bd13bb10e917c512f559ed8fd7f7edf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="proposal_8hpp_a1bd13bb10e917c512f559ed8fd7f7edf.html#a1bd13bb10e917c512f559ed8fd7f7edf">propose</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt;&gt; &amp;r, std::string address, P &amp;&amp;<a class="el" href="particle_8hpp_af4f7c688dd15dc34688064b92ce23a8c.html#af4f7c688dd15dc34688064b92ce23a8c">dist</a>, RNG &amp;rng)</td></tr>
+<tr class="memdesc:a1bd13bb10e917c512f559ed8fd7f7edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propose a value from distribution of type P into a model node of type D.  <a href="proposal_8hpp_a1bd13bb10e917c512f559ed8fd7f7edf.html#a1bd13bb10e917c512f559ed8fd7f7edf">More...</a><br /></td></tr>
+<tr class="separator:a1bd13bb10e917c512f559ed8fd7f7edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50147df1aa1dff4c9bea6c8c85940e0"><td class="memTemplParams" colspan="2">template&lt;typename D , typename... Out&gt; </td></tr>
+<tr class="memitem:ad50147df1aa1dff4c9bea6c8c85940e0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="proposal_8hpp_ad50147df1aa1dff4c9bea6c8c85940e0.html#ad50147df1aa1dff4c9bea6c8c85940e0">transfer</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Out... &gt;&gt; &amp;r_out, std::string address, <a class="el" href="structnode__t.html">node_t</a>&lt; D &gt; &amp;&amp;n)</td></tr>
+<tr class="memdesc:ad50147df1aa1dff4c9bea6c8c85940e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfers a newly created node into a record of a compatible type.  <a href="proposal_8hpp_ad50147df1aa1dff4c9bea6c8c85940e0.html#ad50147df1aa1dff4c9bea6c8c85940e0">More...</a><br /></td></tr>
+<tr class="separator:ad50147df1aa1dff4c9bea6c8c85940e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><br  />

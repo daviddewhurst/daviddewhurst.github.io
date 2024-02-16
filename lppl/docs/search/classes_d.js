@@ -1,18 +1,13 @@
 var searchData=
 [
-  ['paramconstructor_326',['ParamConstructor',['../structParamConstructor.html',1,'']]],
-  ['parameter_327',['Parameter',['../structDistributions_1_1Parameter.html',1,'Distributions']]],
-  ['parameter_5fmatch_328',['parameter_match',['../structparameter__match.html',1,'']]],
-  ['parameter_5fmatch_3c_20d_2c_20gamma_2c_20o_2c_20ts_2e_2e_2e_20_3e_329',['parameter_match&lt; D, Gamma, O, Ts... &gt;',['../structparameter__match_3_01D_00_01Gamma_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
-  ['parameter_5fmatch_3c_20d_2c_20normal_2c_20o_2c_20ts_2e_2e_2e_20_3e_330',['parameter_match&lt; D, Normal, O, Ts... &gt;',['../structparameter__match_3_01D_00_01Normal_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
-  ['parameter_5fmatch_3c_20parameter_3c_20constraint_3c_20basetype_20_3e_20_3e_2c_20parameter_3c_20constraint_3c_20basetype_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_331',['parameter_match&lt; Parameter&lt; Constraint&lt; BaseType &gt; &gt;, Parameter&lt; Constraint&lt; BaseType &gt; &gt;, O, Ts... &gt;',['../structparameter__match_3_01Parameter_3_01Constraint_3_01BaseType_01_4_01_4_00_01Parameter_3_01Co9a843d0040727a0941a5fc0f0d49a263.html',1,'']]],
-  ['parametermatching_332',['ParameterMatching',['../structParameterMatching.html',1,'']]],
-  ['parametermatching_3c_20policy_2c_20filtervaluetype_3c_20o_2c_20ts_2e_2e_2e_20_3e_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_333',['ParameterMatching&lt; Policy, FilterValueType&lt; O, Ts... &gt;, I, O, Ts... &gt;',['../structParameterMatching_3_01Policy_00_01FilterValueType_3_01O_00_01Ts_8_8_8_01_4_00_01I_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
-  ['parametermatching_3c_20policy_2c_20typename_20productgenerator_3c_20weightedmeanstd_2c_20std_3a_3apair_3c_20double_2c_20double_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_3a_3aemittype_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_334',['ParameterMatching&lt; Policy, typename ProductGenerator&lt; WeightedMeanStd, std::pair&lt; double, double &gt;, O, Ts... &gt;::EmitType, I, O, Ts... &gt;',['../structParameterMatching_3_01Policy_00_01typename_01ProductGenerator_3_01WeightedMeanStd_00_01stdac003cef7be04bb8a9c465306a8cffaf.html',1,'']]],
-  ['plate_5fbase_5f_335',['plate_base_',['../structplate__base__.html',1,'']]],
-  ['poisson_336',['Poisson',['../structDistributions_1_1Poisson.html',1,'Distributions']]],
-  ['productgenerator_337',['ProductGenerator',['../structProductGenerator.html',1,'']]],
-  ['program_5finfo_338',['program_info',['../structprogram__info.html',1,'']]],
-  ['program_5frep_339',['program_rep',['../structprogram__rep.html',1,'']]],
-  ['proposal_340',['proposal',['../structproposal.html',1,'']]]
+  ['q_365',['Q',['../structProductGenerator_1_1Q.html',1,'ProductGenerator']]],
+  ['queryer_366',['Queryer',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20logsumexpq_2c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_367',['Queryer&lt; LogSumExpQ, double, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20optimizer_2c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_368',['Queryer&lt; Optimizer, V, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20q_2c_20emittype_2c_20o_2c_20ts_2e_2e_2e_20_3e_369',['Queryer&lt; Q, EmitType, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20weighted_2c_20v_2c_20o_2c_20ts_2e_2e_2e_20_3e_370',['Queryer&lt; Weighted, V, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20weightedmean_2c_20double_2c_20o_2c_20ts_2e_2e_2e_20_3e_371',['Queryer&lt; WeightedMean, double, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20weightedmeanstd_2c_20std_3a_3apair_3c_20double_2c_20double_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_372',['Queryer&lt; WeightedMeanStd, std::pair&lt; double, double &gt;, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20weightedrecord_2c_20std_3a_3ashared_5fptr_3c_20record_5fcollection_5ft_3c_20o_2c_20ts_2e_2e_2e_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_373',['Queryer&lt; WeightedRecord, std::shared_ptr&lt; record_collection_t&lt; O, Ts... &gt; &gt;, O, Ts... &gt;',['../structQueryer.html',1,'']]],
+  ['queryer_3c_20weightedvalue_2c_20std_3a_3aunique_5fptr_3c_20value_5fcollection_5ft_3c_20v_20_3e_20_3e_2c_20o_2c_20ts_2e_2e_2e_20_3e_374',['Queryer&lt; WeightedValue, std::unique_ptr&lt; value_collection_t&lt; V &gt; &gt;, O, Ts... &gt;',['../structQueryer.html',1,'']]]
 ];

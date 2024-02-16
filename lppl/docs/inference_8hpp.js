@@ -1,11 +1,12 @@
 var inference_8hpp =
 [
+    [ "Endog", "structEndog.html", null ],
+    [ "Exog", "structExog.html", null ],
     [ "has_proposal", "structhas__proposal.html", "structhas__proposal" ],
     [ "Inference", "structInference.html", "structInference" ],
-    [ "kernel", "inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517", [
-      [ "none", "inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517a334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
-      [ "partial", "inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517a0e87c1212a698494dcdb198af3e0eb2f", null ],
-      [ "full", "inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517ae9dc924f238fa6cc29465942875fe8f0", null ]
-    ] ],
+    [ "inference_state", "structinference__state.html", null ],
+    [ "No", "structNo.html", null ],
+    [ "endog_proposal_t", "inference_8hpp_a5dae70029260babe4e5b21696350521f.html#a5dae70029260babe4e5b21696350521f", null ],
+    [ "exog_proposal_t", "inference_8hpp_a0a6edfe9ff9499c729496f6ab7dcd37a.html#a0a6edfe9ff9499c729496f6ab7dcd37a", null ],
     [ "inference", "inference_8hpp.html#a3cb9aa036683d29e46ed4d95e1fcebdc", null ]
 ];

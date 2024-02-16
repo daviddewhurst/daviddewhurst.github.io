@@ -4,9 +4,11 @@ var dir_97aefd0d527b934f1d99a682da8fe6a9 =
     [ "inference", "dir_defc5c9a3b9c2e71cd6dbbc0fd39e3dd.html", "dir_defc5c9a3b9c2e71cd6dbbc0fd39e3dd" ],
     [ "translate", "dir_8d03a849f7b1a0247442e86515a7e759.html", "dir_8d03a849f7b1a0247442e86515a7e759" ],
     [ "update", "dir_49c359ee71d246b67d2c9d40a620eeac.html", "dir_49c359ee71d246b67d2c9d40a620eeac" ],
+    [ "distribution_traits.hpp", "distribution__traits_8hpp.html", "distribution__traits_8hpp" ],
     [ "distributions.hpp", "distributions_8hpp.html", "distributions_8hpp" ],
     [ "domains.hpp", "domains_8hpp.html", [
       [ "array_", "structarray__.html", "structarray__" ],
+      [ "dynamic_bounded< double >", "structdynamic__bounded_3_01double_01_4.html", "structdynamic__bounded_3_01double_01_4" ],
       [ "mapping< A< T >, A< T > >", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4.html", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4" ],
       [ "mapping< B, A >", "structmapping_3_01B_00_01A_01_4.html", "structmapping_3_01B_00_01A_01_4" ],
       [ "mapping< unbounded< double >, unit_interval< double > >", "structmapping_3_01unbounded_3_01double_01_4_00_01unit__interval_3_01double_01_4_01_4.html", "structmapping_3_01unbounded_3_01double_01_4_00_01unit__interval_3_01double_01_4_01_4" ],

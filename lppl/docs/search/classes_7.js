@@ -1,6 +1,25 @@
 var searchData=
 [
-  ['has_5fproposal_277',['has_proposal',['../structhas__proposal.html',1,'']]],
-  ['has_5fproposal_3c_20genericmetropolis_20_3e_278',['has_proposal&lt; GenericMetropolis &gt;',['../structhas__proposal_3_01GenericMetropolis_01_4.html',1,'']]],
-  ['has_5fproposal_3c_20importancesampling_20_3e_279',['has_proposal&lt; ImportanceSampling &gt;',['../structhas__proposal_3_01ImportanceSampling_01_4.html',1,'']]]
+  ['importancesampling_296',['ImportanceSampling',['../structImportanceSampling.html',1,'']]],
+  ['inf_5foptions_5ft_297',['inf_options_t',['../structinf__options__t.html',1,'']]],
+  ['inference_298',['Inference',['../structInference.html',1,'']]],
+  ['inference_3c_20ancestormetropolis_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_299',['Inference&lt; AncestorMetropolis, I, O, V, Q, Ts... &gt;',['../structInference.html',1,'']]],
+  ['inference_3c_20genericmetropolis_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_300',['Inference&lt; GenericMetropolis, I, O, V, Q, Ts... &gt;',['../structInference.html',1,'']]],
+  ['inference_3c_20importancesampling_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_301',['Inference&lt; ImportanceSampling, I, O, V, Q, Ts... &gt;',['../structInference.html',1,'']]],
+  ['inference_3c_20likelihoodweighting_2c_20i_2c_20o_2c_20v_2c_20q_2c_20ts_2e_2e_2e_20_3e_302',['Inference&lt; LikelihoodWeighting, I, O, V, Q, Ts... &gt;',['../structInference.html',1,'']]],
+  ['inference_5fstate_303',['inference_state',['../structinference__state.html',1,'']]],
+  ['inference_5fstate_3c_20a_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_304',['inference_state&lt; A, I, O, Ts... &gt;',['../structinference__state.html',1,'']]],
+  ['inference_5fstate_3c_20ancestormetropolis_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_305',['inference_state&lt; AncestorMetropolis, I, O, Ts... &gt;',['../structinference__state_3_01AncestorMetropolis_00_01I_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
+  ['inference_5fstate_3c_20genericmetropolis_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_306',['inference_state&lt; GenericMetropolis, I, O, Ts... &gt;',['../structinference__state_3_01GenericMetropolis_00_01I_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
+  ['inference_5fstate_3c_20importancesampling_2c_20i_2c_20o_2c_20ts_2e_2e_2e_20_3e_307',['inference_state&lt; ImportanceSampling, I, O, Ts... &gt;',['../structinference__state_3_01ImportanceSampling_00_01I_00_01O_00_01Ts_8_8_8_01_4.html',1,'']]],
+  ['input_5ftypes_308',['input_types',['../structinput__types.html',1,'']]],
+  ['input_5ftypes_3c_20beta_20_3e_309',['input_types&lt; Beta &gt;',['../structinput__types_3_01Beta_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20categorical_20_3e_310',['input_types&lt; Categorical &gt;',['../structinput__types_3_01Categorical_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20discreteuniform_20_3e_311',['input_types&lt; DiscreteUniform &gt;',['../structinput__types_3_01DiscreteUniform_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20gamma_20_3e_312',['input_types&lt; Gamma &gt;',['../structinput__types_3_01Gamma_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20normal_20_3e_313',['input_types&lt; Normal &gt;',['../structinput__types_3_01Normal_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20parameter_3c_20v_20_3e_20_3e_314',['input_types&lt; Parameter&lt; V &gt; &gt;',['../structinput__types_3_01Parameter_3_01V_01_4_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20poisson_20_3e_315',['input_types&lt; Poisson &gt;',['../structinput__types_3_01Poisson_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20triangular_20_3e_316',['input_types&lt; Triangular &gt;',['../structinput__types_3_01Triangular_01_4.html',1,'']]],
+  ['input_5ftypes_3c_20uniform_20_3e_317',['input_types&lt; Uniform &gt;',['../structinput__types_3_01Uniform_01_4.html',1,'']]]
 ];

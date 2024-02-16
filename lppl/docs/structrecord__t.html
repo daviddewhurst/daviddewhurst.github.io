@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl: record_t&lt; Ts &gt; Struct Template Reference</title>
+<title>lppl: record_t&lt; DTs &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v1.0.0</span>
+   &#160;<span id="projectnumber">v2.0.0</span>
    </div>
   </td>
  </tr>
@@ -89,61 +89,11 @@ $(document).ready(function(){initNavTree('structrecord__t.html',''); initResizab
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structrecord__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">record_t&lt; Ts &gt; Struct Template Reference</div>  </div>
+<div class="title">record_t&lt; DTs &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A fundamental data structure that holds a mapping from addresses to nodes, an insertion order, and a record-level interpretation.  
- <a href="structrecord__t.html#details">More...</a></p>
-
-<p><code>#include &quot;record.hpp&quot;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a41ab7b2378d3ef83cd71e9b89b25f66e"><td class="memItemLeft" align="right" valign="top"><a id="a41ab7b2378d3ef83cd71e9b89b25f66e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord__t.html#a41ab7b2378d3ef83cd71e9b89b25f66e">clear</a> ()</td></tr>
-<tr class="memdesc:a41ab7b2378d3ef83cd71e9b89b25f66e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the underlying map and insertion order. <br /></td></tr>
-<tr class="separator:a41ab7b2378d3ef83cd71e9b89b25f66e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3564296c7f4a1aa58d3f55d78b0b868"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord__t_ab3564296c7f4a1aa58d3f55d78b0b868.html#ab3564296c7f4a1aa58d3f55d78b0b868">copy_from_other</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r)</td></tr>
-<tr class="memdesc:ab3564296c7f4a1aa58d3f55d78b0b868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from all nodes from the passed record into this record.  <a href="structrecord__t_ab3564296c7f4a1aa58d3f55d78b0b868.html#ab3564296c7f4a1aa58d3f55d78b0b868">More...</a><br /></td></tr>
-<tr class="separator:ab3564296c7f4a1aa58d3f55d78b0b868"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75575f8ed42d23f7ccb47ce3793e4024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord__t_a75575f8ed42d23f7ccb47ce3793e4024.html#a75575f8ed42d23f7ccb47ce3793e4024">copy_unobserved_from_other</a> (<a class="el" href="structrecord__t.html">record_t</a>&lt; Ts... &gt; &amp;r)</td></tr>
-<tr class="memdesc:a75575f8ed42d23f7ccb47ce3793e4024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies data from each unobserved sample node from the passed record into this record.  <a href="structrecord__t_a75575f8ed42d23f7ccb47ce3793e4024.html#a75575f8ed42d23f7ccb47ce3793e4024">More...</a><br /></td></tr>
-<tr class="separator:a75575f8ed42d23f7ccb47ce3793e4024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06e52e01e6054c1d22192ef2bb49311a"><td class="memItemLeft" align="right" valign="top"><a id="a06e52e01e6054c1d22192ef2bb49311a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrecord__t.html#a06e52e01e6054c1d22192ef2bb49311a">insert</a> (std::string &amp;address, var_node_t&lt; Ts... &gt; &amp;node)</td></tr>
-<tr class="memdesc:a06e52e01e6054c1d22192ef2bb49311a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert the node into the record at the specified address. <br /></td></tr>
-<tr class="separator:a06e52e01e6054c1d22192ef2bb49311a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a18ceee6115c887973b1fdaf9d591708a"><td class="memItemLeft" align="right" valign="top"><a id="a18ceee6115c887973b1fdaf9d591708a"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>addresses</b></td></tr>
-<tr class="separator:a18ceee6115c887973b1fdaf9d591708a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb2e052f27b06553776dbccfedf03444"><td class="memItemLeft" align="right" valign="top"><a id="abb2e052f27b06553776dbccfedf03444"></a>
-std::forward_list&lt; <a class="el" href="record_8hpp.html#a5e779178e7dcd5972e424c72007d8406">record_interpretation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>interp</b></td></tr>
-<tr class="separator:abb2e052f27b06553776dbccfedf03444"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6fcf79a50d38c79074d5172350642df"><td class="memItemLeft" align="right" valign="top"><a id="ad6fcf79a50d38c79074d5172350642df"></a>
-node_map_t&lt; Ts... &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>map</b></td></tr>
-<tr class="separator:ad6fcf79a50d38c79074d5172350642df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename... Ts&gt;<br />
-struct record_t&lt; Ts &gt;</h3>
-
-<p>A fundamental data structure that holds a mapping from addresses to nodes, an insertion order, and a record-level interpretation. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Ts</td><td>types of all nodes contained in the record. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>lib/<a class="el" href="record_8hpp.html">record.hpp</a></li>
 </ul>
 </div><!-- contents -->

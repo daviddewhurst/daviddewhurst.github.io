@@ -5,5 +5,5 @@ var structgr__pair =
     [ "operator==", "structgr__pair.html#a5e58301fc304fab4c7a5c86292d8bf08", null ],
     [ "transfer_distribution", "structgr__pair.html#a5c1363544afc5c84ee5a70c3a9cf1655", null ],
     [ "g", "structgr__pair.html#a2252e7e4d2aa396670a030c58dce5c1e", null ],
-    [ "r", "structgr__pair.html#ab65b0a560257ea15e4791bc3d7b16f30", null ]
+    [ "r", "structgr__pair.html#a7696704354cbf48979ec222d657ae4cc", null ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">lppl
-   &#160;<span id="projectnumber">v1.0.0</span>
+   &#160;<span id="projectnumber">v2.0.0</span>
    </div>
   </td>
  </tr>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('inference_8hpp.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">inference.hpp File Reference</div>  </div>
@@ -104,27 +104,38 @@ $(document).ready(function(){initNavTree('inference_8hpp.html',''); initResizabl
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEndog.html">Endog</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structExog.html">Exog</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhas__proposal.html">has_proposal&lt; C &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will the passed class template have an associated proposal distribution?  <a href="structhas__proposal.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structInference.html">Inference&lt; A, I, O, V, Q, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Universal base class for inference methods.  <a href="structInference.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structinference__state.html">inference_state&lt; C, I, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">State that is used by inference algorithms.  <a href="structinference__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNo.html">No</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a2ff12ba84b360bbe1553c9070a5aa517"><td class="memItemLeft" align="right" valign="top"><a id="a2ff12ba84b360bbe1553c9070a5aa517"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inference_8hpp.html#a2ff12ba84b360bbe1553c9070a5aa517">kernel</a> { <b>none</b>
-, <b>partial</b>
-, <b>full</b>
- }</td></tr>
-<tr class="memdesc:a2ff12ba84b360bbe1553c9070a5aa517"><td class="mdescLeft">&#160;</td><td class="mdescRight">What kind of proposal kernel is it (i.e., does it not exist at all, does it propose to only some of the address space, or does it propose to the entire address space?) <br /></td></tr>
-<tr class="separator:a2ff12ba84b360bbe1553c9070a5aa517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a5dae70029260babe4e5b21696350521f"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a5dae70029260babe4e5b21696350521f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="inference_8hpp_a5dae70029260babe4e5b21696350521f.html#a5dae70029260babe4e5b21696350521f">endog_proposal_t</a> = <a class="el" href="record_8hpp_a8186975ae1d23dd1b7e1d5d156b989e3.html#a8186975ae1d23dd1b7e1d5d156b989e3">pp_t</a>&lt; <a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt; &gt; &amp;, double, Ts... &gt;</td></tr>
+<tr class="memdesc:a5dae70029260babe4e5b21696350521f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An endogenous proposal distribution.  <a href="inference_8hpp_a5dae70029260babe4e5b21696350521f.html#a5dae70029260babe4e5b21696350521f">More...</a><br /></td></tr>
+<tr class="separator:a5dae70029260babe4e5b21696350521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6edfe9ff9499c729496f6ab7dcd37a"><td class="memTemplParams" colspan="2">template&lt;typename I , typename... Ts&gt; </td></tr>
+<tr class="memitem:a0a6edfe9ff9499c729496f6ab7dcd37a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="inference_8hpp_a0a6edfe9ff9499c729496f6ab7dcd37a.html#a0a6edfe9ff9499c729496f6ab7dcd37a">exog_proposal_t</a> = <a class="el" href="record_8hpp_a8186975ae1d23dd1b7e1d5d156b989e3.html#a8186975ae1d23dd1b7e1d5d156b989e3">pp_t</a>&lt; I, double, Ts... &gt;</td></tr>
+<tr class="memdesc:a0a6edfe9ff9499c729496f6ab7dcd37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An exogenous proposal distribution.  <a href="inference_8hpp_a0a6edfe9ff9499c729496f6ab7dcd37a.html#a0a6edfe9ff9499c729496f6ab7dcd37a">More...</a><br /></td></tr>
+<tr class="separator:a0a6edfe9ff9499c729496f6ab7dcd37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3cb9aa036683d29e46ed4d95e1fcebdc"><td class="memTemplParams" colspan="2"><a id="a3cb9aa036683d29e46ed4d95e1fcebdc"></a>
 template&lt;template&lt; typename, typename, typename, template&lt; class, class, class... &gt; class Q, typename... &gt; class A, typename I , typename O , typename V , template&lt; class, class, class... &gt; class Q, typename... Ts&gt; </td></tr>
-<tr class="memitem:a3cb9aa036683d29e46ed4d95e1fcebdc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structInference.html">Inference</a>&lt; A, I, O, V, Q, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="inference_8hpp.html#a3cb9aa036683d29e46ed4d95e1fcebdc">inference</a> (<a class="el" href="record_8hpp_afdf9cf3c04bf7ff49b58b94a963be084.html#afdf9cf3c04bf7ff49b58b94a963be084">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
+<tr class="memitem:a3cb9aa036683d29e46ed4d95e1fcebdc"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structInference.html">Inference</a>&lt; A, I, O, V, Q, Ts... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="inference_8hpp.html#a3cb9aa036683d29e46ed4d95e1fcebdc">inference</a> (<a class="el" href="record_8hpp_a8186975ae1d23dd1b7e1d5d156b989e3.html#a8186975ae1d23dd1b7e1d5d156b989e3">pp_t</a>&lt; I, O, Ts... &gt; f, Q&lt; V, O, Ts... &gt; &amp;queryer, <a class="el" href="structinf__options__t.html">inf_options_t</a> opts)</td></tr>
 <tr class="memdesc:a3cb9aa036683d29e46ed4d95e1fcebdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <a class="el" href="structInference.html" title="Universal base class for inference methods.">Inference</a> instances. <br /></td></tr>
 <tr class="separator:a3cb9aa036683d29e46ed4d95e1fcebdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
