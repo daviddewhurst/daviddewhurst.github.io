@@ -26,7 +26,6 @@ Some fields I find useful to answer questions and develop capabilities in these 
 ## Open-source software
 
 + [`lppl`](./lppl/): the last probabilistic programming language (lppl) I will ever write, hosted in C++, probably never finished
-    + [`glppl`](./glppl/): translation of probabilistic programs into probability distributions over directed graphical models
     + [`ccyan`](./ccyan/): compilation target of `glppl`'s graphical model program synthesis functionality.
     + [`lppl-examples`](./lppl/examples/): using lppl for various modeling and inference tasks.
 + [`libmrf`](https://davidrushingdewhurst.com/libmrf/) Markov random fields in C. Depends only on `malloc` and `free` implementations.
