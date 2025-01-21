@@ -8,6 +8,8 @@ var dir_97aefd0d527b934f1d99a682da8fe6a9 =
     [ "distributions.hpp", "distributions_8hpp.html", "distributions_8hpp" ],
     [ "domains.hpp", "domains_8hpp.html", [
       [ "array_", "structarray__.html", "structarray__" ],
+      [ "discrete_", "structdiscrete__.html", "structdiscrete__" ],
+      [ "discrete_< unsigned long >", "structdiscrete___3_01unsigned_01long_01_4.html", "structdiscrete___3_01unsigned_01long_01_4" ],
       [ "dynamic_bounded< double >", "structdynamic__bounded_3_01double_01_4.html", "structdynamic__bounded_3_01double_01_4" ],
       [ "mapping< A< T >, A< T > >", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4.html", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4" ],
       [ "mapping< B, A >", "structmapping_3_01B_00_01A_01_4.html", "structmapping_3_01B_00_01A_01_4" ],
@@ -28,6 +30,7 @@ var dir_97aefd0d527b934f1d99a682da8fe6a9 =
     ] ],
     [ "query.hpp", "query_8hpp.html", "query_8hpp" ],
     [ "record.hpp", "record_8hpp.html", "record_8hpp" ],
+    [ "score.hpp", "score_8hpp.html", "score_8hpp" ],
     [ "translate.hpp", "translate_8hpp.html", "translate_8hpp" ],
     [ "update.hpp", "update_8hpp.html", "update_8hpp" ]
 ];

@@ -2,7 +2,9 @@ var hierarchy =
 [
     [ "arity< D >", "structarity.html", null ],
     [ "arity< Beta >", "structarity_3_01Beta_01_4.html", null ],
+    [ "arity< BVNormal >", "structarity_3_01BVNormal_01_4.html", null ],
     [ "arity< Categorical >", "structarity_3_01Categorical_01_4.html", null ],
+    [ "arity< Discrete< T > >", "structarity_3_01Discrete_3_01T_01_4_01_4.html", null ],
     [ "arity< DiscreteUniform >", "structarity_3_01DiscreteUniform_01_4.html", null ],
     [ "arity< Gamma >", "structarity_3_01Gamma_01_4.html", null ],
     [ "arity< Normal >", "structarity_3_01Normal_01_4.html", null ],
@@ -10,11 +12,10 @@ var hierarchy =
     [ "arity< Poisson >", "structarity_3_01Poisson_01_4.html", null ],
     [ "arity< Triangular >", "structarity_3_01Triangular_01_4.html", null ],
     [ "arity< Uniform >", "structarity_3_01Uniform_01_4.html", null ],
+    [ "arity< WienerProcess >", "structarity_3_01WienerProcess_01_4.html", null ],
     [ "array_< T, N >", "structarray__.html", null ],
     [ "auxiliary_info< D >", "structauxiliary__info.html", null ],
     [ "auxiliary_info< Categorical >", "structauxiliary__info_3_01Categorical_01_4.html", null ],
-    [ "Beta", "structBeta.html", null ],
-    [ "Categorical", "structCategorical.html", null ],
     [ "collection_t", "structcollection__t.html", [
       [ "value_collection_t< record_t< DTypes< Ts... > > >", "structvalue__collection__t.html", [
         [ "record_collection_t< O, Ts >", "structrecord__collection__t.html", null ]
@@ -22,17 +23,50 @@ var hierarchy =
       [ "value_collection_t< V >", "structvalue__collection__t.html", null ]
     ] ],
     [ "DefaultPolicy< D >", "structDefaultPolicy.html", null ],
-    [ "DiscreteUniform", "structDiscreteUniform.html", null ],
+    [ "discrete_< T >", "structdiscrete__.html", null ],
+    [ "discrete_< unsigned long >", "structdiscrete___3_01unsigned_01long_01_4.html", null ],
     [ "Distribution< Impl, V >", "structDistribution.html", null ],
+    [ "Distribution< Beta, double >", "structDistribution.html", [
+      [ "Beta", "structBeta.html", null ]
+    ] ],
+    [ "Distribution< BVNormal, std::array< double, 2 > >", "structDistribution.html", [
+      [ "BVNormal", "structBVNormal.html", null ]
+    ] ],
+    [ "Distribution< Categorical, unsigned long >", "structDistribution.html", [
+      [ "Categorical", "structCategorical.html", null ]
+    ] ],
+    [ "Distribution< Discrete< T >, T >", "structDistribution.html", [
+      [ "Discrete< T >", "structDiscrete.html", null ]
+    ] ],
+    [ "Distribution< DiscreteUniform, int >", "structDistribution.html", [
+      [ "DiscreteUniform", "structDiscreteUniform.html", null ]
+    ] ],
+    [ "Distribution< Gamma, double >", "structDistribution.html", [
+      [ "Gamma", "structGamma.html", null ]
+    ] ],
+    [ "Distribution< Normal, double >", "structDistribution.html", [
+      [ "Normal", "structNormal.html", null ]
+    ] ],
     [ "Distribution< Parameter< V >, V::type >", "structDistribution.html", [
       [ "Parameter< V >", "structParameter.html", null ]
+    ] ],
+    [ "Distribution< Poisson, unsigned >", "structDistribution.html", [
+      [ "Poisson", "structPoisson.html", null ]
+    ] ],
+    [ "Distribution< Triangular, double >", "structDistribution.html", [
+      [ "Triangular", "structTriangular.html", null ]
+    ] ],
+    [ "Distribution< Uniform, double >", "structDistribution.html", [
+      [ "Uniform", "structUniform.html", null ]
+    ] ],
+    [ "Distribution< WienerProcess, double >", "structDistribution.html", [
+      [ "WienerProcess", "structWienerProcess.html", null ]
     ] ],
     [ "dynamic_bounded< T >", "structdynamic__bounded.html", null ],
     [ "dynamic_bounded< double >", "structdynamic__bounded_3_01double_01_4.html", null ],
     [ "ProductGenerator< Impl, V, O, Ts >::EmitType", "structProductGenerator_1_1EmitType.html", null ],
     [ "Endog", "structEndog.html", null ],
     [ "Exog", "structExog.html", null ],
-    [ "Gamma", "structGamma.html", null ],
     [ "gr_output< O, Ts >", "structgr__output.html", null ],
     [ "gr_pair< Ts >", "structgr__pair.html", null ],
     [ "gr_pair< Ts... >", "structgr__pair.html", null ],
@@ -69,7 +103,9 @@ var hierarchy =
     [ "inference_state< ImportanceSampling, I, O, Ts... >", "structinference__state_3_01ImportanceSampling_00_01I_00_01O_00_01Ts_8_8_8_01_4.html", null ],
     [ "input_types< D >", "structinput__types.html", null ],
     [ "input_types< Beta >", "structinput__types_3_01Beta_01_4.html", null ],
+    [ "input_types< BVNormal >", "structinput__types_3_01BVNormal_01_4.html", null ],
     [ "input_types< Categorical >", "structinput__types_3_01Categorical_01_4.html", null ],
+    [ "input_types< Discrete< T > >", "structinput__types_3_01Discrete_3_01T_01_4_01_4.html", null ],
     [ "input_types< DiscreteUniform >", "structinput__types_3_01DiscreteUniform_01_4.html", null ],
     [ "input_types< Gamma >", "structinput__types_3_01Gamma_01_4.html", null ],
     [ "input_types< Normal >", "structinput__types_3_01Normal_01_4.html", null ],
@@ -77,6 +113,7 @@ var hierarchy =
     [ "input_types< Poisson >", "structinput__types_3_01Poisson_01_4.html", null ],
     [ "input_types< Triangular >", "structinput__types_3_01Triangular_01_4.html", null ],
     [ "input_types< Uniform >", "structinput__types_3_01Uniform_01_4.html", null ],
+    [ "input_types< WienerProcess >", "structinput__types_3_01WienerProcess_01_4.html", null ],
     [ "glppl_algos::likelihood_weighting", "structglppl__algos_1_1likelihood__weighting.html", null ],
     [ "mapping< From, To >", "structmapping.html", null ],
     [ "mapping< A< T >, A< T > >", "structmapping_3_01A_3_01T_01_4_00_01A_3_01T_01_4_01_4.html", null ],
@@ -94,17 +131,20 @@ var hierarchy =
     [ "NodeReplay", "structNodeReplay.html", null ],
     [ "NodeStandard", "structNodeStandard.html", null ],
     [ "non_negative< T >", "structnon__negative.html", null ],
-    [ "Normal", "structNormal.html", null ],
     [ "NormalPolicy< D >", "structNormalPolicy.html", null ],
     [ "Obs", "structObs.html", null ],
     [ "output_dim< D >", "structoutput__dim.html", null ],
     [ "output_domain< D >", "structoutput__domain.html", null ],
     [ "output_domain< Beta >", "structoutput__domain_3_01Beta_01_4.html", null ],
+    [ "output_domain< BVNormal >", "structoutput__domain_3_01BVNormal_01_4.html", null ],
+    [ "output_domain< Categorical >", "structoutput__domain_3_01Categorical_01_4.html", null ],
+    [ "output_domain< Discrete< T > >", "structoutput__domain_3_01Discrete_3_01T_01_4_01_4.html", null ],
     [ "output_domain< Gamma >", "structoutput__domain_3_01Gamma_01_4.html", null ],
     [ "output_domain< Normal >", "structoutput__domain_3_01Normal_01_4.html", null ],
     [ "output_domain< Parameter< V > >", "structoutput__domain_3_01Parameter_3_01V_01_4_01_4.html", null ],
     [ "output_domain< Poisson >", "structoutput__domain_3_01Poisson_01_4.html", null ],
     [ "output_domain< Triangular >", "structoutput__domain_3_01Triangular_01_4.html", null ],
+    [ "output_domain< WienerProcess >", "structoutput__domain_3_01WienerProcess_01_4.html", null ],
     [ "ParamConstructor< V, Ts >", "structParamConstructor.html", null ],
     [ "parameter_match< D, MapTo, O, Ts >", "structparameter__match.html", null ],
     [ "parameter_match< D, Gamma, O, Ts... >", "structparameter__match_3_01D_00_01Gamma_00_01O_00_01Ts_8_8_8_01_4.html", null ],
@@ -114,7 +154,7 @@ var hierarchy =
     [ "plate_base_< D >", "structplate__base__.html", [
       [ "static_plate< D, N >", "structstatic__plate.html", null ]
     ] ],
-    [ "Poisson", "structPoisson.html", null ],
+    [ "Probability< typename, O, Ts >", "structProbability.html", null ],
     [ "ProductGenerator< Impl, V, O, Ts >", "structProductGenerator.html", null ],
     [ "program_info", "structprogram__info.html", null ],
     [ "program_rep", "structprogram__rep.html", null ],
@@ -166,6 +206,7 @@ var hierarchy =
     [ "RecordRewrite", "structRecordRewrite.html", null ],
     [ "RecordStandard", "structRecordStandard.html", null ],
     [ "Sample", "structSample.html", null ],
+    [ "Score", "structScore.html", null ],
     [ "slice_base_< D, N >", "structslice__base__.html", [
       [ "slice_plate< D, N >", "structslice__plate.html", null ]
     ] ],
@@ -177,10 +218,8 @@ var hierarchy =
     [ "translation< Value< int > >", "structtranslation_3_01Value_3_01int_01_4_01_4.html", null ],
     [ "translation< Value< unsigned > >", "structtranslation_3_01Value_3_01unsigned_01_4_01_4.html", null ],
     [ "translation< Value< unsigned long > >", "structtranslation_3_01Value_3_01unsigned_01long_01_4_01_4.html", null ],
-    [ "Triangular", "structTriangular.html", null ],
     [ "typed_map< Policy, Input, Ds >", "structtyped__map.html", null ],
     [ "unbounded< T >", "structunbounded.html", null ],
-    [ "Uniform", "structUniform.html", null ],
     [ "unit_interval< T >", "structunit__interval.html", null ],
     [ "unit_interval< double >", "structunit__interval_3_01double_01_4.html", null ],
     [ "Update< Impl, Policy, QueryResult, I, O, Ts >", "structUpdate.html", null ],

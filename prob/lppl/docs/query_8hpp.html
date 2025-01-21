@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>lppl: lib/query.hpp File Reference</title>
+<title>fmcs: lib/query.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,8 +32,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">lppl
-   &#160;<span id="projectnumber">v2.0.0</span>
+   <div id="projectname">fmcs
+   &#160;<span id="projectnumber">v0.2.1</span>
    </div>
   </td>
  </tr>
@@ -125,6 +125,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOptimizer.html">Optimizer&lt; V, O, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optimizes a value function and returns the argmax value.  <a href="structOptimizer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProbability.html">Probability&lt; typename, O, Ts &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the empirical probability of an event.  <a href="structProbability.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structProductGenerator.html">ProductGenerator&lt; Impl, V, O, Ts &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a queryer that returns a fully factored collection of views.  <a href="structProductGenerator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +164,10 @@ Typedefs</h2></td></tr>
 template&lt;typename V , typename O , template&lt; class, class, class... &gt; class Q, typename... Ts&gt; </td></tr>
 <tr class="memitem:ac1a9641e382dfc94831b2481f00fbb36"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>queryer_map_t</b> = std::unordered_map&lt; std::string, std::shared_ptr&lt; Q&lt; V, O, Ts... &gt; &gt;&gt;</td></tr>
 <tr class="separator:ac1a9641e382dfc94831b2481f00fbb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343c70888c428608b9d298ac30b46d26"><td class="memTemplParams" colspan="2"><a id="a343c70888c428608b9d298ac30b46d26"></a>
+template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a343c70888c428608b9d298ac30b46d26"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sat_t</b> = std::function&lt; bool(<a class="el" href="structrecord__t.html">record_t</a>&lt; DTypes&lt; Ts... &gt; &gt; &amp;)&gt;</td></tr>
+<tr class="separator:a343c70888c428608b9d298ac30b46d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -171,6 +178,11 @@ template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:a07b1c22f6d597c6fe786206d290c530c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="query_8hpp_a07b1c22f6d597c6fe786206d290c530c.html#a07b1c22f6d597c6fe786206d290c530c">logsumexp_streaming</a> (double &amp;_alpha, double &amp;_r, const double &amp;weight)</td></tr>
 <tr class="memdesc:a07b1c22f6d597c6fe786206d290c530c"><td class="mdescLeft">&#160;</td><td class="mdescRight">streaming logsumexp computation, see <a href="https://arxiv.org/abs/1805.02867">https://arxiv.org/abs/1805.02867</a>  <a href="query_8hpp_a07b1c22f6d597c6fe786206d290c530c.html#a07b1c22f6d597c6fe786206d290c530c">More...</a><br /></td></tr>
 <tr class="separator:a07b1c22f6d597c6fe786206d290c530c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f3e5941c791a69de43535f49ac6e50"><td class="memTemplParams" colspan="2"><a id="a12f3e5941c791a69de43535f49ac6e50"></a>
+template&lt;typename O , typename... Ts&gt; </td></tr>
+<tr class="memitem:a12f3e5941c791a69de43535f49ac6e50"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="query_8hpp.html#a12f3e5941c791a69de43535f49ac6e50">probability</a> (auto sat)</td></tr>
+<tr class="memdesc:a12f3e5941c791a69de43535f49ac6e50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory function for <code><a class="el" href="structProbability.html" title="Computes the empirical probability of an event.">Probability</a></code> queryer. <br /></td></tr>
+<tr class="separator:a12f3e5941c791a69de43535f49ac6e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2b1146bdab610a488759411a74b7a01"><td class="memTemplParams" colspan="2"><a id="aa2b1146bdab610a488759411a74b7a01"></a>
 template&lt;typename O , typename... Ts&gt; </td></tr>
 <tr class="memitem:aa2b1146bdab610a488759411a74b7a01"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="query_8hpp.html#aa2b1146bdab610a488759411a74b7a01">weighted_mean</a> (std::string address)</td></tr>

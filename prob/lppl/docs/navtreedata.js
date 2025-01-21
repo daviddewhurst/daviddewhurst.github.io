@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "lppl", "index.html", [
+  [ "fmcs", "index.html", [
     [ "<tt>fmcs</tt>", "md_README.html", [
       [ "Build", "md_README.html#autotoc_md1", null ],
       [ "Test", "md_README.html#autotoc_md2", null ],
@@ -56,8 +56,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structInference_acd7f45b7d0fe70ab9c84954cbdb7ea1f.html#acd7f45b7d0fe70ab9c84954cbdb7ea1f",
-"structinf__options__t.html#af2c1a180fbb257ec22393c77b3d434ab"
+"structEndog.html",
+"structgr__output.html",
+"structvalue__collection__t.html#a8eea8c57b93fc2beba7ef61c6743289c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
