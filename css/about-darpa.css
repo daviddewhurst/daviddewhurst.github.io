@@ -1,11 +1,11 @@
 .jumbotron {
-    background-color: #33425b;
+    background-color: #ffffff;
     color: #a2b0be;
     /* height: 100vh; */
 }
 
 a{
-    color: #33425b;
+    color: #ffffff;
 }
 
 a:hover {
@@ -54,7 +54,7 @@ body {
   /* The active link */
   .navbar-nav li.active a {
     color: #cb1528 !important;
-    background-color: #33425b !important;
+    background-color: #ffffff !important;
   }
   
   /* Remove border color from the collapsible button */
@@ -63,58 +63,66 @@ body {
   }
 
   #about-text {
-    color: #33425b;
+    color: #ffffff;
     padding: 60px 50px;
   }
 
   #econ-home {
-    background-color:#33425b;
+    background-color:#ffffff;
     color: #ffffff;
     opacity: 0.0;
     padding: 60px 50px;
   }
 
   #prob-home {
-    background-color:#33425b;
+    background-color:#ffffff;
     color: #ffffff;
     opacity: 0.75;
     padding: 60px 50px;
   }
 
   #div_detail__body {
-    color: #33425b;
+    color: #ffffff;
     opacity: 0.75;
     padding: 60px 50px;
   }
 
   #sidebar__copy {
-    color: #33425b;
+    color: #ffffff;
     opacity: 0.75;
     padding: 60px 50px;
   }
 
   #sidebar__link {
-    color: #33425b;
+    color: #ffffff;
     opacity: 0.75;
     padding: 60px 50px;
   }
 
   #sidebar__copy {
-    color: #33425b;
+    color: #ffffff;
   }
 
   #sidebar__item {
-    color: #33425b;
+    color: #ffffff;
   }
 
   #h1_detail__header {
-    color: #33425b;
+    color: #ffffff;
   }
 
   #h2_detail__subtitle {
-    color: #33425b;
+    color: #ffffff;
   }
 
   #h2_detail__subtitle2 {
-    color: #33425b;
+    color: #ffffff;
+  }
+
+  #detail__title {
+    color: #ffffff
+  }
+
+  #detail__subtitle {
+    color: #ffffff
   }
