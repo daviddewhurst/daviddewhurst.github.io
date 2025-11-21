@@ -62,6 +62,27 @@ body {
     border-color: transparent;
   }
 
+  .financial-disclaimer-footer {
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 1px solid #ddd; /* A subtle line to separate it */
+      font-size: 0.9em; /* Makes the entire footer slightly smaller */
+      color: #cb1528;
+  }
+
+  .disclaimer-title {
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 5px;
+      color: #cb1528;
+  }
+  
+  .disclaimer-text {
+      display: block;
+      font-size: 0.85em; /* The fine print text */
+      line-height: 1.5;
+  }
+
   #econ-home {
     background-color:#000000;
     color: #ffffff;
